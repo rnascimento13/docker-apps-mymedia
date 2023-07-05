@@ -1,0 +1,293 @@
+(N) 2023-07-03T19:32:11 - qBittorrent v4.5.4 started
+(N) 2023-07-03T19:32:11 - Using config directory: /config/qBittorrent
+(N) 2023-07-03T19:32:11 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2023-07-03T19:32:11 - Peer ID: "-qB4540-"
+(I) 2023-07-03T19:32:11 - HTTP User-Agent: "qBittorrent/4.5.4"
+(I) 2023-07-03T19:32:11 - Distributed Hash Table (DHT) support: ON
+(I) 2023-07-03T19:32:11 - Local Peer Discovery support: ON
+(I) 2023-07-03T19:32:11 - Peer Exchange (PeX) support: ON
+(I) 2023-07-03T19:32:11 - Anonymous mode: OFF
+(I) 2023-07-03T19:32:11 - Encryption support: ON
+(I) 2023-07-03T19:32:11 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2023-07-03T19:32:11 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2023-07-03T19:32:11 - Successfully listening on IP. IP: "172.18.0.7". Port: "TCP/6881"
+(I) 2023-07-03T19:32:11 - Successfully listening on IP. IP: "172.18.0.7". Port: "UTP/6881"
+(W) 2023-07-03T19:32:11 - Couldn't load IP geolocation database. Reason: No such file or directory
+(N) 2023-07-03T19:32:11 - Using built-in Web UI.
+(W) 2023-07-03T19:32:11 - Couldn't load Web UI translation for selected locale (C).
+(N) 2023-07-03T19:32:11 - Web UI: Now listening on IP: *, port: 8080
+(I) 2023-07-03T19:32:11 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Sat Jul 1 08:07:53 2023.
+(I) 2023-07-03T19:32:11 - Successfully updated IP geolocation database.
+(I) 2023-07-03T19:42:11 - Detected external IP. IP: "191.254.116.208"
+(N) 2023-07-03T23:25:17 - qBittorrent termination initiated
+(I) 2023-07-03T23:25:17 - UPnP/NAT-PMP support: OFF
+(N) 2023-07-03T23:25:17 - qBittorrent is now ready to exit
+(N) 2023-07-03T23:26:53 - qBittorrent v4.5.4 started
+(N) 2023-07-03T23:26:53 - Using config directory: /config/qBittorrent
+(N) 2023-07-03T23:26:53 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2023-07-03T23:26:53 - Peer ID: "-qB4540-"
+(I) 2023-07-03T23:26:53 - HTTP User-Agent: "qBittorrent/4.5.4"
+(I) 2023-07-03T23:26:53 - Distributed Hash Table (DHT) support: ON
+(I) 2023-07-03T23:26:53 - Local Peer Discovery support: ON
+(I) 2023-07-03T23:26:53 - Peer Exchange (PeX) support: ON
+(I) 2023-07-03T23:26:53 - Anonymous mode: OFF
+(I) 2023-07-03T23:26:53 - Encryption support: ON
+(I) 2023-07-03T23:26:53 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Sat Jul 1 08:07:53 2023.
+(N) 2023-07-03T23:26:53 - Using built-in Web UI.
+(W) 2023-07-03T23:26:53 - Couldn't load Web UI translation for selected locale (C).
+(N) 2023-07-03T23:26:53 - Web UI: Now listening on IP: *, port: 8080
+(I) 2023-07-03T23:26:53 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2023-07-03T23:26:53 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2023-07-03T23:26:53 - Successfully listening on IP. IP: "172.18.0.2". Port: "TCP/6881"
+(I) 2023-07-03T23:26:53 - Successfully listening on IP. IP: "172.18.0.2". Port: "UTP/6881"
+(I) 2023-07-03T23:26:54 - Detected external IP. IP: "191.254.116.208"
+(N) 2023-07-04T00:19:18 - qBittorrent termination initiated
+(I) 2023-07-04T00:19:19 - UPnP/NAT-PMP support: OFF
+(N) 2023-07-04T00:19:19 - qBittorrent is now ready to exit
+(N) 2023-07-04T00:19:37 - qBittorrent v4.5.4 started
+(N) 2023-07-04T00:19:37 - Using config directory: /config/qBittorrent
+(N) 2023-07-04T00:19:37 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2023-07-04T00:19:37 - Peer ID: "-qB4540-"
+(I) 2023-07-04T00:19:37 - HTTP User-Agent: "qBittorrent/4.5.4"
+(I) 2023-07-04T00:19:37 - Distributed Hash Table (DHT) support: ON
+(I) 2023-07-04T00:19:37 - Local Peer Discovery support: ON
+(I) 2023-07-04T00:19:37 - Peer Exchange (PeX) support: ON
+(I) 2023-07-04T00:19:37 - Anonymous mode: OFF
+(I) 2023-07-04T00:19:37 - Encryption support: ON
+(I) 2023-07-04T00:19:37 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Sat Jul 1 08:07:53 2023.
+(N) 2023-07-04T00:19:37 - Using built-in Web UI.
+(W) 2023-07-04T00:19:37 - Couldn't load Web UI translation for selected locale (C).
+(N) 2023-07-04T00:19:37 - Web UI: Now listening on IP: *, port: 8082
+(I) 2023-07-04T00:19:37 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2023-07-04T00:19:37 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2023-07-04T00:19:37 - Successfully listening on IP. IP: "172.18.0.2". Port: "TCP/6881"
+(I) 2023-07-04T00:19:37 - Successfully listening on IP. IP: "172.18.0.2". Port: "UTP/6881"
+(I) 2023-07-04T00:19:37 - Detected external IP. IP: "191.254.116.208"
+(N) 2023-07-04T00:19:50 - WebAPI login success. IP: ::ffff:192.168.15.9
+(N) 2023-07-04T00:20:37 - Web UI translation for selected locale (en) has been successfully loaded.
+(N) 2023-07-04T00:20:37 - Web UI: Now listening on IP: *, port: 8082
+(N) 2023-07-04T00:20:55 - WebAPI login success. IP: ::ffff:192.168.15.9
+(N) 2023-07-04T00:22:01 - WebAPI login success. IP: ::ffff:172.18.0.4
+(N) 2023-07-04T00:46:43 - Added new torrent. Torrent: "The Simpsons S01E10 1080p WEB H264-BATV[eztv io]"
+(N) 2023-07-04T01:37:15 - qBittorrent termination initiated
+(I) 2023-07-04T01:37:15 - UPnP/NAT-PMP support: OFF
+(N) 2023-07-04T01:37:20 - qBittorrent is now ready to exit
+(N) 2023-07-04T01:38:00 - qBittorrent v4.5.4 started
+(N) 2023-07-04T01:38:00 - Using config directory: /config/qBittorrent
+(N) 2023-07-04T01:38:00 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2023-07-04T01:38:00 - Peer ID: "-qB4540-"
+(I) 2023-07-04T01:38:00 - HTTP User-Agent: "qBittorrent/4.5.4"
+(I) 2023-07-04T01:38:00 - Distributed Hash Table (DHT) support: ON
+(I) 2023-07-04T01:38:00 - Local Peer Discovery support: ON
+(I) 2023-07-04T01:38:00 - Peer Exchange (PeX) support: ON
+(I) 2023-07-04T01:38:00 - Anonymous mode: OFF
+(I) 2023-07-04T01:38:00 - Encryption support: ON
+(I) 2023-07-04T01:38:00 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2023-07-04T01:38:00 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2023-07-04T01:38:00 - Successfully listening on IP. IP: "172.18.0.8". Port: "TCP/6881"
+(I) 2023-07-04T01:38:00 - Successfully listening on IP. IP: "172.18.0.8". Port: "UTP/6881"
+(N) 2023-07-04T01:38:00 - Restored torrent. Torrent: "The Simpsons S01E10 1080p WEB H264-BATV[eztv io]"
+(I) 2023-07-04T01:38:00 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Sat Jul 1 08:07:53 2023.
+(N) 2023-07-04T01:38:00 - Using built-in Web UI.
+(N) 2023-07-04T01:38:00 - Web UI translation for selected locale (en) has been successfully loaded.
+(N) 2023-07-04T01:38:00 - Web UI: Now listening on IP: *, port: 8082
+(I) 2023-07-04T01:38:00 - Detected external IP. IP: "191.254.116.208"
+(N) 2023-07-04T01:38:04 - WebAPI login success. IP: ::ffff:172.18.0.2
+(N) 2023-07-04T01:42:35 - WebAPI login success. IP: ::ffff:192.168.15.9
+(N) 2023-07-04T01:42:51 - Removed torrent and deleted its content. Torrent: "The Simpsons S01E10 1080p WEB H264-BATV[eztv io]"
+(N) 2023-07-04T01:42:59 - Added new torrent. Torrent: "The Simpsons S01E10 1080p WEB H264-BATV[eztv io]"
+(N) 2023-07-04T02:02:42 - Added new torrent. Torrent: "The Simpsons S01E09 1080p HEVC x265-MeGusta[eztv io]"
+(N) 2023-07-04T02:04:28 - Added new torrent. Torrent: "The Simpsons S01E08 1080p HEVC x265-MeGusta[eztv io]"
+(N) 2023-07-04T12:48:11 - WebAPI login success. IP: ::ffff:192.168.15.9
+(N) 2023-07-04T13:35:08 - Torrent download finished. Torrent: "The Simpsons S01E08 1080p HEVC x265-MeGusta[eztv io]"
+(N) 2023-07-04T14:15:26 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-04T14:15:44 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-04T14:15:55 - WebAPI login success. IP: ::ffff:192.168.15.9
+(N) 2023-07-04T14:16:45 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-04T14:17:46 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-04T14:18:46 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-04T14:19:08 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-04T14:19:47 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-04T14:20:47 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-04T14:21:48 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-04T14:22:48 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-04T14:23:48 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-04T14:24:49 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-04T14:25:49 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-04T14:26:49 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-04T14:27:50 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-04T14:28:50 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-04T14:29:50 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-04T14:30:51 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-04T14:31:51 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-04T14:32:51 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-04T14:33:52 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-04T14:34:52 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-04T14:35:52 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-04T14:36:52 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-04T14:37:52 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-04T14:38:52 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-04T14:39:53 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-04T14:40:53 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-04T14:41:53 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-04T14:42:53 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-04T14:43:53 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-04T14:44:53 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-04T14:45:54 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-04T14:46:54 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-04T14:59:39 - Removed torrent and deleted its content. Torrent: "The Simpsons S01E09 1080p HEVC x265-MeGusta[eztv io]"
+(N) 2023-07-04T14:59:39 - Removed torrent and deleted its content. Torrent: "The Simpsons S01E10 1080p WEB H264-BATV[eztv io]"
+(N) 2023-07-04T15:00:18 - Added new torrent. Torrent: "The Simpsons S01E10 1080p WEB H264-BATV[eztv io]"
+(N) 2023-07-04T15:03:39 - Added new torrent. Torrent: "The Simpsons S01E10 1080p HEVC x265-MeGusta[eztv io]"
+(N) 2023-07-04T15:04:21 - Removed torrent and deleted its content. Torrent: "The Simpsons S01E10 1080p WEB H264-BATV[eztv io]"
+(N) 2023-07-04T15:27:38 - qBittorrent v4.5.4 started
+(N) 2023-07-04T15:27:38 - Using config directory: /config/qBittorrent
+(N) 2023-07-04T15:27:38 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2023-07-04T15:27:38 - Peer ID: "-qB4540-"
+(I) 2023-07-04T15:27:38 - HTTP User-Agent: "qBittorrent/4.5.4"
+(I) 2023-07-04T15:27:38 - Distributed Hash Table (DHT) support: ON
+(I) 2023-07-04T15:27:38 - Local Peer Discovery support: ON
+(I) 2023-07-04T15:27:38 - Peer Exchange (PeX) support: ON
+(I) 2023-07-04T15:27:38 - Anonymous mode: OFF
+(I) 2023-07-04T15:27:38 - Encryption support: ON
+(I) 2023-07-04T15:27:38 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2023-07-04T15:27:38 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2023-07-04T15:27:38 - Successfully listening on IP. IP: "172.18.0.3". Port: "TCP/6881"
+(I) 2023-07-04T15:27:38 - Successfully listening on IP. IP: "172.18.0.3". Port: "UTP/6881"
+(N) 2023-07-04T15:27:38 - Restored torrent. Torrent: "The Simpsons S01E08 1080p HEVC x265-MeGusta[eztv io]"
+(N) 2023-07-04T15:27:38 - Restored torrent. Torrent: "The Simpsons S01E10 1080p HEVC x265-MeGusta[eztv io]"
+(I) 2023-07-04T15:27:38 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Sat Jul 1 08:07:53 2023.
+(N) 2023-07-04T15:27:38 - Using built-in Web UI.
+(N) 2023-07-04T15:27:38 - Web UI translation for selected locale (en) has been successfully loaded.
+(N) 2023-07-04T15:27:38 - Web UI: Now listening on IP: *, port: 8082
+(I) 2023-07-04T15:27:38 - Detected external IP. IP: "191.254.116.208"
+(N) 2023-07-04T15:27:42 - WebAPI login success. IP: ::ffff:172.18.0.4
+(N) 2023-07-05T03:08:10 - qBittorrent termination initiated
+(I) 2023-07-05T03:08:10 - UPnP/NAT-PMP support: OFF
+(N) 2023-07-05T03:08:16 - qBittorrent is now ready to exit
+(N) 2023-07-05T03:08:59 - qBittorrent v4.5.4 started
+(N) 2023-07-05T03:08:59 - Using config directory: /config/qBittorrent
+(N) 2023-07-05T03:08:59 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2023-07-05T03:08:59 - Peer ID: "-qB4540-"
+(I) 2023-07-05T03:08:59 - HTTP User-Agent: "qBittorrent/4.5.4"
+(I) 2023-07-05T03:08:59 - Distributed Hash Table (DHT) support: ON
+(I) 2023-07-05T03:08:59 - Local Peer Discovery support: ON
+(I) 2023-07-05T03:08:59 - Peer Exchange (PeX) support: ON
+(I) 2023-07-05T03:08:59 - Anonymous mode: OFF
+(I) 2023-07-05T03:08:59 - Encryption support: ON
+(I) 2023-07-05T03:08:59 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2023-07-05T03:08:59 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2023-07-05T03:08:59 - Successfully listening on IP. IP: "172.18.0.7". Port: "TCP/6881"
+(I) 2023-07-05T03:08:59 - Successfully listening on IP. IP: "172.18.0.7". Port: "UTP/6881"
+(N) 2023-07-05T03:08:59 - Restored torrent. Torrent: "The Simpsons S01E10 1080p HEVC x265-MeGusta[eztv io]"
+(N) 2023-07-05T03:08:59 - Restored torrent. Torrent: "The Simpsons S01E08 1080p HEVC x265-MeGusta[eztv io]"
+(I) 2023-07-05T03:08:59 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Sat Jul 1 08:07:53 2023.
+(N) 2023-07-05T03:08:59 - Using built-in Web UI.
+(N) 2023-07-05T03:08:59 - Web UI translation for selected locale (en) has been successfully loaded.
+(N) 2023-07-05T03:08:59 - Web UI: Now listening on IP: *, port: 8082
+(I) 2023-07-05T03:08:59 - Detected external IP. IP: "191.254.116.208"
+(N) 2023-07-05T03:09:03 - WebAPI login success. IP: ::ffff:172.18.0.6
+(N) 2023-07-05T03:48:22 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T03:49:22 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T03:50:22 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T03:51:23 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T03:52:23 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T03:53:23 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T03:54:23 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T03:55:23 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T03:56:23 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T03:57:23 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T03:58:24 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T03:59:24 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T04:00:24 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T04:01:24 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T04:02:24 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T04:03:24 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T04:04:24 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T04:05:24 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T04:06:25 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T04:07:25 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T04:08:25 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T04:09:25 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T04:10:25 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T04:11:25 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T04:12:25 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T04:13:26 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T04:14:26 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T04:15:26 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T04:16:26 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T04:17:26 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T04:18:26 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T04:19:27 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T04:20:27 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T10:17:05 - Torrent download finished. Torrent: "The Simpsons S01E10 1080p HEVC x265-MeGusta[eztv io]"
+(N) 2023-07-05T10:33:46 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T10:34:46 - WebAPI login success. IP: ::ffff:172.18.0.1
+(W) 2023-07-05T10:35:22 - WebUI: Referer header & Target origin mismatch! Source IP: '::ffff:192.168.15.9'. Referer header: 'http://192.168.15.7:11180/'. Target origin: '192.168.15.7:8082'
+(W) 2023-07-05T10:35:36 - WebUI: Referer header & Target origin mismatch! Source IP: '::ffff:192.168.15.9'. Referer header: 'http://192.168.15.7:11180/'. Target origin: '192.168.15.7:8082'
+(N) 2023-07-05T10:35:47 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T10:36:47 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T10:37:47 - WebAPI login success. IP: ::ffff:172.18.0.1
+(W) 2023-07-05T10:37:56 - WebUI: Referer header & Target origin mismatch! Source IP: '::ffff:192.168.15.9'. Referer header: 'http://192.168.15.7:11180/'. Target origin: '192.168.15.7:8082'
+(W) 2023-07-05T10:38:29 - WebUI: Referer header & Target origin mismatch! Source IP: '::ffff:192.168.15.9'. Referer header: 'http://192.168.15.7:11180/'. Target origin: '192.168.15.7:8082'
+(N) 2023-07-05T10:38:47 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T10:39:48 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T10:40:48 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T10:41:48 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T10:41:57 - qBittorrent termination initiated
+(I) 2023-07-05T10:41:57 - UPnP/NAT-PMP support: OFF
+(N) 2023-07-05T10:42:02 - qBittorrent is now ready to exit
+(N) 2023-07-05T10:42:13 - qBittorrent v4.5.4 started
+(N) 2023-07-05T10:42:13 - Using config directory: /config/qBittorrent
+(N) 2023-07-05T10:42:13 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2023-07-05T10:42:13 - Peer ID: "-qB4540-"
+(I) 2023-07-05T10:42:13 - HTTP User-Agent: "qBittorrent/4.5.4"
+(I) 2023-07-05T10:42:13 - Distributed Hash Table (DHT) support: ON
+(I) 2023-07-05T10:42:13 - Local Peer Discovery support: ON
+(I) 2023-07-05T10:42:13 - Peer Exchange (PeX) support: ON
+(I) 2023-07-05T10:42:13 - Anonymous mode: OFF
+(I) 2023-07-05T10:42:13 - Encryption support: ON
+(I) 2023-07-05T10:42:13 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2023-07-05T10:42:13 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2023-07-05T10:42:13 - Successfully listening on IP. IP: "172.18.0.7". Port: "TCP/6881"
+(I) 2023-07-05T10:42:13 - Successfully listening on IP. IP: "172.18.0.7". Port: "UTP/6881"
+(N) 2023-07-05T10:42:13 - Restored torrent. Torrent: "The Simpsons S01E10 1080p HEVC x265-MeGusta[eztv io]"
+(N) 2023-07-05T10:42:13 - Restored torrent. Torrent: "The Simpsons S01E08 1080p HEVC x265-MeGusta[eztv io]"
+(I) 2023-07-05T10:42:13 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Sat Jul 1 08:07:53 2023.
+(N) 2023-07-05T10:42:13 - Using built-in Web UI.
+(N) 2023-07-05T10:42:13 - Web UI translation for selected locale (en) has been successfully loaded.
+(N) 2023-07-05T10:42:13 - Web UI: Now listening on IP: *, port: 8082
+(I) 2023-07-05T10:42:14 - Detected external IP. IP: "191.254.116.208"
+(N) 2023-07-05T10:42:17 - WebAPI login success. IP: ::ffff:172.18.0.8
+(N) 2023-07-05T10:42:49 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T10:43:50 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T10:44:25 - qBittorrent termination initiated
+(I) 2023-07-05T10:44:25 - UPnP/NAT-PMP support: OFF
+(N) 2023-07-05T10:44:30 - qBittorrent is now ready to exit
+(N) 2023-07-05T10:44:41 - qBittorrent v4.5.4 started
+(N) 2023-07-05T10:44:41 - Using config directory: /config/qBittorrent
+(N) 2023-07-05T10:44:41 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2023-07-05T10:44:41 - Peer ID: "-qB4540-"
+(I) 2023-07-05T10:44:41 - HTTP User-Agent: "qBittorrent/4.5.4"
+(I) 2023-07-05T10:44:41 - Distributed Hash Table (DHT) support: ON
+(I) 2023-07-05T10:44:41 - Local Peer Discovery support: ON
+(I) 2023-07-05T10:44:41 - Peer Exchange (PeX) support: ON
+(I) 2023-07-05T10:44:41 - Anonymous mode: OFF
+(I) 2023-07-05T10:44:41 - Encryption support: ON
+(I) 2023-07-05T10:44:41 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2023-07-05T10:44:41 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2023-07-05T10:44:41 - Successfully listening on IP. IP: "172.18.0.8". Port: "TCP/6881"
+(I) 2023-07-05T10:44:41 - Successfully listening on IP. IP: "172.18.0.8". Port: "UTP/6881"
+(N) 2023-07-05T10:44:41 - Restored torrent. Torrent: "The Simpsons S01E10 1080p HEVC x265-MeGusta[eztv io]"
+(N) 2023-07-05T10:44:41 - Restored torrent. Torrent: "The Simpsons S01E08 1080p HEVC x265-MeGusta[eztv io]"
+(I) 2023-07-05T10:44:41 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Sat Jul 1 08:07:53 2023.
+(N) 2023-07-05T10:44:41 - Using built-in Web UI.
+(N) 2023-07-05T10:44:41 - Web UI translation for selected locale (en) has been successfully loaded.
+(N) 2023-07-05T10:44:41 - Web UI: Now listening on IP: *, port: 8082
+(I) 2023-07-05T10:44:42 - Detected external IP. IP: "191.254.116.208"
+(N) 2023-07-05T10:44:45 - WebAPI login success. IP: ::ffff:172.18.0.7
+(N) 2023-07-05T10:44:50 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2023-07-05T10:45:51 - WebAPI login success. IP: ::ffff:172.18.0.1
+(W) 2023-07-05T10:46:30 - WebUI: Referer header & Target origin mismatch! Source IP: '::ffff:192.168.15.9'. Referer header: 'http://192.168.15.7:11180/'. Target origin: '192.168.15.7:8082'
+(N) 2023-07-05T10:46:51 - WebAPI login success. IP: ::ffff:172.18.0.1
+(W) 2023-07-05T10:47:10 - WebUI: Referer header & Target origin mismatch! Source IP: '::ffff:192.168.15.9'. Referer header: 'http://192.168.15.7:11180/'. Target origin: '192.168.15.7:8082'
