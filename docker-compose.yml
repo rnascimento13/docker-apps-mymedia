@@ -1,17 +1,18 @@
 ---
-version: "2.1"
+version: "2.3"
 services:
   sonarr: # tv series collection manager
     image: lscr.io/linuxserver/sonarr:latest
     container_name: sonarr
     environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Brazil
+      - PUID=${PUID} # default user id, defined in .env
+      - PGID=${PGID} # default group id, defined in .env
+      - TZ=${TZ} # timezone, defined in .env
     volumes:
-      - ./apps/sonarr/config:/config
-      - ./media/tv:/tv #optional
-      - ./media/torrent:/downloads #optional
+      #- /etc/localtime:/etc/localtime:ro
+      - ./apps/sonarr/config:/config # config files
+      - ${ROOT}/tv:/tv # tv shows folder
+      - ${ROOT}/downloads:/downloads # download folder
     ports:
       - 8989:8989
     restart: unless-stopped
@@ -20,13 +21,14 @@ services:
     image: lscr.io/linuxserver/radarr:latest
     container_name: radarr
     environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Brazil
+      - PUID=${PUID} # default user id, defined in .env
+      - PGID=${PGID} # default group id, defined in .env
+      - TZ=${TZ} # timezone, defined in .env
     volumes:
+      #- /etc/localtime:/etc/localtime:ro
       - ./apps/radarr/config:/config
-      - ./media/movie:/movies #optional
-      - ./media/torrent:/downloads #optional
+      - ${ROOT}/movies:/movies #optional
+      - ${ROOT}/downloads:/downloads #optional
     ports:
       - 7878:7878
     restart: unless-stopped
@@ -35,13 +37,14 @@ services:
     image: lscr.io/linuxserver/lidarr:latest
     container_name: lidarr
     environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Brazil
+      - PUID=${PUID} # default user id, defined in .env
+      - PGID=${PGID} # default group id, defined in .env
+      - TZ=${TZ} # timezone, defined in .env
     volumes:
+      #- /etc/localtime:/etc/localtime:ro
       - ./apps/lidar/config:/config
-      - ./media/music:/music #optional
-      - ./media/torrent:/downloads #optional
+      - ${ROOT}/music:/music #optional
+      - ${ROOT}/downloads:/downloads #optional
     ports:
       - 8686:8686
     restart: unless-stopped
@@ -50,13 +53,14 @@ services:
     image: lscr.io/linuxserver/readarr:develop
     container_name: readarr
     environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=America/Brazil
+      - PUID=${PUID} # default user id, defined in .env
+      - PGID=${PGID} # default group id, defined in .env
+      - TZ=${TZ} # timezone, defined in .env
     volumes:
+      #- /etc/localtime:/etc/localtime:ro
       - ./apps/readarr/config:/config
-      - ./media/ebook:/books #optional
-      - ./media/torrent:/downloads #optional
+      - ${ROOT}/ebooks:/books #optional
+      - ${ROOT}/downloads:/downloads #optional
     ports:
       - 8787:8787
     restart: unless-stopped
@@ -65,44 +69,45 @@ services:
     image: lscr.io/linuxserver/bazarr:latest
     container_name: bazarr
     environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=America/Sao_Paulo
+      - PUID=${PUID} # default user id, defined in .env
+      - PGID=${PGID} # default group id, defined in .env
+      - TZ=${TZ} # timezone, defined in .env
     volumes:
+      #- /etc/localtime:/etc/localtime:ro
       - ./apps/bazarr/config:/config
-      - ./media/movie:/movies #optional
-      - ./media/tv:/tv #optional
+      - ${ROOT}/movies:/movies #optional
+      - ${ROOT}/tv:/tv #optional
     ports:
       - 6767:6767
     restart: unless-stopped
 
-  jackett: # indexer for tv, movie, music, ebook
-    image: lscr.io/linuxserver/jackett:latest
-    container_name: jackett
+  prowlarr: # indexer for tv, movie, music, ebook
+    image: lscr.io/linuxserver/prowlarr:latest
+    container_name: prowlarr
     environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Brazil
+      - PUID=${PUID} # default user id, defined in .env
+      - PGID=${PGID} # default group id, defined in .env
+      - TZ=${TZ} # timezone, defined in .env
       - AUTO_UPDATE=true #optional
       - RUN_OPTS= #optional
     volumes:
-      - ./apps/jackett/config:/config
-      - ./media/torrent:/downloads
+      #- /etc/localtime:/etc/localtime:ro
+      - ./apps/prowlarr/config:/config
     ports:
-      - 9117:9117
+      - 9696:9696
     restart: unless-stopped
 
   qbittorrent: # torrent client
     image: lscr.io/linuxserver/qbittorrent:latest
     container_name: qbittorrent
     environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Brazil
+      - PUID=${PUID} # default user id, defined in .env
+      - PGID=${PGID} # default group id, defined in .env
+      - TZ=${TZ} # timezone, defined in .env
       - WEBUI_PORT=8082
     volumes:
       - ./apps/qbittorrent/config:/config
-      - ./media/torrent:/downloads
+      - ${ROOT}/downloads:/downloads
     ports:
       - 8082:8082
       - 6881:6881
@@ -113,14 +118,14 @@ services:
     image: lscr.io/linuxserver/jellyfin:latest
     container_name: jellyfin
     environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Brazil
-      - JELLYFIN_PublishedServerUrl=192.168.0.5 #optional
+      - PUID=${PUID} # default user id, defined in .env
+      - PGID=${PGID} # default group id, defined in .env
+      - TZ=${TZ} # timezone, defined in .env
+      #- JELLYFIN_PublishedServerUrl=192.168.0.5 #optional
     volumes:
       - ./apps/jellyfin/config:/config
-      - ./media/tv:/data/tvshows
-      - ./media/movie:/data/movies
+      - ${ROOT}/tv:/data/tvshows
+      - ${ROOT}/movies:/data/movies
     ports:
       - 8096:8096
       - 8920:8920 #optional
