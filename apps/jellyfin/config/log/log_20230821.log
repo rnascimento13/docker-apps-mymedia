@@ -1,0 +1,1045 @@
+[2023-08-21 14:12:45.054 -03:00] [INF] [1] Main: Jellyfin version: "10.8.10"
+[2023-08-21 14:12:45.100 -03:00] [INF] [1] Main: Environment Variables: ["[JELLYFIN_LOG_DIR, /config/log]", "[JELLYFIN_WEB_DIR, /usr/share/jellyfin/web]", "[JELLYFIN_CACHE_DIR, /config/cache]", "[JELLYFIN_CONFIG_DIR, /config]", "[JELLYFIN_DATA_DIR, /config/data]"]
+[2023-08-21 14:12:45.103 -03:00] [INF] [1] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg"]
+[2023-08-21 14:12:45.104 -03:00] [INF] [1] Main: Operating system: "Linux"
+[2023-08-21 14:12:45.104 -03:00] [INF] [1] Main: Architecture: X64
+[2023-08-21 14:12:45.105 -03:00] [INF] [1] Main: 64-Bit Process: True
+[2023-08-21 14:12:45.105 -03:00] [INF] [1] Main: User Interactive: True
+[2023-08-21 14:12:45.105 -03:00] [INF] [1] Main: Processor count: 10
+[2023-08-21 14:12:45.105 -03:00] [INF] [1] Main: Program data path: "/config/data"
+[2023-08-21 14:12:45.105 -03:00] [INF] [1] Main: Web resources path: "/usr/share/jellyfin/web"
+[2023-08-21 14:12:45.105 -03:00] [INF] [1] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2023-08-21 14:12:45.344 -03:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2023-08-21 14:12:45.373 -03:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2023-08-21 14:12:45.520 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN addresses : "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:12:45.520 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions : "[]"
+[2023-08-21 14:12:45.521 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using LAN addresses: "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:12:45.528 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind addresses: "[]"
+[2023-08-21 14:12:45.529 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind exclusions: "[]"
+[2023-08-21 14:12:47.488 -03:00] [FTL] [1] Main: Error while starting server.
+ReadOnly: SQLitePCL.pretty.SQLiteException: attempt to write a readonly database
+   at SQLitePCL.pretty.SQLiteException.Throw(Int32 rc, Int32 extended, String msg)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3 db, Int32 rc)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3_stmt stmt, Int32 rc)
+   at SQLitePCL.pretty.StatementImpl.MoveNext()
+   at SQLitePCL.pretty.DatabaseConnection.Execute(IDatabaseConnection This, String sql)
+   at Emby.Server.Implementations.Data.BaseSqliteRepository.GetConnection(Boolean readOnly)
+   at Emby.Server.Implementations.Data.SqliteItemRepository.Initialize(SqliteUserDataRepository userDataRepo, IUserManager userManager)
+   at Emby.Server.Implementations.ApplicationHost.InitializeServices()
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+[2023-08-21 14:12:47.492 -03:00] [INF] [1] Main: Running query planner optimizations in the database... This might take a while
+[2023-08-21 14:12:47.527 -03:00] [FTL] [1] Main: Unhandled Exception
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 8: 'attempt to write a readonly database'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQuery(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, Object[] parameters)
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+   at Jellyfin.Server.Program.<Main>(String[] args)
+[2023-08-21 14:12:48.859 -03:00] [INF] [1] Main: Jellyfin version: "10.8.10"
+[2023-08-21 14:12:48.883 -03:00] [INF] [1] Main: Environment Variables: ["[JELLYFIN_WEB_DIR, /usr/share/jellyfin/web]", "[JELLYFIN_DATA_DIR, /config/data]", "[JELLYFIN_CONFIG_DIR, /config]", "[JELLYFIN_LOG_DIR, /config/log]", "[JELLYFIN_CACHE_DIR, /config/cache]"]
+[2023-08-21 14:12:48.884 -03:00] [INF] [1] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg"]
+[2023-08-21 14:12:48.885 -03:00] [INF] [1] Main: Operating system: "Linux"
+[2023-08-21 14:12:48.885 -03:00] [INF] [1] Main: Architecture: X64
+[2023-08-21 14:12:48.886 -03:00] [INF] [1] Main: 64-Bit Process: True
+[2023-08-21 14:12:48.886 -03:00] [INF] [1] Main: User Interactive: True
+[2023-08-21 14:12:48.886 -03:00] [INF] [1] Main: Processor count: 10
+[2023-08-21 14:12:48.886 -03:00] [INF] [1] Main: Program data path: "/config/data"
+[2023-08-21 14:12:48.886 -03:00] [INF] [1] Main: Web resources path: "/usr/share/jellyfin/web"
+[2023-08-21 14:12:48.886 -03:00] [INF] [1] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2023-08-21 14:12:49.038 -03:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2023-08-21 14:12:49.053 -03:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2023-08-21 14:12:49.134 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN addresses : "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:12:49.134 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions : "[]"
+[2023-08-21 14:12:49.134 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using LAN addresses: "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:12:49.139 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind addresses: "[]"
+[2023-08-21 14:12:49.139 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind exclusions: "[]"
+[2023-08-21 14:12:50.493 -03:00] [FTL] [1] Main: Error while starting server.
+ReadOnly: SQLitePCL.pretty.SQLiteException: attempt to write a readonly database
+   at SQLitePCL.pretty.SQLiteException.Throw(Int32 rc, Int32 extended, String msg)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3 db, Int32 rc)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3_stmt stmt, Int32 rc)
+   at SQLitePCL.pretty.StatementImpl.MoveNext()
+   at SQLitePCL.pretty.DatabaseConnection.Execute(IDatabaseConnection This, String sql)
+   at Emby.Server.Implementations.Data.BaseSqliteRepository.GetConnection(Boolean readOnly)
+   at Emby.Server.Implementations.Data.SqliteItemRepository.Initialize(SqliteUserDataRepository userDataRepo, IUserManager userManager)
+   at Emby.Server.Implementations.ApplicationHost.InitializeServices()
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+[2023-08-21 14:12:50.496 -03:00] [INF] [1] Main: Running query planner optimizations in the database... This might take a while
+[2023-08-21 14:12:50.530 -03:00] [FTL] [1] Main: Unhandled Exception
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 8: 'attempt to write a readonly database'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQuery(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, Object[] parameters)
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+   at Jellyfin.Server.Program.<Main>(String[] args)
+[2023-08-21 14:12:51.780 -03:00] [INF] [1] Main: Jellyfin version: "10.8.10"
+[2023-08-21 14:12:51.802 -03:00] [INF] [1] Main: Environment Variables: ["[JELLYFIN_DATA_DIR, /config/data]", "[JELLYFIN_WEB_DIR, /usr/share/jellyfin/web]", "[JELLYFIN_LOG_DIR, /config/log]", "[JELLYFIN_CONFIG_DIR, /config]", "[JELLYFIN_CACHE_DIR, /config/cache]"]
+[2023-08-21 14:12:51.804 -03:00] [INF] [1] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg"]
+[2023-08-21 14:12:51.804 -03:00] [INF] [1] Main: Operating system: "Linux"
+[2023-08-21 14:12:51.804 -03:00] [INF] [1] Main: Architecture: X64
+[2023-08-21 14:12:51.805 -03:00] [INF] [1] Main: 64-Bit Process: True
+[2023-08-21 14:12:51.805 -03:00] [INF] [1] Main: User Interactive: True
+[2023-08-21 14:12:51.805 -03:00] [INF] [1] Main: Processor count: 10
+[2023-08-21 14:12:51.805 -03:00] [INF] [1] Main: Program data path: "/config/data"
+[2023-08-21 14:12:51.805 -03:00] [INF] [1] Main: Web resources path: "/usr/share/jellyfin/web"
+[2023-08-21 14:12:51.805 -03:00] [INF] [1] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2023-08-21 14:12:51.924 -03:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2023-08-21 14:12:51.936 -03:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2023-08-21 14:12:52.001 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN addresses : "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:12:52.001 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions : "[]"
+[2023-08-21 14:12:52.001 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using LAN addresses: "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:12:52.006 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind addresses: "[]"
+[2023-08-21 14:12:52.006 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind exclusions: "[]"
+[2023-08-21 14:12:53.252 -03:00] [FTL] [1] Main: Error while starting server.
+ReadOnly: SQLitePCL.pretty.SQLiteException: attempt to write a readonly database
+   at SQLitePCL.pretty.SQLiteException.Throw(Int32 rc, Int32 extended, String msg)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3 db, Int32 rc)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3_stmt stmt, Int32 rc)
+   at SQLitePCL.pretty.StatementImpl.MoveNext()
+   at SQLitePCL.pretty.DatabaseConnection.Execute(IDatabaseConnection This, String sql)
+   at Emby.Server.Implementations.Data.BaseSqliteRepository.GetConnection(Boolean readOnly)
+   at Emby.Server.Implementations.Data.SqliteItemRepository.Initialize(SqliteUserDataRepository userDataRepo, IUserManager userManager)
+   at Emby.Server.Implementations.ApplicationHost.InitializeServices()
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+[2023-08-21 14:12:53.257 -03:00] [INF] [1] Main: Running query planner optimizations in the database... This might take a while
+[2023-08-21 14:12:53.308 -03:00] [FTL] [1] Main: Unhandled Exception
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 8: 'attempt to write a readonly database'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQuery(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, Object[] parameters)
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+   at Jellyfin.Server.Program.<Main>(String[] args)
+[2023-08-21 14:12:54.578 -03:00] [INF] [1] Main: Jellyfin version: "10.8.10"
+[2023-08-21 14:12:54.594 -03:00] [INF] [1] Main: Environment Variables: ["[JELLYFIN_LOG_DIR, /config/log]", "[JELLYFIN_WEB_DIR, /usr/share/jellyfin/web]", "[JELLYFIN_CONFIG_DIR, /config]", "[JELLYFIN_CACHE_DIR, /config/cache]", "[JELLYFIN_DATA_DIR, /config/data]"]
+[2023-08-21 14:12:54.596 -03:00] [INF] [1] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg"]
+[2023-08-21 14:12:54.596 -03:00] [INF] [1] Main: Operating system: "Linux"
+[2023-08-21 14:12:54.596 -03:00] [INF] [1] Main: Architecture: X64
+[2023-08-21 14:12:54.597 -03:00] [INF] [1] Main: 64-Bit Process: True
+[2023-08-21 14:12:54.597 -03:00] [INF] [1] Main: User Interactive: True
+[2023-08-21 14:12:54.597 -03:00] [INF] [1] Main: Processor count: 10
+[2023-08-21 14:12:54.597 -03:00] [INF] [1] Main: Program data path: "/config/data"
+[2023-08-21 14:12:54.597 -03:00] [INF] [1] Main: Web resources path: "/usr/share/jellyfin/web"
+[2023-08-21 14:12:54.597 -03:00] [INF] [1] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2023-08-21 14:12:54.684 -03:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2023-08-21 14:12:54.694 -03:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2023-08-21 14:12:54.749 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN addresses : "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:12:54.749 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions : "[]"
+[2023-08-21 14:12:54.749 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using LAN addresses: "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:12:54.753 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind addresses: "[]"
+[2023-08-21 14:12:54.753 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind exclusions: "[]"
+[2023-08-21 14:12:55.750 -03:00] [FTL] [1] Main: Error while starting server.
+ReadOnly: SQLitePCL.pretty.SQLiteException: attempt to write a readonly database
+   at SQLitePCL.pretty.SQLiteException.Throw(Int32 rc, Int32 extended, String msg)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3 db, Int32 rc)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3_stmt stmt, Int32 rc)
+   at SQLitePCL.pretty.StatementImpl.MoveNext()
+   at SQLitePCL.pretty.DatabaseConnection.Execute(IDatabaseConnection This, String sql)
+   at Emby.Server.Implementations.Data.BaseSqliteRepository.GetConnection(Boolean readOnly)
+   at Emby.Server.Implementations.Data.SqliteItemRepository.Initialize(SqliteUserDataRepository userDataRepo, IUserManager userManager)
+   at Emby.Server.Implementations.ApplicationHost.InitializeServices()
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+[2023-08-21 14:12:55.752 -03:00] [INF] [1] Main: Running query planner optimizations in the database... This might take a while
+[2023-08-21 14:12:55.783 -03:00] [FTL] [1] Main: Unhandled Exception
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 8: 'attempt to write a readonly database'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQuery(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, Object[] parameters)
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+   at Jellyfin.Server.Program.<Main>(String[] args)
+[2023-08-21 14:12:57.028 -03:00] [INF] [1] Main: Jellyfin version: "10.8.10"
+[2023-08-21 14:12:57.045 -03:00] [INF] [1] Main: Environment Variables: ["[JELLYFIN_LOG_DIR, /config/log]", "[JELLYFIN_WEB_DIR, /usr/share/jellyfin/web]", "[JELLYFIN_CONFIG_DIR, /config]", "[JELLYFIN_DATA_DIR, /config/data]", "[JELLYFIN_CACHE_DIR, /config/cache]"]
+[2023-08-21 14:12:57.046 -03:00] [INF] [1] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg"]
+[2023-08-21 14:12:57.047 -03:00] [INF] [1] Main: Operating system: "Linux"
+[2023-08-21 14:12:57.047 -03:00] [INF] [1] Main: Architecture: X64
+[2023-08-21 14:12:57.047 -03:00] [INF] [1] Main: 64-Bit Process: True
+[2023-08-21 14:12:57.047 -03:00] [INF] [1] Main: User Interactive: True
+[2023-08-21 14:12:57.047 -03:00] [INF] [1] Main: Processor count: 10
+[2023-08-21 14:12:57.047 -03:00] [INF] [1] Main: Program data path: "/config/data"
+[2023-08-21 14:12:57.047 -03:00] [INF] [1] Main: Web resources path: "/usr/share/jellyfin/web"
+[2023-08-21 14:12:57.047 -03:00] [INF] [1] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2023-08-21 14:12:57.137 -03:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2023-08-21 14:12:57.149 -03:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2023-08-21 14:12:57.209 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN addresses : "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:12:57.209 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions : "[]"
+[2023-08-21 14:12:57.210 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using LAN addresses: "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:12:57.214 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind addresses: "[]"
+[2023-08-21 14:12:57.214 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind exclusions: "[]"
+[2023-08-21 14:12:58.267 -03:00] [FTL] [1] Main: Error while starting server.
+ReadOnly: SQLitePCL.pretty.SQLiteException: attempt to write a readonly database
+   at SQLitePCL.pretty.SQLiteException.Throw(Int32 rc, Int32 extended, String msg)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3 db, Int32 rc)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3_stmt stmt, Int32 rc)
+   at SQLitePCL.pretty.StatementImpl.MoveNext()
+   at SQLitePCL.pretty.DatabaseConnection.Execute(IDatabaseConnection This, String sql)
+   at Emby.Server.Implementations.Data.BaseSqliteRepository.GetConnection(Boolean readOnly)
+   at Emby.Server.Implementations.Data.SqliteItemRepository.Initialize(SqliteUserDataRepository userDataRepo, IUserManager userManager)
+   at Emby.Server.Implementations.ApplicationHost.InitializeServices()
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+[2023-08-21 14:12:58.271 -03:00] [INF] [1] Main: Running query planner optimizations in the database... This might take a while
+[2023-08-21 14:12:58.303 -03:00] [FTL] [1] Main: Unhandled Exception
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 8: 'attempt to write a readonly database'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQuery(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, Object[] parameters)
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+   at Jellyfin.Server.Program.<Main>(String[] args)
+[2023-08-21 14:12:59.552 -03:00] [INF] [1] Main: Jellyfin version: "10.8.10"
+[2023-08-21 14:12:59.568 -03:00] [INF] [1] Main: Environment Variables: ["[JELLYFIN_WEB_DIR, /usr/share/jellyfin/web]", "[JELLYFIN_CACHE_DIR, /config/cache]", "[JELLYFIN_LOG_DIR, /config/log]", "[JELLYFIN_CONFIG_DIR, /config]", "[JELLYFIN_DATA_DIR, /config/data]"]
+[2023-08-21 14:12:59.570 -03:00] [INF] [1] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg"]
+[2023-08-21 14:12:59.571 -03:00] [INF] [1] Main: Operating system: "Linux"
+[2023-08-21 14:12:59.571 -03:00] [INF] [1] Main: Architecture: X64
+[2023-08-21 14:12:59.571 -03:00] [INF] [1] Main: 64-Bit Process: True
+[2023-08-21 14:12:59.571 -03:00] [INF] [1] Main: User Interactive: True
+[2023-08-21 14:12:59.571 -03:00] [INF] [1] Main: Processor count: 10
+[2023-08-21 14:12:59.571 -03:00] [INF] [1] Main: Program data path: "/config/data"
+[2023-08-21 14:12:59.571 -03:00] [INF] [1] Main: Web resources path: "/usr/share/jellyfin/web"
+[2023-08-21 14:12:59.571 -03:00] [INF] [1] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2023-08-21 14:12:59.664 -03:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2023-08-21 14:12:59.675 -03:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2023-08-21 14:12:59.737 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN addresses : "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:12:59.737 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions : "[]"
+[2023-08-21 14:12:59.737 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using LAN addresses: "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:12:59.741 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind addresses: "[]"
+[2023-08-21 14:12:59.741 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind exclusions: "[]"
+[2023-08-21 14:13:00.778 -03:00] [FTL] [1] Main: Error while starting server.
+ReadOnly: SQLitePCL.pretty.SQLiteException: attempt to write a readonly database
+   at SQLitePCL.pretty.SQLiteException.Throw(Int32 rc, Int32 extended, String msg)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3 db, Int32 rc)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3_stmt stmt, Int32 rc)
+   at SQLitePCL.pretty.StatementImpl.MoveNext()
+   at SQLitePCL.pretty.DatabaseConnection.Execute(IDatabaseConnection This, String sql)
+   at Emby.Server.Implementations.Data.BaseSqliteRepository.GetConnection(Boolean readOnly)
+   at Emby.Server.Implementations.Data.SqliteItemRepository.Initialize(SqliteUserDataRepository userDataRepo, IUserManager userManager)
+   at Emby.Server.Implementations.ApplicationHost.InitializeServices()
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+[2023-08-21 14:13:00.781 -03:00] [INF] [1] Main: Running query planner optimizations in the database... This might take a while
+[2023-08-21 14:13:00.810 -03:00] [FTL] [1] Main: Unhandled Exception
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 8: 'attempt to write a readonly database'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQuery(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, Object[] parameters)
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+   at Jellyfin.Server.Program.<Main>(String[] args)
+[2023-08-21 14:13:02.021 -03:00] [INF] [1] Main: Jellyfin version: "10.8.10"
+[2023-08-21 14:13:02.037 -03:00] [INF] [1] Main: Environment Variables: ["[JELLYFIN_WEB_DIR, /usr/share/jellyfin/web]", "[JELLYFIN_DATA_DIR, /config/data]", "[JELLYFIN_LOG_DIR, /config/log]", "[JELLYFIN_CONFIG_DIR, /config]", "[JELLYFIN_CACHE_DIR, /config/cache]"]
+[2023-08-21 14:13:02.039 -03:00] [INF] [1] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg"]
+[2023-08-21 14:13:02.039 -03:00] [INF] [1] Main: Operating system: "Linux"
+[2023-08-21 14:13:02.040 -03:00] [INF] [1] Main: Architecture: X64
+[2023-08-21 14:13:02.040 -03:00] [INF] [1] Main: 64-Bit Process: True
+[2023-08-21 14:13:02.040 -03:00] [INF] [1] Main: User Interactive: True
+[2023-08-21 14:13:02.040 -03:00] [INF] [1] Main: Processor count: 10
+[2023-08-21 14:13:02.040 -03:00] [INF] [1] Main: Program data path: "/config/data"
+[2023-08-21 14:13:02.040 -03:00] [INF] [1] Main: Web resources path: "/usr/share/jellyfin/web"
+[2023-08-21 14:13:02.040 -03:00] [INF] [1] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2023-08-21 14:13:02.125 -03:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2023-08-21 14:13:02.136 -03:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2023-08-21 14:13:02.190 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN addresses : "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:13:02.190 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions : "[]"
+[2023-08-21 14:13:02.190 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using LAN addresses: "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:13:02.194 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind addresses: "[]"
+[2023-08-21 14:13:02.194 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind exclusions: "[]"
+[2023-08-21 14:13:03.151 -03:00] [FTL] [1] Main: Error while starting server.
+ReadOnly: SQLitePCL.pretty.SQLiteException: attempt to write a readonly database
+   at SQLitePCL.pretty.SQLiteException.Throw(Int32 rc, Int32 extended, String msg)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3 db, Int32 rc)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3_stmt stmt, Int32 rc)
+   at SQLitePCL.pretty.StatementImpl.MoveNext()
+   at SQLitePCL.pretty.DatabaseConnection.Execute(IDatabaseConnection This, String sql)
+   at Emby.Server.Implementations.Data.BaseSqliteRepository.GetConnection(Boolean readOnly)
+   at Emby.Server.Implementations.Data.SqliteItemRepository.Initialize(SqliteUserDataRepository userDataRepo, IUserManager userManager)
+   at Emby.Server.Implementations.ApplicationHost.InitializeServices()
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+[2023-08-21 14:13:03.154 -03:00] [INF] [1] Main: Running query planner optimizations in the database... This might take a while
+[2023-08-21 14:13:03.184 -03:00] [FTL] [1] Main: Unhandled Exception
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 8: 'attempt to write a readonly database'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQuery(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, Object[] parameters)
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+   at Jellyfin.Server.Program.<Main>(String[] args)
+[2023-08-21 14:13:04.410 -03:00] [INF] [1] Main: Jellyfin version: "10.8.10"
+[2023-08-21 14:13:04.426 -03:00] [INF] [1] Main: Environment Variables: ["[JELLYFIN_CONFIG_DIR, /config]", "[JELLYFIN_LOG_DIR, /config/log]", "[JELLYFIN_WEB_DIR, /usr/share/jellyfin/web]", "[JELLYFIN_CACHE_DIR, /config/cache]", "[JELLYFIN_DATA_DIR, /config/data]"]
+[2023-08-21 14:13:04.428 -03:00] [INF] [1] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg"]
+[2023-08-21 14:13:04.428 -03:00] [INF] [1] Main: Operating system: "Linux"
+[2023-08-21 14:13:04.428 -03:00] [INF] [1] Main: Architecture: X64
+[2023-08-21 14:13:04.428 -03:00] [INF] [1] Main: 64-Bit Process: True
+[2023-08-21 14:13:04.428 -03:00] [INF] [1] Main: User Interactive: True
+[2023-08-21 14:13:04.428 -03:00] [INF] [1] Main: Processor count: 10
+[2023-08-21 14:13:04.428 -03:00] [INF] [1] Main: Program data path: "/config/data"
+[2023-08-21 14:13:04.429 -03:00] [INF] [1] Main: Web resources path: "/usr/share/jellyfin/web"
+[2023-08-21 14:13:04.429 -03:00] [INF] [1] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2023-08-21 14:13:04.516 -03:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2023-08-21 14:13:04.527 -03:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2023-08-21 14:13:04.582 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN addresses : "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:13:04.582 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions : "[]"
+[2023-08-21 14:13:04.583 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using LAN addresses: "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:13:04.587 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind addresses: "[]"
+[2023-08-21 14:13:04.587 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind exclusions: "[]"
+[2023-08-21 14:13:05.547 -03:00] [FTL] [1] Main: Error while starting server.
+ReadOnly: SQLitePCL.pretty.SQLiteException: attempt to write a readonly database
+   at SQLitePCL.pretty.SQLiteException.Throw(Int32 rc, Int32 extended, String msg)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3 db, Int32 rc)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3_stmt stmt, Int32 rc)
+   at SQLitePCL.pretty.StatementImpl.MoveNext()
+   at SQLitePCL.pretty.DatabaseConnection.Execute(IDatabaseConnection This, String sql)
+   at Emby.Server.Implementations.Data.BaseSqliteRepository.GetConnection(Boolean readOnly)
+   at Emby.Server.Implementations.Data.SqliteItemRepository.Initialize(SqliteUserDataRepository userDataRepo, IUserManager userManager)
+   at Emby.Server.Implementations.ApplicationHost.InitializeServices()
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+[2023-08-21 14:13:05.550 -03:00] [INF] [1] Main: Running query planner optimizations in the database... This might take a while
+[2023-08-21 14:13:05.580 -03:00] [FTL] [1] Main: Unhandled Exception
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 8: 'attempt to write a readonly database'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQuery(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, Object[] parameters)
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+   at Jellyfin.Server.Program.<Main>(String[] args)
+[2023-08-21 14:13:06.782 -03:00] [INF] [1] Main: Jellyfin version: "10.8.10"
+[2023-08-21 14:13:06.797 -03:00] [INF] [1] Main: Environment Variables: ["[JELLYFIN_CONFIG_DIR, /config]", "[JELLYFIN_DATA_DIR, /config/data]", "[JELLYFIN_LOG_DIR, /config/log]", "[JELLYFIN_WEB_DIR, /usr/share/jellyfin/web]", "[JELLYFIN_CACHE_DIR, /config/cache]"]
+[2023-08-21 14:13:06.799 -03:00] [INF] [1] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg"]
+[2023-08-21 14:13:06.799 -03:00] [INF] [1] Main: Operating system: "Linux"
+[2023-08-21 14:13:06.799 -03:00] [INF] [1] Main: Architecture: X64
+[2023-08-21 14:13:06.800 -03:00] [INF] [1] Main: 64-Bit Process: True
+[2023-08-21 14:13:06.800 -03:00] [INF] [1] Main: User Interactive: True
+[2023-08-21 14:13:06.800 -03:00] [INF] [1] Main: Processor count: 10
+[2023-08-21 14:13:06.800 -03:00] [INF] [1] Main: Program data path: "/config/data"
+[2023-08-21 14:13:06.800 -03:00] [INF] [1] Main: Web resources path: "/usr/share/jellyfin/web"
+[2023-08-21 14:13:06.800 -03:00] [INF] [1] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2023-08-21 14:13:06.882 -03:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2023-08-21 14:13:06.892 -03:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2023-08-21 14:13:06.945 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN addresses : "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:13:06.945 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions : "[]"
+[2023-08-21 14:13:06.945 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using LAN addresses: "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:13:06.949 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind addresses: "[]"
+[2023-08-21 14:13:06.949 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind exclusions: "[]"
+[2023-08-21 14:13:07.937 -03:00] [FTL] [1] Main: Error while starting server.
+ReadOnly: SQLitePCL.pretty.SQLiteException: attempt to write a readonly database
+   at SQLitePCL.pretty.SQLiteException.Throw(Int32 rc, Int32 extended, String msg)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3 db, Int32 rc)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3_stmt stmt, Int32 rc)
+   at SQLitePCL.pretty.StatementImpl.MoveNext()
+   at SQLitePCL.pretty.DatabaseConnection.Execute(IDatabaseConnection This, String sql)
+   at Emby.Server.Implementations.Data.BaseSqliteRepository.GetConnection(Boolean readOnly)
+   at Emby.Server.Implementations.Data.SqliteItemRepository.Initialize(SqliteUserDataRepository userDataRepo, IUserManager userManager)
+   at Emby.Server.Implementations.ApplicationHost.InitializeServices()
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+[2023-08-21 14:13:07.940 -03:00] [INF] [1] Main: Running query planner optimizations in the database... This might take a while
+[2023-08-21 14:13:07.971 -03:00] [FTL] [1] Main: Unhandled Exception
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 8: 'attempt to write a readonly database'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQuery(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, Object[] parameters)
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+   at Jellyfin.Server.Program.<Main>(String[] args)
+[2023-08-21 14:13:09.210 -03:00] [INF] [1] Main: Jellyfin version: "10.8.10"
+[2023-08-21 14:13:09.226 -03:00] [INF] [1] Main: Environment Variables: ["[JELLYFIN_WEB_DIR, /usr/share/jellyfin/web]", "[JELLYFIN_DATA_DIR, /config/data]", "[JELLYFIN_CACHE_DIR, /config/cache]", "[JELLYFIN_LOG_DIR, /config/log]", "[JELLYFIN_CONFIG_DIR, /config]"]
+[2023-08-21 14:13:09.227 -03:00] [INF] [1] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg"]
+[2023-08-21 14:13:09.228 -03:00] [INF] [1] Main: Operating system: "Linux"
+[2023-08-21 14:13:09.228 -03:00] [INF] [1] Main: Architecture: X64
+[2023-08-21 14:13:09.228 -03:00] [INF] [1] Main: 64-Bit Process: True
+[2023-08-21 14:13:09.228 -03:00] [INF] [1] Main: User Interactive: True
+[2023-08-21 14:13:09.228 -03:00] [INF] [1] Main: Processor count: 10
+[2023-08-21 14:13:09.228 -03:00] [INF] [1] Main: Program data path: "/config/data"
+[2023-08-21 14:13:09.228 -03:00] [INF] [1] Main: Web resources path: "/usr/share/jellyfin/web"
+[2023-08-21 14:13:09.228 -03:00] [INF] [1] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2023-08-21 14:13:09.313 -03:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2023-08-21 14:13:09.323 -03:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2023-08-21 14:13:09.379 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN addresses : "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:13:09.379 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions : "[]"
+[2023-08-21 14:13:09.380 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using LAN addresses: "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:13:09.384 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind addresses: "[]"
+[2023-08-21 14:13:09.384 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind exclusions: "[]"
+[2023-08-21 14:13:10.381 -03:00] [FTL] [1] Main: Error while starting server.
+ReadOnly: SQLitePCL.pretty.SQLiteException: attempt to write a readonly database
+   at SQLitePCL.pretty.SQLiteException.Throw(Int32 rc, Int32 extended, String msg)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3 db, Int32 rc)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3_stmt stmt, Int32 rc)
+   at SQLitePCL.pretty.StatementImpl.MoveNext()
+   at SQLitePCL.pretty.DatabaseConnection.Execute(IDatabaseConnection This, String sql)
+   at Emby.Server.Implementations.Data.BaseSqliteRepository.GetConnection(Boolean readOnly)
+   at Emby.Server.Implementations.Data.SqliteItemRepository.Initialize(SqliteUserDataRepository userDataRepo, IUserManager userManager)
+   at Emby.Server.Implementations.ApplicationHost.InitializeServices()
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+[2023-08-21 14:13:10.384 -03:00] [INF] [1] Main: Running query planner optimizations in the database... This might take a while
+[2023-08-21 14:13:10.414 -03:00] [FTL] [1] Main: Unhandled Exception
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 8: 'attempt to write a readonly database'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQuery(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, Object[] parameters)
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+   at Jellyfin.Server.Program.<Main>(String[] args)
+[2023-08-21 14:13:11.616 -03:00] [INF] [1] Main: Jellyfin version: "10.8.10"
+[2023-08-21 14:13:11.631 -03:00] [INF] [1] Main: Environment Variables: ["[JELLYFIN_CONFIG_DIR, /config]", "[JELLYFIN_LOG_DIR, /config/log]", "[JELLYFIN_CACHE_DIR, /config/cache]", "[JELLYFIN_WEB_DIR, /usr/share/jellyfin/web]", "[JELLYFIN_DATA_DIR, /config/data]"]
+[2023-08-21 14:13:11.633 -03:00] [INF] [1] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg"]
+[2023-08-21 14:13:11.633 -03:00] [INF] [1] Main: Operating system: "Linux"
+[2023-08-21 14:13:11.633 -03:00] [INF] [1] Main: Architecture: X64
+[2023-08-21 14:13:11.634 -03:00] [INF] [1] Main: 64-Bit Process: True
+[2023-08-21 14:13:11.634 -03:00] [INF] [1] Main: User Interactive: True
+[2023-08-21 14:13:11.634 -03:00] [INF] [1] Main: Processor count: 10
+[2023-08-21 14:13:11.634 -03:00] [INF] [1] Main: Program data path: "/config/data"
+[2023-08-21 14:13:11.634 -03:00] [INF] [1] Main: Web resources path: "/usr/share/jellyfin/web"
+[2023-08-21 14:13:11.634 -03:00] [INF] [1] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2023-08-21 14:13:11.715 -03:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2023-08-21 14:13:11.724 -03:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2023-08-21 14:13:11.778 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN addresses : "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:13:11.778 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions : "[]"
+[2023-08-21 14:13:11.778 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using LAN addresses: "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:13:11.782 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind addresses: "[]"
+[2023-08-21 14:13:11.782 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind exclusions: "[]"
+[2023-08-21 14:13:12.787 -03:00] [FTL] [1] Main: Error while starting server.
+ReadOnly: SQLitePCL.pretty.SQLiteException: attempt to write a readonly database
+   at SQLitePCL.pretty.SQLiteException.Throw(Int32 rc, Int32 extended, String msg)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3 db, Int32 rc)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3_stmt stmt, Int32 rc)
+   at SQLitePCL.pretty.StatementImpl.MoveNext()
+   at SQLitePCL.pretty.DatabaseConnection.Execute(IDatabaseConnection This, String sql)
+   at Emby.Server.Implementations.Data.BaseSqliteRepository.GetConnection(Boolean readOnly)
+   at Emby.Server.Implementations.Data.SqliteItemRepository.Initialize(SqliteUserDataRepository userDataRepo, IUserManager userManager)
+   at Emby.Server.Implementations.ApplicationHost.InitializeServices()
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+[2023-08-21 14:13:12.790 -03:00] [INF] [1] Main: Running query planner optimizations in the database... This might take a while
+[2023-08-21 14:13:12.821 -03:00] [FTL] [1] Main: Unhandled Exception
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 8: 'attempt to write a readonly database'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQuery(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, Object[] parameters)
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+   at Jellyfin.Server.Program.<Main>(String[] args)
+[2023-08-21 14:13:14.032 -03:00] [INF] [1] Main: Jellyfin version: "10.8.10"
+[2023-08-21 14:13:14.046 -03:00] [INF] [1] Main: Environment Variables: ["[JELLYFIN_CONFIG_DIR, /config]", "[JELLYFIN_DATA_DIR, /config/data]", "[JELLYFIN_LOG_DIR, /config/log]", "[JELLYFIN_WEB_DIR, /usr/share/jellyfin/web]", "[JELLYFIN_CACHE_DIR, /config/cache]"]
+[2023-08-21 14:13:14.048 -03:00] [INF] [1] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg"]
+[2023-08-21 14:13:14.048 -03:00] [INF] [1] Main: Operating system: "Linux"
+[2023-08-21 14:13:14.049 -03:00] [INF] [1] Main: Architecture: X64
+[2023-08-21 14:13:14.049 -03:00] [INF] [1] Main: 64-Bit Process: True
+[2023-08-21 14:13:14.049 -03:00] [INF] [1] Main: User Interactive: True
+[2023-08-21 14:13:14.049 -03:00] [INF] [1] Main: Processor count: 10
+[2023-08-21 14:13:14.049 -03:00] [INF] [1] Main: Program data path: "/config/data"
+[2023-08-21 14:13:14.049 -03:00] [INF] [1] Main: Web resources path: "/usr/share/jellyfin/web"
+[2023-08-21 14:13:14.049 -03:00] [INF] [1] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2023-08-21 14:13:14.130 -03:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2023-08-21 14:13:14.140 -03:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2023-08-21 14:13:14.194 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN addresses : "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:13:14.194 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions : "[]"
+[2023-08-21 14:13:14.194 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using LAN addresses: "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:13:14.198 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind addresses: "[]"
+[2023-08-21 14:13:14.198 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind exclusions: "[]"
+[2023-08-21 14:13:15.209 -03:00] [FTL] [1] Main: Error while starting server.
+ReadOnly: SQLitePCL.pretty.SQLiteException: attempt to write a readonly database
+   at SQLitePCL.pretty.SQLiteException.Throw(Int32 rc, Int32 extended, String msg)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3 db, Int32 rc)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3_stmt stmt, Int32 rc)
+   at SQLitePCL.pretty.StatementImpl.MoveNext()
+   at SQLitePCL.pretty.DatabaseConnection.Execute(IDatabaseConnection This, String sql)
+   at Emby.Server.Implementations.Data.BaseSqliteRepository.GetConnection(Boolean readOnly)
+   at Emby.Server.Implementations.Data.SqliteItemRepository.Initialize(SqliteUserDataRepository userDataRepo, IUserManager userManager)
+   at Emby.Server.Implementations.ApplicationHost.InitializeServices()
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+[2023-08-21 14:13:15.212 -03:00] [INF] [1] Main: Running query planner optimizations in the database... This might take a while
+[2023-08-21 14:13:15.243 -03:00] [FTL] [1] Main: Unhandled Exception
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 8: 'attempt to write a readonly database'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQuery(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, Object[] parameters)
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+   at Jellyfin.Server.Program.<Main>(String[] args)
+[2023-08-21 14:13:16.478 -03:00] [INF] [1] Main: Jellyfin version: "10.8.10"
+[2023-08-21 14:13:16.494 -03:00] [INF] [1] Main: Environment Variables: ["[JELLYFIN_CONFIG_DIR, /config]", "[JELLYFIN_LOG_DIR, /config/log]", "[JELLYFIN_CACHE_DIR, /config/cache]", "[JELLYFIN_WEB_DIR, /usr/share/jellyfin/web]", "[JELLYFIN_DATA_DIR, /config/data]"]
+[2023-08-21 14:13:16.496 -03:00] [INF] [1] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg"]
+[2023-08-21 14:13:16.496 -03:00] [INF] [1] Main: Operating system: "Linux"
+[2023-08-21 14:13:16.496 -03:00] [INF] [1] Main: Architecture: X64
+[2023-08-21 14:13:16.497 -03:00] [INF] [1] Main: 64-Bit Process: True
+[2023-08-21 14:13:16.497 -03:00] [INF] [1] Main: User Interactive: True
+[2023-08-21 14:13:16.497 -03:00] [INF] [1] Main: Processor count: 10
+[2023-08-21 14:13:16.497 -03:00] [INF] [1] Main: Program data path: "/config/data"
+[2023-08-21 14:13:16.497 -03:00] [INF] [1] Main: Web resources path: "/usr/share/jellyfin/web"
+[2023-08-21 14:13:16.497 -03:00] [INF] [1] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2023-08-21 14:13:16.585 -03:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2023-08-21 14:13:16.595 -03:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2023-08-21 14:13:16.657 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN addresses : "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:13:16.657 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions : "[]"
+[2023-08-21 14:13:16.658 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using LAN addresses: "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:13:16.662 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind addresses: "[]"
+[2023-08-21 14:13:16.662 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind exclusions: "[]"
+[2023-08-21 14:13:17.706 -03:00] [FTL] [1] Main: Error while starting server.
+ReadOnly: SQLitePCL.pretty.SQLiteException: attempt to write a readonly database
+   at SQLitePCL.pretty.SQLiteException.Throw(Int32 rc, Int32 extended, String msg)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3 db, Int32 rc)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3_stmt stmt, Int32 rc)
+   at SQLitePCL.pretty.StatementImpl.MoveNext()
+   at SQLitePCL.pretty.DatabaseConnection.Execute(IDatabaseConnection This, String sql)
+   at Emby.Server.Implementations.Data.BaseSqliteRepository.GetConnection(Boolean readOnly)
+   at Emby.Server.Implementations.Data.SqliteItemRepository.Initialize(SqliteUserDataRepository userDataRepo, IUserManager userManager)
+   at Emby.Server.Implementations.ApplicationHost.InitializeServices()
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+[2023-08-21 14:13:17.709 -03:00] [INF] [1] Main: Running query planner optimizations in the database... This might take a while
+[2023-08-21 14:13:17.740 -03:00] [FTL] [1] Main: Unhandled Exception
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 8: 'attempt to write a readonly database'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQuery(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, Object[] parameters)
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+   at Jellyfin.Server.Program.<Main>(String[] args)
+[2023-08-21 14:13:18.951 -03:00] [INF] [1] Main: Jellyfin version: "10.8.10"
+[2023-08-21 14:13:18.967 -03:00] [INF] [1] Main: Environment Variables: ["[JELLYFIN_CONFIG_DIR, /config]", "[JELLYFIN_LOG_DIR, /config/log]", "[JELLYFIN_WEB_DIR, /usr/share/jellyfin/web]", "[JELLYFIN_DATA_DIR, /config/data]", "[JELLYFIN_CACHE_DIR, /config/cache]"]
+[2023-08-21 14:13:18.969 -03:00] [INF] [1] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg"]
+[2023-08-21 14:13:18.969 -03:00] [INF] [1] Main: Operating system: "Linux"
+[2023-08-21 14:13:18.969 -03:00] [INF] [1] Main: Architecture: X64
+[2023-08-21 14:13:18.970 -03:00] [INF] [1] Main: 64-Bit Process: True
+[2023-08-21 14:13:18.970 -03:00] [INF] [1] Main: User Interactive: True
+[2023-08-21 14:13:18.970 -03:00] [INF] [1] Main: Processor count: 10
+[2023-08-21 14:13:18.970 -03:00] [INF] [1] Main: Program data path: "/config/data"
+[2023-08-21 14:13:18.970 -03:00] [INF] [1] Main: Web resources path: "/usr/share/jellyfin/web"
+[2023-08-21 14:13:18.970 -03:00] [INF] [1] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2023-08-21 14:13:19.053 -03:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2023-08-21 14:13:19.064 -03:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2023-08-21 14:13:19.119 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN addresses : "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:13:19.119 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions : "[]"
+[2023-08-21 14:13:19.119 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using LAN addresses: "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:13:19.123 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind addresses: "[]"
+[2023-08-21 14:13:19.123 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind exclusions: "[]"
+[2023-08-21 14:13:20.095 -03:00] [FTL] [1] Main: Error while starting server.
+ReadOnly: SQLitePCL.pretty.SQLiteException: attempt to write a readonly database
+   at SQLitePCL.pretty.SQLiteException.Throw(Int32 rc, Int32 extended, String msg)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3 db, Int32 rc)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3_stmt stmt, Int32 rc)
+   at SQLitePCL.pretty.StatementImpl.MoveNext()
+   at SQLitePCL.pretty.DatabaseConnection.Execute(IDatabaseConnection This, String sql)
+   at Emby.Server.Implementations.Data.BaseSqliteRepository.GetConnection(Boolean readOnly)
+   at Emby.Server.Implementations.Data.SqliteItemRepository.Initialize(SqliteUserDataRepository userDataRepo, IUserManager userManager)
+   at Emby.Server.Implementations.ApplicationHost.InitializeServices()
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+[2023-08-21 14:13:20.098 -03:00] [INF] [1] Main: Running query planner optimizations in the database... This might take a while
+[2023-08-21 14:13:20.127 -03:00] [FTL] [1] Main: Unhandled Exception
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 8: 'attempt to write a readonly database'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQuery(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, Object[] parameters)
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+   at Jellyfin.Server.Program.<Main>(String[] args)
+[2023-08-21 14:13:21.361 -03:00] [INF] [1] Main: Jellyfin version: "10.8.10"
+[2023-08-21 14:13:21.376 -03:00] [INF] [1] Main: Environment Variables: ["[JELLYFIN_LOG_DIR, /config/log]", "[JELLYFIN_CACHE_DIR, /config/cache]", "[JELLYFIN_DATA_DIR, /config/data]", "[JELLYFIN_CONFIG_DIR, /config]", "[JELLYFIN_WEB_DIR, /usr/share/jellyfin/web]"]
+[2023-08-21 14:13:21.377 -03:00] [INF] [1] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg"]
+[2023-08-21 14:13:21.378 -03:00] [INF] [1] Main: Operating system: "Linux"
+[2023-08-21 14:13:21.378 -03:00] [INF] [1] Main: Architecture: X64
+[2023-08-21 14:13:21.378 -03:00] [INF] [1] Main: 64-Bit Process: True
+[2023-08-21 14:13:21.378 -03:00] [INF] [1] Main: User Interactive: True
+[2023-08-21 14:13:21.378 -03:00] [INF] [1] Main: Processor count: 10
+[2023-08-21 14:13:21.378 -03:00] [INF] [1] Main: Program data path: "/config/data"
+[2023-08-21 14:13:21.378 -03:00] [INF] [1] Main: Web resources path: "/usr/share/jellyfin/web"
+[2023-08-21 14:13:21.378 -03:00] [INF] [1] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2023-08-21 14:13:21.457 -03:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2023-08-21 14:13:21.467 -03:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2023-08-21 14:13:21.519 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN addresses : "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:13:21.519 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions : "[]"
+[2023-08-21 14:13:21.520 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using LAN addresses: "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:13:21.524 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind addresses: "[]"
+[2023-08-21 14:13:21.524 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind exclusions: "[]"
+[2023-08-21 14:13:22.475 -03:00] [FTL] [1] Main: Error while starting server.
+ReadOnly: SQLitePCL.pretty.SQLiteException: attempt to write a readonly database
+   at SQLitePCL.pretty.SQLiteException.Throw(Int32 rc, Int32 extended, String msg)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3 db, Int32 rc)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3_stmt stmt, Int32 rc)
+   at SQLitePCL.pretty.StatementImpl.MoveNext()
+   at SQLitePCL.pretty.DatabaseConnection.Execute(IDatabaseConnection This, String sql)
+   at Emby.Server.Implementations.Data.BaseSqliteRepository.GetConnection(Boolean readOnly)
+   at Emby.Server.Implementations.Data.SqliteItemRepository.Initialize(SqliteUserDataRepository userDataRepo, IUserManager userManager)
+   at Emby.Server.Implementations.ApplicationHost.InitializeServices()
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+[2023-08-21 14:13:22.478 -03:00] [INF] [1] Main: Running query planner optimizations in the database... This might take a while
+[2023-08-21 14:13:22.509 -03:00] [FTL] [1] Main: Unhandled Exception
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 8: 'attempt to write a readonly database'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQuery(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, Object[] parameters)
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+   at Jellyfin.Server.Program.<Main>(String[] args)
+[2023-08-21 14:13:23.711 -03:00] [INF] [1] Main: Jellyfin version: "10.8.10"
+[2023-08-21 14:13:23.726 -03:00] [INF] [1] Main: Environment Variables: ["[JELLYFIN_CONFIG_DIR, /config]", "[JELLYFIN_CACHE_DIR, /config/cache]", "[JELLYFIN_WEB_DIR, /usr/share/jellyfin/web]", "[JELLYFIN_DATA_DIR, /config/data]", "[JELLYFIN_LOG_DIR, /config/log]"]
+[2023-08-21 14:13:23.728 -03:00] [INF] [1] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg"]
+[2023-08-21 14:13:23.729 -03:00] [INF] [1] Main: Operating system: "Linux"
+[2023-08-21 14:13:23.729 -03:00] [INF] [1] Main: Architecture: X64
+[2023-08-21 14:13:23.729 -03:00] [INF] [1] Main: 64-Bit Process: True
+[2023-08-21 14:13:23.729 -03:00] [INF] [1] Main: User Interactive: True
+[2023-08-21 14:13:23.729 -03:00] [INF] [1] Main: Processor count: 10
+[2023-08-21 14:13:23.729 -03:00] [INF] [1] Main: Program data path: "/config/data"
+[2023-08-21 14:13:23.729 -03:00] [INF] [1] Main: Web resources path: "/usr/share/jellyfin/web"
+[2023-08-21 14:13:23.729 -03:00] [INF] [1] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2023-08-21 14:13:23.813 -03:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2023-08-21 14:13:23.822 -03:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2023-08-21 14:13:23.877 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN addresses : "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:13:23.877 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions : "[]"
+[2023-08-21 14:13:23.877 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using LAN addresses: "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:13:23.881 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind addresses: "[]"
+[2023-08-21 14:13:23.881 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind exclusions: "[]"
+[2023-08-21 14:13:24.856 -03:00] [FTL] [1] Main: Error while starting server.
+ReadOnly: SQLitePCL.pretty.SQLiteException: attempt to write a readonly database
+   at SQLitePCL.pretty.SQLiteException.Throw(Int32 rc, Int32 extended, String msg)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3 db, Int32 rc)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3_stmt stmt, Int32 rc)
+   at SQLitePCL.pretty.StatementImpl.MoveNext()
+   at SQLitePCL.pretty.DatabaseConnection.Execute(IDatabaseConnection This, String sql)
+   at Emby.Server.Implementations.Data.BaseSqliteRepository.GetConnection(Boolean readOnly)
+   at Emby.Server.Implementations.Data.SqliteItemRepository.Initialize(SqliteUserDataRepository userDataRepo, IUserManager userManager)
+   at Emby.Server.Implementations.ApplicationHost.InitializeServices()
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+[2023-08-21 14:13:24.859 -03:00] [INF] [1] Main: Running query planner optimizations in the database... This might take a while
+[2023-08-21 14:13:24.890 -03:00] [FTL] [1] Main: Unhandled Exception
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 8: 'attempt to write a readonly database'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQuery(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, Object[] parameters)
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+   at Jellyfin.Server.Program.<Main>(String[] args)
+[2023-08-21 14:13:26.098 -03:00] [INF] [1] Main: Jellyfin version: "10.8.10"
+[2023-08-21 14:13:26.113 -03:00] [INF] [1] Main: Environment Variables: ["[JELLYFIN_CONFIG_DIR, /config]", "[JELLYFIN_CACHE_DIR, /config/cache]", "[JELLYFIN_WEB_DIR, /usr/share/jellyfin/web]", "[JELLYFIN_LOG_DIR, /config/log]", "[JELLYFIN_DATA_DIR, /config/data]"]
+[2023-08-21 14:13:26.114 -03:00] [INF] [1] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg"]
+[2023-08-21 14:13:26.115 -03:00] [INF] [1] Main: Operating system: "Linux"
+[2023-08-21 14:13:26.115 -03:00] [INF] [1] Main: Architecture: X64
+[2023-08-21 14:13:26.115 -03:00] [INF] [1] Main: 64-Bit Process: True
+[2023-08-21 14:13:26.115 -03:00] [INF] [1] Main: User Interactive: True
+[2023-08-21 14:13:26.115 -03:00] [INF] [1] Main: Processor count: 10
+[2023-08-21 14:13:26.115 -03:00] [INF] [1] Main: Program data path: "/config/data"
+[2023-08-21 14:13:26.115 -03:00] [INF] [1] Main: Web resources path: "/usr/share/jellyfin/web"
+[2023-08-21 14:13:26.115 -03:00] [INF] [1] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2023-08-21 14:13:26.194 -03:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2023-08-21 14:13:26.204 -03:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2023-08-21 14:13:26.257 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN addresses : "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:13:26.257 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions : "[]"
+[2023-08-21 14:13:26.257 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using LAN addresses: "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:13:26.261 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind addresses: "[]"
+[2023-08-21 14:13:26.261 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind exclusions: "[]"
+[2023-08-21 14:13:27.220 -03:00] [FTL] [1] Main: Error while starting server.
+ReadOnly: SQLitePCL.pretty.SQLiteException: attempt to write a readonly database
+   at SQLitePCL.pretty.SQLiteException.Throw(Int32 rc, Int32 extended, String msg)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3 db, Int32 rc)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3_stmt stmt, Int32 rc)
+   at SQLitePCL.pretty.StatementImpl.MoveNext()
+   at SQLitePCL.pretty.DatabaseConnection.Execute(IDatabaseConnection This, String sql)
+   at Emby.Server.Implementations.Data.BaseSqliteRepository.GetConnection(Boolean readOnly)
+   at Emby.Server.Implementations.Data.SqliteItemRepository.Initialize(SqliteUserDataRepository userDataRepo, IUserManager userManager)
+   at Emby.Server.Implementations.ApplicationHost.InitializeServices()
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+[2023-08-21 14:13:27.223 -03:00] [INF] [1] Main: Running query planner optimizations in the database... This might take a while
+[2023-08-21 14:13:27.253 -03:00] [FTL] [1] Main: Unhandled Exception
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 8: 'attempt to write a readonly database'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQuery(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, Object[] parameters)
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+   at Jellyfin.Server.Program.<Main>(String[] args)
+[2023-08-21 14:13:28.439 -03:00] [INF] [1] Main: Jellyfin version: "10.8.10"
+[2023-08-21 14:13:28.454 -03:00] [INF] [1] Main: Environment Variables: ["[JELLYFIN_CACHE_DIR, /config/cache]", "[JELLYFIN_WEB_DIR, /usr/share/jellyfin/web]", "[JELLYFIN_CONFIG_DIR, /config]", "[JELLYFIN_DATA_DIR, /config/data]", "[JELLYFIN_LOG_DIR, /config/log]"]
+[2023-08-21 14:13:28.455 -03:00] [INF] [1] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg"]
+[2023-08-21 14:13:28.456 -03:00] [INF] [1] Main: Operating system: "Linux"
+[2023-08-21 14:13:28.456 -03:00] [INF] [1] Main: Architecture: X64
+[2023-08-21 14:13:28.456 -03:00] [INF] [1] Main: 64-Bit Process: True
+[2023-08-21 14:13:28.456 -03:00] [INF] [1] Main: User Interactive: True
+[2023-08-21 14:13:28.456 -03:00] [INF] [1] Main: Processor count: 10
+[2023-08-21 14:13:28.456 -03:00] [INF] [1] Main: Program data path: "/config/data"
+[2023-08-21 14:13:28.456 -03:00] [INF] [1] Main: Web resources path: "/usr/share/jellyfin/web"
+[2023-08-21 14:13:28.456 -03:00] [INF] [1] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2023-08-21 14:13:28.536 -03:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2023-08-21 14:13:28.546 -03:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2023-08-21 14:13:28.599 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN addresses : "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:13:28.599 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions : "[]"
+[2023-08-21 14:13:28.599 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using LAN addresses: "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:13:28.603 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind addresses: "[]"
+[2023-08-21 14:13:28.603 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind exclusions: "[]"
+[2023-08-21 14:13:29.557 -03:00] [FTL] [1] Main: Error while starting server.
+ReadOnly: SQLitePCL.pretty.SQLiteException: attempt to write a readonly database
+   at SQLitePCL.pretty.SQLiteException.Throw(Int32 rc, Int32 extended, String msg)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3 db, Int32 rc)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3_stmt stmt, Int32 rc)
+   at SQLitePCL.pretty.StatementImpl.MoveNext()
+   at SQLitePCL.pretty.DatabaseConnection.Execute(IDatabaseConnection This, String sql)
+   at Emby.Server.Implementations.Data.BaseSqliteRepository.GetConnection(Boolean readOnly)
+   at Emby.Server.Implementations.Data.SqliteItemRepository.Initialize(SqliteUserDataRepository userDataRepo, IUserManager userManager)
+   at Emby.Server.Implementations.ApplicationHost.InitializeServices()
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+[2023-08-21 14:13:29.560 -03:00] [INF] [1] Main: Running query planner optimizations in the database... This might take a while
+[2023-08-21 14:13:29.590 -03:00] [FTL] [1] Main: Unhandled Exception
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 8: 'attempt to write a readonly database'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQuery(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, Object[] parameters)
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+   at Jellyfin.Server.Program.<Main>(String[] args)
+[2023-08-21 14:13:30.825 -03:00] [INF] [1] Main: Jellyfin version: "10.8.10"
+[2023-08-21 14:13:30.842 -03:00] [INF] [1] Main: Environment Variables: ["[JELLYFIN_LOG_DIR, /config/log]", "[JELLYFIN_WEB_DIR, /usr/share/jellyfin/web]", "[JELLYFIN_DATA_DIR, /config/data]", "[JELLYFIN_CACHE_DIR, /config/cache]", "[JELLYFIN_CONFIG_DIR, /config]"]
+[2023-08-21 14:13:30.843 -03:00] [INF] [1] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg"]
+[2023-08-21 14:13:30.844 -03:00] [INF] [1] Main: Operating system: "Linux"
+[2023-08-21 14:13:30.844 -03:00] [INF] [1] Main: Architecture: X64
+[2023-08-21 14:13:30.844 -03:00] [INF] [1] Main: 64-Bit Process: True
+[2023-08-21 14:13:30.844 -03:00] [INF] [1] Main: User Interactive: True
+[2023-08-21 14:13:30.844 -03:00] [INF] [1] Main: Processor count: 10
+[2023-08-21 14:13:30.844 -03:00] [INF] [1] Main: Program data path: "/config/data"
+[2023-08-21 14:13:30.844 -03:00] [INF] [1] Main: Web resources path: "/usr/share/jellyfin/web"
+[2023-08-21 14:13:30.844 -03:00] [INF] [1] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2023-08-21 14:13:30.929 -03:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2023-08-21 14:13:30.939 -03:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2023-08-21 14:13:30.995 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN addresses : "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:13:30.995 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions : "[]"
+[2023-08-21 14:13:30.995 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using LAN addresses: "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:13:31.000 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind addresses: "[]"
+[2023-08-21 14:13:31.000 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind exclusions: "[]"
+[2023-08-21 14:13:32.024 -03:00] [FTL] [1] Main: Error while starting server.
+ReadOnly: SQLitePCL.pretty.SQLiteException: attempt to write a readonly database
+   at SQLitePCL.pretty.SQLiteException.Throw(Int32 rc, Int32 extended, String msg)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3 db, Int32 rc)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3_stmt stmt, Int32 rc)
+   at SQLitePCL.pretty.StatementImpl.MoveNext()
+   at SQLitePCL.pretty.DatabaseConnection.Execute(IDatabaseConnection This, String sql)
+   at Emby.Server.Implementations.Data.BaseSqliteRepository.GetConnection(Boolean readOnly)
+   at Emby.Server.Implementations.Data.SqliteItemRepository.Initialize(SqliteUserDataRepository userDataRepo, IUserManager userManager)
+   at Emby.Server.Implementations.ApplicationHost.InitializeServices()
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+[2023-08-21 14:13:32.027 -03:00] [INF] [1] Main: Running query planner optimizations in the database... This might take a while
+[2023-08-21 14:13:32.058 -03:00] [FTL] [1] Main: Unhandled Exception
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 8: 'attempt to write a readonly database'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQuery(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, Object[] parameters)
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+   at Jellyfin.Server.Program.<Main>(String[] args)
+[2023-08-21 14:13:33.280 -03:00] [INF] [1] Main: Jellyfin version: "10.8.10"
+[2023-08-21 14:13:33.300 -03:00] [INF] [1] Main: Environment Variables: ["[JELLYFIN_CONFIG_DIR, /config]", "[JELLYFIN_WEB_DIR, /usr/share/jellyfin/web]", "[JELLYFIN_LOG_DIR, /config/log]", "[JELLYFIN_DATA_DIR, /config/data]", "[JELLYFIN_CACHE_DIR, /config/cache]"]
+[2023-08-21 14:13:33.302 -03:00] [INF] [1] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg"]
+[2023-08-21 14:13:33.303 -03:00] [INF] [1] Main: Operating system: "Linux"
+[2023-08-21 14:13:33.303 -03:00] [INF] [1] Main: Architecture: X64
+[2023-08-21 14:13:33.303 -03:00] [INF] [1] Main: 64-Bit Process: True
+[2023-08-21 14:13:33.303 -03:00] [INF] [1] Main: User Interactive: True
+[2023-08-21 14:13:33.303 -03:00] [INF] [1] Main: Processor count: 10
+[2023-08-21 14:13:33.303 -03:00] [INF] [1] Main: Program data path: "/config/data"
+[2023-08-21 14:13:33.303 -03:00] [INF] [1] Main: Web resources path: "/usr/share/jellyfin/web"
+[2023-08-21 14:13:33.303 -03:00] [INF] [1] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2023-08-21 14:13:33.396 -03:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2023-08-21 14:13:33.406 -03:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2023-08-21 14:13:33.466 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN addresses : "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:13:33.466 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions : "[]"
+[2023-08-21 14:13:33.467 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using LAN addresses: "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:13:33.471 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind addresses: "[]"
+[2023-08-21 14:13:33.471 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind exclusions: "[]"
+[2023-08-21 14:13:34.522 -03:00] [FTL] [1] Main: Error while starting server.
+ReadOnly: SQLitePCL.pretty.SQLiteException: attempt to write a readonly database
+   at SQLitePCL.pretty.SQLiteException.Throw(Int32 rc, Int32 extended, String msg)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3 db, Int32 rc)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3_stmt stmt, Int32 rc)
+   at SQLitePCL.pretty.StatementImpl.MoveNext()
+   at SQLitePCL.pretty.DatabaseConnection.Execute(IDatabaseConnection This, String sql)
+   at Emby.Server.Implementations.Data.BaseSqliteRepository.GetConnection(Boolean readOnly)
+   at Emby.Server.Implementations.Data.SqliteItemRepository.Initialize(SqliteUserDataRepository userDataRepo, IUserManager userManager)
+   at Emby.Server.Implementations.ApplicationHost.InitializeServices()
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+[2023-08-21 14:13:34.525 -03:00] [INF] [1] Main: Running query planner optimizations in the database... This might take a while
+[2023-08-21 14:13:34.556 -03:00] [FTL] [1] Main: Unhandled Exception
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 8: 'attempt to write a readonly database'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQuery(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, Object[] parameters)
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+   at Jellyfin.Server.Program.<Main>(String[] args)
+[2023-08-21 14:13:35.782 -03:00] [INF] [1] Main: Jellyfin version: "10.8.10"
+[2023-08-21 14:13:35.797 -03:00] [INF] [1] Main: Environment Variables: ["[JELLYFIN_CONFIG_DIR, /config]", "[JELLYFIN_DATA_DIR, /config/data]", "[JELLYFIN_WEB_DIR, /usr/share/jellyfin/web]", "[JELLYFIN_LOG_DIR, /config/log]", "[JELLYFIN_CACHE_DIR, /config/cache]"]
+[2023-08-21 14:13:35.799 -03:00] [INF] [1] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg"]
+[2023-08-21 14:13:35.799 -03:00] [INF] [1] Main: Operating system: "Linux"
+[2023-08-21 14:13:35.800 -03:00] [INF] [1] Main: Architecture: X64
+[2023-08-21 14:13:35.800 -03:00] [INF] [1] Main: 64-Bit Process: True
+[2023-08-21 14:13:35.800 -03:00] [INF] [1] Main: User Interactive: True
+[2023-08-21 14:13:35.800 -03:00] [INF] [1] Main: Processor count: 10
+[2023-08-21 14:13:35.800 -03:00] [INF] [1] Main: Program data path: "/config/data"
+[2023-08-21 14:13:35.800 -03:00] [INF] [1] Main: Web resources path: "/usr/share/jellyfin/web"
+[2023-08-21 14:13:35.800 -03:00] [INF] [1] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2023-08-21 14:13:35.884 -03:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2023-08-21 14:13:35.897 -03:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2023-08-21 14:13:35.954 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN addresses : "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:13:35.954 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions : "[]"
+[2023-08-21 14:13:35.955 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using LAN addresses: "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:13:35.959 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind addresses: "[]"
+[2023-08-21 14:13:35.959 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind exclusions: "[]"
+[2023-08-21 14:13:36.997 -03:00] [FTL] [1] Main: Error while starting server.
+ReadOnly: SQLitePCL.pretty.SQLiteException: attempt to write a readonly database
+   at SQLitePCL.pretty.SQLiteException.Throw(Int32 rc, Int32 extended, String msg)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3 db, Int32 rc)
+   at SQLitePCL.pretty.SQLiteException.CheckOk(sqlite3_stmt stmt, Int32 rc)
+   at SQLitePCL.pretty.StatementImpl.MoveNext()
+   at SQLitePCL.pretty.DatabaseConnection.Execute(IDatabaseConnection This, String sql)
+   at Emby.Server.Implementations.Data.BaseSqliteRepository.GetConnection(Boolean readOnly)
+   at Emby.Server.Implementations.Data.SqliteItemRepository.Initialize(SqliteUserDataRepository userDataRepo, IUserManager userManager)
+   at Emby.Server.Implementations.ApplicationHost.InitializeServices()
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+[2023-08-21 14:13:36.999 -03:00] [INF] [1] Main: Running query planner optimizations in the database... This might take a while
+[2023-08-21 14:13:37.029 -03:00] [FTL] [1] Main: Unhandled Exception
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 8: 'attempt to write a readonly database'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQuery(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRaw(DatabaseFacade databaseFacade, String sql, Object[] parameters)
+   at Jellyfin.Server.Program.StartApp(StartupOptions options)
+   at Jellyfin.Server.Program.<Main>(String[] args)
+[2023-08-21 14:13:38.235 -03:00] [INF] [1] Main: Jellyfin version: "10.8.10"
+[2023-08-21 14:13:38.250 -03:00] [INF] [1] Main: Environment Variables: ["[JELLYFIN_WEB_DIR, /usr/share/jellyfin/web]", "[JELLYFIN_DATA_DIR, /config/data]", "[JELLYFIN_CONFIG_DIR, /config]", "[JELLYFIN_CACHE_DIR, /config/cache]", "[JELLYFIN_LOG_DIR, /config/log]"]
+[2023-08-21 14:13:38.252 -03:00] [INF] [1] Main: Arguments: ["/usr/lib/jellyfin/bin/jellyfin.dll", "--ffmpeg=/usr/lib/jellyfin-ffmpeg/ffmpeg"]
+[2023-08-21 14:13:38.253 -03:00] [INF] [1] Main: Operating system: "Linux"
+[2023-08-21 14:13:38.253 -03:00] [INF] [1] Main: Architecture: X64
+[2023-08-21 14:13:38.253 -03:00] [INF] [1] Main: 64-Bit Process: True
+[2023-08-21 14:13:38.253 -03:00] [INF] [1] Main: User Interactive: True
+[2023-08-21 14:13:38.253 -03:00] [INF] [1] Main: Processor count: 10
+[2023-08-21 14:13:38.253 -03:00] [INF] [1] Main: Program data path: "/config/data"
+[2023-08-21 14:13:38.253 -03:00] [INF] [1] Main: Web resources path: "/usr/share/jellyfin/web"
+[2023-08-21 14:13:38.253 -03:00] [INF] [1] Main: Application directory: "/usr/lib/jellyfin/bin/"
+[2023-08-21 14:13:38.334 -03:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/config/cache"
+[2023-08-21 14:13:38.344 -03:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2023-08-21 14:13:38.398 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN addresses : "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:13:38.398 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions : "[]"
+[2023-08-21 14:13:38.399 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using LAN addresses: "[10.0.0.0/8,172.16.0.0/12,192.168.0.0/16]"
+[2023-08-21 14:13:38.402 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind addresses: "[]"
+[2023-08-21 14:13:38.402 -03:00] [INF] [1] Jellyfin.Networking.Manager.NetworkManager: Using bind exclusions: "[]"
+[2023-08-21 14:13:39.434 -03:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "TMDb" "10.8.10.0"
+[2023-08-21 14:13:39.435 -03:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "Studio Images" "10.8.10.0"
+[2023-08-21 14:13:39.435 -03:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "OMDb" "10.8.10.0"
+[2023-08-21 14:13:39.435 -03:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "MusicBrainz" "10.8.10.0"
+[2023-08-21 14:13:39.435 -03:00] [INF] [1] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "AudioDB" "10.8.10.0"
+[2023-08-21 14:13:39.468 -03:00] [INF] [1] Main: Kestrel listening on "Any IP4 Address"
+[2023-08-21 14:13:39.501 -03:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.Repositories.EphemeralXmlRepository: Using an in-memory repository. Keys will not be persisted to storage.
+[2023-08-21 14:13:39.501 -03:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+[2023-08-21 14:13:39.653 -03:00] [WRN] [1] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: No XML encryptor configured. Key {8f346239-6987-45a6-bb6e-a0dcfba38c13} may be persisted to storage in unencrypted form.
+[2023-08-21 14:13:39.666 -03:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Running startup tasks
+[2023-08-21 14:13:39.694 -03:00] [INF] [1] Emby.Server.Implementations.ScheduledTasks.TaskManager: Daily trigger for "Extract Chapter Images" set to fire at 2023-08-22 02:00:00.000 -03:00, which is 11:46:20.3058186 from now.
+[2023-08-21 14:13:39.742 -03:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Found ffmpeg version "5.1.3"
+[2023-08-21 14:13:39.766 -03:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "decoders": ["libdav1d", "av1", "av1_cuvid", "av1_qsv", "h264", "h264_qsv", "h264_cuvid", "hevc", "hevc_qsv", "hevc_cuvid", "mpeg2video", "mpeg2_qsv", "mpeg2_cuvid", "mpeg4", "mpeg4_cuvid", "msmpeg4", "vc1_qsv", "vc1_cuvid", "vp8", "libvpx", "vp8_cuvid", "vp8_qsv", "vp9", "libvpx-vp9", "vp9_cuvid", "vp9_qsv", "aac", "ac3", "dca", "flac", "mp3", "truehd"]
+[2023-08-21 14:13:39.779 -03:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "encoders": ["libx264", "h264_amf", "h264_nvenc", "h264_qsv", "h264_v4l2m2m", "h264_vaapi", "libx265", "hevc_amf", "hevc_nvenc", "hevc_qsv", "hevc_vaapi", "mpeg4", "msmpeg4", "libvpx", "libvpx-vp9", "aac", "libfdk_aac", "ac3", "dca", "flac", "libmp3lame", "libopus", "truehd", "libvorbis", "srt"]
+[2023-08-21 14:13:39.791 -03:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available filters: ["deinterlace_qsv", "deinterlace_vaapi", "hwupload_cuda", "hwupload_vaapi", "overlay_opencl", "overlay_qsv", "overlay_vaapi", "overlay_cuda", "procamp_vaapi", "scale_cuda", "scale_opencl", "scale_qsv", "scale_vaapi", "tonemap_cuda", "tonemap_opencl", "tonemap_vaapi", "vpp_qsv", "yadif_cuda", "zscale", "alphasrc"]
+[2023-08-21 14:13:39.861 -03:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available hwaccel types: ["cuda", "vaapi", "qsv", "drm", "opencl", "vulkan"]
+[2023-08-21 14:13:39.935 -03:00] [INF] [1] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: FFmpeg: "/usr/lib/jellyfin-ffmpeg/ffmpeg"
+[2023-08-21 14:13:39.936 -03:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: ServerId: "069e14fd144a43008ae70d4f4a5d6edd"
+[2023-08-21 14:13:39.989 -03:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Executed all pre-startup entry points in 0:00:00.0475137
+[2023-08-21 14:13:39.989 -03:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Core startup complete
+[2023-08-21 14:13:40.097 -03:00] [INF] [15] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/data/movies"
+[2023-08-21 14:13:40.099 -03:00] [INF] [10] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/data/tvshows"
+[2023-08-21 14:13:40.100 -03:00] [INF] [1] Emby.Server.Implementations.ApplicationHost: Executed all post-startup entry points in 0:00:00.1108728
+[2023-08-21 14:13:40.100 -03:00] [INF] [1] Main: Startup complete 0:00:01.9477851
+[2023-08-21 14:13:40.231 -03:00] [WRN] [10] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"AccessSchedule"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-08-21 14:13:40.232 -03:00] [WRN] [10] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"ActivityLog"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-08-21 14:13:40.232 -03:00] [WRN] [10] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"CustomItemDisplayPreferences"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-08-21 14:13:40.232 -03:00] [WRN] [10] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"DisplayPreferences"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-08-21 14:13:40.232 -03:00] [WRN] [10] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"HomeSection"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-08-21 14:13:40.232 -03:00] [WRN] [10] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"ImageInfo"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-08-21 14:13:40.232 -03:00] [WRN] [10] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"ItemDisplayPreferences"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-08-21 14:13:40.233 -03:00] [WRN] [10] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"Permission"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-08-21 14:13:40.233 -03:00] [WRN] [10] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"Preference"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-08-21 14:13:40.233 -03:00] [WRN] [10] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"ApiKey"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-08-21 14:13:40.233 -03:00] [WRN] [10] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"Device"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-08-21 14:13:40.233 -03:00] [WRN] [10] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"DeviceOptions"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-08-21 14:13:40.233 -03:00] [WRN] [10] Microsoft.EntityFrameworkCore.Model.Validation: The entity type '"User"' is configured to use schema '"jellyfin"', but SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+[2023-08-21 14:13:42.697 -03:00] [INF] [10] Emby.Server.Implementations.ScheduledTasks.TaskManager: "StartupTrigger" fired for task: "Update Plugins"
+[2023-08-21 14:13:42.697 -03:00] [INF] [10] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "PluginUpdateTask"
+[2023-08-21 14:13:42.699 -03:00] [INF] [8] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Update Plugins"
+[2023-08-21 14:13:44.553 -03:00] [INF] [13] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Update Plugins" Completed after 0 minute(s) and 1 seconds
+[2023-08-21 14:13:44.558 -03:00] [INF] [13] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2023-08-21 14:14:39.689 -03:00] [INF] [14] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Refresh People"
+[2023-08-21 14:14:39.689 -03:00] [INF] [3] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Clean Transcode Directory"
+[2023-08-21 14:14:39.689 -03:00] [INF] [11] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Optimize database"
+[2023-08-21 14:14:39.689 -03:00] [INF] [23] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Clean Cache Directory"
+[2023-08-21 14:14:39.689 -03:00] [INF] [3] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "DeleteTranscodeFileTask"
+[2023-08-21 14:14:39.689 -03:00] [INF] [24] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Download missing subtitles"
+[2023-08-21 14:14:39.689 -03:00] [INF] [11] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "OptimizeDatabaseTask"
+[2023-08-21 14:14:39.689 -03:00] [INF] [14] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "PeopleValidationTask"
+[2023-08-21 14:14:39.689 -03:00] [INF] [24] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "SubtitleScheduledTask"
+[2023-08-21 14:14:39.689 -03:00] [INF] [3] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Clean Transcode Directory"
+[2023-08-21 14:14:39.689 -03:00] [INF] [23] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "DeleteCacheFileTask"
+[2023-08-21 14:14:39.690 -03:00] [INF] [28] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Refresh People"
+[2023-08-21 14:14:39.690 -03:00] [INF] [11] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Download missing subtitles"
+[2023-08-21 14:14:39.690 -03:00] [INF] [23] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Clean Cache Directory"
+[2023-08-21 14:14:39.690 -03:00] [INF] [25] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Optimize database"
+[2023-08-21 14:14:39.690 -03:00] [INF] [25] Emby.Server.Implementations.ScheduledTasks.Tasks.OptimizeDatabaseTask: Optimizing and vacuuming jellyfin.db...
+[2023-08-21 14:14:39.691 -03:00] [INF] [3] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Clean Transcode Directory" Completed after 0 minute(s) and 0 seconds
+[2023-08-21 14:14:39.692 -03:00] [INF] [3] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2023-08-21 14:14:39.702 -03:00] [INF] [24] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Scan Media Library"
+[2023-08-21 14:14:39.702 -03:00] [INF] [30] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "TasksRefreshChannels"
+[2023-08-21 14:14:39.702 -03:00] [INF] [14] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Update Plugins"
+[2023-08-21 14:14:39.702 -03:00] [INF] [30] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "RefreshChannelsScheduledTask"
+[2023-08-21 14:14:39.702 -03:00] [INF] [29] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Refresh Guide"
+[2023-08-21 14:14:39.702 -03:00] [INF] [3] Emby.Server.Implementations.ScheduledTasks.TaskManager: "IntervalTrigger" fired for task: "Clean Log Directory"
+[2023-08-21 14:14:39.702 -03:00] [INF] [3] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "DeleteLogFileTask"
+[2023-08-21 14:14:39.702 -03:00] [INF] [24] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "RefreshMediaLibraryTask"
+[2023-08-21 14:14:39.702 -03:00] [INF] [29] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "RefreshGuideScheduledTask"
+[2023-08-21 14:14:39.702 -03:00] [INF] [3] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Clean Log Directory"
+[2023-08-21 14:14:39.702 -03:00] [INF] [29] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Refresh Guide"
+[2023-08-21 14:14:39.702 -03:00] [INF] [24] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Scan Media Library"
+[2023-08-21 14:14:39.702 -03:00] [INF] [14] Emby.Server.Implementations.ScheduledTasks.TaskManager: Queuing task "PluginUpdateTask"
+[2023-08-21 14:14:39.702 -03:00] [INF] [14] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "Update Plugins"
+[2023-08-21 14:14:39.702 -03:00] [INF] [30] Emby.Server.Implementations.ScheduledTasks.TaskManager: Executing "TasksRefreshChannels"
+[2023-08-21 14:14:39.702 -03:00] [INF] [23] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Clean Cache Directory" Completed after 0 minute(s) and 0 seconds
+[2023-08-21 14:14:39.703 -03:00] [INF] [11] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Download missing subtitles" Completed after 0 minute(s) and 0 seconds
+[2023-08-21 14:14:39.703 -03:00] [INF] [23] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2023-08-21 14:14:39.703 -03:00] [INF] [11] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2023-08-21 14:14:39.720 -03:00] [INF] [3] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Clean Log Directory" Completed after 0 minute(s) and 0 seconds
+[2023-08-21 14:14:39.720 -03:00] [INF] [3] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2023-08-21 14:14:39.729 -03:00] [INF] [24] Emby.Server.Implementations.IO.LibraryMonitor: Stopping directory watching for path "/data/tvshows"
+[2023-08-21 14:14:39.729 -03:00] [INF] [24] Emby.Server.Implementations.IO.LibraryMonitor: Stopping directory watching for path "/data/movies"
+[2023-08-21 14:14:39.731 -03:00] [INF] [24] Emby.Server.Implementations.Library.LibraryManager: Validating media library
+[2023-08-21 14:14:39.734 -03:00] [INF] [30] Emby.Server.Implementations.ScheduledTasks.TaskManager: "TasksRefreshChannels" Completed after 0 minute(s) and 0 seconds
+[2023-08-21 14:14:39.734 -03:00] [INF] [30] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2023-08-21 14:14:39.778 -03:00] [INF] [25] Emby.Server.Implementations.ScheduledTasks.Tasks.OptimizeDatabaseTask: jellyfin.db optimized successfully!
+[2023-08-21 14:14:39.778 -03:00] [INF] [25] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Optimize database" Completed after 0 minute(s) and 0 seconds
+[2023-08-21 14:14:39.778 -03:00] [INF] [25] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2023-08-21 14:14:40.495 -03:00] [INF] [3] Emby.Server.Implementations.Library.LibraryManager: Removing item, Type: "Episode", Name: "Conversa Fiada", Path: "/data/tvshows/The Simpsons/Season 1/The Simpsons - S01E08 - The Telltale Head HDTV-1080p.mkv", Id: ae113954-07ed-3703-ee88-5490bb569fd2
+[2023-08-21 14:14:40.607 -03:00] [INF] [3] Emby.Server.Implementations.Library.LibraryManager: Removing item, Type: "Episode", Name: "A Noite de Folga do Homer", Path: "/data/tvshows/The Simpsons/Season 1/The Simpsons - S01E10 - Homer's Night Out HDTV-1080p.mkv", Id: 463079e6-0213-adfa-6109-bc248a99646f
+[2023-08-21 14:14:40.717 -03:00] [INF] [11] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Update Plugins" Completed after 0 minute(s) and 1 seconds
+[2023-08-21 14:14:40.717 -03:00] [INF] [11] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2023-08-21 14:14:41.656 -03:00] [INF] [28] Emby.Server.Implementations.Library.LibraryManager: Deleting dead "66a661120b70c549845585f545a965ea" "Christopher Collins" "Person".
+[2023-08-21 14:14:41.657 -03:00] [INF] [28] Emby.Server.Implementations.Library.LibraryManager: Removing item, Type: "Person", Name: "Christopher Collins", Path: "/config/data/metadata/People/C/Christopher Collins", Id: 66a66112-0b70-c549-8455-85f545a965ea
+[2023-08-21 14:14:41.686 -03:00] [INF] [28] Emby.Server.Implementations.Library.LibraryManager: Deleting dead "cbc76b27c57e2658ddfb3f138f3d8921" "Jo Ann Harris" "Person".
+[2023-08-21 14:14:41.686 -03:00] [INF] [28] Emby.Server.Implementations.Library.LibraryManager: Removing item, Type: "Person", Name: "Jo Ann Harris", Path: "/config/data/metadata/People/J/Jo Ann Harris", Id: cbc76b27-c57e-2658-ddfb-3f138f3d8921
+[2023-08-21 14:14:41.710 -03:00] [INF] [28] Emby.Server.Implementations.Library.LibraryManager: Deleting dead "b2a1380a55d8bc1420517ce71c3f1243" "Maggie Roswell" "Person".
+[2023-08-21 14:14:41.710 -03:00] [INF] [28] Emby.Server.Implementations.Library.LibraryManager: Removing item, Type: "Person", Name: "Maggie Roswell", Path: "/config/data/metadata/People/M/Maggie Roswell", Id: b2a1380a-55d8-bc14-2051-7ce71c3f1243
+[2023-08-21 14:14:41.748 -03:00] [INF] [28] Emby.Server.Implementations.Library.LibraryManager: Deleting dead "126cc1eb91b3be8011487696b9559b25" "Marcia Wallace" "Person".
+[2023-08-21 14:14:41.748 -03:00] [INF] [28] Emby.Server.Implementations.Library.LibraryManager: Removing item, Type: "Person", Name: "Marcia Wallace", Path: "/config/data/metadata/People/M/Marcia Wallace", Id: 126cc1eb-91b3-be80-1148-7696b9559b25
+[2023-08-21 14:14:41.780 -03:00] [INF] [28] Emby.Server.Implementations.Library.LibraryManager: Deleting dead "c268da9883821fc56de9d6315baf4a4d" "Matt Groening" "Person".
+[2023-08-21 14:14:41.780 -03:00] [INF] [28] Emby.Server.Implementations.Library.LibraryManager: Removing item, Type: "Person", Name: "Matt Groening", Path: "/config/data/metadata/People/M/Matt Groening", Id: c268da98-8382-1fc5-6de9-d6315baf4a4d
+[2023-08-21 14:14:41.810 -03:00] [INF] [28] Emby.Server.Implementations.Library.LibraryManager: Deleting dead "96b95d028000624afecfe429b910e07f" "Pamela Hayden" "Person".
+[2023-08-21 14:14:41.810 -03:00] [INF] [28] Emby.Server.Implementations.Library.LibraryManager: Removing item, Type: "Person", Name: "Pamela Hayden", Path: "/config/data/metadata/People/P/Pamela Hayden", Id: 96b95d02-8000-624a-fecf-e429b910e07f
+[2023-08-21 14:14:41.828 -03:00] [INF] [28] Emby.Server.Implementations.Library.LibraryManager: Deleting dead "1f1e7f71332b2c1b02dd248fa56c4335" "Rich Moore" "Person".
+[2023-08-21 14:14:41.828 -03:00] [INF] [28] Emby.Server.Implementations.Library.LibraryManager: Removing item, Type: "Person", Name: "Rich Moore", Path: "/config/data/metadata/People/R/Rich Moore", Id: 1f1e7f71-332b-2c1b-02dd-248fa56c4335
+[2023-08-21 14:14:41.844 -03:00] [INF] [28] Emby.Server.Implementations.Library.LibraryManager: Deleting dead "b6926fee3215c1d60f6c5301928a53f5" "Sam McMurray" "Person".
+[2023-08-21 14:14:41.844 -03:00] [INF] [28] Emby.Server.Implementations.Library.LibraryManager: Removing item, Type: "Person", Name: "Sam McMurray", Path: "/config/data/metadata/People/S/Sam McMurray", Id: b6926fee-3215-c1d6-0f6c-5301928a53f5
+[2023-08-21 14:14:41.865 -03:00] [INF] [28] Emby.Server.Implementations.Library.LibraryManager: Deleting dead "f3fc9cd132216809f167757483afbd9b" "Sam Simon" "Person".
+[2023-08-21 14:14:41.865 -03:00] [INF] [28] Emby.Server.Implementations.Library.LibraryManager: Removing item, Type: "Person", Name: "Sam Simon", Path: "/config/data/metadata/People/S/Sam Simon", Id: f3fc9cd1-3221-6809-f167-757483afbd9b
+[2023-08-21 14:14:41.896 -03:00] [INF] [28] Emby.Server.Implementations.Library.LibraryManager: Deleting dead "1e932894d1bcb035668349ea1316fb5c" "Tress MacNeille" "Person".
+[2023-08-21 14:14:41.896 -03:00] [INF] [28] Emby.Server.Implementations.Library.LibraryManager: Removing item, Type: "Person", Name: "Tress MacNeille", Path: "/config/data/metadata/People/T/Tress MacNeille", Id: 1e932894-d1bc-b035-6683-49ea1316fb5c
+[2023-08-21 14:14:41.926 -03:00] [INF] [28] Emby.Server.Implementations.Library.LibraryManager: People validation complete
+[2023-08-21 14:14:41.926 -03:00] [INF] [28] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Refresh People" Completed after 0 minute(s) and 2 seconds
+[2023-08-21 14:14:41.927 -03:00] [INF] [28] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2023-08-21 14:14:42.766 -03:00] [INF] [11] Emby.Server.Implementations.LiveTv.LiveTvManager: Refreshing guide with 7 days of guide data
+[2023-08-21 14:14:42.772 -03:00] [INF] [11] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Refresh Guide" Completed after 0 minute(s) and 3 seconds
+[2023-08-21 14:14:42.773 -03:00] [INF] [11] Emby.Server.Implementations.ScheduledTasks.TaskManager: ExecuteQueuedTasks
+[2023-08-21 14:14:49.052 -03:00] [INF] [2] Main: Received a SIGTERM signal, shutting down
+[2023-08-21 14:14:49.053 -03:00] [INF] [2] Main: Running query planner optimizations in the database... This might take a while
+[2023-08-21 14:14:49.089 -03:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "CoreAppHost"
+[2023-08-21 14:14:49.091 -03:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "EntryPoint"
+[2023-08-21 14:14:49.092 -03:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "EntryPoint"
+[2023-08-21 14:14:49.093 -03:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "UserDataChangeNotifier"
+[2023-08-21 14:14:49.094 -03:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "MusicBrainzAlbumProvider"
+[2023-08-21 14:14:49.095 -03:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "ExternalPortForwarding"
+[2023-08-21 14:14:49.097 -03:00] [INF] [2] Emby.Server.Implementations.EntryPoints.ExternalPortForwarding: Stopping NAT discovery
+[2023-08-21 14:14:49.111 -03:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "LibraryChangedNotifier"
+[2023-08-21 14:14:49.113 -03:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "RecordingNotifier"
+[2023-08-21 14:14:49.114 -03:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "DeviceAccessEntryPoint"
+[2023-08-21 14:14:49.115 -03:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "SchedulesDirect"
+[2023-08-21 14:14:49.115 -03:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "EmbyTV"
+[2023-08-21 14:14:49.116 -03:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "NotificationEntryPoint"
+[2023-08-21 14:14:49.117 -03:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "LibraryMonitorStartup"
+[2023-08-21 14:14:49.118 -03:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "UdpServerEntryPoint"
+[2023-08-21 14:14:49.118 -03:00] [INF] [2] Emby.Server.Implementations.ApplicationHost: Disposing "DlnaEntryPoint"
+[2023-08-21 14:14:49.119 -03:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: Disposing PlayToManager
+[2023-08-21 14:14:49.121 -03:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: Disposing DeviceDiscovery
+[2023-08-21 14:14:49.127 -03:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: Disposing SsdpCommunicationsServer
+[2023-08-21 14:14:49.128 -03:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing _BroadcastListenSocket
+[2023-08-21 14:14:49.176 -03:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" Disposing 3 sendSockets
+[2023-08-21 14:14:49.178 -03:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing sendSocket from "0.0.0.0"
+[2023-08-21 14:14:49.179 -03:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing sendSocket from "172.24.0.14"
+[2023-08-21 14:14:49.180 -03:00] [INF] [2] Emby.Dlna.Main.DlnaEntryPoint: "SsdpCommunicationsServer" disposing sendSocket from "127.0.0.1"

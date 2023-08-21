@@ -1,0 +1,16 @@
+Mon Aug 21 14:14:33 2023 v60: Creating new database, version 77
+Mon Aug 21 14:14:33 2023 v65: Adding Reading,Abandoned columns to users table
+Mon Aug 21 14:14:33 2023 v66: Creating subscribers table
+Mon Aug 21 14:14:33 2023 v67: Adding Prefs to users table
+Mon Aug 21 14:14:33 2023 v68: Adding Completed to wanted table
+Mon Aug 21 14:14:33 2023 v70: Copied authorid for 0 authors (from 0)
+Mon Aug 21 14:14:33 2023 v70: Copied bookid for 0 books (from 0)
+Mon Aug 21 14:14:33 2023 v72: Adding HaveEBooks and HaveAudioBooks to authors table
+Mon Aug 21 14:14:33 2023 v73: Adding gr_id to series table
+Mon Aug 21 14:14:33 2023 v74: Adding Theme to users table
+Mon Aug 21 14:14:33 2023 v75: Adding ol_id to series table
+Mon Aug 21 14:14:33 2023 v76: Adding Label to wanted table
+Mon Aug 21 14:14:33 2023 v77: Adding Genre to magazine/comic tables
+Mon Aug 21 14:14:33 2023 Changed: 13
+Mon Aug 21 14:14:33 2023: Cleaning Database
+Mon Aug 21 14:14:33 2023: Database updated to version 77

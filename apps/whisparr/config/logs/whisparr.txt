@@ -1,0 +1,580 @@
+2023-08-21 14:12:44.3|Info|Bootstrap|Starting Whisparr - /app/bin/Whisparr - Version 2.0.0.240
+2023-08-21 14:12:44.4|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2023-08-21 14:12:44.4|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2023-08-21 14:12:44.9|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2023-08-21 14:12:45.2|Info|MigrationController|*** Migrating data source=/config/whisparr2.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2023-08-21 14:12:45.4|Info|FluentMigrator.Runner.MigrationRunner|VersionMigration migrating
+2023-08-21 14:12:45.4|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2023-08-21 14:12:45.4|Info|FluentMigrator.Runner.MigrationRunner|CreateTable VersionInfo
+2023-08-21 14:12:45.4|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "VersionInfo" ("Version" INTEGER NOT NULL)
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.038326s
+2023-08-21 14:12:45.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|VersionMigration migrated
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0540976s
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|VersionUniqueMigration migrating
+2023-08-21 14:12:45.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex VersionInfo (Version)
+2023-08-21 14:12:45.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE UNIQUE INDEX "UC_Version" ON "VersionInfo" ("Version" ASC)
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0024189s
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|AlterTable VersionInfo
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0001999s
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|CreateColumn VersionInfo AppliedOn DateTime
+2023-08-21 14:12:45.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "VersionInfo" ADD COLUMN "AppliedOn" DATETIME
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0011675s
+2023-08-21 14:12:45.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|VersionUniqueMigration migrated
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0071951s
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|VersionDescriptionMigration migrating
+2023-08-21 14:12:45.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|AlterTable VersionInfo
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|=> 1.69E-05s
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|CreateColumn VersionInfo Description String
+2023-08-21 14:12:45.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "VersionInfo" ADD COLUMN "Description" TEXT
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0004493s
+2023-08-21 14:12:45.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|VersionDescriptionMigration migrated
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0044242s
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|1: InitialSetup migrating
+2023-08-21 14:12:45.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2023-08-21 14:12:45.5|Info|InitialSetup|Starting migration of Main DB to 1
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|CreateTable Config
+2023-08-21 14:12:45.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "Config" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Key" TEXT NOT NULL, "Value" TEXT NOT NULL)
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0005711s
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex Config (Key)
+2023-08-21 14:12:45.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE UNIQUE INDEX "IX_Config_Key" ON "Config" ("Key" ASC)
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0002123s
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|CreateTable RootFolders
+2023-08-21 14:12:45.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "RootFolders" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Path" TEXT NOT NULL)
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.000198s
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex RootFolders (Path)
+2023-08-21 14:12:45.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE UNIQUE INDEX "IX_RootFolders_Path" ON "RootFolders" ("Path" ASC)
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0001671s
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|CreateTable Series
+2023-08-21 14:12:45.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "Series" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "TvdbId" INTEGER NOT NULL, "Title" TEXT NOT NULL, "TitleSlug" TEXT, "CleanTitle" TEXT NOT NULL, "Status" INTEGER NOT NULL, "Overview" TEXT, "Images" TEXT NOT NULL, "Path" TEXT NOT NULL, "Monitored" INTEGER NOT NULL, "QualityProfileId" INTEGER NOT NULL, "SeasonFolder" INTEGER NOT NULL, "LastInfoSync" DATETIME, "LastDiskSync" DATETIME, "Runtime" INTEGER NOT NULL, "Network" TEXT, "UseSceneNumbering" INTEGER NOT NULL, "FirstAired" DATETIME, "NextAiring" DATETIME, "Year" INTEGER, "Seasons" TEXT, "Ratings" TEXT, "Genres" TEXT, "Certification" TEXT, "SortTitle" TEXT, "Tags" TEXT, "Added" DATETIME, "AddOptions" TEXT, "OriginalLanguage" INTEGER NOT NULL DEFAULT 1)
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0007548s
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex Series (TvdbId)
+2023-08-21 14:12:45.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE UNIQUE INDEX "IX_Series_TvdbId" ON "Series" ("TvdbId" ASC)
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0002448s
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex Series (CleanTitle)
+2023-08-21 14:12:45.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Series_CleanTitle" ON "Series" ("CleanTitle" ASC)
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0002241s
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex Series (Path)
+2023-08-21 14:12:45.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Series_Path" ON "Series" ("Path" ASC)
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0001922s
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|CreateTable Episodes
+2023-08-21 14:12:45.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "Episodes" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Monitored" INTEGER, "SeriesId" INTEGER NOT NULL, "SeasonNumber" INTEGER NOT NULL, "EpisodeNumber" INTEGER NOT NULL, "Title" TEXT, "Overview" TEXT, "Runtime" INTEGER NOT NULL, "EpisodeFileId" INTEGER, "AirDate" TEXT, "AbsoluteEpisodeNumber" INTEGER, "SceneAbsoluteEpisodeNumber" INTEGER, "SceneSeasonNumber" INTEGER, "SceneEpisodeNumber" INTEGER, "AirDateUtc" DATETIME, "Ratings" TEXT, "Images" TEXT, "Actors" TEXT, "UnverifiedSceneNumbering" INTEGER NOT NULL DEFAULT 0, "LastSearchTime" DATETIME, "AiredAfterSeasonNumber" INTEGER, "AiredBeforeSeasonNumber" INTEGER, "AiredBeforeEpisodeNumber" INTEGER, "TvdbId" INTEGER)
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0007575s
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex Episodes (SeriesId)
+2023-08-21 14:12:45.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Episodes_SeriesId" ON "Episodes" ("SeriesId" ASC)
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0002768s
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex Episodes (EpisodeFileId)
+2023-08-21 14:12:45.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Episodes_EpisodeFileId" ON "Episodes" ("EpisodeFileId" ASC)
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0002722s
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex Episodes (SeriesId, SeasonNumber, EpisodeNumber)
+2023-08-21 14:12:45.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Episodes_SeriesId_SeasonNumber_EpisodeNumber" ON "Episodes" ("SeriesId" ASC, "SeasonNumber" ASC, "EpisodeNumber" ASC)
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0002106s
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex Episodes (SeriesId, AirDate)
+2023-08-21 14:12:45.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Episodes_SeriesId_AirDate" ON "Episodes" ("SeriesId" ASC, "AirDate" ASC)
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0001905s
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|CreateTable EpisodeFiles
+2023-08-21 14:12:45.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "EpisodeFiles" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "SeriesId" INTEGER NOT NULL, "Quality" TEXT NOT NULL, "Size" INTEGER NOT NULL, "DateAdded" DATETIME NOT NULL, "SeasonNumber" INTEGER NOT NULL, "SceneName" TEXT, "ReleaseGroup" TEXT, "MediaInfo" TEXT, "RelativePath" TEXT, "Languages" TEXT NOT NULL DEFAULT '[]', "OriginalFilePath" TEXT)
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0014705s
+2023-08-21 14:12:45.5|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex EpisodeFiles (SeriesId)
+2023-08-21 14:12:45.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_EpisodeFiles_SeriesId" ON "EpisodeFiles" ("SeriesId" ASC)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0002345s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateTable History
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "History" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "EpisodeId" INTEGER NOT NULL, "SeriesId" INTEGER NOT NULL, "SourceTitle" TEXT NOT NULL, "Date" DATETIME NOT NULL, "Quality" TEXT NOT NULL, "Data" TEXT NOT NULL, "EventType" INTEGER, "DownloadId" TEXT, "Languages" TEXT NOT NULL DEFAULT '[]')
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0003595s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex History (SeriesId)
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_History_SeriesId" ON "History" ("SeriesId" ASC)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0001729s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex History (Date)
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_History_Date" ON "History" ("Date" ASC)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0001585s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex History (EventType)
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_History_EventType" ON "History" ("EventType" ASC)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0001749s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex History (EpisodeId, Date)
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_History_EpisodeId_Date" ON "History" ("EpisodeId" ASC, "Date" DESC)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0001798s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex History (DownloadId, Date)
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_History_DownloadId_Date" ON "History" ("DownloadId" ASC, "Date" DESC)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0001739s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateTable DownloadHistory
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "DownloadHistory" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "EventType" INTEGER NOT NULL, "SeriesId" INTEGER NOT NULL, "DownloadId" TEXT NOT NULL, "SourceTitle" TEXT NOT NULL, "Date" DATETIME NOT NULL, "Protocol" INTEGER, "IndexerId" INTEGER, "DownloadClientId" INTEGER, "Release" TEXT, "Data" TEXT)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0003094s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex DownloadHistory (EventType)
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_DownloadHistory_EventType" ON "DownloadHistory" ("EventType" ASC)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0001726s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex DownloadHistory (SeriesId)
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_DownloadHistory_SeriesId" ON "DownloadHistory" ("SeriesId" ASC)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0001686s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex DownloadHistory (DownloadId)
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_DownloadHistory_DownloadId" ON "DownloadHistory" ("DownloadId" ASC)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.000159s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateTable Notifications
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "Notifications" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Name" TEXT NOT NULL, "OnGrab" INTEGER NOT NULL, "OnDownload" INTEGER NOT NULL, "Settings" TEXT NOT NULL, "Implementation" TEXT NOT NULL, "ConfigContract" TEXT, "OnUpgrade" INTEGER, "Tags" TEXT, "OnRename" INTEGER NOT NULL, "OnHealthIssue" INTEGER NOT NULL, "IncludeHealthWarnings" INTEGER NOT NULL DEFAULT 0, "OnSeriesDelete" INTEGER NOT NULL DEFAULT 0, "OnEpisodeFileDelete" INTEGER NOT NULL DEFAULT 0, "OnEpisodeFileDeleteForUpgrade" INTEGER NOT NULL DEFAULT 1, "OnApplicationUpdate" INTEGER NOT NULL DEFAULT 0)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0101066s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateTable Blocklist
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "Blocklist" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "SeriesId" INTEGER NOT NULL, "EpisodeIds" TEXT NOT NULL, "SourceTitle" TEXT NOT NULL, "Quality" TEXT NOT NULL, "Date" DATETIME NOT NULL, "PublishedDate" DATETIME, "Size" INTEGER, "Protocol" INTEGER, "Indexer" TEXT, "Message" TEXT, "TorrentInfoHash" TEXT, "Languages" TEXT NOT NULL DEFAULT '[]')
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0005606s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex Blocklist (SeriesId)
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Blocklist_SeriesId" ON "Blocklist" ("SeriesId" ASC)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0002219s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateTable ScheduledTasks
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "ScheduledTasks" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "TypeName" TEXT NOT NULL, "Interval" INTEGER NOT NULL, "LastExecution" DATETIME NOT NULL, "LastStartTime" DATETIME)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0003334s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex ScheduledTasks (TypeName)
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE UNIQUE INDEX "IX_ScheduledTasks_TypeName" ON "ScheduledTasks" ("TypeName" ASC)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.000198s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateTable Indexers
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "Indexers" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "EnableRss" INTEGER, "EnableAutomaticSearch" INTEGER NOT NULL, "EnableInteractiveSearch" INTEGER NOT NULL, "Name" TEXT NOT NULL, "Implementation" TEXT NOT NULL, "Settings" TEXT, "ConfigContract" TEXT, "Priority" INTEGER NOT NULL DEFAULT 25, "Tags" TEXT, "DownloadClientId" INTEGER NOT NULL DEFAULT 0, "SeasonSearchMaximumSingleEpisodeAge" INTEGER NOT NULL DEFAULT 0)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0063703s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex Indexers (Name)
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE UNIQUE INDEX "IX_Indexers_Name" ON "Indexers" ("Name" ASC)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.000247s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateTable IndexerStatus
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "IndexerStatus" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "ProviderId" INTEGER NOT NULL, "InitialFailure" DATETIME, "MostRecentFailure" DATETIME, "EscalationLevel" INTEGER NOT NULL, "DisabledTill" DATETIME, "LastRssSyncReleaseInfo" TEXT)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0003545s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex IndexerStatus (ProviderId)
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE UNIQUE INDEX "IX_IndexerStatus_ProviderId" ON "IndexerStatus" ("ProviderId" ASC)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0002825s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateTable DownloadClients
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "DownloadClients" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Enable" INTEGER NOT NULL, "Name" TEXT NOT NULL, "Implementation" TEXT NOT NULL, "Settings" TEXT NOT NULL, "ConfigContract" TEXT NOT NULL, "Priority" INTEGER NOT NULL DEFAULT 1, "RemoveCompletedDownloads" INTEGER NOT NULL DEFAULT 1, "RemoveFailedDownloads" INTEGER NOT NULL DEFAULT 1)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0005173s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateTable DownloadClientStatus
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "DownloadClientStatus" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "ProviderId" INTEGER NOT NULL, "InitialFailure" DATETIME, "MostRecentFailure" DATETIME, "EscalationLevel" INTEGER NOT NULL, "DisabledTill" DATETIME)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0006106s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex DownloadClientStatus (ProviderId)
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE UNIQUE INDEX "IX_DownloadClientStatus_ProviderId" ON "DownloadClientStatus" ("ProviderId" ASC)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0002922s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateTable QualityProfiles
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "QualityProfiles" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Name" TEXT NOT NULL, "Cutoff" INTEGER NOT NULL, "Items" TEXT NOT NULL, "UpgradeAllowed" INTEGER, "FormatItems" TEXT NOT NULL DEFAULT '[]', "MinFormatScore" INTEGER NOT NULL DEFAULT 0, "CutoffFormatScore" INTEGER NOT NULL DEFAULT 0)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0005797s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex QualityProfiles (Name)
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE UNIQUE INDEX "IX_QualityProfiles_Name" ON "QualityProfiles" ("Name" ASC)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0002944s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateTable QualityDefinitions
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "QualityDefinitions" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Quality" INTEGER NOT NULL, "Title" TEXT NOT NULL, "MinSize" NUMERIC, "MaxSize" NUMERIC, "PreferredSize" NUMERIC)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0004107s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex QualityDefinitions (Quality)
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE UNIQUE INDEX "IX_QualityDefinitions_Quality" ON "QualityDefinitions" ("Quality" ASC)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0002813s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex QualityDefinitions (Title)
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE UNIQUE INDEX "IX_QualityDefinitions_Title" ON "QualityDefinitions" ("Title" ASC)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0002903s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateTable NamingConfig
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "NamingConfig" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "MultiEpisodeStyle" INTEGER NOT NULL, "RenameEpisodes" INTEGER, "StandardEpisodeFormat" TEXT, "SeasonFolderFormat" TEXT, "SeriesFolderFormat" TEXT, "ReplaceIllegalCharacters" INTEGER NOT NULL DEFAULT 1)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0003829s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateTable Metadata
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "Metadata" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Enable" INTEGER NOT NULL, "Name" TEXT NOT NULL, "Implementation" TEXT NOT NULL, "Settings" TEXT NOT NULL, "ConfigContract" TEXT NOT NULL)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0002241s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateTable MetadataFiles
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "MetadataFiles" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "SeriesId" INTEGER NOT NULL, "Consumer" TEXT NOT NULL, "Type" INTEGER NOT NULL, "RelativePath" TEXT NOT NULL, "LastUpdated" DATETIME NOT NULL, "SeasonNumber" INTEGER, "EpisodeFileId" INTEGER, "Hash" TEXT, "Added" DATETIME, "Extension" TEXT NOT NULL)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0002882s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateTable ExtraFiles
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "ExtraFiles" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "SeriesId" INTEGER NOT NULL, "SeasonNumber" INTEGER NOT NULL, "EpisodeFileId" INTEGER NOT NULL, "RelativePath" TEXT NOT NULL, "Extension" TEXT NOT NULL, "Added" DATETIME NOT NULL, "LastUpdated" DATETIME NOT NULL)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0002435s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateTable SubtitleFiles
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "SubtitleFiles" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "SeriesId" INTEGER NOT NULL, "SeasonNumber" INTEGER NOT NULL, "EpisodeFileId" INTEGER NOT NULL, "RelativePath" TEXT NOT NULL, "Extension" TEXT NOT NULL, "Added" DATETIME NOT NULL, "LastUpdated" DATETIME NOT NULL, "Language" INTEGER NOT NULL, "LanguageTags" TEXT)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.000295s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateTable PendingReleases
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "PendingReleases" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "SeriesId" INTEGER NOT NULL, "Title" TEXT NOT NULL, "Added" DATETIME NOT NULL, "ParsedEpisodeInfo" TEXT NOT NULL, "Release" TEXT NOT NULL, "Reason" INTEGER NOT NULL DEFAULT 0, "AdditionalInfo" TEXT)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0002498s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateTable RemotePathMappings
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "RemotePathMappings" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Host" TEXT NOT NULL, "RemotePath" TEXT NOT NULL, "LocalPath" TEXT NOT NULL)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0001945s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateTable Tags
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "Tags" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Label" TEXT NOT NULL)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.000155s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex Tags (Label)
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE UNIQUE INDEX "IX_Tags_Label" ON "Tags" ("Label" ASC)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0001331s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateTable DelayProfiles
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "DelayProfiles" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "EnableUsenet" INTEGER NOT NULL, "EnableTorrent" INTEGER NOT NULL, "PreferredProtocol" INTEGER NOT NULL, "UsenetDelay" INTEGER NOT NULL, "TorrentDelay" INTEGER NOT NULL, "Order" INTEGER NOT NULL, "Tags" TEXT NOT NULL, "BypassIfHighestQuality" INTEGER NOT NULL DEFAULT 0, "BypassIfAboveCustomFormatScore" INTEGER NOT NULL DEFAULT 0, "MinimumCustomFormatScore" INTEGER)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0002959s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateTable Users
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "Users" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Identifier" TEXT NOT NULL, "Username" TEXT NOT NULL, "Password" TEXT NOT NULL, "Salt" TEXT, "Iterations" INTEGER)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0002007s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex Users (Identifier)
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE UNIQUE INDEX "IX_Users_Identifier" ON "Users" ("Identifier" ASC)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0005284s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex Users (Username)
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE UNIQUE INDEX "IX_Users_Username" ON "Users" ("Username" ASC)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0001591s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateTable Commands
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "Commands" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Name" TEXT NOT NULL, "Body" TEXT NOT NULL, "Priority" INTEGER NOT NULL, "Status" INTEGER NOT NULL, "QueuedAt" DATETIME NOT NULL, "StartedAt" DATETIME, "EndedAt" DATETIME, "Duration" TEXT, "Exception" TEXT, "Trigger" INTEGER NOT NULL)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0002853s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateTable CustomFilters
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "CustomFilters" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Type" TEXT NOT NULL, "Label" TEXT NOT NULL, "Filters" TEXT NOT NULL)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0001912s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateTable ReleaseProfiles
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "ReleaseProfiles" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Required" TEXT, "Ignored" TEXT, "Tags" TEXT NOT NULL, "Enabled" INTEGER NOT NULL DEFAULT 1, "IndexerId" INTEGER NOT NULL DEFAULT 0, "Name" TEXT DEFAULT NULL)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.000557s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateTable ImportLists
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "ImportLists" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Name" TEXT NOT NULL, "Implementation" TEXT NOT NULL, "Settings" TEXT, "ConfigContract" TEXT, "EnableAutomaticAdd" INTEGER, "RootFolderPath" TEXT NOT NULL, "ShouldMonitor" INTEGER NOT NULL, "QualityProfileId" INTEGER NOT NULL, "Tags" TEXT, "SeasonFolder" INTEGER NOT NULL DEFAULT 1)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0003741s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex ImportLists (Name)
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE UNIQUE INDEX "IX_ImportLists_Name" ON "ImportLists" ("Name" ASC)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0002202s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateTable ImportListStatus
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "ImportListStatus" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "ProviderId" INTEGER NOT NULL, "InitialFailure" DATETIME, "MostRecentFailure" DATETIME, "EscalationLevel" INTEGER NOT NULL, "DisabledTill" DATETIME, "LastInfoSync" DATETIME)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.000301s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex ImportListStatus (ProviderId)
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE UNIQUE INDEX "IX_ImportListStatus_ProviderId" ON "ImportListStatus" ("ProviderId" ASC)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0002391s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateTable ImportListExclusions
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "ImportListExclusions" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "TvdbId" TEXT NOT NULL, "Title" TEXT NOT NULL)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0003742s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex ImportListExclusions (TvdbId)
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE UNIQUE INDEX "IX_ImportListExclusions_TvdbId" ON "ImportListExclusions" ("TvdbId" ASC)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0012235s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateTable CustomFormats
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "CustomFormats" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Name" TEXT NOT NULL, "Specifications" TEXT NOT NULL DEFAULT '[]', "IncludeCustomFormatWhenRenaming" INTEGER NOT NULL DEFAULT 0)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0003585s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex CustomFormats (Name)
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE UNIQUE INDEX "IX_CustomFormats_Name" ON "CustomFormats" ("Name" ASC)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0002689s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateTable AutoTagging
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "AutoTagging" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Name" TEXT NOT NULL, "Specifications" TEXT NOT NULL DEFAULT '[]', "RemoveTagsAutomatically" INTEGER NOT NULL DEFAULT 0, "Tags" TEXT NOT NULL DEFAULT '[]')
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0003621s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex AutoTagging (Name)
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE UNIQUE INDEX "IX_AutoTagging_Name" ON "AutoTagging" ("Name" ASC)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0002409s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|AlterTable VersionInfo
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 9E-07s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|AlterColumn VersionInfo AppliedOn DateTimeOffset
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "VersionInfo_temp" ("Version" INTEGER NOT NULL, "AppliedOn" DATETIME, "Description" TEXT)
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo_temp" ("Version", "AppliedOn", "Description") SELECT "Version", "AppliedOn", "Description" FROM "VersionInfo"
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|DROP TABLE "VersionInfo"
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "VersionInfo_temp" RENAME TO "VersionInfo"
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE UNIQUE INDEX "UC_Version" ON "VersionInfo" ("Version" ASC)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0263267s
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "DelayProfiles" ("EnableUsenet", "EnableTorrent", "PreferredProtocol", "UsenetDelay", "TorrentDelay", "Order", "Tags") VALUES (1, 1, 1, 0, 0, 2147483647, '[]')
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|-> 1 Insert operations completed in 00:00:00.0039026 taking an average of 00:00:00.0039026
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (1, '2023-08-21T17:12:45', 'InitialSetup')
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|1: InitialSetup migrated
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0115417s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|2: remove_season_folders migrating
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2023-08-21 14:12:45.6|Info|remove_season_folders|Starting migration of Main DB to 2
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|DeleteColumn Series SeasonFolder
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "Series_temp" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "TvdbId" INTEGER NOT NULL, "Title" TEXT NOT NULL, "TitleSlug" TEXT, "CleanTitle" TEXT NOT NULL, "Status" INTEGER NOT NULL, "Overview" TEXT, "Images" TEXT NOT NULL, "Path" TEXT NOT NULL, "Monitored" INTEGER NOT NULL, "QualityProfileId" INTEGER NOT NULL, "LastInfoSync" DATETIME, "LastDiskSync" DATETIME, "Runtime" INTEGER NOT NULL, "Network" TEXT, "UseSceneNumbering" INTEGER NOT NULL, "FirstAired" DATETIME, "NextAiring" DATETIME, "Year" INTEGER, "Seasons" TEXT, "Ratings" TEXT, "Genres" TEXT, "Certification" TEXT, "SortTitle" TEXT, "Tags" TEXT, "Added" DATETIME, "AddOptions" TEXT, "OriginalLanguage" INTEGER NOT NULL)
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "Series_temp" ("Id", "TvdbId", "Title", "TitleSlug", "CleanTitle", "Status", "Overview", "Images", "Path", "Monitored", "QualityProfileId", "LastInfoSync", "LastDiskSync", "Runtime", "Network", "UseSceneNumbering", "FirstAired", "NextAiring", "Year", "Seasons", "Ratings", "Genres", "Certification", "SortTitle", "Tags", "Added", "AddOptions", "OriginalLanguage") SELECT "Id", "TvdbId", "Title", "TitleSlug", "CleanTitle", "Status", "Overview", "Images", "Path", "Monitored", "QualityProfileId", "LastInfoSync", "LastDiskSync", "Runtime", "Network", "UseSceneNumbering", "FirstAired", "NextAiring", "Year", "Seasons", "Ratings", "Genres", "Certification", "SortTitle", "Tags", "Added", "AddOptions", "OriginalLanguage" FROM "Series"
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|DROP TABLE "Series"
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "Series_temp" RENAME TO "Series"
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE UNIQUE INDEX "IX_Series_TvdbId" ON "Series" ("TvdbId" ASC)
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Series_CleanTitle" ON "Series" ("CleanTitle" ASC)
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Series_Path" ON "Series" ("Path" ASC)
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0078803s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|DeleteColumn NamingConfig SeasonFolderFormat
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "NamingConfig_temp" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "MultiEpisodeStyle" INTEGER NOT NULL, "RenameEpisodes" INTEGER, "StandardEpisodeFormat" TEXT, "SeriesFolderFormat" TEXT, "ReplaceIllegalCharacters" INTEGER NOT NULL)
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "NamingConfig_temp" ("Id", "MultiEpisodeStyle", "RenameEpisodes", "StandardEpisodeFormat", "SeriesFolderFormat", "ReplaceIllegalCharacters") SELECT "Id", "MultiEpisodeStyle", "RenameEpisodes", "StandardEpisodeFormat", "SeriesFolderFormat", "ReplaceIllegalCharacters" FROM "NamingConfig"
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|DROP TABLE "NamingConfig"
+2023-08-21 14:12:45.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "NamingConfig_temp" RENAME TO "NamingConfig"
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|=> 0.004081s
+2023-08-21 14:12:45.6|Info|FluentMigrator.Runner.MigrationRunner|DeleteColumn ImportLists SeasonFolder
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "ImportLists_temp" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Name" TEXT NOT NULL, "Implementation" TEXT NOT NULL, "Settings" TEXT, "ConfigContract" TEXT, "EnableAutomaticAdd" INTEGER, "RootFolderPath" TEXT NOT NULL, "ShouldMonitor" INTEGER NOT NULL, "QualityProfileId" INTEGER NOT NULL, "Tags" TEXT)
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "ImportLists_temp" ("Id", "Name", "Implementation", "Settings", "ConfigContract", "EnableAutomaticAdd", "RootFolderPath", "ShouldMonitor", "QualityProfileId", "Tags") SELECT "Id", "Name", "Implementation", "Settings", "ConfigContract", "EnableAutomaticAdd", "RootFolderPath", "ShouldMonitor", "QualityProfileId", "Tags" FROM "ImportLists"
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|DROP TABLE "ImportLists"
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "ImportLists_temp" RENAME TO "ImportLists"
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE UNIQUE INDEX "IX_ImportLists_Name" ON "ImportLists" ("Name" ASC)
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0048661s
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (2, '2023-08-21T17:12:45', 'remove_season_folders')
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|2: remove_season_folders migrated
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|=> 0.012217s
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|3: remove_rarbg migrating
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2023-08-21 14:12:45.7|Info|remove_rarbg|Starting migration of Main DB to 3
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|FluentMigrator.Expressions.DeleteDataExpression
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|DELETE FROM "Indexers" WHERE "Implementation" = 'Rarbg'
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0022493s
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (3, '2023-08-21T17:12:45', 'remove_rarbg')
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|3: remove_rarbg migrated
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0082684s
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|4: add_result_to_commands migrating
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2023-08-21 14:12:45.7|Info|add_result_to_commands|Starting migration of Main DB to 4
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|AlterTable Commands
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|=> 1.2E-06s
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|CreateColumn Commands Result Int32
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "Commands" ADD COLUMN "Result" INTEGER NOT NULL DEFAULT 1
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0006739s
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (4, '2023-08-21T17:12:45', 'add_result_to_commands')
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|4: add_result_to_commands migrated
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0070937s
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|5: add_on_series_add_to_notifications migrating
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2023-08-21 14:12:45.7|Info|add_on_series_add_to_notifications|Starting migration of Main DB to 5
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|AlterTable Notifications
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|=> 1.8E-06s
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|CreateColumn Notifications OnSeriesAdd Boolean
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "Notifications" ADD COLUMN "OnSeriesAdd" INTEGER NOT NULL DEFAULT 0
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|=> 0.000665s
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (5, '2023-08-21T17:12:45', 'add_on_series_add_to_notifications')
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|5: add_on_series_add_to_notifications migrated
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0073492s
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|6: add_colon_replacement_to_naming_config migrating
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2023-08-21 14:12:45.7|Info|add_colon_replacement_to_naming_config|Starting migration of Main DB to 6
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|AlterTable NamingConfig
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|=> 1.1E-06s
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|CreateColumn NamingConfig ColonReplacementFormat Int32
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "NamingConfig" ADD COLUMN "ColonReplacementFormat" INTEGER NOT NULL DEFAULT 4
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0007897s
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (6, '2023-08-21T17:12:45', 'add_colon_replacement_to_naming_config')
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|6: add_colon_replacement_to_naming_config migrated
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0061454s
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|7: health_restored_notification migrating
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2023-08-21 14:12:45.7|Info|health_restored_notification|Starting migration of Main DB to 7
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|AlterTable Notifications
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|=> 1.1E-06s
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|CreateColumn Notifications OnHealthRestored Boolean
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "Notifications" ADD COLUMN "OnHealthRestored" INTEGER NOT NULL DEFAULT 0
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0007597s
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|AlterTable Notifications
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|=> 9E-07s
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|CreateColumn Notifications OnManualInteractionRequired Boolean
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "Notifications" ADD COLUMN "OnManualInteractionRequired" INTEGER NOT NULL DEFAULT 0
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0009625s
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (7, '2023-08-21T17:12:45', 'health_restored_notification')
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|7: health_restored_notification migrated
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0097772s
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|8: clean_episode_model migrating
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2023-08-21 14:12:45.7|Info|clean_episode_model|Starting migration of Main DB to 8
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|DeleteColumn Episodes EpisodeNumber
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "Episodes_temp" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Monitored" INTEGER, "SeriesId" INTEGER NOT NULL, "SeasonNumber" INTEGER NOT NULL, "Title" TEXT, "Overview" TEXT, "Runtime" INTEGER NOT NULL, "EpisodeFileId" INTEGER, "AirDate" TEXT, "AbsoluteEpisodeNumber" INTEGER, "SceneAbsoluteEpisodeNumber" INTEGER, "SceneSeasonNumber" INTEGER, "SceneEpisodeNumber" INTEGER, "AirDateUtc" DATETIME, "Ratings" TEXT, "Images" TEXT, "Actors" TEXT, "UnverifiedSceneNumbering" INTEGER NOT NULL, "LastSearchTime" DATETIME, "AiredAfterSeasonNumber" INTEGER, "AiredBeforeSeasonNumber" INTEGER, "AiredBeforeEpisodeNumber" INTEGER, "TvdbId" INTEGER)
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "Episodes_temp" ("Id", "Monitored", "SeriesId", "SeasonNumber", "Title", "Overview", "Runtime", "EpisodeFileId", "AirDate", "AbsoluteEpisodeNumber", "SceneAbsoluteEpisodeNumber", "SceneSeasonNumber", "SceneEpisodeNumber", "AirDateUtc", "Ratings", "Images", "Actors", "UnverifiedSceneNumbering", "LastSearchTime", "AiredAfterSeasonNumber", "AiredBeforeSeasonNumber", "AiredBeforeEpisodeNumber", "TvdbId") SELECT "Id", "Monitored", "SeriesId", "SeasonNumber", "Title", "Overview", "Runtime", "EpisodeFileId", "AirDate", "AbsoluteEpisodeNumber", "SceneAbsoluteEpisodeNumber", "SceneSeasonNumber", "SceneEpisodeNumber", "AirDateUtc", "Ratings", "Images", "Actors", "UnverifiedSceneNumbering", "LastSearchTime", "AiredAfterSeasonNumber", "AiredBeforeSeasonNumber", "AiredBeforeEpisodeNumber", "TvdbId" FROM "Episodes"
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|DROP TABLE "Episodes"
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "Episodes_temp" RENAME TO "Episodes"
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Episodes_SeriesId" ON "Episodes" ("SeriesId" ASC)
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Episodes_EpisodeFileId" ON "Episodes" ("EpisodeFileId" ASC)
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Episodes_SeriesId_AirDate" ON "Episodes" ("SeriesId" ASC, "AirDate" ASC)
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0174137s
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|DeleteColumn Episodes SceneAbsoluteEpisodeNumber
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "Episodes_temp" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Monitored" INTEGER, "SeriesId" INTEGER NOT NULL, "SeasonNumber" INTEGER NOT NULL, "Title" TEXT, "Overview" TEXT, "Runtime" INTEGER NOT NULL, "EpisodeFileId" INTEGER, "AirDate" TEXT, "AbsoluteEpisodeNumber" INTEGER, "SceneSeasonNumber" INTEGER, "SceneEpisodeNumber" INTEGER, "AirDateUtc" DATETIME, "Ratings" TEXT, "Images" TEXT, "Actors" TEXT, "UnverifiedSceneNumbering" INTEGER NOT NULL, "LastSearchTime" DATETIME, "AiredAfterSeasonNumber" INTEGER, "AiredBeforeSeasonNumber" INTEGER, "AiredBeforeEpisodeNumber" INTEGER, "TvdbId" INTEGER)
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "Episodes_temp" ("Id", "Monitored", "SeriesId", "SeasonNumber", "Title", "Overview", "Runtime", "EpisodeFileId", "AirDate", "AbsoluteEpisodeNumber", "SceneSeasonNumber", "SceneEpisodeNumber", "AirDateUtc", "Ratings", "Images", "Actors", "UnverifiedSceneNumbering", "LastSearchTime", "AiredAfterSeasonNumber", "AiredBeforeSeasonNumber", "AiredBeforeEpisodeNumber", "TvdbId") SELECT "Id", "Monitored", "SeriesId", "SeasonNumber", "Title", "Overview", "Runtime", "EpisodeFileId", "AirDate", "AbsoluteEpisodeNumber", "SceneSeasonNumber", "SceneEpisodeNumber", "AirDateUtc", "Ratings", "Images", "Actors", "UnverifiedSceneNumbering", "LastSearchTime", "AiredAfterSeasonNumber", "AiredBeforeSeasonNumber", "AiredBeforeEpisodeNumber", "TvdbId" FROM "Episodes"
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|DROP TABLE "Episodes"
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "Episodes_temp" RENAME TO "Episodes"
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Episodes_SeriesId" ON "Episodes" ("SeriesId" ASC)
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Episodes_EpisodeFileId" ON "Episodes" ("EpisodeFileId" ASC)
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Episodes_SeriesId_AirDate" ON "Episodes" ("SeriesId" ASC, "AirDate" ASC)
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0043118s
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|DeleteColumn Episodes SceneSeasonNumber
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "Episodes_temp" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Monitored" INTEGER, "SeriesId" INTEGER NOT NULL, "SeasonNumber" INTEGER NOT NULL, "Title" TEXT, "Overview" TEXT, "Runtime" INTEGER NOT NULL, "EpisodeFileId" INTEGER, "AirDate" TEXT, "AbsoluteEpisodeNumber" INTEGER, "SceneEpisodeNumber" INTEGER, "AirDateUtc" DATETIME, "Ratings" TEXT, "Images" TEXT, "Actors" TEXT, "UnverifiedSceneNumbering" INTEGER NOT NULL, "LastSearchTime" DATETIME, "AiredAfterSeasonNumber" INTEGER, "AiredBeforeSeasonNumber" INTEGER, "AiredBeforeEpisodeNumber" INTEGER, "TvdbId" INTEGER)
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "Episodes_temp" ("Id", "Monitored", "SeriesId", "SeasonNumber", "Title", "Overview", "Runtime", "EpisodeFileId", "AirDate", "AbsoluteEpisodeNumber", "SceneEpisodeNumber", "AirDateUtc", "Ratings", "Images", "Actors", "UnverifiedSceneNumbering", "LastSearchTime", "AiredAfterSeasonNumber", "AiredBeforeSeasonNumber", "AiredBeforeEpisodeNumber", "TvdbId") SELECT "Id", "Monitored", "SeriesId", "SeasonNumber", "Title", "Overview", "Runtime", "EpisodeFileId", "AirDate", "AbsoluteEpisodeNumber", "SceneEpisodeNumber", "AirDateUtc", "Ratings", "Images", "Actors", "UnverifiedSceneNumbering", "LastSearchTime", "AiredAfterSeasonNumber", "AiredBeforeSeasonNumber", "AiredBeforeEpisodeNumber", "TvdbId" FROM "Episodes"
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|DROP TABLE "Episodes"
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "Episodes_temp" RENAME TO "Episodes"
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Episodes_SeriesId" ON "Episodes" ("SeriesId" ASC)
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Episodes_EpisodeFileId" ON "Episodes" ("EpisodeFileId" ASC)
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Episodes_SeriesId_AirDate" ON "Episodes" ("SeriesId" ASC, "AirDate" ASC)
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0047114s
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|DeleteColumn Episodes SceneEpisodeNumber
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "Episodes_temp" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Monitored" INTEGER, "SeriesId" INTEGER NOT NULL, "SeasonNumber" INTEGER NOT NULL, "Title" TEXT, "Overview" TEXT, "Runtime" INTEGER NOT NULL, "EpisodeFileId" INTEGER, "AirDate" TEXT, "AbsoluteEpisodeNumber" INTEGER, "AirDateUtc" DATETIME, "Ratings" TEXT, "Images" TEXT, "Actors" TEXT, "UnverifiedSceneNumbering" INTEGER NOT NULL, "LastSearchTime" DATETIME, "AiredAfterSeasonNumber" INTEGER, "AiredBeforeSeasonNumber" INTEGER, "AiredBeforeEpisodeNumber" INTEGER, "TvdbId" INTEGER)
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "Episodes_temp" ("Id", "Monitored", "SeriesId", "SeasonNumber", "Title", "Overview", "Runtime", "EpisodeFileId", "AirDate", "AbsoluteEpisodeNumber", "AirDateUtc", "Ratings", "Images", "Actors", "UnverifiedSceneNumbering", "LastSearchTime", "AiredAfterSeasonNumber", "AiredBeforeSeasonNumber", "AiredBeforeEpisodeNumber", "TvdbId") SELECT "Id", "Monitored", "SeriesId", "SeasonNumber", "Title", "Overview", "Runtime", "EpisodeFileId", "AirDate", "AbsoluteEpisodeNumber", "AirDateUtc", "Ratings", "Images", "Actors", "UnverifiedSceneNumbering", "LastSearchTime", "AiredAfterSeasonNumber", "AiredBeforeSeasonNumber", "AiredBeforeEpisodeNumber", "TvdbId" FROM "Episodes"
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|DROP TABLE "Episodes"
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "Episodes_temp" RENAME TO "Episodes"
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Episodes_SeriesId" ON "Episodes" ("SeriesId" ASC)
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Episodes_EpisodeFileId" ON "Episodes" ("EpisodeFileId" ASC)
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Episodes_SeriesId_AirDate" ON "Episodes" ("SeriesId" ASC, "AirDate" ASC)
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0043604s
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|DeleteColumn Episodes AiredAfterSeasonNumber
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "Episodes_temp" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Monitored" INTEGER, "SeriesId" INTEGER NOT NULL, "SeasonNumber" INTEGER NOT NULL, "Title" TEXT, "Overview" TEXT, "Runtime" INTEGER NOT NULL, "EpisodeFileId" INTEGER, "AirDate" TEXT, "AbsoluteEpisodeNumber" INTEGER, "AirDateUtc" DATETIME, "Ratings" TEXT, "Images" TEXT, "Actors" TEXT, "UnverifiedSceneNumbering" INTEGER NOT NULL, "LastSearchTime" DATETIME, "AiredBeforeSeasonNumber" INTEGER, "AiredBeforeEpisodeNumber" INTEGER, "TvdbId" INTEGER)
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "Episodes_temp" ("Id", "Monitored", "SeriesId", "SeasonNumber", "Title", "Overview", "Runtime", "EpisodeFileId", "AirDate", "AbsoluteEpisodeNumber", "AirDateUtc", "Ratings", "Images", "Actors", "UnverifiedSceneNumbering", "LastSearchTime", "AiredBeforeSeasonNumber", "AiredBeforeEpisodeNumber", "TvdbId") SELECT "Id", "Monitored", "SeriesId", "SeasonNumber", "Title", "Overview", "Runtime", "EpisodeFileId", "AirDate", "AbsoluteEpisodeNumber", "AirDateUtc", "Ratings", "Images", "Actors", "UnverifiedSceneNumbering", "LastSearchTime", "AiredBeforeSeasonNumber", "AiredBeforeEpisodeNumber", "TvdbId" FROM "Episodes"
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|DROP TABLE "Episodes"
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "Episodes_temp" RENAME TO "Episodes"
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Episodes_SeriesId" ON "Episodes" ("SeriesId" ASC)
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Episodes_EpisodeFileId" ON "Episodes" ("EpisodeFileId" ASC)
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Episodes_SeriesId_AirDate" ON "Episodes" ("SeriesId" ASC, "AirDate" ASC)
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|=> 0.004056s
+2023-08-21 14:12:45.7|Info|FluentMigrator.Runner.MigrationRunner|DeleteColumn Episodes AiredBeforeSeasonNumber
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "Episodes_temp" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Monitored" INTEGER, "SeriesId" INTEGER NOT NULL, "SeasonNumber" INTEGER NOT NULL, "Title" TEXT, "Overview" TEXT, "Runtime" INTEGER NOT NULL, "EpisodeFileId" INTEGER, "AirDate" TEXT, "AbsoluteEpisodeNumber" INTEGER, "AirDateUtc" DATETIME, "Ratings" TEXT, "Images" TEXT, "Actors" TEXT, "UnverifiedSceneNumbering" INTEGER NOT NULL, "LastSearchTime" DATETIME, "AiredBeforeEpisodeNumber" INTEGER, "TvdbId" INTEGER)
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "Episodes_temp" ("Id", "Monitored", "SeriesId", "SeasonNumber", "Title", "Overview", "Runtime", "EpisodeFileId", "AirDate", "AbsoluteEpisodeNumber", "AirDateUtc", "Ratings", "Images", "Actors", "UnverifiedSceneNumbering", "LastSearchTime", "AiredBeforeEpisodeNumber", "TvdbId") SELECT "Id", "Monitored", "SeriesId", "SeasonNumber", "Title", "Overview", "Runtime", "EpisodeFileId", "AirDate", "AbsoluteEpisodeNumber", "AirDateUtc", "Ratings", "Images", "Actors", "UnverifiedSceneNumbering", "LastSearchTime", "AiredBeforeEpisodeNumber", "TvdbId" FROM "Episodes"
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|DROP TABLE "Episodes"
+2023-08-21 14:12:45.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "Episodes_temp" RENAME TO "Episodes"
+2023-08-21 14:12:45.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Episodes_SeriesId" ON "Episodes" ("SeriesId" ASC)
+2023-08-21 14:12:45.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Episodes_EpisodeFileId" ON "Episodes" ("EpisodeFileId" ASC)
+2023-08-21 14:12:45.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Episodes_SeriesId_AirDate" ON "Episodes" ("SeriesId" ASC, "AirDate" ASC)
+2023-08-21 14:12:45.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0041258s
+2023-08-21 14:12:45.8|Info|FluentMigrator.Runner.MigrationRunner|DeleteColumn Episodes AiredBeforeEpisodeNumber
+2023-08-21 14:12:45.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "Episodes_temp" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Monitored" INTEGER, "SeriesId" INTEGER NOT NULL, "SeasonNumber" INTEGER NOT NULL, "Title" TEXT, "Overview" TEXT, "Runtime" INTEGER NOT NULL, "EpisodeFileId" INTEGER, "AirDate" TEXT, "AbsoluteEpisodeNumber" INTEGER, "AirDateUtc" DATETIME, "Ratings" TEXT, "Images" TEXT, "Actors" TEXT, "UnverifiedSceneNumbering" INTEGER NOT NULL, "LastSearchTime" DATETIME, "TvdbId" INTEGER)
+2023-08-21 14:12:45.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "Episodes_temp" ("Id", "Monitored", "SeriesId", "SeasonNumber", "Title", "Overview", "Runtime", "EpisodeFileId", "AirDate", "AbsoluteEpisodeNumber", "AirDateUtc", "Ratings", "Images", "Actors", "UnverifiedSceneNumbering", "LastSearchTime", "TvdbId") SELECT "Id", "Monitored", "SeriesId", "SeasonNumber", "Title", "Overview", "Runtime", "EpisodeFileId", "AirDate", "AbsoluteEpisodeNumber", "AirDateUtc", "Ratings", "Images", "Actors", "UnverifiedSceneNumbering", "LastSearchTime", "TvdbId" FROM "Episodes"
+2023-08-21 14:12:45.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|DROP TABLE "Episodes"
+2023-08-21 14:12:45.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "Episodes_temp" RENAME TO "Episodes"
+2023-08-21 14:12:45.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Episodes_SeriesId" ON "Episodes" ("SeriesId" ASC)
+2023-08-21 14:12:45.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Episodes_EpisodeFileId" ON "Episodes" ("EpisodeFileId" ASC)
+2023-08-21 14:12:45.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Episodes_SeriesId_AirDate" ON "Episodes" ("SeriesId" ASC, "AirDate" ASC)
+2023-08-21 14:12:45.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0040851s
+2023-08-21 14:12:45.8|Info|FluentMigrator.Runner.MigrationRunner|DeleteColumn Episodes UnverifiedSceneNumbering
+2023-08-21 14:12:45.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "Episodes_temp" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Monitored" INTEGER, "SeriesId" INTEGER NOT NULL, "SeasonNumber" INTEGER NOT NULL, "Title" TEXT, "Overview" TEXT, "Runtime" INTEGER NOT NULL, "EpisodeFileId" INTEGER, "AirDate" TEXT, "AbsoluteEpisodeNumber" INTEGER, "AirDateUtc" DATETIME, "Ratings" TEXT, "Images" TEXT, "Actors" TEXT, "LastSearchTime" DATETIME, "TvdbId" INTEGER)
+2023-08-21 14:12:45.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "Episodes_temp" ("Id", "Monitored", "SeriesId", "SeasonNumber", "Title", "Overview", "Runtime", "EpisodeFileId", "AirDate", "AbsoluteEpisodeNumber", "AirDateUtc", "Ratings", "Images", "Actors", "LastSearchTime", "TvdbId") SELECT "Id", "Monitored", "SeriesId", "SeasonNumber", "Title", "Overview", "Runtime", "EpisodeFileId", "AirDate", "AbsoluteEpisodeNumber", "AirDateUtc", "Ratings", "Images", "Actors", "LastSearchTime", "TvdbId" FROM "Episodes"
+2023-08-21 14:12:45.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|DROP TABLE "Episodes"
+2023-08-21 14:12:45.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "Episodes_temp" RENAME TO "Episodes"
+2023-08-21 14:12:45.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Episodes_SeriesId" ON "Episodes" ("SeriesId" ASC)
+2023-08-21 14:12:45.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Episodes_EpisodeFileId" ON "Episodes" ("EpisodeFileId" ASC)
+2023-08-21 14:12:45.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Episodes_SeriesId_AirDate" ON "Episodes" ("SeriesId" ASC, "AirDate" ASC)
+2023-08-21 14:12:45.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0041093s
+2023-08-21 14:12:45.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (8, '2023-08-21T17:12:45', 'clean_episode_model')
+2023-08-21 14:12:45.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2023-08-21 14:12:45.8|Info|FluentMigrator.Runner.MigrationRunner|8: clean_episode_model migrated
+2023-08-21 14:12:45.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0088452s
+2023-08-21 14:12:45.8|Info|FluentMigrator.Runner.MigrationRunner|9: import_list_monitor migrating
+2023-08-21 14:12:45.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2023-08-21 14:12:45.8|Info|import_list_monitor|Starting migration of Main DB to 9
+2023-08-21 14:12:45.8|Info|FluentMigrator.Runner.MigrationRunner|RenameColumn ImportLists ShouldMonitor to SiteMonitorType
+2023-08-21 14:12:45.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "ImportLists_temp" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Name" TEXT NOT NULL, "Implementation" TEXT NOT NULL, "Settings" TEXT, "ConfigContract" TEXT, "EnableAutomaticAdd" INTEGER, "RootFolderPath" TEXT NOT NULL, "SiteMonitorType" INTEGER NOT NULL, "QualityProfileId" INTEGER NOT NULL, "Tags" TEXT)
+2023-08-21 14:12:45.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "ImportLists_temp" ("Id", "Name", "Implementation", "Settings", "ConfigContract", "EnableAutomaticAdd", "RootFolderPath", "SiteMonitorType", "QualityProfileId", "Tags") SELECT "Id", "Name", "Implementation", "Settings", "ConfigContract", "EnableAutomaticAdd", "RootFolderPath", "ShouldMonitor", "QualityProfileId", "Tags" FROM "ImportLists"
+2023-08-21 14:12:45.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|DROP TABLE "ImportLists"
+2023-08-21 14:12:45.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "ImportLists_temp" RENAME TO "ImportLists"
+2023-08-21 14:12:45.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE UNIQUE INDEX "IX_ImportLists_Name" ON "ImportLists" ("Name" ASC)
+2023-08-21 14:12:45.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0148227s
+2023-08-21 14:12:45.8|Info|FluentMigrator.Runner.MigrationRunner|CreateColumn ImportLists ShouldMonitor Int32
+2023-08-21 14:12:45.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "ImportLists" ADD COLUMN "ShouldMonitor" INTEGER NOT NULL DEFAULT 2
+2023-08-21 14:12:45.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0009316s
+2023-08-21 14:12:45.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (9, '2023-08-21T17:12:45', 'import_list_monitor')
+2023-08-21 14:12:45.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2023-08-21 14:12:45.8|Info|FluentMigrator.Runner.MigrationRunner|9: import_list_monitor migrated
+2023-08-21 14:12:45.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0069366s
+2023-08-21 14:12:45.8|Info|FluentMigrator.Runner.MigrationRunner|10: add_download_client_tags migrating
+2023-08-21 14:12:45.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2023-08-21 14:12:45.8|Info|add_download_client_tags|Starting migration of Main DB to 10
+2023-08-21 14:12:45.8|Info|FluentMigrator.Runner.MigrationRunner|AlterTable DownloadClients
+2023-08-21 14:12:45.8|Info|FluentMigrator.Runner.MigrationRunner|=> 2E-06s
+2023-08-21 14:12:45.8|Info|FluentMigrator.Runner.MigrationRunner|CreateColumn DownloadClients Tags String
+2023-08-21 14:12:45.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "DownloadClients" ADD COLUMN "Tags" TEXT
+2023-08-21 14:12:45.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0009876s
+2023-08-21 14:12:45.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (10, '2023-08-21T17:12:45', 'add_download_client_tags')
+2023-08-21 14:12:45.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2023-08-21 14:12:45.8|Info|FluentMigrator.Runner.MigrationRunner|10: add_download_client_tags migrated
+2023-08-21 14:12:45.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0057564s
+2023-08-21 14:12:46.2|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2023-08-21 14:12:46.2|Info|FluentMigrator.Runner.MigrationRunner|VersionMigration migrating
+2023-08-21 14:12:46.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2023-08-21 14:12:46.2|Info|FluentMigrator.Runner.MigrationRunner|CreateTable VersionInfo
+2023-08-21 14:12:46.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "VersionInfo" ("Version" INTEGER NOT NULL)
+2023-08-21 14:12:46.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.004401s
+2023-08-21 14:12:46.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2023-08-21 14:12:46.2|Info|FluentMigrator.Runner.MigrationRunner|VersionMigration migrated
+2023-08-21 14:12:46.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0179622s
+2023-08-21 14:12:46.2|Info|FluentMigrator.Runner.MigrationRunner|VersionUniqueMigration migrating
+2023-08-21 14:12:46.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2023-08-21 14:12:46.2|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex VersionInfo (Version)
+2023-08-21 14:12:46.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE UNIQUE INDEX "UC_Version" ON "VersionInfo" ("Version" ASC)
+2023-08-21 14:12:46.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.000221s
+2023-08-21 14:12:46.2|Info|FluentMigrator.Runner.MigrationRunner|AlterTable VersionInfo
+2023-08-21 14:12:46.2|Info|FluentMigrator.Runner.MigrationRunner|=> 7E-07s
+2023-08-21 14:12:46.2|Info|FluentMigrator.Runner.MigrationRunner|CreateColumn VersionInfo AppliedOn DateTime
+2023-08-21 14:12:46.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "VersionInfo" ADD COLUMN "AppliedOn" DATETIME
+2023-08-21 14:12:46.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0005037s
+2023-08-21 14:12:46.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2023-08-21 14:12:46.2|Info|FluentMigrator.Runner.MigrationRunner|VersionUniqueMigration migrated
+2023-08-21 14:12:46.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0071579s
+2023-08-21 14:12:46.2|Info|FluentMigrator.Runner.MigrationRunner|VersionDescriptionMigration migrating
+2023-08-21 14:12:46.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2023-08-21 14:12:46.2|Info|FluentMigrator.Runner.MigrationRunner|AlterTable VersionInfo
+2023-08-21 14:12:46.2|Info|FluentMigrator.Runner.MigrationRunner|=> 1.1E-06s
+2023-08-21 14:12:46.2|Info|FluentMigrator.Runner.MigrationRunner|CreateColumn VersionInfo Description String
+2023-08-21 14:12:46.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "VersionInfo" ADD COLUMN "Description" TEXT
+2023-08-21 14:12:46.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0006114s
+2023-08-21 14:12:46.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2023-08-21 14:12:46.2|Info|FluentMigrator.Runner.MigrationRunner|VersionDescriptionMigration migrated
+2023-08-21 14:12:46.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.01121s
+2023-08-21 14:12:46.2|Info|FluentMigrator.Runner.MigrationRunner|1: InitialSetup migrating
+2023-08-21 14:12:46.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2023-08-21 14:12:46.2|Info|InitialSetup|Starting migration of Log DB to 1
+2023-08-21 14:12:46.2|Info|FluentMigrator.Runner.MigrationRunner|CreateTable Logs
+2023-08-21 14:12:46.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "Logs" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Message" TEXT NOT NULL, "Time" DATETIME NOT NULL, "Logger" TEXT NOT NULL, "Exception" TEXT, "ExceptionType" TEXT, "Level" TEXT NOT NULL)
+2023-08-21 14:12:46.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.004107s
+2023-08-21 14:12:46.2|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex Logs (Time)
+2023-08-21 14:12:46.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Logs_Time" ON "Logs" ("Time" ASC)
+2023-08-21 14:12:46.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0002371s
+2023-08-21 14:12:46.2|Info|FluentMigrator.Runner.MigrationRunner|CreateTable UpdateHistory
+2023-08-21 14:12:46.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "UpdateHistory" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Date" DATETIME NOT NULL, "Version" TEXT NOT NULL, "EventType" INTEGER NOT NULL)
+2023-08-21 14:12:46.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0002946s
+2023-08-21 14:12:46.2|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex UpdateHistory (Date)
+2023-08-21 14:12:46.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_UpdateHistory_Date" ON "UpdateHistory" ("Date" ASC)
+2023-08-21 14:12:46.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0001869s
+2023-08-21 14:12:46.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (1, '2023-08-21T17:12:46', 'InitialSetup')
+2023-08-21 14:12:46.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2023-08-21 14:12:46.2|Info|FluentMigrator.Runner.MigrationRunner|1: InitialSetup migrated
+2023-08-21 14:12:46.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0028755s
+2023-08-21 14:12:46.2|Info|FluentMigrator.Runner.MigrationRunner|2: remove_season_folders migrating
+2023-08-21 14:12:46.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2023-08-21 14:12:46.2|Info|remove_season_folders|Starting migration of Log DB to 2
+2023-08-21 14:12:46.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (2, '2023-08-21T17:12:46', 'remove_season_folders')
+2023-08-21 14:12:46.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2023-08-21 14:12:46.3|Info|FluentMigrator.Runner.MigrationRunner|2: remove_season_folders migrated
+2023-08-21 14:12:46.3|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0075119s
+2023-08-21 14:12:46.3|Info|FluentMigrator.Runner.MigrationRunner|3: remove_rarbg migrating
+2023-08-21 14:12:46.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2023-08-21 14:12:46.3|Info|remove_rarbg|Starting migration of Log DB to 3
+2023-08-21 14:12:46.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (3, '2023-08-21T17:12:46', 'remove_rarbg')
+2023-08-21 14:12:46.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2023-08-21 14:12:46.3|Info|FluentMigrator.Runner.MigrationRunner|3: remove_rarbg migrated
+2023-08-21 14:12:46.3|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0060272s
+2023-08-21 14:12:46.3|Info|FluentMigrator.Runner.MigrationRunner|4: add_result_to_commands migrating
+2023-08-21 14:12:46.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2023-08-21 14:12:46.3|Info|add_result_to_commands|Starting migration of Log DB to 4
+2023-08-21 14:12:46.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (4, '2023-08-21T17:12:46', 'add_result_to_commands')
+2023-08-21 14:12:46.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2023-08-21 14:12:46.3|Info|FluentMigrator.Runner.MigrationRunner|4: add_result_to_commands migrated
+2023-08-21 14:12:46.3|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0081235s
+2023-08-21 14:12:46.3|Info|FluentMigrator.Runner.MigrationRunner|5: add_on_series_add_to_notifications migrating
+2023-08-21 14:12:46.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2023-08-21 14:12:46.3|Info|add_on_series_add_to_notifications|Starting migration of Log DB to 5
+2023-08-21 14:12:46.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (5, '2023-08-21T17:12:46', 'add_on_series_add_to_notifications')
+2023-08-21 14:12:46.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2023-08-21 14:12:46.3|Info|FluentMigrator.Runner.MigrationRunner|5: add_on_series_add_to_notifications migrated
+2023-08-21 14:12:46.3|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0046914s
+2023-08-21 14:12:46.3|Info|FluentMigrator.Runner.MigrationRunner|6: add_colon_replacement_to_naming_config migrating
+2023-08-21 14:12:46.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2023-08-21 14:12:46.3|Info|add_colon_replacement_to_naming_config|Starting migration of Log DB to 6
+2023-08-21 14:12:46.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (6, '2023-08-21T17:12:46', 'add_colon_replacement_to_naming_config')
+2023-08-21 14:12:46.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2023-08-21 14:12:46.3|Info|FluentMigrator.Runner.MigrationRunner|6: add_colon_replacement_to_naming_config migrated
+2023-08-21 14:12:46.3|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0036704s
+2023-08-21 14:12:46.3|Info|FluentMigrator.Runner.MigrationRunner|7: health_restored_notification migrating
+2023-08-21 14:12:46.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2023-08-21 14:12:46.3|Info|health_restored_notification|Starting migration of Log DB to 7
+2023-08-21 14:12:46.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (7, '2023-08-21T17:12:46', 'health_restored_notification')
+2023-08-21 14:12:46.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2023-08-21 14:12:46.3|Info|FluentMigrator.Runner.MigrationRunner|7: health_restored_notification migrated
+2023-08-21 14:12:46.3|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0036315s
+2023-08-21 14:12:46.3|Info|FluentMigrator.Runner.MigrationRunner|8: clean_episode_model migrating
+2023-08-21 14:12:46.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2023-08-21 14:12:46.3|Info|clean_episode_model|Starting migration of Log DB to 8
+2023-08-21 14:12:46.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (8, '2023-08-21T17:12:46', 'clean_episode_model')
+2023-08-21 14:12:46.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2023-08-21 14:12:46.3|Info|FluentMigrator.Runner.MigrationRunner|8: clean_episode_model migrated
+2023-08-21 14:12:46.3|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0076118s
+2023-08-21 14:12:46.3|Info|FluentMigrator.Runner.MigrationRunner|9: import_list_monitor migrating
+2023-08-21 14:12:46.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2023-08-21 14:12:46.3|Info|import_list_monitor|Starting migration of Log DB to 9
+2023-08-21 14:12:46.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (9, '2023-08-21T17:12:46', 'import_list_monitor')
+2023-08-21 14:12:46.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2023-08-21 14:12:46.3|Info|FluentMigrator.Runner.MigrationRunner|9: import_list_monitor migrated
+2023-08-21 14:12:46.3|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0036967s
+2023-08-21 14:12:46.3|Info|FluentMigrator.Runner.MigrationRunner|10: add_download_client_tags migrating
+2023-08-21 14:12:46.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2023-08-21 14:12:46.3|Info|add_download_client_tags|Starting migration of Log DB to 10
+2023-08-21 14:12:46.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (10, '2023-08-21T17:12:46', 'add_download_client_tags')
+2023-08-21 14:12:46.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2023-08-21 14:12:46.3|Info|FluentMigrator.Runner.MigrationRunner|10: add_download_client_tags migrated
+2023-08-21 14:12:46.3|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0051206s
+2023-08-21 14:12:46.7|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:6969
+2023-08-21 14:12:46.7|Info|UpdaterConfigProvider|Update mechanism BuiltIn not supported in the current configuration, changing to Docker.
+2023-08-21 14:12:46.9|Info|QualityProfileService|Setting up default quality profiles
+2023-08-21 14:12:47.2|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-08-21 14:12:47.2|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2023-08-21 14:12:47.2|Info|Microsoft.Hosting.Lifetime|Content root path: /run/s6/legacy-services/whisparr
+2023-08-21 14:14:48.9|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2023-08-21 14:14:49.1|Info|ConsoleApp|Exiting main.

@@ -291,3 +291,30 @@
 (W) 2023-07-05T10:46:30 - WebUI: Referer header & Target origin mismatch! Source IP: '::ffff:192.168.15.9'. Referer header: 'http://192.168.15.7:11180/'. Target origin: '192.168.15.7:8082'
 (N) 2023-07-05T10:46:51 - WebAPI login success. IP: ::ffff:172.18.0.1
 (W) 2023-07-05T10:47:10 - WebUI: Referer header & Target origin mismatch! Source IP: '::ffff:192.168.15.9'. Referer header: 'http://192.168.15.7:11180/'. Target origin: '192.168.15.7:8082'
+(N) 2023-08-21T14:12:43 - qBittorrent v4.5.4 started
+(N) 2023-08-21T14:12:43 - Using config directory: /config/qBittorrent
+(N) 2023-08-21T14:12:43 - Trying to listen on the following list of IP addresses: "0.0.0.0:6881,[::]:6881"
+(I) 2023-08-21T14:12:43 - Peer ID: "-qB4540-"
+(I) 2023-08-21T14:12:43 - HTTP User-Agent: "qBittorrent/4.5.4"
+(I) 2023-08-21T14:12:43 - Distributed Hash Table (DHT) support: ON
+(I) 2023-08-21T14:12:43 - Local Peer Discovery support: ON
+(I) 2023-08-21T14:12:43 - Peer Exchange (PeX) support: ON
+(I) 2023-08-21T14:12:43 - Anonymous mode: OFF
+(I) 2023-08-21T14:12:43 - Encryption support: ON
+(I) 2023-08-21T14:12:43 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/6881"
+(I) 2023-08-21T14:12:43 - Successfully listening on IP. IP: "127.0.0.1". Port: "UTP/6881"
+(I) 2023-08-21T14:12:43 - Successfully listening on IP. IP: "172.24.0.5". Port: "TCP/6881"
+(I) 2023-08-21T14:12:43 - Successfully listening on IP. IP: "172.24.0.5". Port: "UTP/6881"
+(N) 2023-08-21T14:12:43 - Restored torrent. Torrent: "The Simpsons S01E08 1080p HEVC x265-MeGusta[eztv io]"
+(N) 2023-08-21T14:12:43 - Restored torrent. Torrent: "The Simpsons S01E10 1080p HEVC x265-MeGusta[eztv io]"
+(I) 2023-08-21T14:12:43 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Sat Jul 1 05:07:53 2023.
+(N) 2023-08-21T14:12:43 - Using built-in Web UI.
+(N) 2023-08-21T14:12:43 - Web UI translation for selected locale (en) has been successfully loaded.
+(N) 2023-08-21T14:12:43 - Web UI: Now listening on IP: *, port: 8082
+(I) 2023-08-21T14:12:43 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Mon Jul 31 21:15:41 2023.
+(I) 2023-08-21T14:12:43 - Successfully updated IP geolocation database.
+(I) 2023-08-21T14:12:43 - Detected external IP. IP: "177.188.253.1"
+(N) 2023-08-21T14:12:47 - WebAPI login success. IP: ::ffff:172.24.0.7
+(N) 2023-08-21T14:14:48 - qBittorrent termination initiated
+(I) 2023-08-21T14:14:48 - UPnP/NAT-PMP support: OFF
+(N) 2023-08-21T14:14:54 - qBittorrent is now ready to exit

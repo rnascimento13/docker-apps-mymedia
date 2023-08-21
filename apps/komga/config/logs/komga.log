@@ -1,0 +1,134 @@
+2023-08-21T14:12:45.815-03:00  INFO 1 --- [main] org.gotson.komga.ApplicationKt           : Starting ApplicationKt v1.3.1 using Java 19.0.2 with PID 1 (/app/BOOT-INF/classes started by root in /app)
+2023-08-21T14:12:45.816-03:00  INFO 1 --- [main] org.gotson.komga.ApplicationKt           : No active profile set, falling back to 1 default profile: "default"
+2023-08-21T14:12:49.093-03:00  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 25600 (http)
+2023-08-21T14:12:49.101-03:00  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-21T14:12:49.102-03:00  INFO 1 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-08-21T14:12:49.194-03:00  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-21T14:12:49.195-03:00  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3268 ms
+2023-08-21T14:12:49.656-03:00  INFO 1 --- [main] o.apache.activemq.artemis.core.server    : AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=/config/artemis/journal,bindingsDirectory=/config/artemis/bindings,largeMessagesDirectory=/config/artemis/largemessages,pagingDirectory=/config/artemis/paging)
+2023-08-21T14:12:49.676-03:00  INFO 1 --- [main] o.apache.activemq.artemis.core.server    : AMQ221013: Using NIO Journal
+2023-08-21T14:12:49.720-03:00  INFO 1 --- [main] o.apache.activemq.artemis.core.server    : AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 2075131904
+2023-08-21T14:12:49.736-03:00  INFO 1 --- [main] o.apache.activemq.artemis.core.server    : AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2023-08-21T14:12:49.778-03:00  INFO 1 --- [main] o.apache.activemq.artemis.core.server    : AMQ221034: Waiting indefinitely to obtain live lock
+2023-08-21T14:12:49.778-03:00  INFO 1 --- [main] o.apache.activemq.artemis.core.server    : AMQ221035: Live Server Obtained live lock
+2023-08-21T14:12:49.874-03:00  INFO 1 --- [main] o.apache.activemq.artemis.core.server    : AMQ221080: Deploying address DLQ supporting [ANYCAST]
+2023-08-21T14:12:49.880-03:00  INFO 1 --- [main] o.apache.activemq.artemis.core.server    : AMQ221003: Deploying ANYCAST queue DLQ on address DLQ
+2023-08-21T14:12:49.910-03:00  INFO 1 --- [main] o.apache.activemq.artemis.core.server    : AMQ221080: Deploying address ExpiryQueue supporting [ANYCAST]
+2023-08-21T14:12:49.911-03:00  INFO 1 --- [main] o.apache.activemq.artemis.core.server    : AMQ221003: Deploying ANYCAST queue ExpiryQueue on address ExpiryQueue
+2023-08-21T14:12:49.912-03:00  INFO 1 --- [main] o.apache.activemq.artemis.core.server    : AMQ221003: Deploying ANYCAST queue tasks.background on address tasks.background
+2023-08-21T14:12:49.914-03:00  INFO 1 --- [main] o.apache.activemq.artemis.core.server    : AMQ221003: Deploying MULTICAST queue domain.events on address domain.events
+2023-08-21T14:12:49.962-03:00  INFO 1 --- [main] o.apache.activemq.artemis.core.server    : AMQ221007: Server is now live
+2023-08-21T14:12:49.962-03:00  INFO 1 --- [main] o.apache.activemq.artemis.core.server    : AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.28.0 [localhost, nodeID=f4a59fe0-4045-11ee-8629-0242ac180010] 
+2023-08-21T14:12:50.130-03:00  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : SqliteUdfPool - Starting...
+2023-08-21T14:12:50.261-03:00  INFO 1 --- [main] com.zaxxer.hikari.pool.HikariPool        : SqliteUdfPool - Added connection org.sqlite.jdbc4.JDBC4Connection@35451ba6
+2023-08-21T14:12:50.262-03:00  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : SqliteUdfPool - Start completed.
+2023-08-21T14:12:50.328-03:00  INFO 1 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.16.3 by Redgate
+2023-08-21T14:12:50.329-03:00  INFO 1 --- [main] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2023-08-21T14:12:50.329-03:00  INFO 1 --- [main] o.f.c.internal.license.VersionPrinter    : 
+2023-08-21T14:12:50.344-03:00  INFO 1 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:sqlite:/config/database.sqlite (SQLite 3.42)
+2023-08-21T14:12:50.374-03:00  INFO 1 --- [main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "main"."flyway_schema_history" does not exist yet
+2023-08-21T14:12:50.377-03:00  INFO 1 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 66 migrations (execution time 00:00.020s)
+2023-08-21T14:12:50.379-03:00  INFO 1 --- [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "main"."flyway_schema_history" ...
+2023-08-21T14:12:50.406-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "main": << Empty Schema >>
+2023-08-21T14:12:50.416-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20200706141854 - initial migration"
+2023-08-21T14:12:50.434-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20200730135746 - image dimension"
+2023-08-21T14:12:50.453-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20200810154729 - thumbnails part 1"
+2023-08-21T14:12:50.466-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20200810154730 - thumbnails part 2"
+2023-08-21T14:12:50.487-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20200810165912 - thumbnails part 3" [non-transactional]
+2023-08-21T14:12:50.559-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20200812161631 - thumbnails series"
+2023-08-21T14:12:50.576-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20200814142406 - library scan options"
+2023-08-21T14:12:50.591-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20200814145800 - library import local artwork"
+2023-08-21T14:12:50.605-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20200817115957 - readlists"
+2023-08-21T14:12:50.619-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20200820141405 - metadata fields part 1"
+2023-08-21T14:12:50.636-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20200820150923 - metadata fields part 2"
+2023-08-21T14:12:50.651-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20200820154318 - metadata fields part 3" [non-transactional]
+2023-08-21T14:12:50.703-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20200827103627 - index"
+2023-08-21T14:12:50.715-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20200906115600 - lower trim tags"
+2023-08-21T14:12:50.728-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20210111113543 - book metadata aggregation"
+2023-08-21T14:12:50.751-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20210308163522 - book isbn"
+2023-08-21T14:12:50.764-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20210504171645 - library convert to cbz"
+2023-08-21T14:12:50.778-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20210505150806 - library repair extensions"
+2023-08-21T14:12:50.792-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20210517145427 - fix rar"
+2023-08-21T14:12:50.806-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20210525172240 - index"
+2023-08-21T14:12:50.821-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20210526113555 - series book count"
+2023-08-21T14:12:50.834-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20210527100741 - index book created"
+2023-08-21T14:12:50.848-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20210609165742 - sidecars"
+2023-08-21T14:12:50.860-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20210617114814 - sidecar cleanup"
+2023-08-21T14:12:50.874-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20210624165023 - missing series metadata"
+2023-08-21T14:12:50.888-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20210625155626 - authentication activity"
+2023-08-21T14:12:50.903-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20210706162229 - trash bin"
+2023-08-21T14:12:50.919-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20210716153910 - library import mylar metadata"
+2023-08-21T14:12:50.932-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20210726140759 - cover preference"
+2023-08-21T14:12:50.949-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20210727102041 - full text search"
+2023-08-21T14:12:50.964-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20210729173532 - series metadata total book count"
+2023-08-21T14:12:50.985-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20210730111835 - book metadata aggregation tag"
+2023-08-21T14:12:50.999-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20210730151147 - readlist summary"
+2023-08-21T14:12:51.012-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20210805174355 - remove full text search"
+2023-08-21T14:12:51.028-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20210816113108 - library unavailable"
+2023-08-21T14:12:51.042-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20210831113524 - temp table urls"
+2023-08-21T14:12:51.058-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20210902100930 - series thumbnail blob"
+2023-08-21T14:12:51.075-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20210906163333 - series metadata lowercase language"
+2023-08-21T14:12:51.090-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20210907115532 - spring session"
+2023-08-21T14:12:51.104-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20210914111439 - read progress read date"
+2023-08-21T14:12:51.118-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20210926222612 - authentication activity source"
+2023-08-21T14:12:51.132-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20211006141333 - remove spring session"
+2023-08-21T14:12:51.146-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20211206100610 - temp table ids"
+2023-08-21T14:12:51.160-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20211206124920 - collection and readlist thumbnails"
+2023-08-21T14:12:51.174-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20211228152113 - book metadata link"
+2023-08-21T14:12:51.188-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20220101120232 - page hash"
+2023-08-21T14:12:51.202-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20220105143154 - library hashing options"
+2023-08-21T14:12:51.224-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20220106143755 - page file size"
+2023-08-21T14:12:51.239-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20220128152310 - page hash"
+2023-08-21T14:12:51.252-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20220208193203 - fix books with missing pages"
+2023-08-21T14:12:51.266-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20220218111455 - historical events"
+2023-08-21T14:12:51.280-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20220224112015 - series sharing labels"
+2023-08-21T14:12:51.294-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20220225164240 - user restrictions"
+2023-08-21T14:12:51.308-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20220715213721 - perf indices"
+2023-08-21T14:12:51.322-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20230112151202 - library comicinfo append volume"
+2023-08-21T14:12:51.336-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20230113140806 - series metadata link"
+2023-08-21T14:12:51.350-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20230116112647 - series alternate title"
+2023-08-21T14:12:51.364-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20230221170726 - readlist ordered"
+2023-08-21T14:12:51.378-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20230310121946 - series metadata index"
+2023-08-21T14:12:51.392-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20230626150454 - xxhash128"
+2023-08-21T14:12:51.407-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20230626151717 - missing page size"
+2023-08-21T14:12:51.420-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20230626170856 - page hash remove columns"
+2023-08-21T14:12:51.436-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20230629114356 - remove library scandeep column"
+2023-08-21T14:12:51.464-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20230711173700 - read announcements"
+2023-08-21T14:12:51.484-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20230724114349 - oneshots"
+2023-08-21T14:12:51.502-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "main" to version "20230801104436 - fix incorrect language codes"
+2023-08-21T14:12:51.527-03:00  INFO 1 --- [main] o.f.core.internal.command.DbMigrate      : Successfully applied 66 migrations to schema "main", now at version v20230801104436 (execution time 00:01.121s)
+2023-08-21T14:12:52.159-03:00  INFO 1 --- [main] c.g.g.n.j.i.plugins.JxlImageReaderSpi    : Loaded libjxl v0.8.1
+2023-08-21T14:12:52.179-03:00  INFO 1 --- [main] o.g.k.i.image.ImageConverter             : Supported read formats: [JPG, JPEG 2000, tiff, bigtiff, bmp, PCX, wbp, gif, WBMP, PNG, RAW, JPEG, PNM, BigTIFF, tif, TIFF, wbmp, jpeg, jbig2, jpeg-lossless, jxl, jpg, JPEG2000, BMP, pcx, WBP, GIF, Jpeg XL, png, BIGTIFF, raw, JPEG-LOSSLESS, webp, JBIG2, pnm, TIF, jpeg2000, WEBP, jpeg 2000]
+2023-08-21T14:12:52.180-03:00  INFO 1 --- [main] o.g.k.i.image.ImageConverter             : Supported read mediaTypes: [image/vnd.wap.wbmp, image/jpeg, image/x-portable-graymap, image/bmp, image/x-windows-pcx, image/gif, image/x-pc-paintbrush, image/x-raw, image/webp, image/x-pcx, image/x-portable-bitmap, image/png, image/x-jb2, image/pcx, image/x-windows-bmp, image/x-webp, image/jpeg2000, image/jp2, image/x-bmp, image/x-png, image/x-portable-pixmap, image/tiff, image/x-tiff, image/x-jbig2, image/x-portable-anymap, image/jxl]
+2023-08-21T14:12:52.180-03:00  INFO 1 --- [main] o.g.k.i.image.ImageConverter             : Supported write formats: [JPEG 2000, JPG, tiff, bmp, bigtiff, PCX, gif, WBMP, PNG, RAW, JPEG, PNM, BigTIFF, tif, TIFF, wbmp, jpeg, jpg, JPEG2000, BMP, pcx, GIF, png, BIGTIFF, raw, pnm, TIF, jpeg2000, jpeg 2000]
+2023-08-21T14:12:52.180-03:00  INFO 1 --- [main] o.g.k.i.image.ImageConverter             : Supported write mediaTypes: [image/vnd.wap.wbmp, image/png, image/jpeg, image/x-portable-graymap, image/bmp, image/pcx, image/gif, image/x-windows-pcx, image/x-windows-bmp, image/jpeg2000, image/x-pc-paintbrush, image/x-raw, image/jp2, image/x-pcx, image/x-bmp, image/x-png, image/x-portable-bitmap, image/x-portable-pixmap, image/tiff, image/x-tiff, image/x-portable-anymap]
+2023-08-21T14:12:52.349-03:00  INFO 1 --- [main] o.a.l.s.MemorySegmentIndexInputProvider  : Using MemorySegmentIndexInput with Java 19; to disable start with -Dorg.apache.lucene.store.MMapDirectory.enableMemorySegments=false
+2023-08-21T14:12:52.959-03:00  INFO 1 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
+2023-08-21T14:12:53.250-03:00  INFO 1 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2023-08-21T14:12:53.294-03:00  INFO 1 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Or [Mvc [pattern='/api/**'], Mvc [pattern='/opds/**'], Mvc [pattern='/sse/**'], Mvc [pattern='/oauth2/authorization/**'], Mvc [pattern='/login/oauth2/code/**'], EndpointRequestMatcher includes=[*], excludes=[], includeLinks=true] with [org.springframework.security.web.session.DisableEncodeUrlFilter@23471b2f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@19d75d3c, org.springframework.security.web.context.SecurityContextHolderFilter@6d598162, org.springframework.security.web.header.HeaderWriterFilter@72e5f018, org.springframework.web.filter.CorsFilter@5c3cc103, org.springframework.security.web.authentication.logout.LogoutFilter@69497a36, org.springframework.security.web.session.ConcurrentSessionFilter@2380e8d4, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4daee083, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b285847, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@57af157c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5af08232, org.springframework.security.web.session.SessionManagementFilter@4b3ea082, org.springframework.security.web.access.ExceptionTranslationFilter@333afc53, org.springframework.security.web.access.intercept.AuthorizationFilter@4ed7fb78]
+2023-08-21T14:12:53.600-03:00  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 25600 (http) with context path ''
+2023-08-21T14:12:53.665-03:00  INFO 1 --- [scheduling-1] .AuthenticationActivityCleanupController : Remove authentication activity older than 2023-07-21T17:12:53.664334346 (UTC)
+2023-08-21T14:12:53.666-03:00  INFO 1 --- [main] org.gotson.komga.ApplicationKt           : Started ApplicationKt in 8.6 seconds (process running for 9.55)
+2023-08-21T14:12:53.892-03:00  INFO 1 --- [main] o.g.k.i.scheduler.SearchIndexController  : Lucene index not found, trigger rebuild
+2023-08-21T14:12:53.894-03:00  INFO 1 --- [main] o.g.komga.application.tasks.TaskEmitter  : Sending task: RebuildIndex(priority='8',entities='null')
+2023-08-21T14:12:53.928-03:00  INFO 1 --- [org.springframework.jms.JmsListenerEndpointContainer#1-1] o.g.komga.application.tasks.TaskHandler  : Executing task: RebuildIndex(priority='8',entities='null')
+2023-08-21T14:12:53.930-03:00  INFO 1 --- [org.springframework.jms.JmsListenerEndpointContainer#1-1] o.g.k.i.search.SearchIndexLifecycle      : Rebuild index for: [book, series, collection, readlist]
+2023-08-21T14:12:53.931-03:00  INFO 1 --- [org.springframework.jms.JmsListenerEndpointContainer#1-1] o.g.k.i.search.SearchIndexLifecycle      : Rebuilding index for Book
+2023-08-21T14:12:53.970-03:00  INFO 1 --- [org.springframework.jms.JmsListenerEndpointContainer#1-1] o.g.k.i.search.SearchIndexLifecycle      : Number of entities: 0
+2023-08-21T14:12:54.034-03:00  INFO 1 --- [org.springframework.jms.JmsListenerEndpointContainer#1-1] o.g.k.i.search.SearchIndexLifecycle      : Wrote Book index in 2.747141ms
+2023-08-21T14:12:54.055-03:00  INFO 1 --- [org.springframework.jms.JmsListenerEndpointContainer#1-1] o.g.k.i.search.SearchIndexLifecycle      : Rebuilding index for Series
+2023-08-21T14:12:54.078-03:00  INFO 1 --- [org.springframework.jms.JmsListenerEndpointContainer#1-1] o.g.k.i.search.SearchIndexLifecycle      : Number of entities: 0
+2023-08-21T14:12:54.083-03:00  INFO 1 --- [org.springframework.jms.JmsListenerEndpointContainer#1-1] o.g.k.i.search.SearchIndexLifecycle      : Wrote Series index in 44.027us
+2023-08-21T14:12:54.084-03:00  INFO 1 --- [org.springframework.jms.JmsListenerEndpointContainer#1-1] o.g.k.i.search.SearchIndexLifecycle      : Rebuilding index for Collection
+2023-08-21T14:12:54.086-03:00  INFO 1 --- [org.springframework.jms.JmsListenerEndpointContainer#1-1] o.g.k.i.search.SearchIndexLifecycle      : Number of entities: 0
+2023-08-21T14:12:54.087-03:00  INFO 1 --- [org.springframework.jms.JmsListenerEndpointContainer#1-1] o.g.k.i.search.SearchIndexLifecycle      : Wrote Collection index in 42.379us
+2023-08-21T14:12:54.088-03:00  INFO 1 --- [org.springframework.jms.JmsListenerEndpointContainer#1-1] o.g.k.i.search.SearchIndexLifecycle      : Rebuilding index for ReadList
+2023-08-21T14:12:54.091-03:00  INFO 1 --- [org.springframework.jms.JmsListenerEndpointContainer#1-1] o.g.k.i.search.SearchIndexLifecycle      : Number of entities: 0
+2023-08-21T14:12:54.092-03:00  INFO 1 --- [org.springframework.jms.JmsListenerEndpointContainer#1-1] o.g.k.i.search.SearchIndexLifecycle      : Wrote ReadList index in 29.553us
+2023-08-21T14:12:54.181-03:00  INFO 1 --- [org.springframework.jms.JmsListenerEndpointContainer#1-1] o.g.k.i.search.LuceneHelper              : Lucene index version: 8
+2023-08-21T14:12:54.181-03:00  INFO 1 --- [org.springframework.jms.JmsListenerEndpointContainer#1-1] o.g.komga.application.tasks.TaskHandler  : Task RebuildIndex(priority='8',entities='null') executed in 252.601504ms
+2023-08-21T14:14:49.775-03:00  INFO 1 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2023-08-21T14:14:49.779-03:00  INFO 1 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2023-08-21T14:14:49.815-03:00  INFO 1 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : SqliteUdfPool - Shutdown initiated...
+2023-08-21T14:14:49.817-03:00  INFO 1 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : SqliteUdfPool - Shutdown completed.
+2023-08-21T14:14:49.840-03:00  INFO 1 --- [SpringApplicationShutdownHook] o.apache.activemq.artemis.core.server    : AMQ221002: Apache ActiveMQ Artemis Message Broker version 2.28.0 [f4a59fe0-4045-11ee-8629-0242ac180010] stopped, uptime 2 minutes
