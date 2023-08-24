@@ -11,10 +11,13 @@ services:
     volumes:
       #- /etc/localtime:/etc/localtime:ro
       - ./apps/sonarr/config:/config # config files
-      - ${ROOT}/tv:/tv # tv shows folder
-      - ${ROOT}/downloads:/downloads # download folder
+      - ${ROOT}:/data
+      #- ${ROOT}/tv:/tv # tv shows folder
+      #- ${ROOT}/downloads:/downloads # download folder
     ports:
       - 8989:8989
+    labels:
+      - "com.centurylinklabs.watchtower.scope=myscope"
     restart: unless-stopped
 
   radarr: # movies colection manager
@@ -27,10 +30,13 @@ services:
     volumes:
       #- /etc/localtime:/etc/localtime:ro
       - ./apps/radarr/config:/config
-      - ${ROOT}/movies:/movies #optional
-      - ${ROOT}/downloads:/downloads #optional
+      - ${ROOT}:/data
+      #- ${ROOT}/movies:/movies #optional
+      #- ${ROOT}/downloads:/downloads #optional
     ports:
       - 7878:7878
+    labels:
+      - "com.centurylinklabs.watchtower.scope=myscope"
     restart: unless-stopped
 
   lidarr: # music collection manager
@@ -43,12 +49,15 @@ services:
     volumes:
       #- /etc/localtime:/etc/localtime:ro
       - ./apps/lidarr/config:/config
-      - ${ROOT}/music:/music #optional
-      - ${ROOT}/downloads:/downloads #optional
+      - ${ROOT}:/data
+      #- ${ROOT}/music:/music #optional
+      #- ${ROOT}/downloads:/downloads #optional
       - ./apps/lidarr/custom-services.d:/custom-services.d #scripts by RandomNinjaAtk
       - ./apps/lidarr/custom-cont-init.d:/custom-cont-init.d #scripts by RandomNinjaAtk
     ports:
       - 8686:8686
+    labels:
+      - "com.centurylinklabs.watchtower.scope=myscope"
     restart: unless-stopped
 
   readarr: # ebook collection manager
@@ -61,10 +70,13 @@ services:
     volumes:
       #- /etc/localtime:/etc/localtime:ro
       - ./apps/readarr/config:/config
-      - ${ROOT}/ebooks:/books #optional
-      - ${ROOT}/downloads:/downloads #optional
+      - ${ROOT}:/data
+      #- ${ROOT}/ebooks:/books #optional
+      #- ${ROOT}/downloads:/downloads #optional
     ports:
       - 8787:8787
+    labels:
+      - "com.centurylinklabs.watchtower.scope=myscope"
     restart: unless-stopped
 
   whisparr: # adult movie collection manager
@@ -79,6 +91,10 @@ services:
       - 6969:6969
     volumes:
       - ./apps/whisparr/config:/config
+      - ${ROOT}:/data
+    labels:
+      - "com.centurylinklabs.watchtower.scope=myscope"
+    restart: unless-stopped
 
   mylar3: # comic book collection manager
     image: lscr.io/linuxserver/mylar3:latest
@@ -89,10 +105,13 @@ services:
       - TZ=${TZ} # timezone, defined in .env
     volumes:
       - ./apps/mylar3/config:/config
-      - ${ROOT}/comics:/comics
-      - ${ROOT}/downloads:/downloads
+      - ${ROOT}:/data
+      #- ${ROOT}/comics:/comics
+      #- ${ROOT}/downloads:/downloads
     ports:
       - 8090:8090
+    labels:
+      - "com.centurylinklabs.watchtower.scope=myscope"
     restart: unless-stopped
 
   lazylibrarian: #ebooks, audiobooks and magazines manager
@@ -105,10 +124,13 @@ services:
       - DOCKER_MODS=linuxserver/calibre-web:calibre|linuxserver/mods:lazylibrarian-ffmpeg #optional
     volumes:
       - ./apps/lazylibrarian/config:/config
-      - ${ROOT}/ebooks:/books
-      - ${ROOT}/downloads:/downloads
+      - ${ROOT}:/data
+      #- ${ROOT}/ebooks:/books
+      #- ${ROOT}/downloads:/downloads
     ports:
       - 5299:5299
+    labels:
+      - "com.centurylinklabs.watchtower.scope=myscope"
     restart: unless-stopped
 
   bazarr: #subtitle for movie and tv
@@ -121,10 +143,13 @@ services:
     volumes:
       #- /etc/localtime:/etc/localtime:ro
       - ./apps/bazarr/config:/config
-      - ${ROOT}/movies:/movies #optional
-      - ${ROOT}/tv:/tv #optional
+      - ${ROOT}:/data
+      #- ${ROOT}/movies:/movies #optional
+      #- ${ROOT}/tv:/tv #optional
     ports:
       - 6767:6767
+    labels:
+      - "com.centurylinklabs.watchtower.scope=myscope"
     restart: unless-stopped
 
   prowlarr: # indexer for tv, movie, music, ebook
@@ -141,6 +166,8 @@ services:
       - ./apps/prowlarr/config:/config
     ports:
       - 9696:9696
+    labels:
+      - "com.centurylinklabs.watchtower.scope=myscope"
     restart: unless-stopped
 
   qbittorrent: # torrent client
@@ -158,6 +185,8 @@ services:
       - 8082:8082
       - 6881:6881
       - 6881:6881/udp
+    labels:
+      - "com.centurylinklabs.watchtower.scope=myscope"
     restart: unless-stopped
 
   jellyfin:
@@ -170,19 +199,21 @@ services:
       #- JELLYFIN_PublishedServerUrl=192.168.0.5 #optional
     volumes:
       - ./apps/jellyfin/config:/config
-      - ${ROOT}/tv:/data/tvshows
-      - ${ROOT}/movies:/data/movies
+      - ${ROOT}:/data
+      #- ${ROOT}/tv:/data/tvshows
+      #- ${ROOT}/movies:/data/movies
     ports:
       - 8096:8096
       - 8920:8920 #optional
       - 7359:7359/udp #optional
       - 1900:1900/udp #optional
+    labels:
+      - "com.centurylinklabs.watchtower.scope=myscope"
     restart: unless-stopped
 
   autobrr: #download automation tool for torrents and usenet, with IRC announces
     container_name: autobrr
     image: ghcr.io/autobrr/autobrr:latest
-    restart: unless-stopped
     environment:
       - TZ=${TZ}
     user: ${PUID}:${PGID}
@@ -190,13 +221,13 @@ services:
       - ./apps/autobrr/config:/config
     ports:
       - 7474:7474
+    labels:
+      - "com.centurylinklabs.watchtower.scope=myscope"
+    restart: unless-stopped
 
   stash: # video and image organizer
     image: stashapp/stash:latest
     container_name: stash
-    restart: unless-stopped
-    ports:
-      - "9999:9999"
     ## If you intend to use stash's DLNA functionality uncomment the below network mode and comment out the above ports section
     # network_mode: host
     logging:
@@ -213,14 +244,20 @@ services:
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - ./apps/stash/config:/root/.stash
-      - ./apps/stash/data:/data
       - ./apps/stash/metadata:/metadata
       - ./apps/stash/cache:/cache
       - ./apps/stash/blobs:/blobs
       - ./apps/stash/generated:/generated
+      - ${ROOT}/adult:/data
+      #- ./apps/stash/data:/data
+    ports:
+      - "9999:9999"
+    labels:
+      - "com.centurylinklabs.watchtower.scope=myscope"
+    restart: unless-stopped
 
   komga: # media server for your comics, mangas, BDs and magazines.
-    image: gotson/komga
+    image: gotson/komga:latest
     container_name: komga
     environment:
       - PUID=${PUID} # default user id, defined in .env
@@ -231,10 +268,12 @@ services:
       - ${ROOT}/comics:/data
     ports:
       - 25600:25600
+    labels:
+      - "com.centurylinklabs.watchtower.scope=myscope"
     restart: unless-stopped    
 
   unpackerr:
-    image: golift/unpackerr
+    image: golift/unpackerr:latest
     container_name: unpackerr
     volumes:
       - ${ROOT}/downloads:/downloads
@@ -256,38 +295,40 @@ services:
       - UN_DIR_MODE=0755
       # Sonarr Config
       - UN_SONARR_0_URL=http://sonarr:8989
-      - UN_SONARR_0_API_KEY=c7f30e75f47949488b33dedb1275247a
-      - UN_SONARR_0_PATHS_0=/downloads
+      - UN_SONARR_0_API_KEY=cebf03bb54834941920d9ed5f25a53dd
+      - UN_SONARR_0_PATHS_0=/data/downloads
       - UN_SONARR_0_PROTOCOLS=torrent
       - UN_SONARR_0_TIMEOUT=10s
       - UN_SONARR_0_DELETE_ORIG=false
       - UN_SONARR_0_DELETE_DELAY=5m
       # Radarr Config
       - UN_RADARR_0_URL=http://radarr:7878
-      - UN_RADARR_0_API_KEY=ea6ee52fd3474e1398b7f3365304e258
-      - UN_RADARR_0_PATHS_0=/downloads
+      - UN_RADARR_0_API_KEY=f96fe052295146899670462f10803f3d
+      - UN_RADARR_0_PATHS_0=/data/downloads
       - UN_RADARR_0_PROTOCOLS=torrent
       - UN_RADARR_0_TIMEOUT=10s
       - UN_RADARR_0_DELETE_ORIG=false
       - UN_RADARR_0_DELETE_DELAY=5m
       # Lidarr Config
       - UN_LIDARR_0_URL=http://lidarr:8686
-      - UN_LIDARR_0_API_KEY=4cf5d57bcdbe40c89488bbc959f3710a
-      - UN_LIDARR_0_PATHS_0=/downloads
+      - UN_LIDARR_0_API_KEY=4e1e8194dd2a415eae9b5fa1af04a43f
+      - UN_LIDARR_0_PATHS_0=/data/downloads
       - UN_LIDARR_0_PROTOCOLS=torrent
       - UN_LIDARR_0_TIMEOUT=10s
       - UN_LIDARR_0_DELETE_ORIG=false
       - UN_LIDARR_0_DELETE_DELAY=5m
       # Readarr Config
       - UN_READARR_0_URL=http://readarr:8787
-      - UN_READARR_0_API_KEY=11f68f6b64d94f58ab57e4ca14c03a2d
-      - UN_READARR_0_PATHS_0=/downloads
+      - UN_READARR_0_API_KEY=b69d08b7632e45e393188e47fe5228b9
+      - UN_READARR_0_PATHS_0=/data/downloads
       - UN_READARR_0_PROTOCOLS=torrent
       - UN_READARR_0_TIMEOUT=10s
       - UN_READARR_0_DELETE_ORIG=false
       - UN_READARR_0_DELETE_DELAY=5m
     security_opt:
       - no-new-privileges:true
+    labels:
+      - "com.centurylinklabs.watchtower.scope=myscope"
 
   # omegabrr: # transforms items monitored by arrs or lists into autobrr filters. Useful for automating your filters for monitored media or racing criteria.
   #   container_name: omegabrr
@@ -300,3 +341,13 @@ services:
   #   volumes:
   #     - "./apps/omegabrr/config:/config"
   #   restart: unless-stopped
+  #  labels:
+  #    - "com.centurylinklabs.watchtower.scope=myscope"
+
+  watchtower:
+    image: containrrr/watchtower:latest
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: --interval 30 --scope myscope
+    labels:
+      - "com.centurylinklabs.watchtower.scope=myscope"

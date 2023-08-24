@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<artist>
+  <biography />
+  <outline />
+  <lockdata>false</lockdata>
+  <dateadded>2023-08-23 03:32:05</dateadded>
+  <title>Capleton</title>
+  <runtime>4</runtime>
+  <genre>East Coast Hip Hop</genre>
+  <genre>Electronic</genre>
+  <genre>Hip Hop</genre>
+  <genre>Hardcore Hip Hop</genre>
+  <musicbrainzartistid>93dda03d-c1d3-42c2-80b0-fa71bc20262b</musicbrainzartistid>
+  <art>
+    <poster>/config/data/metadata/artists/Capleton/folder.jpg</poster>
+    <fanart>/config/data/metadata/artists/Capleton/backdrop.jpg</fanart>
+  </art>
+</artist>

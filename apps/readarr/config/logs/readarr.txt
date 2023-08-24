@@ -1,0 +1,329 @@
+2023-08-23 14:52:17.2|Info|Bootstrap|Starting Readarr - /app/readarr/bin/Readarr - Version 0.3.3.2171
+2023-08-23 14:52:17.3|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2023-08-23 14:52:17.3|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2023-08-23 14:52:17.7|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2023-08-23 14:52:17.7|Info|MigrationController|*** Migrating data source=/config/readarr.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2023-08-23 14:52:17.9|Info|FluentMigrator.Runner.MigrationRunner|35: add_download_client_tags migrating
+2023-08-23 14:52:17.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2023-08-23 14:52:17.9|Info|add_download_client_tags|Starting migration of Main DB to 35
+2023-08-23 14:52:17.9|Info|FluentMigrator.Runner.MigrationRunner|AlterTable DownloadClients
+2023-08-23 14:52:17.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0007587s
+2023-08-23 14:52:17.9|Info|FluentMigrator.Runner.MigrationRunner|CreateColumn DownloadClients Tags String
+2023-08-23 14:52:17.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "DownloadClients" ADD COLUMN "Tags" TEXT
+2023-08-23 14:52:18.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0488417s
+2023-08-23 14:52:18.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (35, '2023-08-23T17:52:18', 'add_download_client_tags')
+2023-08-23 14:52:18.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2023-08-23 14:52:18.0|Info|FluentMigrator.Runner.MigrationRunner|35: add_download_client_tags migrated
+2023-08-23 14:52:18.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0672075s
+2023-08-23 14:52:18.0|Info|FluentMigrator.Runner.MigrationRunner|36: add_result_to_commands migrating
+2023-08-23 14:52:18.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2023-08-23 14:52:18.0|Info|add_result_to_commands|Starting migration of Main DB to 36
+2023-08-23 14:52:18.0|Info|FluentMigrator.Runner.MigrationRunner|AlterTable Commands
+2023-08-23 14:52:18.0|Info|FluentMigrator.Runner.MigrationRunner|=> 8.7E-06s
+2023-08-23 14:52:18.0|Info|FluentMigrator.Runner.MigrationRunner|CreateColumn Commands Result Int32
+2023-08-23 14:52:18.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "Commands" ADD COLUMN "Result" INTEGER NOT NULL DEFAULT 1
+2023-08-23 14:52:18.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.000872s
+2023-08-23 14:52:18.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (36, '2023-08-23T17:52:18', 'add_result_to_commands')
+2023-08-23 14:52:18.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2023-08-23 14:52:18.0|Info|FluentMigrator.Runner.MigrationRunner|36: add_result_to_commands migrated
+2023-08-23 14:52:18.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0057205s
+2023-08-23 14:52:18.0|Info|FluentMigrator.Runner.MigrationRunner|37: add_notification_status migrating
+2023-08-23 14:52:18.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2023-08-23 14:52:18.0|Info|add_notification_status|Starting migration of Main DB to 37
+2023-08-23 14:52:18.0|Info|FluentMigrator.Runner.MigrationRunner|CreateTable NotificationStatus
+2023-08-23 14:52:18.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "NotificationStatus" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "ProviderId" INTEGER NOT NULL, "InitialFailure" DATETIME, "MostRecentFailure" DATETIME, "EscalationLevel" INTEGER NOT NULL, "DisabledTill" DATETIME)
+2023-08-23 14:52:18.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.00291s
+2023-08-23 14:52:18.0|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex NotificationStatus (ProviderId)
+2023-08-23 14:52:18.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE UNIQUE INDEX "IX_NotificationStatus_ProviderId" ON "NotificationStatus" ("ProviderId" ASC)
+2023-08-23 14:52:18.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0012972s
+2023-08-23 14:52:18.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (37, '2023-08-23T17:52:18', 'add_notification_status')
+2023-08-23 14:52:18.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2023-08-23 14:52:18.0|Info|FluentMigrator.Runner.MigrationRunner|37: add_notification_status migrated
+2023-08-23 14:52:18.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0099794s
+2023-08-23 14:52:18.0|Info|FluentMigrator.Runner.MigrationRunner|158: cdh_per_downloadclient migrating
+2023-08-23 14:52:18.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2023-08-23 14:52:18.0|Info|cdh_per_downloadclient|Starting migration of Main DB to 158
+2023-08-23 14:52:18.0|Info|FluentMigrator.Runner.MigrationRunner|AlterTable DownloadClients
+2023-08-23 14:52:18.0|Info|FluentMigrator.Runner.MigrationRunner|=> 1.4E-06s
+2023-08-23 14:52:18.0|Info|FluentMigrator.Runner.MigrationRunner|CreateColumn DownloadClients RemoveCompletedDownloads Boolean
+2023-08-23 14:52:18.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "DownloadClients" ADD COLUMN "RemoveCompletedDownloads" INTEGER NOT NULL DEFAULT 1
+2023-08-23 14:52:18.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0011167s
+2023-08-23 14:52:18.0|Info|FluentMigrator.Runner.MigrationRunner|CreateColumn DownloadClients RemoveFailedDownloads Boolean
+2023-08-23 14:52:18.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "DownloadClients" ADD COLUMN "RemoveFailedDownloads" INTEGER NOT NULL DEFAULT 1
+2023-08-23 14:52:18.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0005931s
+2023-08-23 14:52:18.0|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2023-08-23 14:52:18.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2023-08-23 14:52:18.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0211495s
+2023-08-23 14:52:18.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (158, '2023-08-23T17:52:18', 'cdh_per_downloadclient')
+2023-08-23 14:52:18.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2023-08-23 14:52:18.0|Info|FluentMigrator.Runner.MigrationRunner|158: cdh_per_downloadclient migrated
+2023-08-23 14:52:18.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0281761s
+2023-08-23 14:52:18.2|Info|MigrationController|*** Migrating data source=/config/cache.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2023-08-23 14:52:18.2|Info|FluentMigrator.Runner.MigrationRunner|35: add_download_client_tags migrating
+2023-08-23 14:52:18.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2023-08-23 14:52:18.2|Info|add_download_client_tags|Starting migration to 35
+2023-08-23 14:52:18.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (35, '2023-08-23T17:52:18', 'add_download_client_tags')
+2023-08-23 14:52:18.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2023-08-23 14:52:18.2|Info|FluentMigrator.Runner.MigrationRunner|35: add_download_client_tags migrated
+2023-08-23 14:52:18.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0221966s
+2023-08-23 14:52:18.2|Info|FluentMigrator.Runner.MigrationRunner|36: add_result_to_commands migrating
+2023-08-23 14:52:18.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2023-08-23 14:52:18.2|Info|add_result_to_commands|Starting migration to 36
+2023-08-23 14:52:18.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (36, '2023-08-23T17:52:18', 'add_result_to_commands')
+2023-08-23 14:52:18.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2023-08-23 14:52:18.2|Info|FluentMigrator.Runner.MigrationRunner|36: add_result_to_commands migrated
+2023-08-23 14:52:18.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0077714s
+2023-08-23 14:52:18.2|Info|FluentMigrator.Runner.MigrationRunner|37: add_notification_status migrating
+2023-08-23 14:52:18.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2023-08-23 14:52:18.2|Info|add_notification_status|Starting migration to 37
+2023-08-23 14:52:18.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (37, '2023-08-23T17:52:18', 'add_notification_status')
+2023-08-23 14:52:18.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2023-08-23 14:52:18.2|Info|FluentMigrator.Runner.MigrationRunner|37: add_notification_status migrated
+2023-08-23 14:52:18.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0076265s
+2023-08-23 14:52:18.2|Info|FluentMigrator.Runner.MigrationRunner|158: cdh_per_downloadclient migrating
+2023-08-23 14:52:18.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2023-08-23 14:52:18.2|Info|cdh_per_downloadclient|Starting migration to 158
+2023-08-23 14:52:18.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (158, '2023-08-23T17:52:18', 'cdh_per_downloadclient')
+2023-08-23 14:52:18.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2023-08-23 14:52:18.2|Info|FluentMigrator.Runner.MigrationRunner|158: cdh_per_downloadclient migrated
+2023-08-23 14:52:18.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0052822s
+2023-08-23 14:52:18.3|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2023-08-23 14:52:18.3|Info|FluentMigrator.Runner.MigrationRunner|35: add_download_client_tags migrating
+2023-08-23 14:52:18.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2023-08-23 14:52:18.3|Info|add_download_client_tags|Starting migration of Log DB to 35
+2023-08-23 14:52:18.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (35, '2023-08-23T17:52:18', 'add_download_client_tags')
+2023-08-23 14:52:18.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2023-08-23 14:52:18.3|Info|FluentMigrator.Runner.MigrationRunner|35: add_download_client_tags migrated
+2023-08-23 14:52:18.3|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0092368s
+2023-08-23 14:52:18.3|Info|FluentMigrator.Runner.MigrationRunner|36: add_result_to_commands migrating
+2023-08-23 14:52:18.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2023-08-23 14:52:18.3|Info|add_result_to_commands|Starting migration of Log DB to 36
+2023-08-23 14:52:18.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (36, '2023-08-23T17:52:18', 'add_result_to_commands')
+2023-08-23 14:52:18.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2023-08-23 14:52:18.3|Info|FluentMigrator.Runner.MigrationRunner|36: add_result_to_commands migrated
+2023-08-23 14:52:18.3|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0052307s
+2023-08-23 14:52:18.3|Info|FluentMigrator.Runner.MigrationRunner|37: add_notification_status migrating
+2023-08-23 14:52:18.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2023-08-23 14:52:18.3|Info|add_notification_status|Starting migration of Log DB to 37
+2023-08-23 14:52:18.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (37, '2023-08-23T17:52:18', 'add_notification_status')
+2023-08-23 14:52:18.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2023-08-23 14:52:18.3|Info|FluentMigrator.Runner.MigrationRunner|37: add_notification_status migrated
+2023-08-23 14:52:18.3|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0076585s
+2023-08-23 14:52:18.3|Info|FluentMigrator.Runner.MigrationRunner|158: cdh_per_downloadclient migrating
+2023-08-23 14:52:18.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2023-08-23 14:52:18.3|Info|cdh_per_downloadclient|Starting migration of Log DB to 158
+2023-08-23 14:52:18.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (158, '2023-08-23T17:52:18', 'cdh_per_downloadclient')
+2023-08-23 14:52:18.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2023-08-23 14:52:18.3|Info|FluentMigrator.Runner.MigrationRunner|158: cdh_per_downloadclient migrated
+2023-08-23 14:52:18.3|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0058273s
+2023-08-23 14:52:18.5|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:8787
+2023-08-23 14:52:18.7|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-08-23 14:52:18.7|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2023-08-23 14:52:18.7|Info|Microsoft.Hosting.Lifetime|Content root path: /app/readarr/bin
+2023-08-23 14:52:48.8|Info|ImportListSyncService|Starting Import List Sync
+2023-08-23 14:52:48.8|Info|ImportListSyncService|Processing 0 list items
+2023-08-23 14:52:48.8|Info|ImportListSyncService|Import List Sync Completed. Items found: 0, Authors added: 0, Books added: 0
+2023-08-23 14:57:48.9|Info|ImportListSyncService|Starting Import List Sync
+2023-08-23 14:57:48.9|Info|ImportListSyncService|Processing 0 list items
+2023-08-23 14:57:48.9|Info|ImportListSyncService|Import List Sync Completed. Items found: 0, Authors added: 0, Books added: 0
+2023-08-23 14:58:18.9|Info|RssSyncService|Starting RSS Sync
+2023-08-23 14:58:19.9|Warn|Torznab|Indexer Solid Torrents (Prowlarr) rss sync didn't cover the period between 08/23/2023 03:00:00 and 08/23/2023 03:00:00 UTC. Search may be required.
+2023-08-23 14:58:20.1|Warn|Torznab|Indexer BitSearch (Prowlarr) rss sync didn't cover the period between 08/23/2023 03:00:00 and 08/23/2023 03:00:00 UTC. Search may be required.
+2023-08-23 14:58:20.2|Warn|Torznab|Indexer Torrent Downloads (Prowlarr) rss sync didn't cover the period between 08/23/2023 17:42:42 and 08/23/2023 17:58:20 UTC. Search may be required.
+2023-08-23 14:58:33.0|Info|DownloadDecisionMaker|Processing 226 releases
+2023-08-23 14:58:33.2|Info|RssSyncService|RSS Sync Completed. Reports found: 226, Reports grabbed: 0
+2023-08-23 15:00:28.5|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2023-08-23 15:00:28.6|Info|ConsoleApp|Exiting main.
+2023-08-23 15:01:01.8|Info|Bootstrap|Starting Readarr - /app/readarr/bin/Readarr - Version 0.3.3.2171
+2023-08-23 15:01:01.8|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2023-08-23 15:01:01.9|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2023-08-23 15:01:02.2|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2023-08-23 15:01:02.3|Info|MigrationController|*** Migrating data source=/config/readarr.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2023-08-23 15:01:02.7|Info|MigrationController|*** Migrating data source=/config/cache.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2023-08-23 15:01:02.9|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2023-08-23 15:01:03.1|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:8787
+2023-08-23 15:01:03.5|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-08-23 15:01:03.5|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2023-08-23 15:01:03.5|Info|Microsoft.Hosting.Lifetime|Content root path: /app/readarr/bin
+2023-08-23 15:03:03.5|Info|ImportListSyncService|Starting Import List Sync
+2023-08-23 15:03:03.5|Info|ImportListSyncService|Processing 0 list items
+2023-08-23 15:03:03.5|Info|ImportListSyncService|Import List Sync Completed. Items found: 0, Authors added: 0, Books added: 0
+2023-08-23 15:08:03.5|Info|ImportListSyncService|Starting Import List Sync
+2023-08-23 15:08:03.5|Info|ImportListSyncService|Processing 0 list items
+2023-08-23 15:08:03.5|Info|ImportListSyncService|Import List Sync Completed. Items found: 0, Authors added: 0, Books added: 0
+2023-08-23 15:13:03.7|Info|ImportListSyncService|Starting Import List Sync
+2023-08-23 15:13:03.7|Info|ImportListSyncService|Processing 0 list items
+2023-08-23 15:13:03.7|Info|ImportListSyncService|Import List Sync Completed. Items found: 0, Authors added: 0, Books added: 0
+2023-08-23 15:13:33.8|Info|RssSyncService|Starting RSS Sync
+2023-08-23 15:13:34.8|Warn|Torznab|Indexer Solid Torrents (Prowlarr) rss sync didn't cover the period between 08/23/2023 03:00:00 and 08/23/2023 03:00:00 UTC. Search may be required.
+2023-08-23 15:13:35.0|Warn|Torznab|Indexer BitSearch (Prowlarr) rss sync didn't cover the period between 08/23/2023 03:00:00 and 08/23/2023 03:00:00 UTC. Search may be required.
+2023-08-23 15:13:35.2|Warn|Torznab|Indexer Torrent Downloads (Prowlarr) rss sync didn't cover the period between 08/23/2023 17:58:20 and 08/23/2023 18:13:35 UTC. Search may be required.
+2023-08-23 15:13:39.2|Warn|Torznab|Indexer EXT Torrents (Prowlarr) rss sync didn't cover the period between 08/23/2023 17:40:20 and 08/23/2023 17:40:39 UTC. Search may be required.
+2023-08-23 15:13:40.9|Info|DownloadDecisionMaker|Processing 226 releases
+2023-08-23 15:13:41.1|Info|RssSyncService|RSS Sync Completed. Reports found: 226, Reports grabbed: 0
+2023-08-23 15:15:53.2|Info|RootFolderWatchingService|Watching directory /data/ebooks/
+2023-08-23 15:15:53.2|Info|DiskScanService|Scanning /data/ebooks/
+2023-08-23 15:15:53.2|Info|ImportDecisionMaker|Reading file 1/2
+2023-08-23 15:15:53.3|Info|ImportDecisionMaker|Reading file 2/2
+2023-08-23 15:15:53.3|Info|TrackGroupingService|Grouping 2 tracks
+2023-08-23 15:15:53.3|Info|IdentificationService|Identifying book 1/2
+2023-08-23 15:15:54.9|Info|IdentificationService|Identifying book 2/2
+2023-08-23 15:15:55.3|Info|ImportApprovedBooks|Importing book 1/2 [60958118][Fantastic Beasts: The Crimes of Grindelwald]
+2023-08-23 15:15:55.4|Info|AddAuthorService|Adding Author [1077326][J.K. Rowling] Path: [/data/ebooks/J.K. Rowling]
+2023-08-23 15:15:55.6|Info|ImportApprovedBooks|Importing book 2/2 [52535072][The Hogwarts Collection]
+2023-08-23 15:15:55.6|Info|ImportApprovedBooks|Importing 2 files
+2023-08-23 15:15:55.6|Info|RefreshAuthorService|Updating Info for J.K. Rowling
+2023-08-23 15:15:55.7|Info|RefreshBookService|Updating Info for The Hogwarts Collection
+2023-08-23 15:15:55.8|Info|RefreshBookService|Updating Info for Fantastic Beasts: The Crimes of Grindelwald
+2023-08-23 15:15:55.8|Info|RefreshBookService|Updating Info for Harry Potter: La precuela
+2023-08-23 15:15:55.8|Info|RefreshBookService|Updating Info for What's Your Story? (Postcard Collection)
+2023-08-23 15:15:55.8|Info|RefreshBookService|Updating Info for The Casual Vacancy
+2023-08-23 15:15:55.8|Info|RefreshBookService|Updating Info for Harry Potter and the Order of the Phoenix
+2023-08-23 15:15:55.8|Info|RefreshBookService|Updating Info for Fantastic Beasts and Where to Find Them
+2023-08-23 15:15:55.8|Info|RefreshBookService|Updating Info for Harry Potter and the Deathly Hallows
+2023-08-23 15:15:55.9|Info|RefreshBookService|Updating Info for Ilvermorny School of Witchcraft and Wizardry
+2023-08-23 15:15:55.9|Info|RefreshBookService|Updating Info for Harry Potter and the Cursed Child: Parts One and Two
+2023-08-23 15:15:55.9|Info|RefreshBookService|Updating Info for Very Good Lives: The Fringe Benefits of Failure and the Importance of Imagination
+2023-08-23 15:15:55.9|Info|RefreshBookService|Updating Info for Harry Potter and the Chamber of Secrets
+2023-08-23 15:15:55.9|Info|RefreshBookService|Updating Info for Harry Potter and the Order of the Phoenix
+2023-08-23 15:15:56.0|Info|RefreshBookService|Updating Info for Harry Potter and the Philosopher’s Stone
+2023-08-23 15:15:56.0|Info|RefreshBookService|Updating Info for Harry Potter and the Goblet of Fire
+2023-08-23 15:15:56.0|Info|RefreshBookService|Updating Info for Fantastic Beasts: The Secrets of Dumbledore: The Original Screenplay
+2023-08-23 15:15:56.1|Info|RefreshBookService|Updating Info for Harry Potter and the Prisoner of Azkaban
+2023-08-23 15:15:56.1|Info|RefreshBookService|Updating Info for Fantastic Beasts and Where to Find Them: The Original Screenplay
+2023-08-23 15:15:56.1|Info|RefreshBookService|Updating Info for Harry Potter and the Order of the Phoenix
+2023-08-23 15:15:56.1|Info|RefreshBookService|Updating Info for カジュアル・ベイカンシー 突然の空席 1
+2023-08-23 15:15:56.1|Info|RefreshBookService|Updating Info for The Tales of Beedle the Bard
+2023-08-23 15:15:56.1|Info|RefreshBookService|Updating Info for Short Stories from Hogwarts of Heroism, Hardship and Dangerous Hobbies
+2023-08-23 15:15:56.1|Info|RefreshBookService|Updating Info for Short Stories from Hogwarts of Power, Politics and Pesky Poltergeists
+2023-08-23 15:15:56.2|Info|RefreshBookService|Updating Info for Harry Potter and the Half-Blood Prince
+2023-08-23 15:15:56.2|Info|RefreshBookService|Updating Info for Hogwarts: An Incomplete and Unreliable Guide
+2023-08-23 15:15:56.2|Info|RefreshBookService|Updating Info for The History of the Quidditch World Cup
+2023-08-23 15:15:56.2|Info|RefreshBookService|Updating Info for The Ickabog
+2023-08-23 15:15:56.2|Info|RefreshBookService|Updating Info for Harry Potter and the Prisoner of Azkaban (Harry Potter, Book 3)
+2023-08-23 15:15:56.2|Info|RefreshBookService|Updating Info for Harry Potter Audio Collection 2,3 Harry Potter and the Chamber of Secrets. Harry Potter and the Prisoner of Azkaban .
+2023-08-23 15:15:56.2|Info|RefreshBookService|Updating Info for Harry Potter y el Prisionero de Azkaban
+2023-08-23 15:15:56.2|Info|RefreshBookService|Updating Info for The Christmas Pig
+2023-08-23 15:15:56.2|Info|RefreshBookService|Updating Info for Tales of Beetle the Bard Illustrated Version
+2023-08-23 15:15:56.2|Info|RefreshBookService|Updating Info for The Harry Potter Wizarding Almanac: The official magical companion to J.K. Rowling's Harry Potter books
+2023-08-23 15:15:56.2|Info|RefreshBookService|Updating Info for Harry Potter Slytherin House Edition Paperback Box Set
+2023-08-23 15:15:56.2|Info|RefreshBookService|Updating Info for Harry Potter and the Philosopher’s Stone: Illustrated Edition (Harry Potter Illustrated Edtn) & Unofficial Harry Potter - The Ultimate Amazing Complete Quiz Book 2 Books Collection Set
+2023-08-23 15:15:56.2|Info|RefreshBookService|Updating Info for Harry Potter and the prisoner of Azkaban #3
+2023-08-23 15:15:56.2|Info|RefreshBookService|Updating Info for Harry Potter: A Magical Year – The Illustrations of Jim Kay
+2023-08-23 15:15:56.3|Info|RefreshBookService|Updating Info for Harry Potter Ravenclaw House Edition Paperback Box Set
+2023-08-23 15:15:56.4|Info|MediaCoverService|Downloading Poster for [1077326][J.K. Rowling] https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/authors/1596216614i/1077326.jpg
+2023-08-23 15:15:56.4|Info|DiskScanService|Scanning /data/ebooks/
+2023-08-23 15:15:56.4|Info|TrackGroupingService|Grouping 0 tracks
+2023-08-23 15:15:56.4|Info|ImportApprovedBooks|Importing 0 files
+2023-08-23 15:15:56.4|Info|DiskScanService|Completed scanning disk for J.K. Rowling
+2023-08-23 15:15:56.4|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2023-08-23 15:15:56.4|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2023-08-23 15:15:56.4|Info|ExistingExtraFileService|Found 0 extra files
+2023-08-23 15:15:56.4|Info|AuthorScannedHandler|[J.K. Rowling] was recently added, performing post-add actions
+2023-08-23 15:15:58.4|Info|MediaCoverService|Downloading Cover for [60958118][Fantastic Beasts: The Crimes of Grindelwald] https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1544557642i/43198588.jpg
+2023-08-23 15:15:58.7|Info|MediaCoverService|Downloading Cover for [52535072][The Hogwarts Collection] https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1635342325i/33802420.jpg
+2023-08-23 15:15:58.9|Info|MediaCoverService|Downloading Cover for [13810543][Harry Potter: La precuela] https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1456894457i/8933944.jpg
+2023-08-23 15:15:59.2|Info|MediaCoverService|Downloading Cover for [3900781][What's Your Story? (Postcard Collection)] https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1241851196i/3855680.jpg
+2023-08-23 15:15:59.4|Info|MediaCoverService|Downloading Cover for [19926990][The Casual Vacancy] https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1509893913i/13497818.jpg
+2023-08-23 15:15:59.4|Info|MediaCoverService|Downloading Cover for [19079807][Harry Potter and the Order of the Phoenix] https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1182710609i/1317181.jpg
+2023-08-23 15:15:59.5|Info|MediaCoverService|Downloading Cover for [4195128][Fantastic Beasts and Where to Find Them] https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1303738520i/41899.jpg
+2023-08-23 15:15:59.6|Info|MediaCoverService|Downloading Cover for [2963218][Harry Potter and the Deathly Hallows] https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1663805647i/136251.jpg
+2023-08-23 15:15:59.7|Info|MediaCoverService|Downloading Cover for [51879110][Ilvermorny School of Witchcraft and Wizardry] https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1474996746i/31223522.jpg
+2023-08-23 15:15:59.8|Info|MediaCoverService|Downloading Cover for [48765776][Harry Potter and the Cursed Child: Parts One and Two] https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1470082995i/29056083.jpg
+2023-08-23 15:16:00.1|Info|MediaCoverService|Downloading Cover for [43264515][Very Good Lives: The Fringe Benefits of Failure and the Importance of Imagination] https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1514282569i/23731881.jpg
+2023-08-23 15:16:00.2|Info|MediaCoverService|Downloading Cover for [6231171][Harry Potter and the Chamber of Secrets] https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1474169725i/15881.jpg
+2023-08-23 15:16:00.3|Info|MediaCoverService|Downloading Cover for [2809203][Harry Potter and the Order of the Phoenix] https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1546910265i/2.jpg
+2023-08-23 15:16:00.4|Info|MediaCoverService|Downloading Cover for [4640799][Harry Potter and the Philosopher’s Stone] https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1474154022i/3.jpg
+2023-08-23 15:16:00.6|Info|MediaCoverService|Downloading Cover for [3046572][Harry Potter and the Goblet of Fire] https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1554006152i/6.jpg
+2023-08-23 15:16:00.8|Info|MediaCoverService|Downloading Cover for [65370683][Fantastic Beasts: The Secrets of Dumbledore: The Original Screenplay] https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1661082101i/41879350.jpg
+2023-08-23 15:16:00.9|Info|MediaCoverService|Downloading Cover for [2402163][Harry Potter and the Prisoner of Azkaban] https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1630547330i/5.jpg
+2023-08-23 15:16:01.0|Info|MediaCoverService|Downloading Cover for [50435175][Fantastic Beasts and Where to Find Them: The Original Screenplay] https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1481542648i/29363501.jpg
+2023-08-23 15:16:01.2|Info|MediaCoverService|Downloading Cover for [64811799][Harry Potter and the Order of the Phoenix] https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1394391315i/21175582.jpg
+2023-08-23 15:16:01.3|Info|MediaCoverService|Downloading Cover for [3007490][The Tales of Beedle the Bard] https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1630876355i/3950967.jpg
+2023-08-23 15:16:01.4|Info|MediaCoverService|Downloading Cover for [52885176][Short Stories from Hogwarts of Heroism, Hardship and Dangerous Hobbies] https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1471436733i/31538635.jpg
+2023-08-23 15:16:01.6|Info|MediaCoverService|Downloading Cover for [52218734][Short Stories from Hogwarts of Power, Politics and Pesky Poltergeists] https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1471436601i/31538614.jpg
+2023-08-23 15:16:01.7|Info|MediaCoverService|Downloading Cover for [41335427][Harry Potter and the Half-Blood Prince] https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1587697303i/1.jpg
+2023-08-23 15:16:02.1|Info|MediaCoverService|Downloading Cover for [52218770][Hogwarts: An Incomplete and Unreliable Guide] https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1648044694i/31538647.jpg
+2023-08-23 15:16:02.3|Info|MediaCoverService|Downloading Cover for [83743758][The Ickabog] https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1595440101i/53490148.jpg
+2023-08-23 15:16:02.4|Info|MediaCoverService|Downloading Cover for [99861431][Harry Potter and the Prisoner of Azkaban (Harry Potter, Book 3)] https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1680660789i/63899003.jpg
+2023-08-23 15:16:02.5|Info|MediaCoverService|Downloading Cover for [96581658][Harry Potter y el Prisionero de Azkaban] https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1652811511i/61116954.jpg
+2023-08-23 15:16:02.6|Info|MediaCoverService|Downloading Cover for [90423339][The Christmas Pig] https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1635373481i/57730258.jpg
+2023-08-23 15:16:02.9|Info|MediaCoverService|Downloading Cover for [144458699][The Harry Potter Wizarding Almanac: The official magical companion to J.K. Rowling's Harry Potter books] https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1680320055i/123166296.jpg
+2023-08-23 15:16:03.1|Info|MediaCoverService|Downloading Cover for [95923940][Harry Potter Slytherin House Edition Paperback Box Set] https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1650170329i/60826497.jpg
+2023-08-23 15:16:03.2|Info|MediaCoverService|Downloading Cover for [90932446][Harry Potter and the Philosopher’s Stone: Illustrated Edition (Harry Potter Illustrated Edtn) & Unofficial Harry Potter - The Ultimate Amazing Complete Quiz Book 2 Books Collection Set] https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1620834089i/58024456.jpg
+2023-08-23 15:16:03.3|Info|MediaCoverService|Downloading Cover for [135593542][Harry Potter and the prisoner of Azkaban #3] https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1676290596i/113078810.jpg
+2023-08-23 15:16:03.4|Info|MediaCoverService|Downloading Cover for [90696181][Harry Potter: A Magical Year – The Illustrations of Jim Kay] https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1633193692i/57892922.jpg
+2023-08-23 15:16:03.7|Info|MediaCoverService|Downloading Cover for [96707423][Harry Potter Ravenclaw House Edition Paperback Box Set] https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1655745271i/61329222.jpg
+2023-08-23 15:18:03.9|Info|ImportListSyncService|Starting Import List Sync
+2023-08-23 15:18:03.9|Info|ImportListSyncService|Processing 0 list items
+2023-08-23 15:18:03.9|Info|ImportListSyncService|Import List Sync Completed. Items found: 0, Authors added: 0, Books added: 0
+2023-08-23 15:23:04.0|Info|ImportListSyncService|Starting Import List Sync
+2023-08-23 15:23:04.0|Info|ImportListSyncService|Processing 0 list items
+2023-08-23 15:23:04.0|Info|ImportListSyncService|Import List Sync Completed. Items found: 0, Authors added: 0, Books added: 0
+2023-08-23 15:28:04.1|Info|ImportListSyncService|Starting Import List Sync
+2023-08-23 15:28:04.1|Info|ImportListSyncService|Processing 0 list items
+2023-08-23 15:28:04.1|Info|ImportListSyncService|Import List Sync Completed. Items found: 0, Authors added: 0, Books added: 0
+2023-08-23 15:28:47.2|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2023-08-23 15:28:47.2|Info|RootFolderWatchingService|Stopping directory watching for path /data/ebooks/
+2023-08-23 15:28:47.4|Info|ConsoleApp|Exiting main.
+2023-08-23 21:25:36.9|Info|Bootstrap|Starting Readarr - /app/readarr/bin/Readarr - Version 0.3.3.2171
+2023-08-23 21:25:37.0|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2023-08-23 21:25:37.0|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2023-08-23 21:25:37.5|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2023-08-23 21:25:37.6|Info|MigrationController|*** Migrating data source=/config/readarr.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2023-08-23 21:25:38.0|Info|MigrationController|*** Migrating data source=/config/cache.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2023-08-23 21:25:38.2|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-10000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2023-08-23 21:25:38.4|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:8787
+2023-08-23 21:25:39.1|Info|RootFolderWatchingService|Watching directory /data/ebooks/
+2023-08-23 21:25:39.2|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-08-23 21:25:39.2|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2023-08-23 21:25:39.2|Info|Microsoft.Hosting.Lifetime|Content root path: /app/readarr/bin
+2023-08-23 21:26:09.5|Info|RssSyncService|Starting RSS Sync
+2023-08-23 21:26:09.7|Info|ImportListSyncService|Starting Import List Sync
+2023-08-23 21:26:09.7|Info|ImportListSyncService|Processing 0 list items
+2023-08-23 21:26:09.7|Info|ImportListSyncService|Import List Sync Completed. Items found: 0, Authors added: 0, Books added: 0
+2023-08-23 21:26:10.5|Warn|Torznab|Indexer Solid Torrents (Prowlarr) rss sync didn't cover the period between 08/23/2023 03:00:00 and 08/23/2023 03:00:00 UTC. Search may be required.
+2023-08-23 21:26:10.6|Warn|Torznab|Indexer BitSearch (Prowlarr) rss sync didn't cover the period between 08/23/2023 03:00:00 and 08/23/2023 03:00:00 UTC. Search may be required.
+2023-08-23 21:26:10.6|Warn|Torznab|Indexer Torrent Downloads (Prowlarr) rss sync didn't cover the period between 08/23/2023 18:13:35 and 08/24/2023 00:26:10 UTC. Search may be required.
+2023-08-23 21:26:12.8|Warn|Torznab|Indexer Internet Archive (Prowlarr) rss sync didn't cover the period between 08/23/2023 21:07:03 and 08/24/2023 02:22:26 UTC. Search may be required.
+2023-08-23 21:26:13.5|Warn|Torznab|Indexer GloDLS (Prowlarr) rss sync didn't cover the period between 08/23/2023 13:18:47 and 08/24/2023 00:26:13 UTC. Search may be required.
+2023-08-23 21:26:29.9|Info|DownloadDecisionMaker|Processing 189 releases
+2023-08-23 21:26:30.1|Info|RssSyncService|RSS Sync Completed. Reports found: 189, Reports grabbed: 0
+2023-08-23 21:27:25.5|Warn|ReadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2023-08-23 21:27:26.8|Warn|ReadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2023-08-23 21:27:28.5|Warn|ReadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2023-08-23 21:27:31.8|Warn|ReadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2023-08-23 21:27:33.9|Warn|ReadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2023-08-23 21:27:36.4|Warn|ReadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2023-08-23 21:27:44.9|Warn|ReadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2023-08-23 21:27:54.9|Warn|ReadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2023-08-23 21:27:55.0|Warn|ReadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2023-08-23 21:27:57.0|Warn|ReadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2023-08-23 21:27:59.3|Warn|ReadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2023-08-23 21:28:01.1|Warn|ReadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2023-08-23 21:28:03.5|Warn|ReadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2023-08-23 21:28:05.3|Warn|ReadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2023-08-23 21:28:15.3|Warn|ReadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2023-08-23 21:28:16.6|Warn|ReadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2023-08-23 21:31:10.0|Info|ImportListSyncService|Starting Import List Sync
+2023-08-23 21:31:10.0|Info|ImportListSyncService|Processing 0 list items
+2023-08-23 21:31:10.0|Info|ImportListSyncService|Import List Sync Completed. Items found: 0, Authors added: 0, Books added: 0
+2023-08-23 21:33:33.1|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2023-08-23 21:33:33.1|Info|RootFolderWatchingService|Stopping directory watching for path /data/ebooks/
+2023-08-23 21:33:33.2|Info|ConsoleApp|Exiting main.

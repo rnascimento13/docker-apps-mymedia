@@ -69,3 +69,770 @@
 21-Aug-2023 14:14:51 - INFO    :: mylar.halt.1604 : MAIN : Shutting down the background schedulers...
 21-Aug-2023 14:14:52 - INFO    :: mylar.search_queue.3324 : SEARCH-QUEUE : [SEARCH-QUEUE] Cleaning up workers for shutdown
 21-Aug-2023 14:14:52 - INFO    :: mylar.shutdown.1631 : MAIN : Mylar is shutting down...
+21-Aug-2023 17:01:02 - INFO    :: mylar.configure.1120 : MainThread : [DOCKER-AWARE] Docker installation detected.
+21-Aug-2023 17:01:02 - INFO    :: mylar.configure.1123 : MainThread : [DOCKER-AWARE] Setting default comic location path to /comics
+21-Aug-2023 17:01:02 - INFO    :: mylar.configure.1126 : MainThread : [DOCKER-AWARE] Setting default sabnzbd download directory location to /downloads
+21-Aug-2023 17:01:02 - ERROR   :: mylar.configure.1139 : MainThread : No User Comicvine API key specified. I will not work very well due to api limits - http://api.comicvine.com/ and get your own free key.
+21-Aug-2023 17:01:02 - INFO    :: mylar.configure.1180 : MainThread : Ignored Publishers: []
+21-Aug-2023 17:01:02 - INFO    :: mylar.configure.1203 : MainThread : [MASS_PUBLISHERS] Auto-add for weekly publishers set to: []
+21-Aug-2023 17:01:02 - INFO    :: mylar.configure.1215 : MainThread : [IGNORE_SEARCH_WORDS] Words to flag search result as invalid: ['.exe', '.iso', 'pdf-xpost', 'pdf', 'ebook']
+21-Aug-2023 17:01:02 - INFO    :: mylar.configure.1227 : MainThread : [PROBLEM_DATES] Problem dates loaded: ['2021-07-14 04:00:34']
+21-Aug-2023 17:01:02 - INFO    :: mylar.configure.1241 : MainThread : [COMICTAGGER] Version detected: 1.3.5
+21-Aug-2023 17:01:02 - INFO    :: mylar.configure.1334 : MainThread : [Search Tier Cutoff] Setting Tier-1 cutoff point to 14 days
+21-Aug-2023 17:01:02 - INFO    :: mylar.initialize.257 : MainThread : Checking to see if the database has all tables....
+21-Aug-2023 17:01:02 - INFO    :: mylar.dbcheck.1555 : MainThread : Ensuring DB integrity - Removing all Erroneous Comics (ie. named None)
+21-Aug-2023 17:01:02 - INFO    :: mylar.dbcheck.1565 : MainThread : Correcting Null entries that make the main page break on startup.
+21-Aug-2023 17:01:02 - INFO    :: mylar.dbcheck.1576 : MainThread : [<class 'int'>]oldconfig_version: 12
+21-Aug-2023 17:01:02 - INFO    :: mylar.check_failed_update.172 : MainThread : checked is None
+21-Aug-2023 17:01:02 - INFO    :: mylar.initialize.286 : MainThread : Successfully discovered local IP and locking it in as : 172.26.0.7
+21-Aug-2023 17:01:02 - INFO    :: mylar.initialize.363 : MainThread : [IMPRINT_LOADS] Loading Publisher imprints data from local file.
+21-Aug-2023 17:01:02 - INFO    :: mylar.initialize.389 : MainThread : [IMPRINT_LOADS] Successfully loaded imprints for 6 publishers
+21-Aug-2023 17:01:02 - INFO    :: mylar.initialize.391 : MainThread : Remapping the sorting to allow for new additions.
+21-Aug-2023 17:01:02 - INFO    :: mylar.ComicSort.778 : MainThread : Sucessfully ordered -1 series in your watchlist.
+21-Aug-2023 17:01:02 - INFO    :: mylar.validateAndCreateDirectory.1836 : MainThread : [DIRECTORY-CHECK] Found DATA directory: /config/mylar
+21-Aug-2023 17:01:02 - INFO    :: mylar.initialize.73 : MAIN : Starting Mylar on http://0.0.0.0:8090/
+21-Aug-2023 17:01:02 - INFO    :: mylar.getVersion.188 : MAIN : [DOCKER-AWARE] Docker installation detected.
+21-Aug-2023 17:01:02 - INFO    :: mylar.getVersion.209 : MAIN : i:  (HEAD -> master, tag: v0.7.3)
+
+21-Aug-2023 17:01:02 - INFO    :: mylar.getVersion.220 : MAIN : [LAST_RELEASE] Branch: master
+21-Aug-2023 17:01:02 - INFO    :: mylar.getVersion.225 : MAIN : [LAST_RELEASE] Version: v0.7.3
+21-Aug-2023 17:01:02 - INFO    :: mylar.getVersion.209 : MAIN : i: f59746303c1e14298fc4aef7a91a2116829ce3d8
+
+21-Aug-2023 17:01:02 - INFO    :: mylar.getVersion.231 : MAIN : [LAST_RELEASE] Commit: f59746303c1e14298fc4aef7a91a2116829ce3d8
+21-Aug-2023 17:01:02 - INFO    :: mylar.getVersion.266 : MAIN : Branch detected & set to : master
+21-Aug-2023 17:01:02 - INFO    :: mylar.versionload.469 : MAIN : Version information: master [f59746303c1e14298fc4aef7a91a2116829ce3d8]
+21-Aug-2023 17:01:03 - INFO    :: mylar.release_messages.270 : MAIN : release_messages: None
+21-Aug-2023 17:01:03 - INFO    :: mylar.start.667 : MAIN : [SEARCH-QUEUE] Attempting to background load the search queue....
+21-Aug-2023 17:01:03 - INFO    :: mylar.start.671 : MAIN : [SEARCH-QUEUE] Successfully started the Search Queuer...
+21-Aug-2023 17:01:03 - INFO    :: mylar.start.586 : MAIN : [WEEKLY] Checking for existance of Weekly Comic listing...
+21-Aug-2023 17:01:03 - INFO    :: mylar.start.645 : MAIN : Firing up the Background Schedulers now....
+21-Aug-2023 17:01:03 - INFO    :: mylar.start.650 : MAIN : Background Schedulers successfully started...
+21-Aug-2023 17:05:57 - INFO    :: mylar.generateAPI.7349 : CP Server Thread-6 : New API generated
+21-Aug-2023 17:06:28 - INFO    :: mylar.configure.1120 : CP Server Thread-5 : [DOCKER-AWARE] Docker installation detected.
+21-Aug-2023 17:06:28 - ERROR   :: mylar.configure.1139 : CP Server Thread-5 : No User Comicvine API key specified. I will not work very well due to api limits - http://api.comicvine.com/ and get your own free key.
+21-Aug-2023 17:06:28 - INFO    :: mylar.configure.1180 : CP Server Thread-5 : Ignored Publishers: []
+21-Aug-2023 17:06:28 - INFO    :: mylar.configure.1203 : CP Server Thread-5 : [MASS_PUBLISHERS] Auto-add for weekly publishers set to: []
+21-Aug-2023 17:06:28 - INFO    :: mylar.configure.1215 : CP Server Thread-5 : [IGNORE_SEARCH_WORDS] Words to flag search result as invalid: ['.exe', '.iso', 'pdf-xpost', 'pdf', 'ebook']
+21-Aug-2023 17:06:28 - INFO    :: mylar.configure.1227 : CP Server Thread-5 : [PROBLEM_DATES] Problem dates loaded: ['2021-07-14 04:00:34']
+21-Aug-2023 17:06:28 - INFO    :: mylar.configure.1241 : CP Server Thread-5 : [COMICTAGGER] Version detected: 1.3.5
+21-Aug-2023 17:06:28 - INFO    :: mylar.validateAndCreateDirectory.1836 : CP Server Thread-5 : [DIRECTORY-CHECK] Found ddl location directory: /config/mylar/cache
+21-Aug-2023 17:06:28 - INFO    :: mylar.configure.1334 : CP Server Thread-5 : [Search Tier Cutoff] Setting Tier-1 cutoff point to 14 days
+21-Aug-2023 17:06:28 - INFO    :: mylar.configUpdate.7139 : CP Server Thread-5 : Now saving config...
+21-Aug-2023 17:09:09 - INFO    :: mylar.main.481 : MAIN : Received signal: shutdown
+21-Aug-2023 17:09:11 - INFO    :: mylar.halt.1604 : MAIN : Shutting down the background schedulers...
+21-Aug-2023 17:09:13 - INFO    :: mylar.search_queue.3324 : SEARCH-QUEUE : [SEARCH-QUEUE] Cleaning up workers for shutdown
+21-Aug-2023 17:09:13 - INFO    :: mylar.shutdown.1631 : MAIN : Mylar is shutting down...
+21-Aug-2023 17:09:20 - INFO    :: mylar.configure.1120 : MainThread : [DOCKER-AWARE] Docker installation detected.
+21-Aug-2023 17:09:20 - ERROR   :: mylar.configure.1139 : MainThread : No User Comicvine API key specified. I will not work very well due to api limits - http://api.comicvine.com/ and get your own free key.
+21-Aug-2023 17:09:20 - INFO    :: mylar.configure.1180 : MainThread : Ignored Publishers: []
+21-Aug-2023 17:09:20 - INFO    :: mylar.configure.1203 : MainThread : [MASS_PUBLISHERS] Auto-add for weekly publishers set to: []
+21-Aug-2023 17:09:20 - INFO    :: mylar.configure.1215 : MainThread : [IGNORE_SEARCH_WORDS] Words to flag search result as invalid: ['.exe', '.iso', 'pdf-xpost', 'pdf', 'ebook']
+21-Aug-2023 17:09:20 - INFO    :: mylar.configure.1227 : MainThread : [PROBLEM_DATES] Problem dates loaded: ['2021-07-14 04:00:34']
+21-Aug-2023 17:09:20 - INFO    :: mylar.configure.1241 : MainThread : [COMICTAGGER] Version detected: 1.3.5
+21-Aug-2023 17:09:20 - INFO    :: mylar.configure.1334 : MainThread : [Search Tier Cutoff] Setting Tier-1 cutoff point to 14 days
+21-Aug-2023 17:09:20 - INFO    :: mylar.initialize.257 : MainThread : Checking to see if the database has all tables....
+21-Aug-2023 17:09:20 - INFO    :: mylar.dbcheck.1555 : MainThread : Ensuring DB integrity - Removing all Erroneous Comics (ie. named None)
+21-Aug-2023 17:09:20 - INFO    :: mylar.dbcheck.1565 : MainThread : Correcting Null entries that make the main page break on startup.
+21-Aug-2023 17:09:20 - INFO    :: mylar.dbcheck.1576 : MainThread : [<class 'int'>]oldconfig_version: 12
+21-Aug-2023 17:09:20 - INFO    :: mylar.check_failed_update.172 : MainThread : checked is None
+21-Aug-2023 17:09:20 - INFO    :: mylar.initialize.286 : MainThread : Successfully discovered local IP and locking it in as : 172.26.0.7
+21-Aug-2023 17:09:20 - INFO    :: mylar.initialize.363 : MainThread : [IMPRINT_LOADS] Loading Publisher imprints data from local file.
+21-Aug-2023 17:09:20 - INFO    :: mylar.initialize.389 : MainThread : [IMPRINT_LOADS] Successfully loaded imprints for 6 publishers
+21-Aug-2023 17:09:20 - INFO    :: mylar.initialize.391 : MainThread : Remapping the sorting to allow for new additions.
+21-Aug-2023 17:09:20 - INFO    :: mylar.ComicSort.778 : MainThread : Sucessfully ordered -1 series in your watchlist.
+21-Aug-2023 17:09:20 - INFO    :: mylar.validateAndCreateDirectory.1836 : MainThread : [DIRECTORY-CHECK] Found DATA directory: /config/mylar
+21-Aug-2023 17:09:20 - INFO    :: mylar.initialize.73 : MAIN : Starting Mylar on http://0.0.0.0:8090/
+21-Aug-2023 17:09:20 - INFO    :: mylar.getVersion.188 : MAIN : [DOCKER-AWARE] Docker installation detected.
+21-Aug-2023 17:09:20 - INFO    :: mylar.getVersion.209 : MAIN : i:  (HEAD -> master, tag: v0.7.3)
+
+21-Aug-2023 17:09:20 - INFO    :: mylar.getVersion.220 : MAIN : [LAST_RELEASE] Branch: master
+21-Aug-2023 17:09:20 - INFO    :: mylar.getVersion.225 : MAIN : [LAST_RELEASE] Version: v0.7.3
+21-Aug-2023 17:09:20 - INFO    :: mylar.getVersion.209 : MAIN : i: f59746303c1e14298fc4aef7a91a2116829ce3d8
+
+21-Aug-2023 17:09:20 - INFO    :: mylar.getVersion.231 : MAIN : [LAST_RELEASE] Commit: f59746303c1e14298fc4aef7a91a2116829ce3d8
+21-Aug-2023 17:09:20 - INFO    :: mylar.getVersion.266 : MAIN : Branch detected & set to : master
+21-Aug-2023 17:09:20 - INFO    :: mylar.versionload.469 : MAIN : Version information: master [f59746303c1e14298fc4aef7a91a2116829ce3d8]
+21-Aug-2023 17:09:20 - INFO    :: mylar.release_messages.270 : MAIN : release_messages: None
+21-Aug-2023 17:09:20 - INFO    :: mylar.start.667 : MAIN : [SEARCH-QUEUE] Attempting to background load the search queue....
+21-Aug-2023 17:09:20 - INFO    :: mylar.start.671 : MAIN : [SEARCH-QUEUE] Successfully started the Search Queuer...
+21-Aug-2023 17:09:20 - INFO    :: mylar.start.586 : MAIN : [WEEKLY] Checking for existance of Weekly Comic listing...
+21-Aug-2023 17:09:20 - INFO    :: mylar.start.645 : MAIN : Firing up the Background Schedulers now....
+21-Aug-2023 17:09:20 - INFO    :: mylar.start.650 : MAIN : Background Schedulers successfully started...
+21-Aug-2023 18:12:52 - INFO    :: mylar.run.27 : ThreadPoolExecutor-0_0 : [WEEKLY] Checking Weekly Pull-list for new releases/updates
+21-Aug-2023 18:12:52 - INFO    :: mylar.pullit.43 : ThreadPoolExecutor-0_0 : Weekly pull list present - checking if it's up-to-date..
+21-Aug-2023 18:12:52 - INFO    :: mylar.pullit.72 : ThreadPoolExecutor-0_0 : [PULL-LIST] Populating & Loading pull-list data directly from alternate website
+21-Aug-2023 18:12:52 - INFO    :: mylar.pullit.106 : ThreadPoolExecutor-0_0 : [PULL-LIST] Populating & Loading pull-list data directly from alternate website for specific week of 33, 2023
+21-Aug-2023 18:12:53 - INFO    :: mylar.locg.78 : ThreadPoolExecutor-0_0 : [WEEKLY-PULL] There are 96 issues for week 33, 2023
+21-Aug-2023 18:12:53 - INFO    :: mylar.locg.109 : ThreadPoolExecutor-0_0 : Re-creating pullist to ensure everything's fresh.
+21-Aug-2023 18:12:55 - INFO    :: mylar.locg.144 : ThreadPoolExecutor-0_0 : [PULL-LIST] Successfully populated pull-list into Mylar for week 33 of 2023
+21-Aug-2023 18:12:55 - INFO    :: mylar.pullit.114 : ThreadPoolExecutor-0_0 : [PULL-LIST] Weekly Pull List successfully loaded with 96 issues.
+21-Aug-2023 18:12:57 - INFO    :: mylar.pullit.106 : ThreadPoolExecutor-0_0 : [PULL-LIST] Populating & Loading pull-list data directly from alternate website for specific week of 34, 2023
+21-Aug-2023 18:12:58 - INFO    :: mylar.locg.78 : ThreadPoolExecutor-0_0 : [WEEKLY-PULL] There are 99 issues for week 34, 2023
+21-Aug-2023 18:12:58 - INFO    :: mylar.locg.109 : ThreadPoolExecutor-0_0 : Re-creating pullist to ensure everything's fresh.
+21-Aug-2023 18:12:59 - INFO    :: mylar.locg.144 : ThreadPoolExecutor-0_0 : [PULL-LIST] Successfully populated pull-list into Mylar for week 34 of 2023
+21-Aug-2023 18:12:59 - INFO    :: mylar.pullit.114 : ThreadPoolExecutor-0_0 : [PULL-LIST] Weekly Pull List successfully loaded with 99 issues.
+21-Aug-2023 18:12:59 - INFO    :: mylar.future_check.1637 : ThreadPoolExecutor-0_0 : No series have been marked as being on auto-watch.
+21-Aug-2023 22:12:59 - INFO    :: mylar.run.27 : ThreadPoolExecutor-0_0 : [WEEKLY] Checking Weekly Pull-list for new releases/updates
+21-Aug-2023 22:12:59 - INFO    :: mylar.pullit.43 : ThreadPoolExecutor-0_0 : Weekly pull list present - checking if it's up-to-date..
+21-Aug-2023 22:12:59 - INFO    :: mylar.pullit.72 : ThreadPoolExecutor-0_0 : [PULL-LIST] Populating & Loading pull-list data directly from alternate website
+21-Aug-2023 22:12:59 - INFO    :: mylar.pullit.106 : ThreadPoolExecutor-0_0 : [PULL-LIST] Populating & Loading pull-list data directly from alternate website for specific week of 33, 2023
+21-Aug-2023 22:12:59 - INFO    :: mylar.locg.78 : ThreadPoolExecutor-0_0 : [WEEKLY-PULL] There are 96 issues for week 33, 2023
+21-Aug-2023 22:12:59 - INFO    :: mylar.locg.109 : ThreadPoolExecutor-0_0 : Re-creating pullist to ensure everything's fresh.
+21-Aug-2023 22:13:00 - INFO    :: mylar.locg.144 : ThreadPoolExecutor-0_0 : [PULL-LIST] Successfully populated pull-list into Mylar for week 33 of 2023
+21-Aug-2023 22:13:00 - INFO    :: mylar.pullit.114 : ThreadPoolExecutor-0_0 : [PULL-LIST] Weekly Pull List successfully loaded with 96 issues.
+21-Aug-2023 22:13:02 - INFO    :: mylar.pullit.106 : ThreadPoolExecutor-0_0 : [PULL-LIST] Populating & Loading pull-list data directly from alternate website for specific week of 34, 2023
+21-Aug-2023 22:13:03 - INFO    :: mylar.locg.78 : ThreadPoolExecutor-0_0 : [WEEKLY-PULL] There are 99 issues for week 34, 2023
+21-Aug-2023 22:13:03 - INFO    :: mylar.locg.109 : ThreadPoolExecutor-0_0 : Re-creating pullist to ensure everything's fresh.
+21-Aug-2023 22:13:04 - INFO    :: mylar.locg.144 : ThreadPoolExecutor-0_0 : [PULL-LIST] Successfully populated pull-list into Mylar for week 34 of 2023
+21-Aug-2023 22:13:04 - INFO    :: mylar.pullit.114 : ThreadPoolExecutor-0_0 : [PULL-LIST] Weekly Pull List successfully loaded with 99 issues.
+21-Aug-2023 22:13:04 - INFO    :: mylar.future_check.1637 : ThreadPoolExecutor-0_0 : No series have been marked as being on auto-watch.
+22-Aug-2023 01:42:27 - INFO    :: mylar.main.481 : MAIN : Received signal: shutdown
+22-Aug-2023 01:42:29 - INFO    :: mylar.halt.1604 : MAIN : Shutting down the background schedulers...
+22-Aug-2023 01:42:32 - INFO    :: mylar.search_queue.3324 : SEARCH-QUEUE : [SEARCH-QUEUE] Cleaning up workers for shutdown
+22-Aug-2023 01:42:32 - INFO    :: mylar.shutdown.1631 : MAIN : Mylar is shutting down...
+22-Aug-2023 07:23:38 - INFO    :: mylar.configure.1120 : MainThread : [DOCKER-AWARE] Docker installation detected.
+22-Aug-2023 07:23:38 - ERROR   :: mylar.configure.1139 : MainThread : No User Comicvine API key specified. I will not work very well due to api limits - http://api.comicvine.com/ and get your own free key.
+22-Aug-2023 07:23:38 - INFO    :: mylar.configure.1180 : MainThread : Ignored Publishers: []
+22-Aug-2023 07:23:38 - INFO    :: mylar.configure.1203 : MainThread : [MASS_PUBLISHERS] Auto-add for weekly publishers set to: []
+22-Aug-2023 07:23:38 - INFO    :: mylar.configure.1215 : MainThread : [IGNORE_SEARCH_WORDS] Words to flag search result as invalid: ['.exe', '.iso', 'pdf-xpost', 'pdf', 'ebook']
+22-Aug-2023 07:23:38 - INFO    :: mylar.configure.1227 : MainThread : [PROBLEM_DATES] Problem dates loaded: ['2021-07-14 04:00:34']
+22-Aug-2023 07:23:38 - INFO    :: mylar.configure.1241 : MainThread : [COMICTAGGER] Version detected: 1.3.5
+22-Aug-2023 07:23:38 - INFO    :: mylar.configure.1334 : MainThread : [Search Tier Cutoff] Setting Tier-1 cutoff point to 14 days
+22-Aug-2023 07:23:38 - INFO    :: mylar.initialize.257 : MainThread : Checking to see if the database has all tables....
+22-Aug-2023 07:23:38 - INFO    :: mylar.dbcheck.1555 : MainThread : Ensuring DB integrity - Removing all Erroneous Comics (ie. named None)
+22-Aug-2023 07:23:38 - INFO    :: mylar.dbcheck.1565 : MainThread : Correcting Null entries that make the main page break on startup.
+22-Aug-2023 07:23:38 - INFO    :: mylar.dbcheck.1576 : MainThread : [<class 'int'>]oldconfig_version: 12
+22-Aug-2023 07:23:38 - INFO    :: mylar.check_failed_update.172 : MainThread : checked is None
+22-Aug-2023 07:23:38 - INFO    :: mylar.initialize.286 : MainThread : Successfully discovered local IP and locking it in as : 172.26.0.4
+22-Aug-2023 07:23:38 - INFO    :: mylar.initialize.363 : MainThread : [IMPRINT_LOADS] Loading Publisher imprints data from local file.
+22-Aug-2023 07:23:38 - INFO    :: mylar.initialize.389 : MainThread : [IMPRINT_LOADS] Successfully loaded imprints for 6 publishers
+22-Aug-2023 07:23:38 - INFO    :: mylar.initialize.391 : MainThread : Remapping the sorting to allow for new additions.
+22-Aug-2023 07:23:38 - INFO    :: mylar.ComicSort.778 : MainThread : Sucessfully ordered -1 series in your watchlist.
+22-Aug-2023 07:23:38 - INFO    :: mylar.validateAndCreateDirectory.1836 : MainThread : [DIRECTORY-CHECK] Found DATA directory: /config/mylar
+22-Aug-2023 07:23:38 - INFO    :: mylar.initialize.73 : MAIN : Starting Mylar on http://0.0.0.0:8090/
+22-Aug-2023 07:23:38 - INFO    :: mylar.getVersion.188 : MAIN : [DOCKER-AWARE] Docker installation detected.
+22-Aug-2023 07:23:38 - INFO    :: mylar.getVersion.209 : MAIN : i:  (HEAD -> master, tag: v0.7.3)
+
+22-Aug-2023 07:23:38 - INFO    :: mylar.getVersion.220 : MAIN : [LAST_RELEASE] Branch: master
+22-Aug-2023 07:23:38 - INFO    :: mylar.getVersion.225 : MAIN : [LAST_RELEASE] Version: v0.7.3
+22-Aug-2023 07:23:38 - INFO    :: mylar.getVersion.209 : MAIN : i: f59746303c1e14298fc4aef7a91a2116829ce3d8
+
+22-Aug-2023 07:23:38 - INFO    :: mylar.getVersion.231 : MAIN : [LAST_RELEASE] Commit: f59746303c1e14298fc4aef7a91a2116829ce3d8
+22-Aug-2023 07:23:39 - INFO    :: mylar.getVersion.266 : MAIN : Branch detected & set to : master
+22-Aug-2023 07:23:39 - INFO    :: mylar.versionload.469 : MAIN : Version information: master [f59746303c1e14298fc4aef7a91a2116829ce3d8]
+22-Aug-2023 07:23:40 - INFO    :: mylar.release_messages.270 : MAIN : release_messages: None
+22-Aug-2023 07:23:40 - INFO    :: mylar.start.667 : MAIN : [SEARCH-QUEUE] Attempting to background load the search queue....
+22-Aug-2023 07:23:40 - INFO    :: mylar.start.671 : MAIN : [SEARCH-QUEUE] Successfully started the Search Queuer...
+22-Aug-2023 07:23:40 - INFO    :: mylar.start.586 : MAIN : [WEEKLY] Checking for existance of Weekly Comic listing...
+22-Aug-2023 07:23:40 - INFO    :: mylar.start.606 : MAIN : [WEEKLY] Weekly Pull-Update initializing immediately as it has been 9.176723695596058 hours since the last run
+22-Aug-2023 07:23:40 - INFO    :: mylar.start.645 : MAIN : Firing up the Background Schedulers now....
+22-Aug-2023 07:23:40 - INFO    :: mylar.run.27 : ThreadPoolExecutor-0_0 : [WEEKLY] Checking Weekly Pull-list for new releases/updates
+22-Aug-2023 07:23:40 - INFO    :: mylar.start.650 : MAIN : Background Schedulers successfully started...
+22-Aug-2023 07:23:40 - INFO    :: mylar.pullit.43 : ThreadPoolExecutor-0_0 : Weekly pull list present - checking if it's up-to-date..
+22-Aug-2023 07:23:40 - INFO    :: mylar.pullit.72 : ThreadPoolExecutor-0_0 : [PULL-LIST] Populating & Loading pull-list data directly from alternate website
+22-Aug-2023 07:23:40 - INFO    :: mylar.pullit.106 : ThreadPoolExecutor-0_0 : [PULL-LIST] Populating & Loading pull-list data directly from alternate website for specific week of 33, 2023
+22-Aug-2023 07:23:40 - INFO    :: mylar.locg.78 : ThreadPoolExecutor-0_0 : [WEEKLY-PULL] There are 96 issues for week 33, 2023
+22-Aug-2023 07:23:40 - INFO    :: mylar.locg.109 : ThreadPoolExecutor-0_0 : Re-creating pullist to ensure everything's fresh.
+22-Aug-2023 07:23:42 - INFO    :: mylar.locg.144 : ThreadPoolExecutor-0_0 : [PULL-LIST] Successfully populated pull-list into Mylar for week 33 of 2023
+22-Aug-2023 07:23:42 - INFO    :: mylar.pullit.114 : ThreadPoolExecutor-0_0 : [PULL-LIST] Weekly Pull List successfully loaded with 96 issues.
+22-Aug-2023 07:23:44 - INFO    :: mylar.pullit.106 : ThreadPoolExecutor-0_0 : [PULL-LIST] Populating & Loading pull-list data directly from alternate website for specific week of 34, 2023
+22-Aug-2023 07:23:44 - INFO    :: mylar.locg.78 : ThreadPoolExecutor-0_0 : [WEEKLY-PULL] There are 99 issues for week 34, 2023
+22-Aug-2023 07:23:44 - INFO    :: mylar.locg.109 : ThreadPoolExecutor-0_0 : Re-creating pullist to ensure everything's fresh.
+22-Aug-2023 07:23:45 - INFO    :: mylar.locg.144 : ThreadPoolExecutor-0_0 : [PULL-LIST] Successfully populated pull-list into Mylar for week 34 of 2023
+22-Aug-2023 07:23:45 - INFO    :: mylar.pullit.114 : ThreadPoolExecutor-0_0 : [PULL-LIST] Weekly Pull List successfully loaded with 99 issues.
+22-Aug-2023 07:23:45 - INFO    :: mylar.future_check.1637 : ThreadPoolExecutor-0_0 : No series have been marked as being on auto-watch.
+22-Aug-2023 07:52:27 - INFO    :: mylar.main.481 : MAIN : Received signal: shutdown
+22-Aug-2023 07:52:29 - INFO    :: mylar.halt.1604 : MAIN : Shutting down the background schedulers...
+22-Aug-2023 07:52:30 - INFO    :: mylar.search_queue.3324 : SEARCH-QUEUE : [SEARCH-QUEUE] Cleaning up workers for shutdown
+22-Aug-2023 07:52:30 - INFO    :: mylar.shutdown.1631 : MAIN : Mylar is shutting down...
+22-Aug-2023 07:55:48 - INFO    :: mylar.configure.1120 : MainThread : [DOCKER-AWARE] Docker installation detected.
+22-Aug-2023 07:55:48 - ERROR   :: mylar.configure.1139 : MainThread : No User Comicvine API key specified. I will not work very well due to api limits - http://api.comicvine.com/ and get your own free key.
+22-Aug-2023 07:55:48 - INFO    :: mylar.configure.1180 : MainThread : Ignored Publishers: []
+22-Aug-2023 07:55:48 - INFO    :: mylar.configure.1203 : MainThread : [MASS_PUBLISHERS] Auto-add for weekly publishers set to: []
+22-Aug-2023 07:55:48 - INFO    :: mylar.configure.1215 : MainThread : [IGNORE_SEARCH_WORDS] Words to flag search result as invalid: ['.exe', '.iso', 'pdf-xpost', 'pdf', 'ebook']
+22-Aug-2023 07:55:48 - INFO    :: mylar.configure.1227 : MainThread : [PROBLEM_DATES] Problem dates loaded: ['2021-07-14 04:00:34']
+22-Aug-2023 07:55:48 - INFO    :: mylar.configure.1241 : MainThread : [COMICTAGGER] Version detected: 1.3.5
+22-Aug-2023 07:55:48 - INFO    :: mylar.configure.1334 : MainThread : [Search Tier Cutoff] Setting Tier-1 cutoff point to 14 days
+22-Aug-2023 07:55:48 - INFO    :: mylar.initialize.257 : MainThread : Checking to see if the database has all tables....
+22-Aug-2023 07:55:48 - INFO    :: mylar.dbcheck.1555 : MainThread : Ensuring DB integrity - Removing all Erroneous Comics (ie. named None)
+22-Aug-2023 07:55:48 - INFO    :: mylar.dbcheck.1565 : MainThread : Correcting Null entries that make the main page break on startup.
+22-Aug-2023 07:55:48 - INFO    :: mylar.dbcheck.1576 : MainThread : [<class 'int'>]oldconfig_version: 12
+22-Aug-2023 07:55:48 - INFO    :: mylar.check_failed_update.172 : MainThread : checked is None
+22-Aug-2023 07:55:48 - INFO    :: mylar.initialize.286 : MainThread : Successfully discovered local IP and locking it in as : 172.23.0.6
+22-Aug-2023 07:55:48 - INFO    :: mylar.initialize.363 : MainThread : [IMPRINT_LOADS] Loading Publisher imprints data from local file.
+22-Aug-2023 07:55:48 - INFO    :: mylar.initialize.389 : MainThread : [IMPRINT_LOADS] Successfully loaded imprints for 6 publishers
+22-Aug-2023 07:55:48 - INFO    :: mylar.initialize.391 : MainThread : Remapping the sorting to allow for new additions.
+22-Aug-2023 07:55:48 - INFO    :: mylar.ComicSort.778 : MainThread : Sucessfully ordered -1 series in your watchlist.
+22-Aug-2023 07:55:48 - INFO    :: mylar.validateAndCreateDirectory.1836 : MainThread : [DIRECTORY-CHECK] Found DATA directory: /config/mylar
+22-Aug-2023 07:55:48 - INFO    :: mylar.initialize.73 : MAIN : Starting Mylar on http://0.0.0.0:8090/
+22-Aug-2023 07:55:48 - INFO    :: mylar.getVersion.188 : MAIN : [DOCKER-AWARE] Docker installation detected.
+22-Aug-2023 07:55:48 - INFO    :: mylar.getVersion.209 : MAIN : i:  (HEAD -> master, tag: v0.7.3)
+
+22-Aug-2023 07:55:48 - INFO    :: mylar.getVersion.220 : MAIN : [LAST_RELEASE] Branch: master
+22-Aug-2023 07:55:48 - INFO    :: mylar.getVersion.225 : MAIN : [LAST_RELEASE] Version: v0.7.3
+22-Aug-2023 07:55:48 - INFO    :: mylar.getVersion.209 : MAIN : i: f59746303c1e14298fc4aef7a91a2116829ce3d8
+
+22-Aug-2023 07:55:48 - INFO    :: mylar.getVersion.231 : MAIN : [LAST_RELEASE] Commit: f59746303c1e14298fc4aef7a91a2116829ce3d8
+22-Aug-2023 07:55:49 - INFO    :: mylar.getVersion.266 : MAIN : Branch detected & set to : master
+22-Aug-2023 07:55:49 - INFO    :: mylar.versionload.469 : MAIN : Version information: master [f59746303c1e14298fc4aef7a91a2116829ce3d8]
+22-Aug-2023 07:55:50 - INFO    :: mylar.release_messages.270 : MAIN : release_messages: None
+22-Aug-2023 07:55:50 - INFO    :: mylar.start.667 : MAIN : [SEARCH-QUEUE] Attempting to background load the search queue....
+22-Aug-2023 07:55:50 - INFO    :: mylar.start.671 : MAIN : [SEARCH-QUEUE] Successfully started the Search Queuer...
+22-Aug-2023 07:55:50 - INFO    :: mylar.start.586 : MAIN : [WEEKLY] Checking for existance of Weekly Comic listing...
+22-Aug-2023 07:55:50 - INFO    :: mylar.start.645 : MAIN : Firing up the Background Schedulers now....
+22-Aug-2023 07:55:50 - INFO    :: mylar.start.650 : MAIN : Background Schedulers successfully started...
+22-Aug-2023 11:23:45 - INFO    :: mylar.run.27 : ThreadPoolExecutor-0_0 : [WEEKLY] Checking Weekly Pull-list for new releases/updates
+22-Aug-2023 11:23:45 - INFO    :: mylar.pullit.43 : ThreadPoolExecutor-0_0 : Weekly pull list present - checking if it's up-to-date..
+22-Aug-2023 11:23:45 - INFO    :: mylar.pullit.72 : ThreadPoolExecutor-0_0 : [PULL-LIST] Populating & Loading pull-list data directly from alternate website
+22-Aug-2023 11:23:45 - INFO    :: mylar.pullit.106 : ThreadPoolExecutor-0_0 : [PULL-LIST] Populating & Loading pull-list data directly from alternate website for specific week of 33, 2023
+22-Aug-2023 11:23:46 - INFO    :: mylar.locg.78 : ThreadPoolExecutor-0_0 : [WEEKLY-PULL] There are 96 issues for week 33, 2023
+22-Aug-2023 11:23:46 - INFO    :: mylar.locg.109 : ThreadPoolExecutor-0_0 : Re-creating pullist to ensure everything's fresh.
+22-Aug-2023 11:23:47 - INFO    :: mylar.locg.144 : ThreadPoolExecutor-0_0 : [PULL-LIST] Successfully populated pull-list into Mylar for week 33 of 2023
+22-Aug-2023 11:23:47 - INFO    :: mylar.pullit.114 : ThreadPoolExecutor-0_0 : [PULL-LIST] Weekly Pull List successfully loaded with 96 issues.
+22-Aug-2023 11:23:49 - INFO    :: mylar.pullit.106 : ThreadPoolExecutor-0_0 : [PULL-LIST] Populating & Loading pull-list data directly from alternate website for specific week of 34, 2023
+22-Aug-2023 11:23:49 - INFO    :: mylar.locg.78 : ThreadPoolExecutor-0_0 : [WEEKLY-PULL] There are 99 issues for week 34, 2023
+22-Aug-2023 11:23:49 - INFO    :: mylar.locg.109 : ThreadPoolExecutor-0_0 : Re-creating pullist to ensure everything's fresh.
+22-Aug-2023 11:23:50 - INFO    :: mylar.locg.144 : ThreadPoolExecutor-0_0 : [PULL-LIST] Successfully populated pull-list into Mylar for week 34 of 2023
+22-Aug-2023 11:23:50 - INFO    :: mylar.pullit.114 : ThreadPoolExecutor-0_0 : [PULL-LIST] Weekly Pull List successfully loaded with 99 issues.
+22-Aug-2023 11:23:50 - INFO    :: mylar.future_check.1637 : ThreadPoolExecutor-0_0 : No series have been marked as being on auto-watch.
+22-Aug-2023 13:56:27 - INFO    :: mylar.main.481 : MAIN : Received signal: shutdown
+22-Aug-2023 13:56:29 - INFO    :: mylar.halt.1604 : MAIN : Shutting down the background schedulers...
+22-Aug-2023 13:56:31 - INFO    :: mylar.search_queue.3324 : SEARCH-QUEUE : [SEARCH-QUEUE] Cleaning up workers for shutdown
+22-Aug-2023 13:56:31 - INFO    :: mylar.shutdown.1631 : MAIN : Mylar is shutting down...
+22-Aug-2023 21:40:12 - INFO    :: mylar.configure.1120 : MainThread : [DOCKER-AWARE] Docker installation detected.
+22-Aug-2023 21:40:12 - ERROR   :: mylar.configure.1139 : MainThread : No User Comicvine API key specified. I will not work very well due to api limits - http://api.comicvine.com/ and get your own free key.
+22-Aug-2023 21:40:12 - INFO    :: mylar.configure.1180 : MainThread : Ignored Publishers: []
+22-Aug-2023 21:40:12 - INFO    :: mylar.configure.1203 : MainThread : [MASS_PUBLISHERS] Auto-add for weekly publishers set to: []
+22-Aug-2023 21:40:12 - INFO    :: mylar.configure.1215 : MainThread : [IGNORE_SEARCH_WORDS] Words to flag search result as invalid: ['.exe', '.iso', 'pdf-xpost', 'pdf', 'ebook']
+22-Aug-2023 21:40:12 - INFO    :: mylar.configure.1227 : MainThread : [PROBLEM_DATES] Problem dates loaded: ['2021-07-14 04:00:34']
+22-Aug-2023 21:40:12 - INFO    :: mylar.configure.1241 : MainThread : [COMICTAGGER] Version detected: 1.3.5
+22-Aug-2023 21:40:12 - INFO    :: mylar.configure.1334 : MainThread : [Search Tier Cutoff] Setting Tier-1 cutoff point to 14 days
+22-Aug-2023 21:40:12 - INFO    :: mylar.initialize.257 : MainThread : Checking to see if the database has all tables....
+22-Aug-2023 21:40:12 - INFO    :: mylar.dbcheck.1555 : MainThread : Ensuring DB integrity - Removing all Erroneous Comics (ie. named None)
+22-Aug-2023 21:40:12 - INFO    :: mylar.dbcheck.1565 : MainThread : Correcting Null entries that make the main page break on startup.
+22-Aug-2023 21:40:12 - INFO    :: mylar.dbcheck.1576 : MainThread : [<class 'int'>]oldconfig_version: 12
+22-Aug-2023 21:40:12 - INFO    :: mylar.check_failed_update.172 : MainThread : checked is None
+22-Aug-2023 21:40:12 - INFO    :: mylar.initialize.286 : MainThread : Successfully discovered local IP and locking it in as : 172.23.0.12
+22-Aug-2023 21:40:12 - INFO    :: mylar.initialize.363 : MainThread : [IMPRINT_LOADS] Loading Publisher imprints data from local file.
+22-Aug-2023 21:40:12 - INFO    :: mylar.initialize.389 : MainThread : [IMPRINT_LOADS] Successfully loaded imprints for 6 publishers
+22-Aug-2023 21:40:12 - INFO    :: mylar.initialize.391 : MainThread : Remapping the sorting to allow for new additions.
+22-Aug-2023 21:40:12 - INFO    :: mylar.ComicSort.778 : MainThread : Sucessfully ordered -1 series in your watchlist.
+22-Aug-2023 21:40:12 - INFO    :: mylar.validateAndCreateDirectory.1836 : MainThread : [DIRECTORY-CHECK] Found DATA directory: /config/mylar
+22-Aug-2023 21:40:12 - INFO    :: mylar.initialize.73 : MAIN : Starting Mylar on http://0.0.0.0:8090/
+22-Aug-2023 21:40:12 - INFO    :: mylar.getVersion.188 : MAIN : [DOCKER-AWARE] Docker installation detected.
+22-Aug-2023 21:40:12 - INFO    :: mylar.getVersion.209 : MAIN : i:  (HEAD -> master, tag: v0.7.3)
+
+22-Aug-2023 21:40:12 - INFO    :: mylar.getVersion.220 : MAIN : [LAST_RELEASE] Branch: master
+22-Aug-2023 21:40:12 - INFO    :: mylar.getVersion.225 : MAIN : [LAST_RELEASE] Version: v0.7.3
+22-Aug-2023 21:40:12 - INFO    :: mylar.getVersion.209 : MAIN : i: f59746303c1e14298fc4aef7a91a2116829ce3d8
+
+22-Aug-2023 21:40:12 - INFO    :: mylar.getVersion.231 : MAIN : [LAST_RELEASE] Commit: f59746303c1e14298fc4aef7a91a2116829ce3d8
+22-Aug-2023 21:40:12 - INFO    :: mylar.getVersion.266 : MAIN : Branch detected & set to : master
+22-Aug-2023 21:40:12 - INFO    :: mylar.versionload.469 : MAIN : Version information: master [f59746303c1e14298fc4aef7a91a2116829ce3d8]
+22-Aug-2023 21:40:13 - INFO    :: mylar.release_messages.270 : MAIN : release_messages: None
+22-Aug-2023 21:40:13 - INFO    :: mylar.start.667 : MAIN : [SEARCH-QUEUE] Attempting to background load the search queue....
+22-Aug-2023 21:40:13 - INFO    :: mylar.start.671 : MAIN : [SEARCH-QUEUE] Successfully started the Search Queuer...
+22-Aug-2023 21:40:13 - INFO    :: mylar.start.586 : MAIN : [WEEKLY] Checking for existance of Weekly Comic listing...
+22-Aug-2023 21:40:13 - INFO    :: mylar.start.606 : MAIN : [WEEKLY] Weekly Pull-Update initializing immediately as it has been 10.272997080286343 hours since the last run
+22-Aug-2023 21:40:13 - INFO    :: mylar.start.645 : MAIN : Firing up the Background Schedulers now....
+22-Aug-2023 21:40:13 - INFO    :: mylar.start.650 : MAIN : Background Schedulers successfully started...
+22-Aug-2023 21:40:13 - INFO    :: mylar.run.27 : ThreadPoolExecutor-0_0 : [WEEKLY] Checking Weekly Pull-list for new releases/updates
+22-Aug-2023 21:40:13 - INFO    :: mylar.pullit.43 : ThreadPoolExecutor-0_0 : Weekly pull list present - checking if it's up-to-date..
+22-Aug-2023 21:40:13 - INFO    :: mylar.pullit.72 : ThreadPoolExecutor-0_0 : [PULL-LIST] Populating & Loading pull-list data directly from alternate website
+22-Aug-2023 21:40:13 - INFO    :: mylar.pullit.106 : ThreadPoolExecutor-0_0 : [PULL-LIST] Populating & Loading pull-list data directly from alternate website for specific week of 33, 2023
+22-Aug-2023 21:40:14 - INFO    :: mylar.locg.78 : ThreadPoolExecutor-0_0 : [WEEKLY-PULL] There are 96 issues for week 33, 2023
+22-Aug-2023 21:40:14 - INFO    :: mylar.locg.109 : ThreadPoolExecutor-0_0 : Re-creating pullist to ensure everything's fresh.
+22-Aug-2023 21:40:14 - INFO    :: mylar.locg.144 : ThreadPoolExecutor-0_0 : [PULL-LIST] Successfully populated pull-list into Mylar for week 33 of 2023
+22-Aug-2023 21:40:14 - INFO    :: mylar.pullit.114 : ThreadPoolExecutor-0_0 : [PULL-LIST] Weekly Pull List successfully loaded with 96 issues.
+22-Aug-2023 21:40:16 - INFO    :: mylar.pullit.106 : ThreadPoolExecutor-0_0 : [PULL-LIST] Populating & Loading pull-list data directly from alternate website for specific week of 34, 2023
+22-Aug-2023 21:40:17 - INFO    :: mylar.locg.78 : ThreadPoolExecutor-0_0 : [WEEKLY-PULL] There are 101 issues for week 34, 2023
+22-Aug-2023 21:40:17 - INFO    :: mylar.locg.109 : ThreadPoolExecutor-0_0 : Re-creating pullist to ensure everything's fresh.
+22-Aug-2023 21:40:18 - INFO    :: mylar.locg.144 : ThreadPoolExecutor-0_0 : [PULL-LIST] Successfully populated pull-list into Mylar for week 34 of 2023
+22-Aug-2023 21:40:18 - INFO    :: mylar.pullit.114 : ThreadPoolExecutor-0_0 : [PULL-LIST] Weekly Pull List successfully loaded with 101 issues.
+22-Aug-2023 21:40:18 - INFO    :: mylar.future_check.1637 : ThreadPoolExecutor-0_0 : No series have been marked as being on auto-watch.
+23-Aug-2023 01:40:18 - INFO    :: mylar.run.27 : ThreadPoolExecutor-0_0 : [WEEKLY] Checking Weekly Pull-list for new releases/updates
+23-Aug-2023 01:40:18 - INFO    :: mylar.pullit.43 : ThreadPoolExecutor-0_0 : Weekly pull list present - checking if it's up-to-date..
+23-Aug-2023 01:40:18 - INFO    :: mylar.pullit.72 : ThreadPoolExecutor-0_0 : [PULL-LIST] Populating & Loading pull-list data directly from alternate website
+23-Aug-2023 01:40:18 - INFO    :: mylar.pullit.106 : ThreadPoolExecutor-0_0 : [PULL-LIST] Populating & Loading pull-list data directly from alternate website for specific week of 33, 2023
+23-Aug-2023 01:40:19 - INFO    :: mylar.locg.78 : ThreadPoolExecutor-0_0 : [WEEKLY-PULL] There are 95 issues for week 33, 2023
+23-Aug-2023 01:40:19 - INFO    :: mylar.locg.109 : ThreadPoolExecutor-0_0 : Re-creating pullist to ensure everything's fresh.
+23-Aug-2023 01:40:20 - INFO    :: mylar.locg.144 : ThreadPoolExecutor-0_0 : [PULL-LIST] Successfully populated pull-list into Mylar for week 33 of 2023
+23-Aug-2023 01:40:20 - INFO    :: mylar.pullit.114 : ThreadPoolExecutor-0_0 : [PULL-LIST] Weekly Pull List successfully loaded with 95 issues.
+23-Aug-2023 01:40:22 - INFO    :: mylar.pullit.106 : ThreadPoolExecutor-0_0 : [PULL-LIST] Populating & Loading pull-list data directly from alternate website for specific week of 34, 2023
+23-Aug-2023 01:40:22 - INFO    :: mylar.locg.78 : ThreadPoolExecutor-0_0 : [WEEKLY-PULL] There are 99 issues for week 34, 2023
+23-Aug-2023 01:40:22 - INFO    :: mylar.locg.109 : ThreadPoolExecutor-0_0 : Re-creating pullist to ensure everything's fresh.
+23-Aug-2023 01:40:23 - INFO    :: mylar.locg.144 : ThreadPoolExecutor-0_0 : [PULL-LIST] Successfully populated pull-list into Mylar for week 34 of 2023
+23-Aug-2023 01:40:23 - INFO    :: mylar.pullit.114 : ThreadPoolExecutor-0_0 : [PULL-LIST] Weekly Pull List successfully loaded with 99 issues.
+23-Aug-2023 01:40:23 - INFO    :: mylar.future_check.1637 : ThreadPoolExecutor-0_0 : No series have been marked as being on auto-watch.
+23-Aug-2023 03:03:48 - INFO    :: mylar.main.481 : MAIN : Received signal: shutdown
+23-Aug-2023 03:03:50 - INFO    :: mylar.halt.1604 : MAIN : Shutting down the background schedulers...
+23-Aug-2023 03:03:54 - INFO    :: mylar.search_queue.3324 : SEARCH-QUEUE : [SEARCH-QUEUE] Cleaning up workers for shutdown
+23-Aug-2023 03:03:54 - INFO    :: mylar.shutdown.1631 : MAIN : Mylar is shutting down...
+23-Aug-2023 03:04:16 - INFO    :: mylar.configure.1120 : MainThread : [DOCKER-AWARE] Docker installation detected.
+23-Aug-2023 03:04:16 - ERROR   :: mylar.configure.1139 : MainThread : No User Comicvine API key specified. I will not work very well due to api limits - http://api.comicvine.com/ and get your own free key.
+23-Aug-2023 03:04:16 - INFO    :: mylar.configure.1180 : MainThread : Ignored Publishers: []
+23-Aug-2023 03:04:16 - INFO    :: mylar.configure.1203 : MainThread : [MASS_PUBLISHERS] Auto-add for weekly publishers set to: []
+23-Aug-2023 03:04:16 - INFO    :: mylar.configure.1215 : MainThread : [IGNORE_SEARCH_WORDS] Words to flag search result as invalid: ['.exe', '.iso', 'pdf-xpost', 'pdf', 'ebook']
+23-Aug-2023 03:04:16 - INFO    :: mylar.configure.1227 : MainThread : [PROBLEM_DATES] Problem dates loaded: ['2021-07-14 04:00:34']
+23-Aug-2023 03:04:16 - INFO    :: mylar.configure.1241 : MainThread : [COMICTAGGER] Version detected: 1.3.5
+23-Aug-2023 03:04:16 - INFO    :: mylar.configure.1334 : MainThread : [Search Tier Cutoff] Setting Tier-1 cutoff point to 14 days
+23-Aug-2023 03:04:16 - INFO    :: mylar.initialize.257 : MainThread : Checking to see if the database has all tables....
+23-Aug-2023 03:04:16 - INFO    :: mylar.dbcheck.1555 : MainThread : Ensuring DB integrity - Removing all Erroneous Comics (ie. named None)
+23-Aug-2023 03:04:16 - INFO    :: mylar.dbcheck.1565 : MainThread : Correcting Null entries that make the main page break on startup.
+23-Aug-2023 03:04:16 - INFO    :: mylar.dbcheck.1576 : MainThread : [<class 'int'>]oldconfig_version: 12
+23-Aug-2023 03:04:16 - INFO    :: mylar.check_failed_update.172 : MainThread : checked is None
+23-Aug-2023 03:04:16 - INFO    :: mylar.initialize.286 : MainThread : Successfully discovered local IP and locking it in as : 172.23.0.11
+23-Aug-2023 03:04:16 - INFO    :: mylar.initialize.363 : MainThread : [IMPRINT_LOADS] Loading Publisher imprints data from local file.
+23-Aug-2023 03:04:16 - INFO    :: mylar.initialize.389 : MainThread : [IMPRINT_LOADS] Successfully loaded imprints for 6 publishers
+23-Aug-2023 03:04:16 - INFO    :: mylar.initialize.391 : MainThread : Remapping the sorting to allow for new additions.
+23-Aug-2023 03:04:16 - INFO    :: mylar.ComicSort.778 : MainThread : Sucessfully ordered -1 series in your watchlist.
+23-Aug-2023 03:04:16 - INFO    :: mylar.validateAndCreateDirectory.1836 : MainThread : [DIRECTORY-CHECK] Found DATA directory: /config/mylar
+23-Aug-2023 03:04:16 - INFO    :: mylar.initialize.73 : MAIN : Starting Mylar on http://0.0.0.0:8090/
+23-Aug-2023 03:04:16 - INFO    :: mylar.getVersion.188 : MAIN : [DOCKER-AWARE] Docker installation detected.
+23-Aug-2023 03:04:16 - INFO    :: mylar.getVersion.209 : MAIN : i:  (HEAD -> master, tag: v0.7.3)
+
+23-Aug-2023 03:04:16 - INFO    :: mylar.getVersion.220 : MAIN : [LAST_RELEASE] Branch: master
+23-Aug-2023 03:04:16 - INFO    :: mylar.getVersion.225 : MAIN : [LAST_RELEASE] Version: v0.7.3
+23-Aug-2023 03:04:16 - INFO    :: mylar.getVersion.209 : MAIN : i: f59746303c1e14298fc4aef7a91a2116829ce3d8
+
+23-Aug-2023 03:04:16 - INFO    :: mylar.getVersion.231 : MAIN : [LAST_RELEASE] Commit: f59746303c1e14298fc4aef7a91a2116829ce3d8
+23-Aug-2023 03:04:17 - INFO    :: mylar.getVersion.266 : MAIN : Branch detected & set to : master
+23-Aug-2023 03:04:17 - INFO    :: mylar.versionload.469 : MAIN : Version information: master [f59746303c1e14298fc4aef7a91a2116829ce3d8]
+23-Aug-2023 03:04:18 - INFO    :: mylar.release_messages.270 : MAIN : release_messages: None
+23-Aug-2023 03:04:18 - INFO    :: mylar.start.667 : MAIN : [SEARCH-QUEUE] Attempting to background load the search queue....
+23-Aug-2023 03:04:18 - INFO    :: mylar.start.671 : MAIN : [SEARCH-QUEUE] Successfully started the Search Queuer...
+23-Aug-2023 03:04:18 - INFO    :: mylar.start.586 : MAIN : [WEEKLY] Checking for existance of Weekly Comic listing...
+23-Aug-2023 03:04:18 - INFO    :: mylar.start.645 : MAIN : Firing up the Background Schedulers now....
+23-Aug-2023 03:04:18 - INFO    :: mylar.start.650 : MAIN : Background Schedulers successfully started...
+23-Aug-2023 03:19:42 - INFO    :: mylar.main.481 : MAIN : Received signal: shutdown
+23-Aug-2023 03:19:44 - INFO    :: mylar.halt.1604 : MAIN : Shutting down the background schedulers...
+23-Aug-2023 03:19:48 - INFO    :: mylar.search_queue.3324 : SEARCH-QUEUE : [SEARCH-QUEUE] Cleaning up workers for shutdown
+23-Aug-2023 03:19:48 - INFO    :: mylar.shutdown.1631 : MAIN : Mylar is shutting down...
+23-Aug-2023 10:02:40 - INFO    :: mylar.configure.1120 : MainThread : [DOCKER-AWARE] Docker installation detected.
+23-Aug-2023 10:02:40 - ERROR   :: mylar.configure.1139 : MainThread : No User Comicvine API key specified. I will not work very well due to api limits - http://api.comicvine.com/ and get your own free key.
+23-Aug-2023 10:02:40 - INFO    :: mylar.configure.1180 : MainThread : Ignored Publishers: []
+23-Aug-2023 10:02:40 - INFO    :: mylar.configure.1203 : MainThread : [MASS_PUBLISHERS] Auto-add for weekly publishers set to: []
+23-Aug-2023 10:02:40 - INFO    :: mylar.configure.1215 : MainThread : [IGNORE_SEARCH_WORDS] Words to flag search result as invalid: ['.exe', '.iso', 'pdf-xpost', 'pdf', 'ebook']
+23-Aug-2023 10:02:40 - INFO    :: mylar.configure.1227 : MainThread : [PROBLEM_DATES] Problem dates loaded: ['2021-07-14 04:00:34']
+23-Aug-2023 10:02:40 - INFO    :: mylar.configure.1241 : MainThread : [COMICTAGGER] Version detected: 1.3.5
+23-Aug-2023 10:02:40 - INFO    :: mylar.configure.1334 : MainThread : [Search Tier Cutoff] Setting Tier-1 cutoff point to 14 days
+23-Aug-2023 10:02:40 - INFO    :: mylar.initialize.257 : MainThread : Checking to see if the database has all tables....
+23-Aug-2023 10:02:40 - INFO    :: mylar.dbcheck.1555 : MainThread : Ensuring DB integrity - Removing all Erroneous Comics (ie. named None)
+23-Aug-2023 10:02:40 - INFO    :: mylar.dbcheck.1565 : MainThread : Correcting Null entries that make the main page break on startup.
+23-Aug-2023 10:02:40 - INFO    :: mylar.dbcheck.1576 : MainThread : [<class 'int'>]oldconfig_version: 12
+23-Aug-2023 10:02:40 - INFO    :: mylar.check_failed_update.172 : MainThread : checked is None
+23-Aug-2023 10:02:40 - INFO    :: mylar.initialize.286 : MainThread : Successfully discovered local IP and locking it in as : 172.23.0.7
+23-Aug-2023 10:02:40 - INFO    :: mylar.initialize.363 : MainThread : [IMPRINT_LOADS] Loading Publisher imprints data from local file.
+23-Aug-2023 10:02:40 - INFO    :: mylar.initialize.389 : MainThread : [IMPRINT_LOADS] Successfully loaded imprints for 6 publishers
+23-Aug-2023 10:02:40 - INFO    :: mylar.initialize.391 : MainThread : Remapping the sorting to allow for new additions.
+23-Aug-2023 10:02:40 - INFO    :: mylar.ComicSort.778 : MainThread : Sucessfully ordered -1 series in your watchlist.
+23-Aug-2023 10:02:40 - INFO    :: mylar.validateAndCreateDirectory.1836 : MainThread : [DIRECTORY-CHECK] Found DATA directory: /config/mylar
+23-Aug-2023 10:02:40 - INFO    :: mylar.initialize.73 : MAIN : Starting Mylar on http://0.0.0.0:8090/
+23-Aug-2023 10:02:40 - INFO    :: mylar.getVersion.188 : MAIN : [DOCKER-AWARE] Docker installation detected.
+23-Aug-2023 10:02:40 - INFO    :: mylar.getVersion.209 : MAIN : i:  (HEAD -> master, tag: v0.7.3)
+
+23-Aug-2023 10:02:40 - INFO    :: mylar.getVersion.220 : MAIN : [LAST_RELEASE] Branch: master
+23-Aug-2023 10:02:40 - INFO    :: mylar.getVersion.225 : MAIN : [LAST_RELEASE] Version: v0.7.3
+23-Aug-2023 10:02:40 - INFO    :: mylar.getVersion.209 : MAIN : i: f59746303c1e14298fc4aef7a91a2116829ce3d8
+
+23-Aug-2023 10:02:40 - INFO    :: mylar.getVersion.231 : MAIN : [LAST_RELEASE] Commit: f59746303c1e14298fc4aef7a91a2116829ce3d8
+23-Aug-2023 10:02:41 - INFO    :: mylar.getVersion.266 : MAIN : Branch detected & set to : master
+23-Aug-2023 10:02:41 - INFO    :: mylar.versionload.469 : MAIN : Version information: master [f59746303c1e14298fc4aef7a91a2116829ce3d8]
+23-Aug-2023 10:02:42 - INFO    :: mylar.release_messages.270 : MAIN : release_messages: None
+23-Aug-2023 10:02:42 - INFO    :: mylar.start.667 : MAIN : [SEARCH-QUEUE] Attempting to background load the search queue....
+23-Aug-2023 10:02:42 - INFO    :: mylar.start.671 : MAIN : [SEARCH-QUEUE] Successfully started the Search Queuer...
+23-Aug-2023 10:02:42 - INFO    :: mylar.start.586 : MAIN : [WEEKLY] Checking for existance of Weekly Comic listing...
+23-Aug-2023 10:02:42 - INFO    :: mylar.start.606 : MAIN : [WEEKLY] Weekly Pull-Update initializing immediately as it has been 8.371947651836608 hours since the last run
+23-Aug-2023 10:02:42 - INFO    :: mylar.start.645 : MAIN : Firing up the Background Schedulers now....
+23-Aug-2023 10:02:42 - INFO    :: mylar.run.27 : ThreadPoolExecutor-0_0 : [WEEKLY] Checking Weekly Pull-list for new releases/updates
+23-Aug-2023 10:02:42 - INFO    :: mylar.start.650 : MAIN : Background Schedulers successfully started...
+23-Aug-2023 10:02:42 - INFO    :: mylar.pullit.43 : ThreadPoolExecutor-0_0 : Weekly pull list present - checking if it's up-to-date..
+23-Aug-2023 10:02:42 - INFO    :: mylar.pullit.72 : ThreadPoolExecutor-0_0 : [PULL-LIST] Populating & Loading pull-list data directly from alternate website
+23-Aug-2023 10:02:42 - INFO    :: mylar.pullit.106 : ThreadPoolExecutor-0_0 : [PULL-LIST] Populating & Loading pull-list data directly from alternate website for specific week of 33, 2023
+23-Aug-2023 10:02:43 - INFO    :: mylar.locg.78 : ThreadPoolExecutor-0_0 : [WEEKLY-PULL] There are 95 issues for week 33, 2023
+23-Aug-2023 10:02:43 - INFO    :: mylar.locg.109 : ThreadPoolExecutor-0_0 : Re-creating pullist to ensure everything's fresh.
+23-Aug-2023 10:02:44 - INFO    :: mylar.locg.144 : ThreadPoolExecutor-0_0 : [PULL-LIST] Successfully populated pull-list into Mylar for week 33 of 2023
+23-Aug-2023 10:02:44 - INFO    :: mylar.pullit.114 : ThreadPoolExecutor-0_0 : [PULL-LIST] Weekly Pull List successfully loaded with 95 issues.
+23-Aug-2023 10:02:46 - INFO    :: mylar.pullit.106 : ThreadPoolExecutor-0_0 : [PULL-LIST] Populating & Loading pull-list data directly from alternate website for specific week of 34, 2023
+23-Aug-2023 10:02:46 - INFO    :: mylar.locg.78 : ThreadPoolExecutor-0_0 : [WEEKLY-PULL] There are 102 issues for week 34, 2023
+23-Aug-2023 10:02:46 - INFO    :: mylar.locg.109 : ThreadPoolExecutor-0_0 : Re-creating pullist to ensure everything's fresh.
+23-Aug-2023 10:02:47 - INFO    :: mylar.locg.144 : ThreadPoolExecutor-0_0 : [PULL-LIST] Successfully populated pull-list into Mylar for week 34 of 2023
+23-Aug-2023 10:02:47 - INFO    :: mylar.pullit.114 : ThreadPoolExecutor-0_0 : [PULL-LIST] Weekly Pull List successfully loaded with 102 issues.
+23-Aug-2023 10:02:47 - INFO    :: mylar.future_check.1637 : ThreadPoolExecutor-0_0 : No series have been marked as being on auto-watch.
+23-Aug-2023 14:02:47 - INFO    :: mylar.run.27 : ThreadPoolExecutor-0_0 : [WEEKLY] Checking Weekly Pull-list for new releases/updates
+23-Aug-2023 14:02:47 - INFO    :: mylar.pullit.43 : ThreadPoolExecutor-0_0 : Weekly pull list present - checking if it's up-to-date..
+23-Aug-2023 14:02:47 - INFO    :: mylar.pullit.72 : ThreadPoolExecutor-0_0 : [PULL-LIST] Populating & Loading pull-list data directly from alternate website
+23-Aug-2023 14:02:47 - INFO    :: mylar.pullit.106 : ThreadPoolExecutor-0_0 : [PULL-LIST] Populating & Loading pull-list data directly from alternate website for specific week of 33, 2023
+23-Aug-2023 14:02:48 - INFO    :: mylar.locg.78 : ThreadPoolExecutor-0_0 : [WEEKLY-PULL] There are 95 issues for week 33, 2023
+23-Aug-2023 14:02:48 - INFO    :: mylar.locg.109 : ThreadPoolExecutor-0_0 : Re-creating pullist to ensure everything's fresh.
+23-Aug-2023 14:02:49 - INFO    :: mylar.locg.144 : ThreadPoolExecutor-0_0 : [PULL-LIST] Successfully populated pull-list into Mylar for week 33 of 2023
+23-Aug-2023 14:02:49 - INFO    :: mylar.pullit.114 : ThreadPoolExecutor-0_0 : [PULL-LIST] Weekly Pull List successfully loaded with 95 issues.
+23-Aug-2023 14:02:51 - INFO    :: mylar.pullit.106 : ThreadPoolExecutor-0_0 : [PULL-LIST] Populating & Loading pull-list data directly from alternate website for specific week of 34, 2023
+23-Aug-2023 14:02:51 - INFO    :: mylar.locg.78 : ThreadPoolExecutor-0_0 : [WEEKLY-PULL] There are 102 issues for week 34, 2023
+23-Aug-2023 14:02:51 - INFO    :: mylar.locg.109 : ThreadPoolExecutor-0_0 : Re-creating pullist to ensure everything's fresh.
+23-Aug-2023 14:02:52 - INFO    :: mylar.locg.144 : ThreadPoolExecutor-0_0 : [PULL-LIST] Successfully populated pull-list into Mylar for week 34 of 2023
+23-Aug-2023 14:02:52 - INFO    :: mylar.pullit.114 : ThreadPoolExecutor-0_0 : [PULL-LIST] Weekly Pull List successfully loaded with 102 issues.
+23-Aug-2023 14:02:52 - INFO    :: mylar.future_check.1637 : ThreadPoolExecutor-0_0 : No series have been marked as being on auto-watch.
+23-Aug-2023 14:24:13 - INFO    :: mylar.main.481 : MAIN : Received signal: shutdown
+23-Aug-2023 14:24:15 - INFO    :: mylar.halt.1604 : MAIN : Shutting down the background schedulers...
+23-Aug-2023 14:24:18 - INFO    :: mylar.search_queue.3324 : SEARCH-QUEUE : [SEARCH-QUEUE] Cleaning up workers for shutdown
+23-Aug-2023 14:24:18 - INFO    :: mylar.shutdown.1631 : MAIN : Mylar is shutting down...
+23-Aug-2023 14:24:44 - INFO    :: mylar.configure.1120 : MainThread : [DOCKER-AWARE] Docker installation detected.
+23-Aug-2023 14:24:44 - ERROR   :: mylar.configure.1139 : MainThread : No User Comicvine API key specified. I will not work very well due to api limits - http://api.comicvine.com/ and get your own free key.
+23-Aug-2023 14:24:44 - INFO    :: mylar.configure.1180 : MainThread : Ignored Publishers: []
+23-Aug-2023 14:24:44 - INFO    :: mylar.configure.1203 : MainThread : [MASS_PUBLISHERS] Auto-add for weekly publishers set to: []
+23-Aug-2023 14:24:44 - INFO    :: mylar.configure.1215 : MainThread : [IGNORE_SEARCH_WORDS] Words to flag search result as invalid: ['.exe', '.iso', 'pdf-xpost', 'pdf', 'ebook']
+23-Aug-2023 14:24:44 - INFO    :: mylar.configure.1227 : MainThread : [PROBLEM_DATES] Problem dates loaded: ['2021-07-14 04:00:34']
+23-Aug-2023 14:24:44 - INFO    :: mylar.configure.1241 : MainThread : [COMICTAGGER] Version detected: 1.3.5
+23-Aug-2023 14:24:44 - INFO    :: mylar.configure.1334 : MainThread : [Search Tier Cutoff] Setting Tier-1 cutoff point to 14 days
+23-Aug-2023 14:24:44 - INFO    :: mylar.initialize.257 : MainThread : Checking to see if the database has all tables....
+23-Aug-2023 14:24:44 - INFO    :: mylar.dbcheck.1555 : MainThread : Ensuring DB integrity - Removing all Erroneous Comics (ie. named None)
+23-Aug-2023 14:24:44 - INFO    :: mylar.dbcheck.1565 : MainThread : Correcting Null entries that make the main page break on startup.
+23-Aug-2023 14:24:44 - INFO    :: mylar.dbcheck.1576 : MainThread : [<class 'int'>]oldconfig_version: 12
+23-Aug-2023 14:24:44 - INFO    :: mylar.check_failed_update.172 : MainThread : checked is None
+23-Aug-2023 14:24:44 - INFO    :: mylar.initialize.286 : MainThread : Successfully discovered local IP and locking it in as : 172.23.0.15
+23-Aug-2023 14:24:44 - INFO    :: mylar.initialize.363 : MainThread : [IMPRINT_LOADS] Loading Publisher imprints data from local file.
+23-Aug-2023 14:24:44 - INFO    :: mylar.initialize.389 : MainThread : [IMPRINT_LOADS] Successfully loaded imprints for 6 publishers
+23-Aug-2023 14:24:44 - INFO    :: mylar.initialize.391 : MainThread : Remapping the sorting to allow for new additions.
+23-Aug-2023 14:24:44 - INFO    :: mylar.ComicSort.778 : MainThread : Sucessfully ordered -1 series in your watchlist.
+23-Aug-2023 14:24:44 - INFO    :: mylar.validateAndCreateDirectory.1836 : MainThread : [DIRECTORY-CHECK] Found DATA directory: /config/mylar
+23-Aug-2023 14:24:44 - INFO    :: mylar.initialize.73 : MAIN : Starting Mylar on http://0.0.0.0:8090/
+23-Aug-2023 14:24:44 - INFO    :: mylar.getVersion.188 : MAIN : [DOCKER-AWARE] Docker installation detected.
+23-Aug-2023 14:24:44 - INFO    :: mylar.getVersion.209 : MAIN : i:  (HEAD -> master, tag: v0.7.3)
+
+23-Aug-2023 14:24:44 - INFO    :: mylar.getVersion.220 : MAIN : [LAST_RELEASE] Branch: master
+23-Aug-2023 14:24:44 - INFO    :: mylar.getVersion.225 : MAIN : [LAST_RELEASE] Version: v0.7.3
+23-Aug-2023 14:24:44 - INFO    :: mylar.getVersion.209 : MAIN : i: f59746303c1e14298fc4aef7a91a2116829ce3d8
+
+23-Aug-2023 14:24:44 - INFO    :: mylar.getVersion.231 : MAIN : [LAST_RELEASE] Commit: f59746303c1e14298fc4aef7a91a2116829ce3d8
+23-Aug-2023 14:24:45 - INFO    :: mylar.getVersion.266 : MAIN : Branch detected & set to : master
+23-Aug-2023 14:24:45 - INFO    :: mylar.versionload.469 : MAIN : Version information: master [f59746303c1e14298fc4aef7a91a2116829ce3d8]
+23-Aug-2023 14:24:45 - INFO    :: mylar.release_messages.270 : MAIN : release_messages: None
+23-Aug-2023 14:24:45 - INFO    :: mylar.start.667 : MAIN : [SEARCH-QUEUE] Attempting to background load the search queue....
+23-Aug-2023 14:24:45 - INFO    :: mylar.start.671 : MAIN : [SEARCH-QUEUE] Successfully started the Search Queuer...
+23-Aug-2023 14:24:45 - INFO    :: mylar.start.586 : MAIN : [WEEKLY] Checking for existance of Weekly Comic listing...
+23-Aug-2023 14:24:45 - INFO    :: mylar.start.645 : MAIN : Firing up the Background Schedulers now....
+23-Aug-2023 14:24:45 - INFO    :: mylar.start.650 : MAIN : Background Schedulers successfully started...
+23-Aug-2023 14:28:42 - INFO    :: mylar.main.481 : MAIN : Received signal: shutdown
+23-Aug-2023 14:28:44 - INFO    :: mylar.halt.1604 : MAIN : Shutting down the background schedulers...
+23-Aug-2023 14:28:45 - INFO    :: mylar.search_queue.3324 : SEARCH-QUEUE : [SEARCH-QUEUE] Cleaning up workers for shutdown
+23-Aug-2023 14:28:45 - INFO    :: mylar.shutdown.1631 : MAIN : Mylar is shutting down...
+23-Aug-2023 14:31:38 - INFO    :: mylar.configure.1120 : MainThread : [DOCKER-AWARE] Docker installation detected.
+23-Aug-2023 14:31:38 - ERROR   :: mylar.configure.1139 : MainThread : No User Comicvine API key specified. I will not work very well due to api limits - http://api.comicvine.com/ and get your own free key.
+23-Aug-2023 14:31:38 - INFO    :: mylar.configure.1180 : MainThread : Ignored Publishers: []
+23-Aug-2023 14:31:38 - INFO    :: mylar.configure.1203 : MainThread : [MASS_PUBLISHERS] Auto-add for weekly publishers set to: []
+23-Aug-2023 14:31:38 - INFO    :: mylar.configure.1215 : MainThread : [IGNORE_SEARCH_WORDS] Words to flag search result as invalid: ['.exe', '.iso', 'pdf-xpost', 'pdf', 'ebook']
+23-Aug-2023 14:31:38 - INFO    :: mylar.configure.1227 : MainThread : [PROBLEM_DATES] Problem dates loaded: ['2021-07-14 04:00:34']
+23-Aug-2023 14:31:38 - INFO    :: mylar.configure.1241 : MainThread : [COMICTAGGER] Version detected: 1.3.5
+23-Aug-2023 14:31:38 - INFO    :: mylar.configure.1334 : MainThread : [Search Tier Cutoff] Setting Tier-1 cutoff point to 14 days
+23-Aug-2023 14:31:38 - INFO    :: mylar.initialize.257 : MainThread : Checking to see if the database has all tables....
+23-Aug-2023 14:31:38 - INFO    :: mylar.dbcheck.1555 : MainThread : Ensuring DB integrity - Removing all Erroneous Comics (ie. named None)
+23-Aug-2023 14:31:38 - INFO    :: mylar.dbcheck.1565 : MainThread : Correcting Null entries that make the main page break on startup.
+23-Aug-2023 14:31:38 - INFO    :: mylar.dbcheck.1576 : MainThread : [<class 'int'>]oldconfig_version: 12
+23-Aug-2023 14:31:38 - INFO    :: mylar.check_failed_update.172 : MainThread : checked is None
+23-Aug-2023 14:31:38 - INFO    :: mylar.initialize.286 : MainThread : Successfully discovered local IP and locking it in as : 172.24.0.2
+23-Aug-2023 14:31:38 - INFO    :: mylar.initialize.363 : MainThread : [IMPRINT_LOADS] Loading Publisher imprints data from local file.
+23-Aug-2023 14:31:38 - INFO    :: mylar.initialize.389 : MainThread : [IMPRINT_LOADS] Successfully loaded imprints for 6 publishers
+23-Aug-2023 14:31:38 - INFO    :: mylar.initialize.391 : MainThread : Remapping the sorting to allow for new additions.
+23-Aug-2023 14:31:38 - INFO    :: mylar.ComicSort.778 : MainThread : Sucessfully ordered -1 series in your watchlist.
+23-Aug-2023 14:31:38 - INFO    :: mylar.validateAndCreateDirectory.1836 : MainThread : [DIRECTORY-CHECK] Found DATA directory: /config/mylar
+23-Aug-2023 14:31:38 - INFO    :: mylar.initialize.73 : MAIN : Starting Mylar on http://0.0.0.0:8090/
+23-Aug-2023 14:31:38 - INFO    :: mylar.getVersion.188 : MAIN : [DOCKER-AWARE] Docker installation detected.
+23-Aug-2023 14:31:38 - INFO    :: mylar.getVersion.209 : MAIN : i:  (HEAD -> master, tag: v0.7.3)
+
+23-Aug-2023 14:31:38 - INFO    :: mylar.getVersion.220 : MAIN : [LAST_RELEASE] Branch: master
+23-Aug-2023 14:31:38 - INFO    :: mylar.getVersion.225 : MAIN : [LAST_RELEASE] Version: v0.7.3
+23-Aug-2023 14:31:38 - INFO    :: mylar.getVersion.209 : MAIN : i: f59746303c1e14298fc4aef7a91a2116829ce3d8
+
+23-Aug-2023 14:31:38 - INFO    :: mylar.getVersion.231 : MAIN : [LAST_RELEASE] Commit: f59746303c1e14298fc4aef7a91a2116829ce3d8
+23-Aug-2023 14:31:38 - INFO    :: mylar.getVersion.266 : MAIN : Branch detected & set to : master
+23-Aug-2023 14:31:38 - INFO    :: mylar.versionload.469 : MAIN : Version information: master [f59746303c1e14298fc4aef7a91a2116829ce3d8]
+23-Aug-2023 14:31:39 - INFO    :: mylar.release_messages.270 : MAIN : release_messages: None
+23-Aug-2023 14:31:39 - INFO    :: mylar.start.667 : MAIN : [SEARCH-QUEUE] Attempting to background load the search queue....
+23-Aug-2023 14:31:39 - INFO    :: mylar.start.671 : MAIN : [SEARCH-QUEUE] Successfully started the Search Queuer...
+23-Aug-2023 14:31:39 - INFO    :: mylar.start.586 : MAIN : [WEEKLY] Checking for existance of Weekly Comic listing...
+23-Aug-2023 14:31:39 - INFO    :: mylar.start.645 : MAIN : Firing up the Background Schedulers now....
+23-Aug-2023 14:31:39 - INFO    :: mylar.start.650 : MAIN : Background Schedulers successfully started...
+23-Aug-2023 14:44:49 - INFO    :: mylar.main.481 : MAIN : Received signal: shutdown
+23-Aug-2023 14:44:51 - INFO    :: mylar.halt.1604 : MAIN : Shutting down the background schedulers...
+23-Aug-2023 14:44:55 - INFO    :: mylar.search_queue.3324 : SEARCH-QUEUE : [SEARCH-QUEUE] Cleaning up workers for shutdown
+23-Aug-2023 14:44:55 - INFO    :: mylar.shutdown.1631 : MAIN : Mylar is shutting down...
+23-Aug-2023 14:45:14 - INFO    :: mylar.configure.1120 : MainThread : [DOCKER-AWARE] Docker installation detected.
+23-Aug-2023 14:45:14 - ERROR   :: mylar.configure.1139 : MainThread : No User Comicvine API key specified. I will not work very well due to api limits - http://api.comicvine.com/ and get your own free key.
+23-Aug-2023 14:45:14 - INFO    :: mylar.configure.1180 : MainThread : Ignored Publishers: []
+23-Aug-2023 14:45:14 - INFO    :: mylar.configure.1203 : MainThread : [MASS_PUBLISHERS] Auto-add for weekly publishers set to: []
+23-Aug-2023 14:45:14 - INFO    :: mylar.configure.1215 : MainThread : [IGNORE_SEARCH_WORDS] Words to flag search result as invalid: ['.exe', '.iso', 'pdf-xpost', 'pdf', 'ebook']
+23-Aug-2023 14:45:14 - INFO    :: mylar.configure.1227 : MainThread : [PROBLEM_DATES] Problem dates loaded: ['2021-07-14 04:00:34']
+23-Aug-2023 14:45:14 - INFO    :: mylar.configure.1241 : MainThread : [COMICTAGGER] Version detected: 1.3.5
+23-Aug-2023 14:45:14 - INFO    :: mylar.configure.1334 : MainThread : [Search Tier Cutoff] Setting Tier-1 cutoff point to 14 days
+23-Aug-2023 14:45:14 - INFO    :: mylar.initialize.257 : MainThread : Checking to see if the database has all tables....
+23-Aug-2023 14:45:14 - INFO    :: mylar.dbcheck.1555 : MainThread : Ensuring DB integrity - Removing all Erroneous Comics (ie. named None)
+23-Aug-2023 14:45:14 - INFO    :: mylar.dbcheck.1565 : MainThread : Correcting Null entries that make the main page break on startup.
+23-Aug-2023 14:45:14 - INFO    :: mylar.dbcheck.1576 : MainThread : [<class 'int'>]oldconfig_version: 12
+23-Aug-2023 14:45:14 - INFO    :: mylar.check_failed_update.172 : MainThread : checked is None
+23-Aug-2023 14:45:14 - INFO    :: mylar.initialize.286 : MainThread : Successfully discovered local IP and locking it in as : 172.25.0.5
+23-Aug-2023 14:45:14 - INFO    :: mylar.initialize.363 : MainThread : [IMPRINT_LOADS] Loading Publisher imprints data from local file.
+23-Aug-2023 14:45:14 - INFO    :: mylar.initialize.389 : MainThread : [IMPRINT_LOADS] Successfully loaded imprints for 6 publishers
+23-Aug-2023 14:45:14 - INFO    :: mylar.initialize.391 : MainThread : Remapping the sorting to allow for new additions.
+23-Aug-2023 14:45:14 - INFO    :: mylar.ComicSort.778 : MainThread : Sucessfully ordered -1 series in your watchlist.
+23-Aug-2023 14:45:14 - INFO    :: mylar.validateAndCreateDirectory.1836 : MainThread : [DIRECTORY-CHECK] Found DATA directory: /config/mylar
+23-Aug-2023 14:45:14 - INFO    :: mylar.initialize.73 : MAIN : Starting Mylar on http://0.0.0.0:8090/
+23-Aug-2023 14:45:14 - INFO    :: mylar.getVersion.188 : MAIN : [DOCKER-AWARE] Docker installation detected.
+23-Aug-2023 14:45:14 - INFO    :: mylar.getVersion.209 : MAIN : i:  (HEAD -> master, tag: v0.7.3)
+
+23-Aug-2023 14:45:14 - INFO    :: mylar.getVersion.220 : MAIN : [LAST_RELEASE] Branch: master
+23-Aug-2023 14:45:14 - INFO    :: mylar.getVersion.225 : MAIN : [LAST_RELEASE] Version: v0.7.3
+23-Aug-2023 14:45:14 - INFO    :: mylar.getVersion.209 : MAIN : i: f59746303c1e14298fc4aef7a91a2116829ce3d8
+
+23-Aug-2023 14:45:14 - INFO    :: mylar.getVersion.231 : MAIN : [LAST_RELEASE] Commit: f59746303c1e14298fc4aef7a91a2116829ce3d8
+23-Aug-2023 14:45:15 - INFO    :: mylar.getVersion.266 : MAIN : Branch detected & set to : master
+23-Aug-2023 14:45:15 - INFO    :: mylar.versionload.469 : MAIN : Version information: master [f59746303c1e14298fc4aef7a91a2116829ce3d8]
+23-Aug-2023 14:45:16 - INFO    :: mylar.release_messages.270 : MAIN : release_messages: None
+23-Aug-2023 14:45:16 - INFO    :: mylar.start.667 : MAIN : [SEARCH-QUEUE] Attempting to background load the search queue....
+23-Aug-2023 14:45:16 - INFO    :: mylar.start.671 : MAIN : [SEARCH-QUEUE] Successfully started the Search Queuer...
+23-Aug-2023 14:45:16 - INFO    :: mylar.start.586 : MAIN : [WEEKLY] Checking for existance of Weekly Comic listing...
+23-Aug-2023 14:45:16 - INFO    :: mylar.start.645 : MAIN : Firing up the Background Schedulers now....
+23-Aug-2023 14:45:16 - INFO    :: mylar.start.650 : MAIN : Background Schedulers successfully started...
+23-Aug-2023 14:51:14 - INFO    :: mylar.main.481 : MAIN : Received signal: shutdown
+23-Aug-2023 14:51:16 - INFO    :: mylar.halt.1604 : MAIN : Shutting down the background schedulers...
+23-Aug-2023 14:51:21 - INFO    :: mylar.search_queue.3324 : SEARCH-QUEUE : [SEARCH-QUEUE] Cleaning up workers for shutdown
+23-Aug-2023 14:51:21 - INFO    :: mylar.shutdown.1631 : MAIN : Mylar is shutting down...
+23-Aug-2023 14:52:17 - INFO    :: mylar.configure.1123 : MainThread : [DOCKER-AWARE] Docker installation detected.
+23-Aug-2023 14:52:17 - ERROR   :: mylar.configure.1142 : MainThread : No User Comicvine API key specified. I will not work very well due to api limits - http://api.comicvine.com/ and get your own free key.
+23-Aug-2023 14:52:17 - INFO    :: mylar.configure.1183 : MainThread : Ignored Publishers: []
+23-Aug-2023 14:52:17 - INFO    :: mylar.configure.1206 : MainThread : [MASS_PUBLISHERS] Auto-add for weekly publishers set to: []
+23-Aug-2023 14:52:17 - INFO    :: mylar.configure.1218 : MainThread : [IGNORE_SEARCH_WORDS] Words to flag search result as invalid: ['.exe', '.iso', 'pdf-xpost', 'pdf', 'ebook']
+23-Aug-2023 14:52:17 - INFO    :: mylar.configure.1230 : MainThread : [PROBLEM_DATES] Problem dates loaded: ['2021-07-14 04:00:34']
+23-Aug-2023 14:52:17 - INFO    :: mylar.configure.1244 : MainThread : [COMICTAGGER] Version detected: 1.3.5
+23-Aug-2023 14:52:17 - INFO    :: mylar.configure.1337 : MainThread : [Search Tier Cutoff] Setting Tier-1 cutoff point to 14 days
+23-Aug-2023 14:52:17 - INFO    :: mylar.initialize.257 : MainThread : Checking to see if the database has all tables....
+23-Aug-2023 14:52:17 - INFO    :: mylar.dbcheck.1555 : MainThread : Ensuring DB integrity - Removing all Erroneous Comics (ie. named None)
+23-Aug-2023 14:52:17 - INFO    :: mylar.dbcheck.1565 : MainThread : Correcting Null entries that make the main page break on startup.
+23-Aug-2023 14:52:17 - INFO    :: mylar.dbcheck.1576 : MainThread : [<class 'int'>]oldconfig_version: 12
+23-Aug-2023 14:52:17 - INFO    :: mylar.check_failed_update.172 : MainThread : checked is None
+23-Aug-2023 14:52:17 - INFO    :: mylar.initialize.286 : MainThread : Successfully discovered local IP and locking it in as : 172.25.0.14
+23-Aug-2023 14:52:17 - INFO    :: mylar.initialize.363 : MainThread : [IMPRINT_LOADS] Loading Publisher imprints data from local file.
+23-Aug-2023 14:52:17 - INFO    :: mylar.initialize.389 : MainThread : [IMPRINT_LOADS] Successfully loaded imprints for 6 publishers
+23-Aug-2023 14:52:17 - INFO    :: mylar.initialize.391 : MainThread : Remapping the sorting to allow for new additions.
+23-Aug-2023 14:52:17 - INFO    :: mylar.ComicSort.778 : MainThread : Sucessfully ordered -1 series in your watchlist.
+23-Aug-2023 14:52:17 - INFO    :: mylar.validateAndCreateDirectory.1836 : MainThread : [DIRECTORY-CHECK] Found DATA directory: /config/mylar
+23-Aug-2023 14:52:17 - INFO    :: mylar.initialize.73 : MAIN : Starting Mylar on http://0.0.0.0:8090/
+23-Aug-2023 14:52:17 - INFO    :: mylar.getVersion.188 : MAIN : [DOCKER-AWARE] Docker installation detected.
+23-Aug-2023 14:52:17 - INFO    :: mylar.getVersion.209 : MAIN : i:  (HEAD -> master, tag: v0.7.4)
+
+23-Aug-2023 14:52:17 - INFO    :: mylar.getVersion.220 : MAIN : [LAST_RELEASE] Branch: master
+23-Aug-2023 14:52:17 - INFO    :: mylar.getVersion.225 : MAIN : [LAST_RELEASE] Version: v0.7.4
+23-Aug-2023 14:52:17 - INFO    :: mylar.getVersion.209 : MAIN : i: 9cc77a7993bb499904ed1cf5a3a9f8cdbd81f5cc
+
+23-Aug-2023 14:52:17 - INFO    :: mylar.getVersion.231 : MAIN : [LAST_RELEASE] Commit: 9cc77a7993bb499904ed1cf5a3a9f8cdbd81f5cc
+23-Aug-2023 14:52:17 - INFO    :: mylar.getVersion.266 : MAIN : Branch detected & set to : master
+23-Aug-2023 14:52:17 - INFO    :: mylar.versionload.469 : MAIN : Version information: master [9cc77a7993bb499904ed1cf5a3a9f8cdbd81f5cc]
+23-Aug-2023 14:52:18 - INFO    :: mylar.release_messages.274 : MAIN : release_messages: None
+23-Aug-2023 14:52:18 - INFO    :: mylar.start.667 : MAIN : [SEARCH-QUEUE] Attempting to background load the search queue....
+23-Aug-2023 14:52:18 - INFO    :: mylar.start.671 : MAIN : [SEARCH-QUEUE] Successfully started the Search Queuer...
+23-Aug-2023 14:52:18 - INFO    :: mylar.start.586 : MAIN : [WEEKLY] Checking for existance of Weekly Comic listing...
+23-Aug-2023 14:52:18 - INFO    :: mylar.start.645 : MAIN : Firing up the Background Schedulers now....
+23-Aug-2023 14:52:18 - INFO    :: mylar.start.650 : MAIN : Background Schedulers successfully started...
+23-Aug-2023 15:00:29 - INFO    :: mylar.main.481 : MAIN : Received signal: shutdown
+23-Aug-2023 15:00:31 - INFO    :: mylar.halt.1604 : MAIN : Shutting down the background schedulers...
+23-Aug-2023 15:00:33 - INFO    :: mylar.search_queue.3327 : SEARCH-QUEUE : [SEARCH-QUEUE] Cleaning up workers for shutdown
+23-Aug-2023 15:00:33 - INFO    :: mylar.shutdown.1631 : MAIN : Mylar is shutting down...
+23-Aug-2023 15:01:05 - INFO    :: mylar.configure.1123 : MainThread : [DOCKER-AWARE] Docker installation detected.
+23-Aug-2023 15:01:05 - ERROR   :: mylar.configure.1142 : MainThread : No User Comicvine API key specified. I will not work very well due to api limits - http://api.comicvine.com/ and get your own free key.
+23-Aug-2023 15:01:05 - INFO    :: mylar.configure.1183 : MainThread : Ignored Publishers: []
+23-Aug-2023 15:01:05 - INFO    :: mylar.configure.1206 : MainThread : [MASS_PUBLISHERS] Auto-add for weekly publishers set to: []
+23-Aug-2023 15:01:05 - INFO    :: mylar.configure.1218 : MainThread : [IGNORE_SEARCH_WORDS] Words to flag search result as invalid: ['.exe', '.iso', 'pdf-xpost', 'pdf', 'ebook']
+23-Aug-2023 15:01:05 - INFO    :: mylar.configure.1230 : MainThread : [PROBLEM_DATES] Problem dates loaded: ['2021-07-14 04:00:34']
+23-Aug-2023 15:01:05 - INFO    :: mylar.configure.1244 : MainThread : [COMICTAGGER] Version detected: 1.3.5
+23-Aug-2023 15:01:05 - INFO    :: mylar.configure.1337 : MainThread : [Search Tier Cutoff] Setting Tier-1 cutoff point to 14 days
+23-Aug-2023 15:01:05 - INFO    :: mylar.initialize.257 : MainThread : Checking to see if the database has all tables....
+23-Aug-2023 15:01:05 - INFO    :: mylar.dbcheck.1555 : MainThread : Ensuring DB integrity - Removing all Erroneous Comics (ie. named None)
+23-Aug-2023 15:01:05 - INFO    :: mylar.dbcheck.1565 : MainThread : Correcting Null entries that make the main page break on startup.
+23-Aug-2023 15:01:05 - INFO    :: mylar.dbcheck.1576 : MainThread : [<class 'int'>]oldconfig_version: 12
+23-Aug-2023 15:01:05 - INFO    :: mylar.check_failed_update.172 : MainThread : checked is None
+23-Aug-2023 15:01:05 - INFO    :: mylar.initialize.286 : MainThread : Successfully discovered local IP and locking it in as : 172.26.0.12
+23-Aug-2023 15:01:05 - INFO    :: mylar.initialize.363 : MainThread : [IMPRINT_LOADS] Loading Publisher imprints data from local file.
+23-Aug-2023 15:01:05 - INFO    :: mylar.initialize.389 : MainThread : [IMPRINT_LOADS] Successfully loaded imprints for 6 publishers
+23-Aug-2023 15:01:05 - INFO    :: mylar.initialize.391 : MainThread : Remapping the sorting to allow for new additions.
+23-Aug-2023 15:01:05 - INFO    :: mylar.ComicSort.778 : MainThread : Sucessfully ordered -1 series in your watchlist.
+23-Aug-2023 15:01:05 - INFO    :: mylar.validateAndCreateDirectory.1836 : MainThread : [DIRECTORY-CHECK] Found DATA directory: /config/mylar
+23-Aug-2023 15:01:05 - INFO    :: mylar.initialize.73 : MAIN : Starting Mylar on http://0.0.0.0:8090/
+23-Aug-2023 15:01:05 - INFO    :: mylar.getVersion.188 : MAIN : [DOCKER-AWARE] Docker installation detected.
+23-Aug-2023 15:01:05 - INFO    :: mylar.getVersion.209 : MAIN : i:  (HEAD -> master, tag: v0.7.4)
+
+23-Aug-2023 15:01:05 - INFO    :: mylar.getVersion.220 : MAIN : [LAST_RELEASE] Branch: master
+23-Aug-2023 15:01:05 - INFO    :: mylar.getVersion.225 : MAIN : [LAST_RELEASE] Version: v0.7.4
+23-Aug-2023 15:01:05 - INFO    :: mylar.getVersion.209 : MAIN : i: 9cc77a7993bb499904ed1cf5a3a9f8cdbd81f5cc
+
+23-Aug-2023 15:01:05 - INFO    :: mylar.getVersion.231 : MAIN : [LAST_RELEASE] Commit: 9cc77a7993bb499904ed1cf5a3a9f8cdbd81f5cc
+23-Aug-2023 15:01:05 - INFO    :: mylar.getVersion.266 : MAIN : Branch detected & set to : master
+23-Aug-2023 15:01:05 - INFO    :: mylar.versionload.469 : MAIN : Version information: master [9cc77a7993bb499904ed1cf5a3a9f8cdbd81f5cc]
+23-Aug-2023 15:01:06 - INFO    :: mylar.release_messages.274 : MAIN : release_messages: None
+23-Aug-2023 15:01:06 - INFO    :: mylar.start.667 : MAIN : [SEARCH-QUEUE] Attempting to background load the search queue....
+23-Aug-2023 15:01:06 - INFO    :: mylar.start.671 : MAIN : [SEARCH-QUEUE] Successfully started the Search Queuer...
+23-Aug-2023 15:01:06 - INFO    :: mylar.start.586 : MAIN : [WEEKLY] Checking for existance of Weekly Comic listing...
+23-Aug-2023 15:01:06 - INFO    :: mylar.start.645 : MAIN : Firing up the Background Schedulers now....
+23-Aug-2023 15:01:06 - INFO    :: mylar.start.650 : MAIN : Background Schedulers successfully started...
+23-Aug-2023 15:26:42 - INFO    :: mylar.configure.1123 : CP Server Thread-11 : [DOCKER-AWARE] Docker installation detected.
+23-Aug-2023 15:26:42 - ERROR   :: mylar.configure.1142 : CP Server Thread-11 : No User Comicvine API key specified. I will not work very well due to api limits - http://api.comicvine.com/ and get your own free key.
+23-Aug-2023 15:26:42 - INFO    :: mylar.configure.1183 : CP Server Thread-11 : Ignored Publishers: []
+23-Aug-2023 15:26:42 - INFO    :: mylar.configure.1206 : CP Server Thread-11 : [MASS_PUBLISHERS] Auto-add for weekly publishers set to: []
+23-Aug-2023 15:26:42 - INFO    :: mylar.configure.1218 : CP Server Thread-11 : [IGNORE_SEARCH_WORDS] Words to flag search result as invalid: ['.exe', '.iso', 'pdf-xpost', 'pdf', 'ebook']
+23-Aug-2023 15:26:42 - INFO    :: mylar.configure.1230 : CP Server Thread-11 : [PROBLEM_DATES] Problem dates loaded: ['2021-07-14 04:00:34']
+23-Aug-2023 15:26:42 - INFO    :: mylar.configure.1244 : CP Server Thread-11 : [COMICTAGGER] Version detected: 1.3.5
+23-Aug-2023 15:26:42 - INFO    :: mylar.validateAndCreateDirectory.1836 : CP Server Thread-11 : [DIRECTORY-CHECK] Found ddl location directory: /config/mylar/cache
+23-Aug-2023 15:26:42 - INFO    :: mylar.configure.1337 : CP Server Thread-11 : [Search Tier Cutoff] Setting Tier-1 cutoff point to 14 days
+23-Aug-2023 15:26:42 - INFO    :: mylar.configUpdate.7139 : CP Server Thread-11 : Now saving config...
+23-Aug-2023 15:27:00 - INFO    :: mylar.configure.1123 : CP Server Thread-3 : [DOCKER-AWARE] Docker installation detected.
+23-Aug-2023 15:27:00 - ERROR   :: mylar.configure.1142 : CP Server Thread-3 : No User Comicvine API key specified. I will not work very well due to api limits - http://api.comicvine.com/ and get your own free key.
+23-Aug-2023 15:27:00 - INFO    :: mylar.configure.1183 : CP Server Thread-3 : Ignored Publishers: []
+23-Aug-2023 15:27:00 - INFO    :: mylar.configure.1206 : CP Server Thread-3 : [MASS_PUBLISHERS] Auto-add for weekly publishers set to: []
+23-Aug-2023 15:27:00 - INFO    :: mylar.configure.1218 : CP Server Thread-3 : [IGNORE_SEARCH_WORDS] Words to flag search result as invalid: ['.exe', '.iso', 'pdf-xpost', 'pdf', 'ebook']
+23-Aug-2023 15:27:00 - INFO    :: mylar.configure.1230 : CP Server Thread-3 : [PROBLEM_DATES] Problem dates loaded: ['2021-07-14 04:00:34']
+23-Aug-2023 15:27:00 - INFO    :: mylar.configure.1244 : CP Server Thread-3 : [COMICTAGGER] Version detected: 1.3.5
+23-Aug-2023 15:27:00 - INFO    :: mylar.validateAndCreateDirectory.1836 : CP Server Thread-3 : [DIRECTORY-CHECK] Found ddl location directory: /config/mylar/cache
+23-Aug-2023 15:27:00 - INFO    :: mylar.configure.1337 : CP Server Thread-3 : [Search Tier Cutoff] Setting Tier-1 cutoff point to 14 days
+23-Aug-2023 15:27:00 - INFO    :: mylar.configUpdate.7139 : CP Server Thread-3 : Now saving config...
+23-Aug-2023 15:27:19 - INFO    :: mylar.configure.1123 : CP Server Thread-5 : [DOCKER-AWARE] Docker installation detected.
+23-Aug-2023 15:27:19 - ERROR   :: mylar.configure.1142 : CP Server Thread-5 : No User Comicvine API key specified. I will not work very well due to api limits - http://api.comicvine.com/ and get your own free key.
+23-Aug-2023 15:27:19 - INFO    :: mylar.configure.1183 : CP Server Thread-5 : Ignored Publishers: []
+23-Aug-2023 15:27:19 - INFO    :: mylar.configure.1206 : CP Server Thread-5 : [MASS_PUBLISHERS] Auto-add for weekly publishers set to: []
+23-Aug-2023 15:27:19 - INFO    :: mylar.configure.1218 : CP Server Thread-5 : [IGNORE_SEARCH_WORDS] Words to flag search result as invalid: ['.exe', '.iso', 'pdf-xpost', 'pdf', 'ebook']
+23-Aug-2023 15:27:19 - INFO    :: mylar.configure.1230 : CP Server Thread-5 : [PROBLEM_DATES] Problem dates loaded: ['2021-07-14 04:00:34']
+23-Aug-2023 15:27:19 - INFO    :: mylar.configure.1244 : CP Server Thread-5 : [COMICTAGGER] Version detected: 1.3.5
+23-Aug-2023 15:27:19 - INFO    :: mylar.start.667 : CP Server Thread-5 : [DDL-QUEUE] DDL Download queue enabled & monitoring for requests....
+23-Aug-2023 15:27:19 - INFO    :: mylar.start.671 : CP Server Thread-5 : [DDL-QUEUE] Succesfully started DDL Download Queuer....
+23-Aug-2023 15:27:19 - INFO    :: mylar.validateAndCreateDirectory.1836 : CP Server Thread-5 : [DIRECTORY-CHECK] Found ddl location directory: /config/mylar/cache
+23-Aug-2023 15:27:19 - INFO    :: mylar.configure.1337 : CP Server Thread-5 : [Search Tier Cutoff] Setting Tier-1 cutoff point to 14 days
+23-Aug-2023 15:27:19 - INFO    :: mylar.configUpdate.7139 : CP Server Thread-5 : Now saving config...
+23-Aug-2023 15:27:29 - INFO    :: mylar.configure.1123 : CP Server Thread-11 : [DOCKER-AWARE] Docker installation detected.
+23-Aug-2023 15:27:29 - ERROR   :: mylar.configure.1142 : CP Server Thread-11 : No User Comicvine API key specified. I will not work very well due to api limits - http://api.comicvine.com/ and get your own free key.
+23-Aug-2023 15:27:29 - INFO    :: mylar.configure.1183 : CP Server Thread-11 : Ignored Publishers: []
+23-Aug-2023 15:27:29 - INFO    :: mylar.configure.1206 : CP Server Thread-11 : [MASS_PUBLISHERS] Auto-add for weekly publishers set to: []
+23-Aug-2023 15:27:29 - INFO    :: mylar.configure.1218 : CP Server Thread-11 : [IGNORE_SEARCH_WORDS] Words to flag search result as invalid: ['.exe', '.iso', 'pdf-xpost', 'pdf', 'ebook']
+23-Aug-2023 15:27:29 - INFO    :: mylar.configure.1230 : CP Server Thread-11 : [PROBLEM_DATES] Problem dates loaded: ['2021-07-14 04:00:34']
+23-Aug-2023 15:27:29 - INFO    :: mylar.configure.1244 : CP Server Thread-11 : [COMICTAGGER] Version detected: 1.3.5
+23-Aug-2023 15:27:29 - INFO    :: mylar.validateAndCreateDirectory.1836 : CP Server Thread-11 : [DIRECTORY-CHECK] Found ddl location directory: /config/mylar/cache
+23-Aug-2023 15:27:29 - INFO    :: mylar.configure.1337 : CP Server Thread-11 : [Search Tier Cutoff] Setting Tier-1 cutoff point to 14 days
+23-Aug-2023 15:27:29 - INFO    :: mylar.configUpdate.7139 : CP Server Thread-11 : Now saving config...
+23-Aug-2023 15:27:49 - INFO    :: mylar.configure.1123 : CP Server Thread-8 : [DOCKER-AWARE] Docker installation detected.
+23-Aug-2023 15:27:49 - ERROR   :: mylar.configure.1142 : CP Server Thread-8 : No User Comicvine API key specified. I will not work very well due to api limits - http://api.comicvine.com/ and get your own free key.
+23-Aug-2023 15:27:49 - INFO    :: mylar.configure.1183 : CP Server Thread-8 : Ignored Publishers: []
+23-Aug-2023 15:27:49 - INFO    :: mylar.configure.1206 : CP Server Thread-8 : [MASS_PUBLISHERS] Auto-add for weekly publishers set to: []
+23-Aug-2023 15:27:49 - INFO    :: mylar.configure.1218 : CP Server Thread-8 : [IGNORE_SEARCH_WORDS] Words to flag search result as invalid: ['.exe', '.iso', 'pdf-xpost', 'pdf', 'ebook']
+23-Aug-2023 15:27:49 - INFO    :: mylar.configure.1230 : CP Server Thread-8 : [PROBLEM_DATES] Problem dates loaded: ['2021-07-14 04:00:34']
+23-Aug-2023 15:27:49 - INFO    :: mylar.configure.1244 : CP Server Thread-8 : [COMICTAGGER] Version detected: 1.3.5
+23-Aug-2023 15:27:49 - INFO    :: mylar.validateAndCreateDirectory.1836 : CP Server Thread-8 : [DIRECTORY-CHECK] Found ddl location directory: /config/mylar/cache
+23-Aug-2023 15:27:49 - INFO    :: mylar.configure.1337 : CP Server Thread-8 : [Search Tier Cutoff] Setting Tier-1 cutoff point to 14 days
+23-Aug-2023 15:27:49 - INFO    :: mylar.configUpdate.7139 : CP Server Thread-8 : Now saving config...
+23-Aug-2023 15:27:51 - INFO    :: mylar.main.481 : MAIN : Received signal: restart
+23-Aug-2023 15:27:51 - INFO    :: mylar.halt.1604 : MAIN : Shutting down the background schedulers...
+23-Aug-2023 15:27:56 - INFO    :: mylar.search_queue.3327 : SEARCH-QUEUE : [SEARCH-QUEUE] Cleaning up workers for shutdown
+23-Aug-2023 15:27:59 - INFO    :: mylar.ddl_downloader.3222 : DDL-QUEUE : Cleaning up workers for shutdown
+23-Aug-2023 15:27:59 - INFO    :: mylar.shutdown.1644 : MAIN : Mylar is restarting...
+23-Aug-2023 15:27:59 - INFO    :: mylar.shutdown.1656 : MAIN : Restarting Mylar with ['/lsiopy/bin/python3', '/app/mylar3/Mylar.py', '--nolaunch', '--datadir', '/config/mylar']
+23-Aug-2023 15:27:59 - INFO    :: mylar.configure.1123 : MainThread : [DOCKER-AWARE] Docker installation detected.
+23-Aug-2023 15:27:59 - ERROR   :: mylar.configure.1142 : MainThread : No User Comicvine API key specified. I will not work very well due to api limits - http://api.comicvine.com/ and get your own free key.
+23-Aug-2023 15:27:59 - INFO    :: mylar.configure.1183 : MainThread : Ignored Publishers: []
+23-Aug-2023 15:27:59 - INFO    :: mylar.configure.1206 : MainThread : [MASS_PUBLISHERS] Auto-add for weekly publishers set to: []
+23-Aug-2023 15:27:59 - INFO    :: mylar.configure.1218 : MainThread : [IGNORE_SEARCH_WORDS] Words to flag search result as invalid: ['.exe', '.iso', 'pdf-xpost', 'pdf', 'ebook']
+23-Aug-2023 15:27:59 - INFO    :: mylar.configure.1230 : MainThread : [PROBLEM_DATES] Problem dates loaded: ['2021-07-14 04:00:34']
+23-Aug-2023 15:27:59 - INFO    :: mylar.configure.1244 : MainThread : [COMICTAGGER] Version detected: 1.3.5
+23-Aug-2023 15:27:59 - INFO    :: mylar.configure.1323 : MainThread : Setting DDL Location set to : /config/mylar/cache
+23-Aug-2023 15:27:59 - INFO    :: mylar.configure.1337 : MainThread : [Search Tier Cutoff] Setting Tier-1 cutoff point to 14 days
+23-Aug-2023 15:27:59 - INFO    :: mylar.initialize.257 : MainThread : Checking to see if the database has all tables....
+23-Aug-2023 15:27:59 - INFO    :: mylar.dbcheck.1555 : MainThread : Ensuring DB integrity - Removing all Erroneous Comics (ie. named None)
+23-Aug-2023 15:27:59 - INFO    :: mylar.dbcheck.1565 : MainThread : Correcting Null entries that make the main page break on startup.
+23-Aug-2023 15:27:59 - INFO    :: mylar.dbcheck.1576 : MainThread : [<class 'int'>]oldconfig_version: 12
+23-Aug-2023 15:27:59 - INFO    :: mylar.check_failed_update.172 : MainThread : checked is None
+23-Aug-2023 15:27:59 - INFO    :: mylar.initialize.286 : MainThread : Successfully discovered local IP and locking it in as : 172.26.0.12
+23-Aug-2023 15:27:59 - INFO    :: mylar.initialize.363 : MainThread : [IMPRINT_LOADS] Loading Publisher imprints data from local file.
+23-Aug-2023 15:27:59 - INFO    :: mylar.initialize.389 : MainThread : [IMPRINT_LOADS] Successfully loaded imprints for 6 publishers
+23-Aug-2023 15:27:59 - INFO    :: mylar.initialize.391 : MainThread : Remapping the sorting to allow for new additions.
+23-Aug-2023 15:27:59 - INFO    :: mylar.ComicSort.778 : MainThread : Sucessfully ordered -1 series in your watchlist.
+23-Aug-2023 15:27:59 - INFO    :: mylar.validateAndCreateDirectory.1836 : MainThread : [DIRECTORY-CHECK] Found DATA directory: /config/mylar
+23-Aug-2023 15:27:59 - INFO    :: mylar.initialize.73 : MAIN : Starting Mylar on http://0.0.0.0:8090/
+23-Aug-2023 15:27:59 - INFO    :: mylar.getVersion.188 : MAIN : [DOCKER-AWARE] Docker installation detected.
+23-Aug-2023 15:27:59 - INFO    :: mylar.getVersion.209 : MAIN : i:  (HEAD -> master, tag: v0.7.4)
+
+23-Aug-2023 15:27:59 - INFO    :: mylar.getVersion.220 : MAIN : [LAST_RELEASE] Branch: master
+23-Aug-2023 15:27:59 - INFO    :: mylar.getVersion.225 : MAIN : [LAST_RELEASE] Version: v0.7.4
+23-Aug-2023 15:27:59 - INFO    :: mylar.getVersion.209 : MAIN : i: 9cc77a7993bb499904ed1cf5a3a9f8cdbd81f5cc
+
+23-Aug-2023 15:27:59 - INFO    :: mylar.getVersion.231 : MAIN : [LAST_RELEASE] Commit: 9cc77a7993bb499904ed1cf5a3a9f8cdbd81f5cc
+23-Aug-2023 15:28:00 - INFO    :: mylar.getVersion.266 : MAIN : Branch detected & set to : master
+23-Aug-2023 15:28:00 - INFO    :: mylar.versionload.469 : MAIN : Version information: master [9cc77a7993bb499904ed1cf5a3a9f8cdbd81f5cc]
+23-Aug-2023 15:28:00 - INFO    :: mylar.release_messages.274 : MAIN : release_messages: None
+23-Aug-2023 15:28:00 - INFO    :: mylar.start.667 : MAIN : [SEARCH-QUEUE] Attempting to background load the search queue....
+23-Aug-2023 15:28:00 - INFO    :: mylar.start.671 : MAIN : [SEARCH-QUEUE] Successfully started the Search Queuer...
+23-Aug-2023 15:28:00 - INFO    :: mylar.start.667 : MAIN : [POST-PROCESS-QUEUE] Post Process queue enabled & monitoring for api requests....
+23-Aug-2023 15:28:00 - INFO    :: mylar.start.671 : MAIN : [POST-PROCESS-QUEUE] Succesfully started Post-Processing Queuer....
+23-Aug-2023 15:28:00 - INFO    :: mylar.start.667 : MAIN : [DDL-QUEUE] DDL Download queue enabled & monitoring for requests....
+23-Aug-2023 15:28:00 - INFO    :: mylar.start.671 : MAIN : [DDL-QUEUE] Succesfully started DDL Download Queuer....
+23-Aug-2023 15:28:00 - INFO    :: mylar.start.586 : MAIN : [WEEKLY] Checking for existance of Weekly Comic listing...
+23-Aug-2023 15:28:00 - INFO    :: mylar.start.645 : MAIN : Firing up the Background Schedulers now....
+23-Aug-2023 15:28:00 - INFO    :: mylar.start.650 : MAIN : Background Schedulers successfully started...
+23-Aug-2023 15:28:47 - INFO    :: mylar.main.481 : MAIN : Received signal: shutdown
+23-Aug-2023 15:28:49 - INFO    :: mylar.halt.1604 : MAIN : Shutting down the background schedulers...
+23-Aug-2023 15:28:50 - INFO    :: mylar.search_queue.3327 : SEARCH-QUEUE : [SEARCH-QUEUE] Cleaning up workers for shutdown
+23-Aug-2023 15:28:55 - INFO    :: mylar.postprocess_main.3294 : POST-PROCESS-QUEUE : Now loading from post-processing queue: exit
+23-Aug-2023 15:28:55 - INFO    :: mylar.postprocess_main.3296 : POST-PROCESS-QUEUE : Cleaning up workers for shutdown
+23-Aug-2023 21:25:38 - INFO    :: mylar.configure.1123 : MainThread : [DOCKER-AWARE] Docker installation detected.
+23-Aug-2023 21:25:38 - ERROR   :: mylar.configure.1142 : MainThread : No User Comicvine API key specified. I will not work very well due to api limits - http://api.comicvine.com/ and get your own free key.
+23-Aug-2023 21:25:38 - INFO    :: mylar.configure.1183 : MainThread : Ignored Publishers: []
+23-Aug-2023 21:25:38 - INFO    :: mylar.configure.1206 : MainThread : [MASS_PUBLISHERS] Auto-add for weekly publishers set to: []
+23-Aug-2023 21:25:38 - INFO    :: mylar.configure.1218 : MainThread : [IGNORE_SEARCH_WORDS] Words to flag search result as invalid: ['.exe', '.iso', 'pdf-xpost', 'pdf', 'ebook']
+23-Aug-2023 21:25:38 - INFO    :: mylar.configure.1230 : MainThread : [PROBLEM_DATES] Problem dates loaded: ['2021-07-14 04:00:34']
+23-Aug-2023 21:25:38 - INFO    :: mylar.configure.1244 : MainThread : [COMICTAGGER] Version detected: 1.3.5
+23-Aug-2023 21:25:38 - INFO    :: mylar.configure.1323 : MainThread : Setting DDL Location set to : /config/mylar/cache
+23-Aug-2023 21:25:38 - INFO    :: mylar.configure.1337 : MainThread : [Search Tier Cutoff] Setting Tier-1 cutoff point to 14 days
+23-Aug-2023 21:25:38 - INFO    :: mylar.initialize.257 : MainThread : Checking to see if the database has all tables....
+23-Aug-2023 21:25:38 - INFO    :: mylar.dbcheck.1555 : MainThread : Ensuring DB integrity - Removing all Erroneous Comics (ie. named None)
+23-Aug-2023 21:25:38 - INFO    :: mylar.dbcheck.1565 : MainThread : Correcting Null entries that make the main page break on startup.
+23-Aug-2023 21:25:38 - INFO    :: mylar.dbcheck.1576 : MainThread : [<class 'int'>]oldconfig_version: 12
+23-Aug-2023 21:25:38 - INFO    :: mylar.check_failed_update.172 : MainThread : checked is None
+23-Aug-2023 21:25:38 - INFO    :: mylar.initialize.286 : MainThread : Successfully discovered local IP and locking it in as : 172.26.0.8
+23-Aug-2023 21:25:38 - INFO    :: mylar.initialize.363 : MainThread : [IMPRINT_LOADS] Loading Publisher imprints data from local file.
+23-Aug-2023 21:25:38 - INFO    :: mylar.initialize.389 : MainThread : [IMPRINT_LOADS] Successfully loaded imprints for 6 publishers
+23-Aug-2023 21:25:38 - INFO    :: mylar.initialize.391 : MainThread : Remapping the sorting to allow for new additions.
+23-Aug-2023 21:25:38 - INFO    :: mylar.ComicSort.778 : MainThread : Sucessfully ordered -1 series in your watchlist.
+23-Aug-2023 21:25:38 - INFO    :: mylar.validateAndCreateDirectory.1836 : MainThread : [DIRECTORY-CHECK] Found DATA directory: /config/mylar
+23-Aug-2023 21:25:38 - INFO    :: mylar.initialize.73 : MAIN : Starting Mylar on http://0.0.0.0:8090/
+23-Aug-2023 21:25:38 - INFO    :: mylar.getVersion.188 : MAIN : [DOCKER-AWARE] Docker installation detected.
+23-Aug-2023 21:25:38 - INFO    :: mylar.getVersion.209 : MAIN : i:  (HEAD -> master, tag: v0.7.4)
+
+23-Aug-2023 21:25:38 - INFO    :: mylar.getVersion.220 : MAIN : [LAST_RELEASE] Branch: master
+23-Aug-2023 21:25:38 - INFO    :: mylar.getVersion.225 : MAIN : [LAST_RELEASE] Version: v0.7.4
+23-Aug-2023 21:25:38 - INFO    :: mylar.getVersion.209 : MAIN : i: 9cc77a7993bb499904ed1cf5a3a9f8cdbd81f5cc
+
+23-Aug-2023 21:25:38 - INFO    :: mylar.getVersion.231 : MAIN : [LAST_RELEASE] Commit: 9cc77a7993bb499904ed1cf5a3a9f8cdbd81f5cc
+23-Aug-2023 21:25:38 - INFO    :: mylar.getVersion.266 : MAIN : Branch detected & set to : master
+23-Aug-2023 21:25:38 - INFO    :: mylar.versionload.469 : MAIN : Version information: master [9cc77a7993bb499904ed1cf5a3a9f8cdbd81f5cc]
+23-Aug-2023 21:25:39 - INFO    :: mylar.release_messages.274 : MAIN : release_messages: None
+23-Aug-2023 21:25:39 - INFO    :: mylar.start.667 : MAIN : [SEARCH-QUEUE] Attempting to background load the search queue....
+23-Aug-2023 21:25:39 - INFO    :: mylar.start.671 : MAIN : [SEARCH-QUEUE] Successfully started the Search Queuer...
+23-Aug-2023 21:25:39 - INFO    :: mylar.start.667 : MAIN : [POST-PROCESS-QUEUE] Post Process queue enabled & monitoring for api requests....
+23-Aug-2023 21:25:39 - INFO    :: mylar.start.671 : MAIN : [POST-PROCESS-QUEUE] Succesfully started Post-Processing Queuer....
+23-Aug-2023 21:25:39 - INFO    :: mylar.start.667 : MAIN : [DDL-QUEUE] DDL Download queue enabled & monitoring for requests....
+23-Aug-2023 21:25:39 - INFO    :: mylar.start.671 : MAIN : [DDL-QUEUE] Succesfully started DDL Download Queuer....
+23-Aug-2023 21:25:39 - INFO    :: mylar.start.586 : MAIN : [WEEKLY] Checking for existance of Weekly Comic listing...
+23-Aug-2023 21:25:39 - INFO    :: mylar.start.606 : MAIN : [WEEKLY] Weekly Pull-Update initializing immediately as it has been 7.379767402145598 hours since the last run
+23-Aug-2023 21:25:39 - INFO    :: mylar.start.645 : MAIN : Firing up the Background Schedulers now....
+23-Aug-2023 21:25:39 - INFO    :: mylar.start.650 : MAIN : Background Schedulers successfully started...
+23-Aug-2023 21:25:39 - INFO    :: mylar.run.27 : ThreadPoolExecutor-0_0 : [WEEKLY] Checking Weekly Pull-list for new releases/updates
+23-Aug-2023 21:25:39 - INFO    :: mylar.pullit.43 : ThreadPoolExecutor-0_0 : Weekly pull list present - checking if it's up-to-date..
+23-Aug-2023 21:25:39 - INFO    :: mylar.pullit.72 : ThreadPoolExecutor-0_0 : [PULL-LIST] Populating & Loading pull-list data directly from alternate website
+23-Aug-2023 21:25:39 - INFO    :: mylar.pullit.106 : ThreadPoolExecutor-0_0 : [PULL-LIST] Populating & Loading pull-list data directly from alternate website for specific week of 33, 2023
+23-Aug-2023 21:25:40 - INFO    :: mylar.locg.78 : ThreadPoolExecutor-0_0 : [WEEKLY-PULL] There are 95 issues for week 33, 2023
+23-Aug-2023 21:25:40 - INFO    :: mylar.locg.109 : ThreadPoolExecutor-0_0 : Re-creating pullist to ensure everything's fresh.
+23-Aug-2023 21:25:41 - INFO    :: mylar.locg.144 : ThreadPoolExecutor-0_0 : [PULL-LIST] Successfully populated pull-list into Mylar for week 33 of 2023
+23-Aug-2023 21:25:41 - INFO    :: mylar.pullit.114 : ThreadPoolExecutor-0_0 : [PULL-LIST] Weekly Pull List successfully loaded with 95 issues.
+23-Aug-2023 21:25:43 - INFO    :: mylar.pullit.106 : ThreadPoolExecutor-0_0 : [PULL-LIST] Populating & Loading pull-list data directly from alternate website for specific week of 34, 2023
+23-Aug-2023 21:25:44 - INFO    :: mylar.locg.78 : ThreadPoolExecutor-0_0 : [WEEKLY-PULL] There are 103 issues for week 34, 2023
+23-Aug-2023 21:25:44 - INFO    :: mylar.locg.109 : ThreadPoolExecutor-0_0 : Re-creating pullist to ensure everything's fresh.
+23-Aug-2023 21:25:45 - INFO    :: mylar.locg.144 : ThreadPoolExecutor-0_0 : [PULL-LIST] Successfully populated pull-list into Mylar for week 34 of 2023
+23-Aug-2023 21:25:45 - INFO    :: mylar.pullit.114 : ThreadPoolExecutor-0_0 : [PULL-LIST] Weekly Pull List successfully loaded with 103 issues.
+23-Aug-2023 21:25:45 - INFO    :: mylar.future_check.1637 : ThreadPoolExecutor-0_0 : No series have been marked as being on auto-watch.
+23-Aug-2023 21:33:33 - INFO    :: mylar.main.481 : MAIN : Received signal: shutdown
+23-Aug-2023 21:33:35 - INFO    :: mylar.halt.1604 : MAIN : Shutting down the background schedulers...
+23-Aug-2023 21:33:39 - INFO    :: mylar.search_queue.3327 : SEARCH-QUEUE : [SEARCH-QUEUE] Cleaning up workers for shutdown

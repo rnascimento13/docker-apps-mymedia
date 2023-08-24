@@ -6,7 +6,7 @@
   <ExtractChapterImagesDuringLibraryScan>true</ExtractChapterImagesDuringLibraryScan>
   <PathInfos>
     <MediaPathInfo>
-      <Path>/data/tvshows</Path>
+      <Path>/data/tv</Path>
     </MediaPathInfo>
   </PathInfos>
   <SaveLocalMetadata>true</SaveLocalMetadata>
