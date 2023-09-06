@@ -1,0 +1,13 @@
+02/09/2023 03:13:41|INFO    |root                            |BAZARR is started and waiting for request on http://***.***.***.***:6767|
+02/09/2023 13:03:37|INFO    |root                            |BAZARR is started and waiting for request on http://***.***.***.***:6767|
+02/09/2023 14:18:07|INFO    |root                            |BAZARR trying to connect to Sonarr SignalR feed...|
+02/09/2023 14:18:54|INFO    |root                            |BAZARR trying to connect to Radarr SignalR feed...|
+02/09/2023 14:18:54|INFO    |root                            |BAZARR SignalR client for Radarr is connected and waiting for events.|
+02/09/2023 14:24:09|INFO    |root                            |BAZARR throttled providers have been reset (only AuthenticationError and ConfigurationError).|
+02/09/2023 14:24:09|INFO    |root                            |BAZARR throttled providers have been reset (only AuthenticationError and ConfigurationError).|
+02/09/2023 14:24:09|INFO    |root                            |BAZARR throttled providers have been reset (only AuthenticationError and ConfigurationError).|
+02/09/2023 14:24:09|INFO    |root                            |BAZARR throttled providers have been reset (only AuthenticationError and ConfigurationError).|
+02/09/2023 14:24:09|INFO    |root                            |BAZARR throttled providers have been reset (only AuthenticationError and ConfigurationError).|
+02/09/2023 14:27:32|INFO    |root                            |Throttling subf2m for 10 minutes, until 23/09/02 14:37, because of: ConfigurationError. Exception info: 'User-agent config missing'|
+02/09/2023 14:27:33|INFO    |root                            |Throttling addic7ed for 10 minutes, until 23/09/02 14:37, because of: Exception. Exception info: 'AntiCaptcha class not given, exiting'|
+02/09/2023 14:27:35|INFO    |root                            |Throttling opensubtitles for 10 minutes, until 23/09/02 14:37, because of: Unauthorized. Exception info: None|

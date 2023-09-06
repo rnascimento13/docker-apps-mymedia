@@ -1,0 +1,13 @@
+1
+00:00:40,917 --> 00:00:41,975
+{\an8}<i>Informe de la misión.</i>
+
+2
+00:00:42,197 --> 00:00:47,125
+{\an8}<i>Submarino K599 Sebastopol
+de la Federación Rusa</i>
+
+3
+00:00:47,644 --> 00:00:51,292
+{\an8}<i>Operación Podkova. Día 74.</i>
+

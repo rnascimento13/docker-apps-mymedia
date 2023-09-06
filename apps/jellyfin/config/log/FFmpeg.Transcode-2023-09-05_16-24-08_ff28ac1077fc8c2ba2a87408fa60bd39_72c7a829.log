@@ -1,0 +1,94 @@
+/audio/ff28ac10-77fc-8c2b-a2a8-7408fa60bd39/stream.mp3
+
+{"Protocol":0,"Id":"ff28ac1077fc8c2ba2a87408fa60bd39","Path":"/data/music/Wu\u2010Tang Clan/Wu\u2010Tang Clan - Album - 2009 - Chamber Music/0102 - Kill Too Hard.m4a","EncoderPath":null,"EncoderProtocol":null,"Type":0,"Container":"m4a","Size":7607009,"Name":"0102 - Kill Too Hard","IsRemote":false,"ETag":"46aa7cc1c9c0bad73db41486d3fe20f8","RunTimeTicks":1697939968,"ReadAtNativeFramerate":false,"IgnoreDts":false,"IgnoreIndex":false,"GenPtsInput":false,"SupportsTranscoding":true,"SupportsDirectStream":true,"SupportsDirectPlay":true,"IsInfiniteStream":false,"RequiresOpening":false,"OpenToken":null,"RequiresClosing":false,"LiveStreamId":null,"BufferMs":null,"RequiresLooping":false,"SupportsProbing":true,"VideoType":null,"IsoType":null,"Video3DFormat":null,"MediaStreams":[{"Codec":"aac","CodecTag":"mp4a","Language":"und","ColorRange":null,"ColorSpace":null,"ColorTransfer":null,"ColorPrimaries":null,"DvVersionMajor":null,"DvVersionMinor":null,"DvProfile":null,"DvLevel":null,"RpuPresentFlag":null,"ElPresentFlag":null,"BlPresentFlag":null,"DvBlSignalCompatibilityId":null,"Comment":null,"TimeBase":"1/44100","CodecTimeBase":null,"Title":"ISO Media file produced by Google Inc.","VideoRange":null,"VideoRangeType":null,"VideoDoViTitle":null,"LocalizedUndefined":null,"LocalizedDefault":null,"LocalizedForced":null,"LocalizedExternal":null,"DisplayTitle":"ISO Media file produced by Google Inc. - AAC - Stereo - Default","NalLengthSize":null,"IsInterlaced":false,"IsAVC":null,"ChannelLayout":"stereo","BitRate":321665,"BitDepth":null,"RefFrames":null,"PacketLength":null,"Channels":2,"SampleRate":44100,"IsDefault":true,"IsForced":false,"Height":null,"Width":null,"AverageFrameRate":null,"RealFrameRate":null,"Profile":"LC","Type":0,"AspectRatio":null,"Index":0,"Score":null,"IsExternal":false,"DeliveryMethod":null,"DeliveryUrl":null,"IsExternalUrl":null,"IsTextSubtitleStream":false,"SupportsExternalStream":false,"Path":null,"PixelFormat":null,"Level":0,"IsAnamorphic":null},{"Codec":"mjpeg","CodecTag":null,"Language":null,"ColorRange":null,"ColorSpace":"bt470bg","ColorTransfer":null,"ColorPrimaries":null,"DvVersionMajor":null,"DvVersionMinor":null,"DvProfile":null,"DvLevel":null,"RpuPresentFlag":null,"ElPresentFlag":null,"BlPresentFlag":null,"DvBlSignalCompatibilityId":null,"Comment":null,"TimeBase":"1/90000","CodecTimeBase":null,"Title":null,"VideoRange":null,"VideoRangeType":null,"VideoDoViTitle":null,"LocalizedUndefined":null,"LocalizedDefault":null,"LocalizedForced":null,"LocalizedExternal":null,"DisplayTitle":null,"NalLengthSize":null,"IsInterlaced":false,"IsAVC":null,"ChannelLayout":null,"BitRate":null,"BitDepth":8,"RefFrames":1,"PacketLength":null,"Channels":null,"SampleRate":null,"IsDefault":false,"IsForced":false,"Height":1000,"Width":1000,"AverageFrameRate":null,"RealFrameRate":90000,"Profile":"Baseline","Type":3,"AspectRatio":"1:1","Index":1,"Score":null,"IsExternal":false,"DeliveryMethod":null,"DeliveryUrl":null,"IsExternalUrl":null,"IsTextSubtitleStream":false,"SupportsExternalStream":false,"Path":null,"PixelFormat":"yuvj420p","Level":-99,"IsAnamorphic":null}],"MediaAttachments":[],"Formats":[],"Bitrate":358360,"Timestamp":null,"RequiredHttpHeaders":{},"TranscodingUrl":null,"TranscodingSubProtocol":null,"TranscodingContainer":null,"AnalyzeDurationMs":null,"DefaultAudioStreamIndex":null,"DefaultSubtitleStreamIndex":null}
+
+/usr/lib/jellyfin-ffmpeg/ffmpeg -analyzeduration 200M  -i file:"/data/music/Wu‐Tang Clan/Wu‐Tang Clan - Album - 2009 - Chamber Music/0102 - Kill Too Hard.m4a" -threads 0 -vn -ab 128000 -ac 2 -acodec libmp3lame -id3v2_version 3 -write_id3v1 1 -y "/config/data/transcodes/04905c4c233776cdb585b5a1bcd535b9.mp3"
+
+
+ffmpeg version 5.1.3-Jellyfin Copyright (c) 2000-2022 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.4.0-1ubuntu1~22.04)
+  configuration: --prefix=/usr/lib/jellyfin-ffmpeg --target-os=linux --extra-libs=-lfftw3f --extra-version=Jellyfin --disable-doc --disable-ffplay --disable-ptx-compression --disable-static --disable-libxcb --disable-sdl2 --disable-xlib --enable-lto --enable-gpl --enable-version3 --enable-shared --enable-gmp --enable-gnutls --enable-chromaprint --enable-libdrm --enable-libass --enable-libfreetype --enable-libfribidi --enable-libfontconfig --enable-libbluray --enable-libmp3lame --enable-libopus --enable-libtheora --enable-libvorbis --enable-libopenmpt --enable-libdav1d --enable-libwebp --enable-libvpx --enable-libx264 --enable-libx265 --enable-libzvbi --enable-libzimg --enable-libfdk-aac --arch=amd64 --enable-libsvtav1 --enable-libshaderc --enable-libplacebo --enable-vulkan --enable-opencl --enable-vaapi --enable-amf --enable-libmfx --enable-ffnvcodec --enable-cuda --enable-cuda-llvm --enable-cuvid --enable-nvdec --enable-nvenc
+  libavutil      57. 28.100 / 57. 28.100
+  libavcodec     59. 37.100 / 59. 37.100
+  libavformat    59. 27.100 / 59. 27.100
+  libavdevice    59.  7.100 / 59.  7.100
+  libavfilter     8. 44.100 /  8. 44.100
+  libswscale      6.  7.100 /  6.  7.100
+  libswresample   4.  7.100 /  4.  7.100
+  libpostproc    56.  6.100 / 56.  6.100
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x562b50a87740] stream 0, timescale not set
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'file:/data/music/Wu‐Tang Clan/Wu‐Tang Clan - Album - 2009 - Chamber Music/0102 - Kill Too Hard.m4a':
+  Metadata:
+    major_brand     : M4A 
+    minor_version   : 512
+    compatible_brands: M4A isomiso2
+    title           : Kill Too Hard
+    artist          : Wu‐Tang Clan
+    album_artist    : Wu‐Tang Clan
+    track           : 2/17
+    album           : Chamber Music
+    disc            : 1/1
+    publisher       : E1 Entertainment
+    genre           : Hip Hop
+    MusicBrainz Album Release Country: US
+    MusicBrainz Album Status: official
+    MusicBrainz Album Type: album
+    MusicBrainz Album Id: e253e27f-b5fc-4261-9e42-46cd6ca5662e
+    MusicBrainz Artist Id: 0febdcf7-4e1f-4661-9493-b40427de2c13
+    MusicBrainz Album Artist Id: 0febdcf7-4e1f-4661-9493-b40427de2c13
+    MusicBrainz Release Group Id: cc41e3b6-4025-4221-9b01-c5e55cc565d4
+    MusicBrainz Track Id: 4a0083b9-ea58-4ed6-8091-a7c85038c6e2
+    date            : 2009-06-30
+    Original Date   : 2009-06-30
+    Original Year   : 2009
+    MEDIA           : CD
+    MusicBrainz Release Track Id: cac3af7b-abde-324b-8abb-26ed9fe94bda
+  Duration: 00:02:49.82, start: 0.000000, bitrate: 358 kb/s
+  Stream #0:0[0x1](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 321 kb/s (default)
+    Metadata:
+      handler_name    : ISO Media file produced by Google Inc.
+      vendor_id       : [0][0][0][0]
+  Stream #0:1[0x0]: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 1000x1000 [SAR 300:300 DAR 1:1], 90k tbr, 90k tbn (attached pic)
+Stream mapping:
+  Stream #0:0 -> #0:0 (aac (native) -> mp3 (libmp3lame))
+Press [q] to stop, [?] for help
+Output #0, mp3, to '/config/data/transcodes/04905c4c233776cdb585b5a1bcd535b9.mp3':
+  Metadata:
+    major_brand     : M4A 
+    minor_version   : 512
+    compatible_brands: M4A isomiso2
+    TIT2            : Kill Too Hard
+    TPE1            : Wu‐Tang Clan
+    TPE2            : Wu‐Tang Clan
+    TRCK            : 2/17
+    TALB            : Chamber Music
+    TPOS            : 1/1
+    TPUB            : E1 Entertainment
+    TCON            : Hip Hop
+    MusicBrainz Album Release Country: US
+    MusicBrainz Album Status: official
+    MusicBrainz Album Type: album
+    MusicBrainz Album Id: e253e27f-b5fc-4261-9e42-46cd6ca5662e
+    MusicBrainz Artist Id: 0febdcf7-4e1f-4661-9493-b40427de2c13
+    MusicBrainz Album Artist Id: 0febdcf7-4e1f-4661-9493-b40427de2c13
+    MusicBrainz Release Group Id: cc41e3b6-4025-4221-9b01-c5e55cc565d4
+    MusicBrainz Track Id: 4a0083b9-ea58-4ed6-8091-a7c85038c6e2
+    TYER            : 2009
+    TDAT            : 3006
+    Original Date   : 2009-06-30
+    Original Year   : 2009
+    MEDIA           : CD
+    MusicBrainz Release Track Id: cac3af7b-abde-324b-8abb-26ed9fe94bda
+    TSSE            : Lavf59.27.100
+  Stream #0:0(und): Audio: mp3, 44100 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      handler_name    : ISO Media file produced by Google Inc.
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc59.37.100 libmp3lame
+size=       1kB time=00:00:00.00 bitrate=N/A speed=   0x    
+size=     512kB time=00:00:42.09 bitrate=  99.6kbits/s speed=84.2x    
+size=    1280kB time=00:01:22.22 bitrate= 127.5kbits/s speed=82.2x    
+size=    1792kB time=00:02:02.11 bitrate= 120.2kbits/s speed=81.4x    
+size=    2304kB time=00:02:42.67 bitrate= 116.0kbits/s speed=81.3x    
+size=    2655kB time=00:02:49.81 bitrate= 128.1kbits/s speed=81.6x    
+video:0kB audio:2654kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.058287%

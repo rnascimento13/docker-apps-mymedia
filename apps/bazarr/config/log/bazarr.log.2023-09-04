@@ -1,0 +1,22 @@
+04/09/2023 10:20:45|INFO    |root                            |BAZARR trying to connect to Sonarr SignalR feed...|
+04/09/2023 10:20:45|INFO    |root                            |BAZARR trying to connect to Radarr SignalR feed...|
+04/09/2023 10:20:45|INFO    |root                            |BAZARR is started and waiting for request on http://***.***.***.***:6767|
+04/09/2023 10:20:45|INFO    |root                            |BAZARR SignalR client for Radarr is connected and waiting for events.|
+04/09/2023 10:20:45|INFO    |root                            |BAZARR SignalR client for Sonarr is connected and waiting for events.|
+04/09/2023 10:27:10|INFO    |root                            |Using addic7ed again after 10 minutes, (disabled because: Exception)|
+04/09/2023 10:27:10|INFO    |root                            |Using subf2m again after 10 minutes, (disabled because: ConfigurationError)|
+04/09/2023 10:27:17|INFO    |root                            |Throttling subf2m for 10 minutes, until 23/09/04 10:37, because of: ConfigurationError. Exception info: 'User-agent config missing'|
+04/09/2023 10:27:18|INFO    |root                            |Throttling opensubtitles for 10 minutes, until 23/09/04 10:37, because of: Unauthorized. Exception info: None|
+04/09/2023 10:27:18|INFO    |root                            |Throttling addic7ed for 10 minutes, until 23/09/04 10:37, because of: Exception. Exception info: 'AntiCaptcha class not given, exiting'|
+04/09/2023 10:27:29|WARNING |retry.api                       |HTTPSConnectionPool(host='www.podnapisi.net', port=443): Read timed out. (read timeout=10), retrying in 5 seconds...|
+04/09/2023 15:21:24|INFO    |root                            |BAZARR Finished searching for missing Series Subtitles. Check History for more information.|
+04/09/2023 15:46:12|INFO    |root                            |BAZARR Finished searching for missing Movies Subtitles. Check History for more information.|
+04/09/2023 16:36:57|INFO    |root                            |Using addic7ed again after 10 minutes, (disabled because: Exception)|
+04/09/2023 16:36:57|INFO    |root                            |Using opensubtitles again after 10 minutes, (disabled because: Unauthorized)|
+04/09/2023 16:36:57|INFO    |root                            |Using subf2m again after 10 minutes, (disabled because: ConfigurationError)|
+04/09/2023 20:18:45|INFO    |root                            |Throttling subf2m for 10 minutes, until 23/09/04 20:28, because of: ConfigurationError. Exception info: 'User-agent config missing'|
+04/09/2023 20:18:46|INFO    |root                            |Throttling opensubtitles for 10 minutes, until 23/09/04 20:28, because of: Unauthorized. Exception info: None|
+04/09/2023 20:18:46|INFO    |root                            |Throttling addic7ed for 10 minutes, until 23/09/04 20:28, because of: Exception. Exception info: 'AntiCaptcha class not given, exiting'|
+04/09/2023 20:18:55|INFO    |root                            |BAZARR Finished searching for Subtitles to upgrade. Check History for more information.|
+04/09/2023 21:21:24|INFO    |root                            |BAZARR Finished searching for missing Series Subtitles. Check History for more information.|
+04/09/2023 21:46:12|INFO    |root                            |BAZARR Finished searching for missing Movies Subtitles. Check History for more information.|

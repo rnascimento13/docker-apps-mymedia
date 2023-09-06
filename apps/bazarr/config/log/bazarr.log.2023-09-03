@@ -1,0 +1,14 @@
+03/09/2023 16:36:16|INFO    |root                            |BAZARR trying to connect to Sonarr SignalR feed...|
+03/09/2023 16:36:16|INFO    |root                            |BAZARR trying to connect to Radarr SignalR feed...|
+03/09/2023 16:36:16|INFO    |root                            |BAZARR is started and waiting for request on http://***.***.***.***:6767|
+03/09/2023 16:36:17|INFO    |root                            |BAZARR SignalR client for Radarr is connected and waiting for events.|
+03/09/2023 16:36:17|INFO    |root                            |BAZARR SignalR client for Sonarr is connected and waiting for events.|
+03/09/2023 16:36:43|INFO    |root                            |Using addic7ed again after 10 minutes, (disabled because: Exception)|
+03/09/2023 16:36:43|INFO    |root                            |Using opensubtitles again after 10 minutes, (disabled because: Unauthorized)|
+03/09/2023 16:36:43|INFO    |root                            |Using subf2m again after 10 minutes, (disabled because: ConfigurationError)|
+03/09/2023 21:18:58|INFO    |root                            |Throttling subf2m for 10 minutes, until 23/09/03 21:28, because of: ConfigurationError. Exception info: 'User-agent config missing'|
+03/09/2023 21:18:58|INFO    |root                            |Provider opensubtitles throttle count 1 of 5, waiting 5sec and trying again|
+03/09/2023 21:18:59|INFO    |root                            |Throttling addic7ed for 10 minutes, until 23/09/03 21:28, because of: Exception. Exception info: 'AntiCaptcha class not given, exiting'|
+03/09/2023 21:19:20|INFO    |root                            |Provider opensubtitles throttle count 2 of 5, waiting 5sec and trying again|
+03/09/2023 21:19:26|INFO    |root                            |BAZARR Finished searching for missing Series Subtitles. Check History for more information.|
+03/09/2023 22:12:53|INFO    |root                            |BAZARR Finished searching for missing Movies Subtitles. Check History for more information.|

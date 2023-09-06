@@ -9,17 +9,21 @@
       <Path>/data/ebooks</Path>
     </MediaPathInfo>
   </PathInfos>
-  <SaveLocalMetadata>false</SaveLocalMetadata>
+  <SaveLocalMetadata>true</SaveLocalMetadata>
   <EnableAutomaticSeriesGrouping>false</EnableAutomaticSeriesGrouping>
   <EnableEmbeddedTitles>false</EnableEmbeddedTitles>
   <EnableEmbeddedEpisodeInfos>false</EnableEmbeddedEpisodeInfos>
   <AutomaticRefreshIntervalDays>0</AutomaticRefreshIntervalDays>
-  <PreferredMetadataLanguage />
-  <MetadataCountryCode />
+  <PreferredMetadataLanguage>pt-br</PreferredMetadataLanguage>
+  <MetadataCountryCode>BR</MetadataCountryCode>
   <SeasonZeroDisplayName>Specials</SeasonZeroDisplayName>
   <MetadataSavers />
   <DisabledLocalMetadataReaders />
-  <LocalMetadataReaderOrder />
+  <LocalMetadataReaderOrder>
+    <string>Open Packaging Format</string>
+    <string>Comic Provider</string>
+    <string>Epub Metadata</string>
+  </LocalMetadataReaderOrder>
   <DisabledSubtitleFetchers />
   <SubtitleFetcherOrder />
   <SkipSubtitlesIfEmbeddedSubtitlesPresent>false</SkipSubtitlesIfEmbeddedSubtitlesPresent>
@@ -29,5 +33,26 @@
   <SaveSubtitlesWithMedia>true</SaveSubtitlesWithMedia>
   <AutomaticallyAddToCollection>false</AutomaticallyAddToCollection>
   <AllowEmbeddedSubtitles>AllowAll</AllowEmbeddedSubtitles>
-  <TypeOptions />
+  <TypeOptions>
+    <TypeOptions>
+      <Type>Book</Type>
+      <MetadataFetchers>
+        <string>Google Books</string>
+      </MetadataFetchers>
+      <MetadataFetcherOrder>
+        <string>Google Books</string>
+      </MetadataFetcherOrder>
+      <ImageFetchers>
+        <string>Comic Book Zip Archive Cover Extractor</string>
+        <string>Google Books</string>
+        <string>Epub Metadata</string>
+      </ImageFetchers>
+      <ImageFetcherOrder>
+        <string>Comic Book Zip Archive Cover Extractor</string>
+        <string>Google Books</string>
+        <string>Epub Metadata</string>
+      </ImageFetcherOrder>
+      <ImageOptions />
+    </TypeOptions>
+  </TypeOptions>
 </LibraryOptions>

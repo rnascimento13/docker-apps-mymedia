@@ -1,0 +1,95 @@
+{
+    "id": 103201516525,
+    "production_status": "r",
+    "song_title": "Triumph",
+    "song_slug": "triumph",
+    "url": "https:\/\/imvdb.com\/video\/wu-tang-clan\/triumph",
+    "multiple_versions": false,
+    "version_name": null,
+    "version_number": 1,
+    "is_imvdb_pick": false,
+    "aspect_ratio": null,
+    "year": 1997,
+    "verified_credits": false,
+    "artists": [
+        {
+            "name": "Wu-Tang Clan",
+            "slug": "wu-tang-clan",
+            "url": "https:\/\/imvdb.com\/n\/wu-tang-clan"
+        }
+    ],
+    "image": {
+        "o": "https:\/\/s3.amazonaws.com\/images.imvdb.com\/video\/103201516525-wu-tang-clan-triumph_music_video_ov.jpg",
+        "l": "https:\/\/s3.amazonaws.com\/images.imvdb.com\/video\/103201516525-wu-tang-clan-triumph_music_video_lv.jpg",
+        "b": "https:\/\/s3.amazonaws.com\/images.imvdb.com\/video\/103201516525-wu-tang-clan-triumph_music_video_bv.jpg",
+        "t": "https:\/\/s3.amazonaws.com\/images.imvdb.com\/video\/103201516525-wu-tang-clan-triumph_music_video_tv.jpg",
+        "s": "https:\/\/s3.amazonaws.com\/images.imvdb.com\/video\/103201516525-wu-tang-clan-triumph_music_video_sv.jpg"
+    },
+    "sources": [
+        {
+            "source": "youtube",
+            "source_slug": "youtube",
+            "source_data": "vtxtTq8xvEQ",
+            "is_primary": true
+        }
+    ],
+    "directors": [
+        {
+            "position_name": "Director",
+            "position_code": "dir",
+            "entity_name": "Brett Ratner",
+            "entity_slug": "brett-ratner",
+            "entity_id": 7725,
+            "position_notes": "",
+            "position_id": 7725,
+            "entity_url": "https:\/\/imvdb.com\/n\/brett-ratner"
+        }
+    ],
+    "credits": {
+        "total_credits": 4,
+        "crew": [
+            {
+                "position_name": "Director",
+                "position_code": "dir",
+                "entity_name": "Brett Ratner",
+                "entity_slug": "brett-ratner",
+                "entity_id": 7725,
+                "position_notes": "",
+                "position_id": 7725,
+                "entity_url": "https:\/\/imvdb.com\/n\/brett-ratner"
+            },
+            {
+                "position_name": "Production Manager",
+                "position_code": "pm",
+                "entity_name": "Matt Caltabiano",
+                "entity_slug": "matt-caltabiano",
+                "entity_id": 93707,
+                "position_notes": "",
+                "position_id": 93707,
+                "entity_url": "https:\/\/imvdb.com\/n\/matt-caltabiano"
+            },
+            {
+                "position_name": "Director of Photography",
+                "position_code": "cin",
+                "entity_name": "Joseph Kahn",
+                "entity_slug": "joseph-kahn",
+                "entity_id": 93708,
+                "position_notes": "",
+                "position_id": 93708,
+                "entity_url": "https:\/\/imvdb.com\/n\/joseph-kahn"
+            }
+        ],
+        "cast": []
+    },
+    "release_date_stamp": null,
+    "release_date_string": null,
+    "featured_artists": [],
+    "popularity": {
+        "views_all_time": 2420126,
+        "views_all_time_formatted": "2.4M",
+        "shares_all_time": 0,
+        "shares_all_time_formatted": 0
+    },
+    "bts": [],
+    "countries": []
+}

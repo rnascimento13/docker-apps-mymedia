@@ -1,0 +1,14 @@
+05/09/2023 13:32:41|INFO    |root                            |BAZARR trying to connect to Sonarr SignalR feed...|
+05/09/2023 13:32:41|INFO    |root                            |BAZARR is started and waiting for request on http://***.***.***.***:6767|
+05/09/2023 13:32:41|INFO    |root                            |BAZARR trying to connect to Radarr SignalR feed...|
+05/09/2023 13:32:41|INFO    |root                            |BAZARR SignalR client for Radarr is connected and waiting for events.|
+05/09/2023 13:32:42|INFO    |root                            |BAZARR SignalR client for Sonarr is connected and waiting for events.|
+05/09/2023 16:37:14|INFO    |root                            |Using addic7ed again after 10 minutes, (disabled because: Exception)|
+05/09/2023 16:37:14|INFO    |root                            |Using opensubtitles again after 10 minutes, (disabled because: Unauthorized)|
+05/09/2023 16:37:14|INFO    |root                            |Using subf2m again after 10 minutes, (disabled because: ConfigurationError)|
+05/09/2023 18:16:17|INFO    |root                            |BAZARR Finished searching for missing Series Subtitles. Check History for more information.|
+05/09/2023 19:05:00|INFO    |root                            |BAZARR Finished searching for missing Movies Subtitles. Check History for more information.|
+05/09/2023 23:24:07|INFO    |root                            |Throttling subf2m for 10 minutes, until 23/09/05 23:34, because of: ConfigurationError. Exception info: 'User-agent config missing'|
+05/09/2023 23:24:08|INFO    |root                            |Throttling opensubtitles for 10 minutes, until 23/09/05 23:34, because of: Unauthorized. Exception info: None|
+05/09/2023 23:24:08|INFO    |root                            |Throttling addic7ed for 10 minutes, until 23/09/05 23:34, because of: Exception. Exception info: 'AntiCaptcha class not given, exiting'|
+05/09/2023 23:24:19|INFO    |root                            |BAZARR Finished searching for Subtitles to upgrade. Check History for more information.|

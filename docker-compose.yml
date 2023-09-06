@@ -272,6 +272,21 @@ services:
       - "com.centurylinklabs.watchtower.scope=myscope"
     restart: unless-stopped    
 
+  jellyseerr:
+    image: fallenbagel/jellyseerr:latest
+    container_name: jellyseerr
+    environment:
+      - LOG_LEVEL=debug
+      - TZ=${TZ}
+    user: ${PUID}:${PGID}
+    ports:
+      - 5055:5055
+    volumes:
+      - ./apps/jellyseerr/config:/app/config
+    labels:
+      - "com.centurylinklabs.watchtower.scope=myscope"
+    restart: unless-stopped
+
   unpackerr:
     image: golift/unpackerr:latest
     container_name: unpackerr

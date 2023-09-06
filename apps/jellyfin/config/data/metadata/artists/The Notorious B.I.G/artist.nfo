@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<artist>
+  <biography />
+  <outline />
+  <lockdata>false</lockdata>
+  <dateadded>2023-08-24 23:40:18</dateadded>
+  <title>The Notorious B.I.G.</title>
+  <runtime>4</runtime>
+  <genre>Hip Hop</genre>
+  <musicbrainzartistid>d5d97b2b-b83b-4976-814a-056d9076c8c3</musicbrainzartistid>
+  <art>
+    <poster>/config/data/metadata/artists/The Notorious B.I.G/folder.jpg</poster>
+    <fanart>/config/data/metadata/artists/The Notorious B.I.G/backdrop.jpg</fanart>
+  </art>
+</artist>

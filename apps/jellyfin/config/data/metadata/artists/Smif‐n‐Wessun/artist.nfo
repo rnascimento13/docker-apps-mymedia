@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<artist>
+  <biography />
+  <outline />
+  <lockdata>false</lockdata>
+  <dateadded>2023-08-24 23:40:10</dateadded>
+  <title>Smif‐n‐Wessun</title>
+  <runtime>4</runtime>
+  <genre>Hip Hop</genre>
+  <musicbrainzartistid>6177f8df-469c-4e9d-a09f-524b29c4d849</musicbrainzartistid>
+  <art>
+    <poster>/config/data/metadata/artists/Smif‐n‐Wessun/folder.jpg</poster>
+    <fanart>/config/data/metadata/artists/Smif‐n‐Wessun/backdrop.jpg</fanart>
+  </art>
+</artist>

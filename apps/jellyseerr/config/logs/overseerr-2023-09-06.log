@@ -1,0 +1,191 @@
+2023-09-06T03:00:00.012Z [debug][Jobs]: Starting scheduled job: Download Sync 
+2023-09-06T03:00:00.017Z [info][Jobs]: Starting scheduled job: Jellyfin Recently Added Sync 
+2023-09-06T03:00:00.017Z [info][Jellyfin Sync]: Jellyfin Sync Starting {"sessionId":"f4b6fcbf-1b0a-45c5-9015-7f42a2678582"}
+2023-09-06T03:00:00.019Z [info][Jobs]: Starting scheduled job: Plex Watchlist Sync 
+2023-09-06T03:00:00.022Z [debug][Download Tracker]: Found 3 item(s) in progress on Sonarr server: sonarr 
+2023-09-06T03:00:00.022Z [debug][Download Tracker]: Found 1 item(s) in progress on Radarr server: radarr 
+2023-09-06T03:00:00.022Z [info][Jellyfin Sync]: Beginning to process recently added for library: Filmes 
+2023-09-06T03:00:00.040Z [debug][Jellyfin Sync]: Title already exists and no new media types found Indiana Jones e A Relíquia do Destino 
+2023-09-06T03:00:00.049Z [debug][Jellyfin Sync]: Title already exists and no new media types found Missão: Impossível - Acerto de Contas Parte 1 
+2023-09-06T03:00:00.050Z [debug][Jellyfin Sync]: Title already exists and no new media types found The Flash 
+2023-09-06T03:00:00.054Z [debug][Jellyfin Sync]: Title already exists and no new media types found Transformers: O Despertar das Feras 
+2023-09-06T03:00:00.055Z [debug][Jellyfin Sync]: Title already exists and no new media types found Liga da Justiça: Mundo Bélico 
+2023-09-06T03:00:04.055Z [info][Jellyfin Sync]: Beginning to process recently added for library: Séries 
+2023-09-06T03:00:04.104Z [debug][Jellyfin Sync]: Updating existing title: My Adventures with Superman 
+2023-09-06T03:00:04.110Z [debug][Jellyfin Sync]: Updating existing title: Star Trek: Strange New Worlds 
+2023-09-06T03:00:04.112Z [debug][Jellyfin Sync]: Updating existing title: The Walking Dead: Dead City 
+2023-09-06T03:00:04.124Z [debug][Jellyfin Sync]: Updating existing title: Harley Quinn 
+2023-09-06T03:00:04.127Z [debug][Jellyfin Sync]: Updating existing title: Solar Opposites 
+2023-09-06T03:00:04.141Z [debug][Jellyfin Sync]: Updating existing title: Futurama 
+2023-09-06T03:00:04.145Z [debug][Jellyfin Sync]: Updating existing title: Star Trek: Enterprise 
+2023-09-06T03:00:08.148Z [info][Jellyfin Sync]: Recently Added Scan Complete 
+2023-09-06T03:01:00.013Z [debug][Jobs]: Starting scheduled job: Download Sync 
+2023-09-06T03:01:00.016Z [debug][Download Tracker]: Found 1 item(s) in progress on Radarr server: radarr 
+2023-09-06T03:01:00.017Z [debug][Download Tracker]: Found 3 item(s) in progress on Sonarr server: sonarr 
+2023-09-06T03:02:00.012Z [debug][Jobs]: Starting scheduled job: Download Sync 
+2023-09-06T03:02:00.014Z [debug][Download Tracker]: Found 1 item(s) in progress on Radarr server: radarr 
+2023-09-06T03:02:00.015Z [debug][Download Tracker]: Found 3 item(s) in progress on Sonarr server: sonarr 
+2023-09-06T03:03:00.012Z [debug][Jobs]: Starting scheduled job: Download Sync 
+2023-09-06T03:03:00.014Z [debug][Download Tracker]: Found 1 item(s) in progress on Radarr server: radarr 
+2023-09-06T03:03:00.015Z [debug][Download Tracker]: Found 3 item(s) in progress on Sonarr server: sonarr 
+2023-09-06T03:04:00.008Z [debug][Jobs]: Starting scheduled job: Download Sync 
+2023-09-06T03:04:00.010Z [debug][Download Tracker]: Found 1 item(s) in progress on Radarr server: radarr 
+2023-09-06T03:04:00.011Z [debug][Download Tracker]: Found 3 item(s) in progress on Sonarr server: sonarr 
+2023-09-06T03:05:00.013Z [debug][Jobs]: Starting scheduled job: Download Sync 
+2023-09-06T03:05:00.015Z [info][Jobs]: Starting scheduled job: Jellyfin Recently Added Sync 
+2023-09-06T03:05:00.015Z [info][Jellyfin Sync]: Jellyfin Sync Starting {"sessionId":"57a3a8fd-2339-415e-975a-ae69fc83c6a7"}
+2023-09-06T03:05:00.017Z [info][Jellyfin Sync]: Beginning to process recently added for library: Filmes 
+2023-09-06T03:05:00.018Z [debug][Download Tracker]: Found 1 item(s) in progress on Radarr server: radarr 
+2023-09-06T03:05:00.019Z [debug][Download Tracker]: Found 3 item(s) in progress on Sonarr server: sonarr 
+2023-09-06T03:05:00.434Z [debug][Jellyfin Sync]: Title already exists and no new media types found Missão: Impossível - Acerto de Contas Parte 1 
+2023-09-06T03:05:00.449Z [debug][Jellyfin Sync]: Title already exists and no new media types found Liga da Justiça: Mundo Bélico 
+2023-09-06T03:05:00.477Z [debug][Jellyfin Sync]: Title already exists and no new media types found Transformers: O Despertar das Feras 
+2023-09-06T03:05:00.478Z [debug][Jellyfin Sync]: Title already exists and no new media types found Indiana Jones e A Relíquia do Destino 
+2023-09-06T03:05:00.478Z [debug][Jellyfin Sync]: Title already exists and no new media types found The Flash 
+2023-09-06T03:05:04.479Z [info][Jellyfin Sync]: Beginning to process recently added for library: Séries 
+2023-09-06T03:05:04.892Z [debug][Jellyfin Sync]: Updating existing title: My Adventures with Superman 
+2023-09-06T03:05:04.902Z [debug][Jellyfin Sync]: Updating existing title: Star Trek: Enterprise 
+2023-09-06T03:05:04.904Z [debug][Jellyfin Sync]: Updating existing title: Star Trek: Strange New Worlds 
+2023-09-06T03:05:04.911Z [debug][Jellyfin Sync]: Updating existing title: Solar Opposites 
+2023-09-06T03:05:04.911Z [debug][Jellyfin Sync]: Updating existing title: Harley Quinn 
+2023-09-06T03:05:04.918Z [debug][Jellyfin Sync]: Updating existing title: Futurama 
+2023-09-06T03:05:04.919Z [debug][Jellyfin Sync]: Updating existing title: The Walking Dead: Dead City 
+2023-09-06T03:05:08.919Z [info][Jellyfin Sync]: Recently Added Scan Complete 
+2023-09-06T03:06:00.012Z [debug][Jobs]: Starting scheduled job: Download Sync 
+2023-09-06T03:06:00.015Z [debug][Download Tracker]: Found 1 item(s) in progress on Radarr server: radarr 
+2023-09-06T03:06:00.019Z [debug][Download Tracker]: Found 3 item(s) in progress on Sonarr server: sonarr 
+2023-09-06T03:07:00.012Z [debug][Jobs]: Starting scheduled job: Download Sync 
+2023-09-06T03:07:00.015Z [debug][Download Tracker]: Found 1 item(s) in progress on Radarr server: radarr 
+2023-09-06T03:07:00.015Z [debug][Download Tracker]: Found 3 item(s) in progress on Sonarr server: sonarr 
+2023-09-06T03:08:00.012Z [debug][Jobs]: Starting scheduled job: Download Sync 
+2023-09-06T03:08:00.015Z [debug][Download Tracker]: Found 1 item(s) in progress on Radarr server: radarr 
+2023-09-06T03:08:00.015Z [debug][Download Tracker]: Found 3 item(s) in progress on Sonarr server: sonarr 
+2023-09-06T03:09:00.013Z [debug][Jobs]: Starting scheduled job: Download Sync 
+2023-09-06T03:09:00.016Z [debug][Download Tracker]: Found 1 item(s) in progress on Radarr server: radarr 
+2023-09-06T03:09:00.016Z [debug][Download Tracker]: Found 3 item(s) in progress on Sonarr server: sonarr 
+2023-09-06T03:10:00.013Z [debug][Jobs]: Starting scheduled job: Download Sync 
+2023-09-06T03:10:00.014Z [info][Jobs]: Starting scheduled job: Jellyfin Recently Added Sync 
+2023-09-06T03:10:00.014Z [info][Jellyfin Sync]: Jellyfin Sync Starting {"sessionId":"483e73dd-6524-4eb5-99e3-433749d3b6f9"}
+2023-09-06T03:10:00.016Z [info][Jobs]: Starting scheduled job: Plex Watchlist Sync 
+2023-09-06T03:10:00.017Z [info][Jellyfin Sync]: Beginning to process recently added for library: Filmes 
+2023-09-06T03:10:00.018Z [debug][Download Tracker]: Found 1 item(s) in progress on Radarr server: radarr 
+2023-09-06T03:10:00.018Z [debug][Download Tracker]: Found 3 item(s) in progress on Sonarr server: sonarr 
+2023-09-06T03:10:00.048Z [debug][Jellyfin Sync]: Title already exists and no new media types found The Flash 
+2023-09-06T03:10:00.048Z [debug][Jellyfin Sync]: Title already exists and no new media types found Liga da Justiça: Mundo Bélico 
+2023-09-06T03:10:00.051Z [debug][Jellyfin Sync]: Title already exists and no new media types found Indiana Jones e A Relíquia do Destino 
+2023-09-06T03:10:00.056Z [debug][Jellyfin Sync]: Title already exists and no new media types found Missão: Impossível - Acerto de Contas Parte 1 
+2023-09-06T03:10:00.056Z [debug][Jellyfin Sync]: Title already exists and no new media types found Transformers: O Despertar das Feras 
+2023-09-06T03:10:04.059Z [info][Jellyfin Sync]: Beginning to process recently added for library: Séries 
+2023-09-06T03:10:04.094Z [debug][Jellyfin Sync]: Updating existing title: My Adventures with Superman 
+2023-09-06T03:10:04.109Z [debug][Jellyfin Sync]: Updating existing title: The Walking Dead: Dead City 
+2023-09-06T03:10:04.109Z [debug][Jellyfin Sync]: Updating existing title: Star Trek: Strange New Worlds 
+2023-09-06T03:10:04.111Z [debug][Jellyfin Sync]: Updating existing title: Harley Quinn 
+2023-09-06T03:10:04.115Z [debug][Jellyfin Sync]: Updating existing title: Solar Opposites 
+2023-09-06T03:10:04.127Z [debug][Jellyfin Sync]: Updating existing title: Futurama 
+2023-09-06T03:10:04.130Z [debug][Jellyfin Sync]: Updating existing title: Star Trek: Enterprise 
+2023-09-06T03:10:08.135Z [info][Jellyfin Sync]: Recently Added Scan Complete 
+2023-09-06T03:11:00.012Z [debug][Jobs]: Starting scheduled job: Download Sync 
+2023-09-06T03:11:00.014Z [debug][Download Tracker]: Found 1 item(s) in progress on Radarr server: radarr 
+2023-09-06T03:11:00.015Z [debug][Download Tracker]: Found 3 item(s) in progress on Sonarr server: sonarr 
+2023-09-06T03:12:00.012Z [debug][Jobs]: Starting scheduled job: Download Sync 
+2023-09-06T03:12:00.014Z [debug][Download Tracker]: Found 1 item(s) in progress on Radarr server: radarr 
+2023-09-06T03:12:00.015Z [debug][Download Tracker]: Found 3 item(s) in progress on Sonarr server: sonarr 
+2023-09-06T03:13:00.008Z [debug][Jobs]: Starting scheduled job: Download Sync 
+2023-09-06T03:13:00.011Z [debug][Download Tracker]: Found 1 item(s) in progress on Radarr server: radarr 
+2023-09-06T03:13:00.011Z [debug][Download Tracker]: Found 3 item(s) in progress on Sonarr server: sonarr 
+2023-09-06T03:14:00.012Z [debug][Jobs]: Starting scheduled job: Download Sync 
+2023-09-06T03:14:00.015Z [debug][Download Tracker]: Found 1 item(s) in progress on Radarr server: radarr 
+2023-09-06T03:14:00.017Z [debug][Download Tracker]: Found 3 item(s) in progress on Sonarr server: sonarr 
+2023-09-06T03:15:00.009Z [debug][Jobs]: Starting scheduled job: Download Sync 
+2023-09-06T03:15:00.011Z [info][Jobs]: Starting scheduled job: Jellyfin Recently Added Sync 
+2023-09-06T03:15:00.011Z [info][Jellyfin Sync]: Jellyfin Sync Starting {"sessionId":"eedf741c-80e1-47e7-a2c9-7a0750c31ee0"}
+2023-09-06T03:15:00.012Z [info][Jellyfin Sync]: Beginning to process recently added for library: Filmes 
+2023-09-06T03:15:00.013Z [debug][Download Tracker]: Found 1 item(s) in progress on Radarr server: radarr 
+2023-09-06T03:15:00.014Z [debug][Download Tracker]: Found 3 item(s) in progress on Sonarr server: sonarr 
+2023-09-06T03:15:00.419Z [debug][Jellyfin Sync]: Title already exists and no new media types found Indiana Jones e A Relíquia do Destino 
+2023-09-06T03:15:00.429Z [debug][Jellyfin Sync]: Title already exists and no new media types found Missão: Impossível - Acerto de Contas Parte 1 
+2023-09-06T03:15:00.462Z [debug][Jellyfin Sync]: Title already exists and no new media types found Transformers: O Despertar das Feras 
+2023-09-06T03:15:00.462Z [debug][Jellyfin Sync]: Title already exists and no new media types found The Flash 
+2023-09-06T03:15:00.462Z [debug][Jellyfin Sync]: Title already exists and no new media types found Liga da Justiça: Mundo Bélico 
+2023-09-06T03:15:04.463Z [info][Jellyfin Sync]: Beginning to process recently added for library: Séries 
+2023-09-06T03:15:04.869Z [debug][Jellyfin Sync]: Updating existing title: My Adventures with Superman 
+2023-09-06T03:15:04.893Z [debug][Jellyfin Sync]: Updating existing title: Harley Quinn 
+2023-09-06T03:15:04.905Z [debug][Jellyfin Sync]: Updating existing title: The Walking Dead: Dead City 
+2023-09-06T03:15:04.923Z [debug][Jellyfin Sync]: Updating existing title: Solar Opposites 
+2023-09-06T03:15:04.931Z [debug][Jellyfin Sync]: Updating existing title: Star Trek: Strange New Worlds 
+2023-09-06T03:15:04.938Z [debug][Jellyfin Sync]: Updating existing title: Futurama 
+2023-09-06T03:15:04.940Z [debug][Jellyfin Sync]: Updating existing title: Star Trek: Enterprise 
+2023-09-06T03:15:08.943Z [info][Jellyfin Sync]: Recently Added Scan Complete 
+2023-09-06T03:16:00.012Z [debug][Jobs]: Starting scheduled job: Download Sync 
+2023-09-06T03:16:00.014Z [debug][Download Tracker]: Found 1 item(s) in progress on Radarr server: radarr 
+2023-09-06T03:16:00.015Z [debug][Download Tracker]: Found 3 item(s) in progress on Sonarr server: sonarr 
+2023-09-06T03:17:00.012Z [debug][Jobs]: Starting scheduled job: Download Sync 
+2023-09-06T03:17:00.014Z [debug][Download Tracker]: Found 1 item(s) in progress on Radarr server: radarr 
+2023-09-06T03:17:00.015Z [debug][Download Tracker]: Found 3 item(s) in progress on Sonarr server: sonarr 
+2023-09-06T03:18:00.008Z [debug][Jobs]: Starting scheduled job: Download Sync 
+2023-09-06T03:18:00.011Z [debug][Download Tracker]: Found 1 item(s) in progress on Radarr server: radarr 
+2023-09-06T03:18:00.011Z [debug][Download Tracker]: Found 3 item(s) in progress on Sonarr server: sonarr 
+2023-09-06T03:19:00.008Z [debug][Jobs]: Starting scheduled job: Download Sync 
+2023-09-06T03:19:00.010Z [debug][Download Tracker]: Found 1 item(s) in progress on Radarr server: radarr 
+2023-09-06T03:19:00.011Z [debug][Download Tracker]: Found 3 item(s) in progress on Sonarr server: sonarr 
+2023-09-06T03:20:00.012Z [debug][Jobs]: Starting scheduled job: Download Sync 
+2023-09-06T03:20:00.014Z [info][Jobs]: Starting scheduled job: Jellyfin Recently Added Sync 
+2023-09-06T03:20:00.014Z [info][Jellyfin Sync]: Jellyfin Sync Starting {"sessionId":"c77968e8-f716-4a6e-90f4-7028c83cbd68"}
+2023-09-06T03:20:00.016Z [info][Jobs]: Starting scheduled job: Plex Watchlist Sync 
+2023-09-06T03:20:00.017Z [debug][Download Tracker]: Found 1 item(s) in progress on Radarr server: radarr 
+2023-09-06T03:20:00.018Z [info][Jellyfin Sync]: Beginning to process recently added for library: Filmes 
+2023-09-06T03:20:00.018Z [debug][Download Tracker]: Found 3 item(s) in progress on Sonarr server: sonarr 
+2023-09-06T03:20:00.036Z [debug][Jellyfin Sync]: Title already exists and no new media types found Indiana Jones e A Relíquia do Destino 
+2023-09-06T03:20:00.042Z [debug][Jellyfin Sync]: Title already exists and no new media types found Liga da Justiça: Mundo Bélico 
+2023-09-06T03:20:00.049Z [debug][Jellyfin Sync]: Title already exists and no new media types found Missão: Impossível - Acerto de Contas Parte 1 
+2023-09-06T03:20:00.053Z [debug][Jellyfin Sync]: Title already exists and no new media types found Transformers: O Despertar das Feras 
+2023-09-06T03:20:00.053Z [debug][Jellyfin Sync]: Title already exists and no new media types found The Flash 
+2023-09-06T03:20:04.057Z [info][Jellyfin Sync]: Beginning to process recently added for library: Séries 
+2023-09-06T03:20:04.102Z [debug][Jellyfin Sync]: Updating existing title: My Adventures with Superman 
+2023-09-06T03:20:04.105Z [debug][Jellyfin Sync]: Updating existing title: The Walking Dead: Dead City 
+2023-09-06T03:20:04.107Z [debug][Jellyfin Sync]: Updating existing title: Star Trek: Strange New Worlds 
+2023-09-06T03:20:04.112Z [debug][Jellyfin Sync]: Updating existing title: Solar Opposites 
+2023-09-06T03:20:04.114Z [debug][Jellyfin Sync]: Updating existing title: Harley Quinn 
+2023-09-06T03:20:04.120Z [debug][Jellyfin Sync]: Updating existing title: Futurama 
+2023-09-06T03:20:04.125Z [debug][Jellyfin Sync]: Updating existing title: Star Trek: Enterprise 
+2023-09-06T03:20:08.129Z [info][Jellyfin Sync]: Recently Added Scan Complete 
+2023-09-06T03:21:00.008Z [debug][Jobs]: Starting scheduled job: Download Sync 
+2023-09-06T03:21:00.010Z [debug][Download Tracker]: Found 1 item(s) in progress on Radarr server: radarr 
+2023-09-06T03:21:00.011Z [debug][Download Tracker]: Found 3 item(s) in progress on Sonarr server: sonarr 
+2023-09-06T03:22:00.004Z [debug][Jobs]: Starting scheduled job: Download Sync 
+2023-09-06T03:22:00.007Z [debug][Download Tracker]: Found 1 item(s) in progress on Radarr server: radarr 
+2023-09-06T03:22:00.008Z [debug][Download Tracker]: Found 3 item(s) in progress on Sonarr server: sonarr 
+2023-09-06T03:23:00.012Z [debug][Jobs]: Starting scheduled job: Download Sync 
+2023-09-06T03:23:00.015Z [debug][Download Tracker]: Found 1 item(s) in progress on Radarr server: radarr 
+2023-09-06T03:23:00.016Z [debug][Download Tracker]: Found 3 item(s) in progress on Sonarr server: sonarr 
+2023-09-06T03:24:00.012Z [debug][Jobs]: Starting scheduled job: Download Sync 
+2023-09-06T03:24:00.015Z [debug][Download Tracker]: Found 1 item(s) in progress on Radarr server: radarr 
+2023-09-06T03:24:00.015Z [debug][Download Tracker]: Found 3 item(s) in progress on Sonarr server: sonarr 
+2023-09-06T03:25:00.012Z [debug][Jobs]: Starting scheduled job: Download Sync 
+2023-09-06T03:25:00.014Z [info][Jobs]: Starting scheduled job: Jellyfin Recently Added Sync 
+2023-09-06T03:25:00.014Z [info][Jellyfin Sync]: Jellyfin Sync Starting {"sessionId":"00e37f53-2bf8-45e2-a3b0-80954ea9599e"}
+2023-09-06T03:25:00.016Z [info][Jellyfin Sync]: Beginning to process recently added for library: Filmes 
+2023-09-06T03:25:00.017Z [debug][Download Tracker]: Found 1 item(s) in progress on Radarr server: radarr 
+2023-09-06T03:25:00.017Z [debug][Download Tracker]: Found 3 item(s) in progress on Sonarr server: sonarr 
+2023-09-06T03:25:00.422Z [debug][Jellyfin Sync]: Title already exists and no new media types found Indiana Jones e A Relíquia do Destino 
+2023-09-06T03:25:00.422Z [debug][Jellyfin Sync]: Title already exists and no new media types found Missão: Impossível - Acerto de Contas Parte 1 
+2023-09-06T03:25:00.426Z [debug][Jellyfin Sync]: Title already exists and no new media types found The Flash 
+2023-09-06T03:25:00.431Z [debug][Jellyfin Sync]: Title already exists and no new media types found Transformers: O Despertar das Feras 
+2023-09-06T03:25:00.454Z [debug][Jellyfin Sync]: Title already exists and no new media types found Liga da Justiça: Mundo Bélico 
+2023-09-06T03:25:04.455Z [info][Jellyfin Sync]: Beginning to process recently added for library: Séries 
+2023-09-06T03:25:04.866Z [debug][Jellyfin Sync]: Updating existing title: My Adventures with Superman 
+2023-09-06T03:25:04.867Z [debug][Jellyfin Sync]: Updating existing title: The Walking Dead: Dead City 
+2023-09-06T03:25:04.872Z [debug][Jellyfin Sync]: Updating existing title: Star Trek: Strange New Worlds 
+2023-09-06T03:25:04.875Z [debug][Jellyfin Sync]: Updating existing title: Solar Opposites 
+2023-09-06T03:25:04.888Z [debug][Jellyfin Sync]: Updating existing title: Harley Quinn 
+2023-09-06T03:25:04.890Z [debug][Jellyfin Sync]: Updating existing title: Star Trek: Enterprise 
+2023-09-06T03:25:04.915Z [debug][Jellyfin Sync]: Updating existing title: Futurama 
+2023-09-06T03:25:08.919Z [info][Jellyfin Sync]: Recently Added Scan Complete 
+2023-09-06T03:26:00.012Z [debug][Jobs]: Starting scheduled job: Download Sync 
+2023-09-06T03:26:00.014Z [debug][Download Tracker]: Found 1 item(s) in progress on Radarr server: radarr 
+2023-09-06T03:26:00.015Z [debug][Download Tracker]: Found 3 item(s) in progress on Sonarr server: sonarr 
+2023-09-06T13:58:29.956Z [info]: Commit Tag: $GIT_SHA 
+2023-09-06T13:58:30.468Z [info]: Starting Overseerr version 1.6.0 
+2023-09-06T13:58:32.045Z [info][Notifications]: Registered notification agents 
+2023-09-06T13:58:32.069Z [info][Jobs]: Scheduled jobs loaded 
+2023-09-06T13:58:32.193Z [info][Server]: Server ready on port 5055 

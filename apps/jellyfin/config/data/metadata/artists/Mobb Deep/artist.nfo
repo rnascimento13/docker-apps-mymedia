@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<artist>
+  <biography />
+  <outline />
+  <lockdata>false</lockdata>
+  <dateadded>2023-08-24 23:39:56</dateadded>
+  <title>Mobb Deep</title>
+  <runtime>5</runtime>
+  <genre>Hip Hop</genre>
+  <musicbrainzartistid>d75d1f08-bbb8-4eae-9877-399ca9121197</musicbrainzartistid>
+  <art>
+    <poster>/config/data/metadata/artists/Mobb Deep/folder.jpg</poster>
+    <fanart>/config/data/metadata/artists/Mobb Deep/backdrop.jpg</fanart>
+  </art>
+</artist>

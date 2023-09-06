@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<artist>
+  <biography />
+  <outline />
+  <lockdata>false</lockdata>
+  <dateadded>2023-08-24 23:40:04</dateadded>
+  <title>Ras Kass</title>
+  <runtime>4</runtime>
+  <genre>Hip Hop</genre>
+  <musicbrainzartistid>ccceb435-efd5-426a-bcdc-024262712525</musicbrainzartistid>
+  <art>
+    <poster>/config/data/metadata/artists/Ras Kass/folder.jpg</poster>
+    <fanart>/config/data/metadata/artists/Ras Kass/backdrop.jpg</fanart>
+  </art>
+</artist>

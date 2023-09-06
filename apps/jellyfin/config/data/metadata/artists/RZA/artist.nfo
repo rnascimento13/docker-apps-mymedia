@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<artist>
+  <biography />
+  <outline />
+  <lockdata>false</lockdata>
+  <dateadded>2023-08-24 23:40:06</dateadded>
+  <title>RZA</title>
+  <runtime>4</runtime>
+  <genre>Hip Hop</genre>
+  <musicbrainzartistid>29c28ac3-27c5-4822-8eb6-0af89a3a7240</musicbrainzartistid>
+  <art>
+    <poster>/config/data/metadata/artists/RZA/folder.jpg</poster>
+    <fanart>/config/data/metadata/artists/RZA/backdrop.jpg</fanart>
+  </art>
+</artist>

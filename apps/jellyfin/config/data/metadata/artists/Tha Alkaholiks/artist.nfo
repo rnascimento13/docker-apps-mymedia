@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<artist>
+  <biography />
+  <outline />
+  <lockdata>false</lockdata>
+  <dateadded>2023-08-24 23:40:14</dateadded>
+  <title>Tha Alkaholiks</title>
+  <runtime>5</runtime>
+  <genre>Hip Hop</genre>
+  <musicbrainzartistid>06993821-4d81-469e-b258-f64d361c0791</musicbrainzartistid>
+  <art>
+    <poster>/config/data/metadata/artists/Tha Alkaholiks/folder.jpg</poster>
+    <fanart>/config/data/metadata/artists/Tha Alkaholiks/backdrop.jpg</fanart>
+  </art>
+</artist>

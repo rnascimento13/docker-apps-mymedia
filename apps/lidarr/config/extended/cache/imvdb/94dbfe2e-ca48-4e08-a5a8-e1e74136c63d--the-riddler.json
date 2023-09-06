@@ -1,0 +1,111 @@
+{
+    "id": 983083643936,
+    "production_status": "r",
+    "song_title": "The Riddler",
+    "song_slug": "the-riddler",
+    "url": "https:\/\/imvdb.com\/video\/method-man\/the-riddler",
+    "multiple_versions": false,
+    "version_name": null,
+    "version_number": 1,
+    "is_imvdb_pick": false,
+    "aspect_ratio": null,
+    "year": 1995,
+    "verified_credits": false,
+    "artists": [
+        {
+            "name": "Method Man",
+            "slug": "method-man",
+            "url": "https:\/\/imvdb.com\/n\/method-man"
+        }
+    ],
+    "image": {
+        "o": "https:\/\/s3.amazonaws.com\/images.imvdb.com\/video\/983083643936-method-man-the-riddler_music_video_ov.jpg?v=2",
+        "l": "https:\/\/s3.amazonaws.com\/images.imvdb.com\/video\/983083643936-method-man-the-riddler_music_video_lv.jpg?v=2",
+        "b": "https:\/\/s3.amazonaws.com\/images.imvdb.com\/video\/983083643936-method-man-the-riddler_music_video_bv.jpg?v=2",
+        "t": "https:\/\/s3.amazonaws.com\/images.imvdb.com\/video\/983083643936-method-man-the-riddler_music_video_tv.jpg?v=2",
+        "s": "https:\/\/s3.amazonaws.com\/images.imvdb.com\/video\/983083643936-method-man-the-riddler_music_video_sv.jpg?v=2"
+    },
+    "sources": [
+        {
+            "source": "youtube",
+            "source_slug": "youtube",
+            "source_data": "gNKI7VNCdcg",
+            "is_primary": true
+        }
+    ],
+    "directors": [
+        {
+            "position_name": "Director",
+            "position_code": "dir",
+            "entity_name": "Diane Martel",
+            "entity_slug": "diane-martel",
+            "entity_id": 223094,
+            "position_notes": null,
+            "position_id": 223094,
+            "entity_url": "https:\/\/imvdb.com\/n\/diane-martel"
+        }
+    ],
+    "credits": {
+        "total_credits": 6,
+        "crew": [
+            {
+                "position_name": "Director",
+                "position_code": "dir",
+                "entity_name": "Diane Martel",
+                "entity_slug": "diane-martel",
+                "entity_id": 223094,
+                "position_notes": null,
+                "position_id": 223094,
+                "entity_url": "https:\/\/imvdb.com\/n\/diane-martel"
+            }
+        ],
+        "cast": [
+            {
+                "entity_name": "Ol' Dirty Bastard",
+                "entity_slug": "ol-dirty-bastard",
+                "entity_id": 223095,
+                "cast_roles": [],
+                "position_id": 223095
+            },
+            {
+                "entity_name": "Ghostface Killah",
+                "entity_slug": "ghostface-killah",
+                "entity_id": 223096,
+                "cast_roles": [],
+                "position_id": 223096
+            },
+            {
+                "entity_name": "U-God",
+                "entity_slug": "u-god",
+                "entity_id": 223097,
+                "cast_roles": [],
+                "position_id": 223097
+            },
+            {
+                "entity_name": "Cappadonna",
+                "entity_slug": "cappadonna",
+                "entity_id": 223098,
+                "cast_roles": [],
+                "position_id": 223098
+            },
+            {
+                "entity_name": "Monie Love",
+                "entity_slug": "monie-love",
+                "entity_id": 223100,
+                "cast_roles": [],
+                "position_id": 223100
+            }
+        ]
+    },
+    "release_date_stamp": null,
+    "release_date_string": null,
+    "featured_artists": [],
+    "popularity": {
+        "views_all_time": 0,
+        "views_all_time_formatted": 0,
+        "shares_all_time": 0,
+        "shares_all_time_formatted": 0
+    },
+    "bts": [],
+    "countries": []
+}

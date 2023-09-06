@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<artist>
+  <biography />
+  <outline />
+  <lockdata>false</lockdata>
+  <dateadded>2023-08-24 23:39:50</dateadded>
+  <title>Heltah Skeltah</title>
+  <runtime>4</runtime>
+  <genre>Hip Hop</genre>
+  <musicbrainzartistid>c9f667d8-2da2-4aea-81cd-a42f3affc560</musicbrainzartistid>
+  <art>
+    <poster>/config/data/metadata/artists/Heltah Skeltah/folder.jpg</poster>
+    <fanart>/config/data/metadata/artists/Heltah Skeltah/backdrop.jpg</fanart>
+  </art>
+</artist>

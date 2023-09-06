@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<artist>
+  <biography />
+  <outline />
+  <lockdata>false</lockdata>
+  <dateadded>2023-08-24 23:39:46</dateadded>
+  <title>GZA</title>
+  <runtime>9</runtime>
+  <genre>Hip Hop</genre>
+  <musicbrainzartistid>550cb78b-4995-4873-baea-76ef265531f5</musicbrainzartistid>
+  <art>
+    <poster>/config/data/metadata/artists/GZA/folder.jpg</poster>
+    <fanart>/config/data/metadata/artists/GZA/backdrop.jpg</fanart>
+  </art>
+</artist>

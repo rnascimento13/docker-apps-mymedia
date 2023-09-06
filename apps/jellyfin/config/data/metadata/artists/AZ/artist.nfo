@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<artist>
+  <biography />
+  <outline />
+  <lockdata>false</lockdata>
+  <dateadded>2023-08-24 23:39:35</dateadded>
+  <title>AZ</title>
+  <runtime>4</runtime>
+  <genre>Hip Hop</genre>
+  <musicbrainzartistid>0506bf37-90d7-4654-9585-b4800dc945d5</musicbrainzartistid>
+  <art>
+    <poster>/config/data/metadata/artists/AZ/folder.jpg</poster>
+    <fanart>/config/data/metadata/artists/AZ/backdrop.jpg</fanart>
+  </art>
+</artist>

@@ -1,0 +1,85 @@
+{
+    "id": 993937638863,
+    "production_status": "r",
+    "song_title": "Break Ups 2 Make Ups",
+    "song_slug": "break-ups-2-make-ups",
+    "url": "https:\/\/imvdb.com\/video\/method-man\/break-ups-2-make-ups",
+    "multiple_versions": false,
+    "version_name": null,
+    "version_number": 1,
+    "is_imvdb_pick": false,
+    "aspect_ratio": null,
+    "year": 1998,
+    "verified_credits": false,
+    "artists": [
+        {
+            "name": "Method Man",
+            "slug": "method-man",
+            "url": "https:\/\/imvdb.com\/n\/method-man"
+        }
+    ],
+    "image": {
+        "o": "https:\/\/s3.amazonaws.com\/images.imvdb.com\/video\/993937638863-method-man-break-ups-2-make-ups_music_video_ov.jpg",
+        "l": "https:\/\/s3.amazonaws.com\/images.imvdb.com\/video\/993937638863-method-man-break-ups-2-make-ups_music_video_lv.jpg",
+        "b": "https:\/\/s3.amazonaws.com\/images.imvdb.com\/video\/993937638863-method-man-break-ups-2-make-ups_music_video_bv.jpg",
+        "t": "https:\/\/s3.amazonaws.com\/images.imvdb.com\/video\/993937638863-method-man-break-ups-2-make-ups_music_video_tv.jpg",
+        "s": "https:\/\/s3.amazonaws.com\/images.imvdb.com\/video\/993937638863-method-man-break-ups-2-make-ups_music_video_sv.jpg"
+    },
+    "sources": [
+        {
+            "source": "youtube",
+            "source_slug": "youtube",
+            "source_data": "0iPFn8d7M3Q",
+            "is_primary": true
+        }
+    ],
+    "directors": [
+        {
+            "position_name": "Director",
+            "position_code": "dir",
+            "entity_name": "Hype Williams",
+            "entity_slug": "hype-williams",
+            "entity_id": 130891,
+            "position_notes": "",
+            "position_id": 130891,
+            "entity_url": "https:\/\/imvdb.com\/n\/hype-williams"
+        }
+    ],
+    "credits": {
+        "total_credits": 3,
+        "crew": [
+            {
+                "position_name": "Director",
+                "position_code": "dir",
+                "entity_name": "Hype Williams",
+                "entity_slug": "hype-williams",
+                "entity_id": 130891,
+                "position_notes": "",
+                "position_id": 130891,
+                "entity_url": "https:\/\/imvdb.com\/n\/hype-williams"
+            },
+            {
+                "position_name": "Director of Photography",
+                "position_code": "cin",
+                "entity_name": "Thomas Marvel",
+                "entity_slug": "thomas-marvel",
+                "entity_id": 130892,
+                "position_notes": "",
+                "position_id": 130892,
+                "entity_url": "https:\/\/imvdb.com\/n\/thomas-marvel"
+            }
+        ],
+        "cast": []
+    },
+    "release_date_stamp": null,
+    "release_date_string": null,
+    "featured_artists": [],
+    "popularity": {
+        "views_all_time": 9421103,
+        "views_all_time_formatted": "9.4M",
+        "shares_all_time": 0,
+        "shares_all_time_formatted": 0
+    },
+    "bts": [],
+    "countries": []
+}

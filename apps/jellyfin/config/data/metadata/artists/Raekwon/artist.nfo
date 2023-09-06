@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<artist>
+  <biography />
+  <outline />
+  <lockdata>false</lockdata>
+  <dateadded>2023-08-24 23:40:01</dateadded>
+  <title>Raekwon</title>
+  <runtime>6</runtime>
+  <genre>Hip Hop</genre>
+  <musicbrainzartistid>4e954b02-fae2-4bd7-9547-e055a6ac0527</musicbrainzartistid>
+  <art>
+    <poster>/config/data/metadata/artists/Raekwon/folder.jpg</poster>
+    <fanart>/config/data/metadata/artists/Raekwon/backdrop.jpg</fanart>
+  </art>
+</artist>

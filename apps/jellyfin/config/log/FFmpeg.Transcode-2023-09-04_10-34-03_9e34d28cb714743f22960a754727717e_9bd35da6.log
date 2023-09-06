@@ -1,0 +1,214 @@
+/videos/9e34d28c-b714-743f-2296-0a754727717e/hls1/main/5.ts
+
+{"Protocol":0,"Id":"9e34d28cb714743f22960a754727717e","Path":"/data/movies/Indiana Jones and the Dial of Destiny (2023)/Indiana Jones and the Dial of Destiny (2023) WEBDL-2160p.mkv","EncoderPath":null,"EncoderProtocol":null,"Type":0,"Container":"mkv,webm","Size":28996252893,"Name":"Indiana Jones and the Dial of Destiny (2023) WEBDL-2160p","IsRemote":false,"ETag":"8951b8ac2e74777deb0f7a7d4610abf2","RunTimeTicks":92739520000,"ReadAtNativeFramerate":false,"IgnoreDts":false,"IgnoreIndex":false,"GenPtsInput":false,"SupportsTranscoding":true,"SupportsDirectStream":true,"SupportsDirectPlay":true,"IsInfiniteStream":false,"RequiresOpening":false,"OpenToken":null,"RequiresClosing":false,"LiveStreamId":null,"BufferMs":null,"RequiresLooping":false,"SupportsProbing":true,"VideoType":0,"IsoType":null,"Video3DFormat":null,"MediaStreams":[{"Codec":"subrip","CodecTag":null,"Language":"pob","ColorRange":null,"ColorSpace":null,"ColorTransfer":null,"ColorPrimaries":null,"DvVersionMajor":null,"DvVersionMinor":null,"DvProfile":null,"DvLevel":null,"RpuPresentFlag":null,"ElPresentFlag":null,"BlPresentFlag":null,"DvBlSignalCompatibilityId":null,"Comment":null,"TimeBase":"1/1000","CodecTimeBase":null,"Title":null,"VideoRange":null,"VideoRangeType":null,"VideoDoViTitle":null,"LocalizedUndefined":"Undefined","LocalizedDefault":"Default","LocalizedForced":"Forced","LocalizedExternal":"External","DisplayTitle":"Pob - SUBRIP - External","NalLengthSize":null,"IsInterlaced":false,"IsAVC":null,"ChannelLayout":null,"BitRate":null,"BitDepth":null,"RefFrames":null,"PacketLength":null,"Channels":null,"SampleRate":null,"IsDefault":false,"IsForced":false,"Height":null,"Width":null,"AverageFrameRate":null,"RealFrameRate":null,"Profile":null,"Type":2,"AspectRatio":null,"Index":0,"Score":null,"IsExternal":true,"DeliveryMethod":null,"DeliveryUrl":null,"IsExternalUrl":null,"IsTextSubtitleStream":true,"SupportsExternalStream":true,"Path":"/data/movies/Indiana Jones and the Dial of Destiny (2023)/Indiana Jones and the Dial of Destiny (2023) WEBDL-2160p.pt-BR.srt","PixelFormat":null,"Level":0,"IsAnamorphic":null},{"Codec":"hevc","CodecTag":null,"Language":null,"ColorRange":null,"ColorSpace":"bt2020nc","ColorTransfer":"smpte2084","ColorPrimaries":"bt2020","DvVersionMajor":1,"DvVersionMinor":0,"DvProfile":8,"DvLevel":6,"RpuPresentFlag":1,"ElPresentFlag":0,"BlPresentFlag":1,"DvBlSignalCompatibilityId":1,"Comment":null,"TimeBase":"1/1000","CodecTimeBase":null,"Title":null,"VideoRange":"HDR","VideoRangeType":"HDR10","VideoDoViTitle":"DV Profile 8.1 (HDR10)","LocalizedUndefined":null,"LocalizedDefault":null,"LocalizedForced":null,"LocalizedExternal":null,"DisplayTitle":"4K HEVC HDR","NalLengthSize":null,"IsInterlaced":false,"IsAVC":null,"ChannelLayout":null,"BitRate":25013071,"BitDepth":10,"RefFrames":1,"PacketLength":null,"Channels":null,"SampleRate":null,"IsDefault":true,"IsForced":false,"Height":1608,"Width":3840,"AverageFrameRate":23.976025,"RealFrameRate":23.976025,"Profile":"Main 10","Type":1,"AspectRatio":"2.40:1","Index":1,"Score":null,"IsExternal":false,"DeliveryMethod":null,"DeliveryUrl":null,"IsExternalUrl":null,"IsTextSubtitleStream":false,"SupportsExternalStream":false,"Path":null,"PixelFormat":"yuv420p10le","Level":150,"IsAnamorphic":null},{"Codec":"eac3","CodecTag":null,"Language":"eng","ColorRange":null,"ColorSpace":null,"ColorTransfer":null,"ColorPrimaries":null,"DvVersionMajor":null,"DvVersionMinor":null,"DvProfile":null,"DvLevel":null,"RpuPresentFlag":null,"ElPresentFlag":null,"BlPresentFlag":null,"DvBlSignalCompatibilityId":null,"Comment":null,"TimeBase":"1/1000","CodecTimeBase":null,"Title":"English","VideoRange":null,"VideoRangeType":null,"VideoDoViTitle":null,"LocalizedUndefined":null,"LocalizedDefault":null,"LocalizedForced":null,"LocalizedExternal":null,"DisplayTitle":"English - Dolby Digital\u002B - 5.1 - Default","NalLengthSize":null,"IsInterlaced":false,"IsAVC":null,"ChannelLayout":"5.1","BitRate":768000,"BitDepth":null,"RefFrames":null,"PacketLength":null,"Channels":6,"SampleRate":48000,"IsDefault":true,"IsForced":false,"Height":null,"Width":null,"AverageFrameRate":null,"RealFrameRate":null,"Profile":null,"Type":0,"AspectRatio":null,"Index":2,"Score":null,"IsExternal":false,"DeliveryMethod":null,"DeliveryUrl":null,"IsExternalUrl":null,"IsTextSubtitleStream":false,"SupportsExternalStream":false,"Path":null,"PixelFormat":null,"Level":0,"IsAnamorphic":null},{"Codec":"subrip","CodecTag":null,"Language":"eng","ColorRange":null,"ColorSpace":null,"ColorTransfer":null,"ColorPrimaries":null,"DvVersionMajor":null,"DvVersionMinor":null,"DvProfile":null,"DvLevel":null,"RpuPresentFlag":null,"ElPresentFlag":null,"BlPresentFlag":null,"DvBlSignalCompatibilityId":null,"Comment":null,"TimeBase":"1/1000","CodecTimeBase":null,"Title":"English (Forced)","VideoRange":null,"VideoRangeType":null,"VideoDoViTitle":null,"LocalizedUndefined":"Undefined","LocalizedDefault":"Default","LocalizedForced":"Forced","LocalizedExternal":"External","DisplayTitle":"English (Forced) - Default - SUBRIP","NalLengthSize":null,"IsInterlaced":false,"IsAVC":null,"ChannelLayout":null,"BitRate":null,"BitDepth":null,"RefFrames":null,"PacketLength":null,"Channels":null,"SampleRate":null,"IsDefault":true,"IsForced":true,"Height":null,"Width":null,"AverageFrameRate":null,"RealFrameRate":null,"Profile":null,"Type":2,"AspectRatio":null,"Index":3,"Score":null,"IsExternal":false,"DeliveryMethod":null,"DeliveryUrl":null,"IsExternalUrl":null,"IsTextSubtitleStream":true,"SupportsExternalStream":true,"Path":null,"PixelFormat":null,"Level":0,"IsAnamorphic":null},{"Codec":"subrip","CodecTag":null,"Language":"eng","ColorRange":null,"ColorSpace":null,"ColorTransfer":null,"ColorPrimaries":null,"DvVersionMajor":null,"DvVersionMinor":null,"DvProfile":null,"DvLevel":null,"RpuPresentFlag":null,"ElPresentFlag":null,"BlPresentFlag":null,"DvBlSignalCompatibilityId":null,"Comment":null,"TimeBase":"1/1000","CodecTimeBase":null,"Title":"English","VideoRange":null,"VideoRangeType":null,"VideoDoViTitle":null,"LocalizedUndefined":"Undefined","LocalizedDefault":"Default","LocalizedForced":"Forced","LocalizedExternal":"External","DisplayTitle":"English - SUBRIP","NalLengthSize":null,"IsInterlaced":false,"IsAVC":null,"ChannelLayout":null,"BitRate":null,"BitDepth":null,"RefFrames":null,"PacketLength":null,"Channels":null,"SampleRate":null,"IsDefault":false,"IsForced":false,"Height":null,"Width":null,"AverageFrameRate":null,"RealFrameRate":null,"Profile":null,"Type":2,"AspectRatio":null,"Index":4,"Score":null,"IsExternal":false,"DeliveryMethod":null,"DeliveryUrl":null,"IsExternalUrl":null,"IsTextSubtitleStream":true,"SupportsExternalStream":true,"Path":null,"PixelFormat":null,"Level":0,"IsAnamorphic":null},{"Codec":"subrip","CodecTag":null,"Language":"spa","ColorRange":null,"ColorSpace":null,"ColorTransfer":null,"ColorPrimaries":null,"DvVersionMajor":null,"DvVersionMinor":null,"DvProfile":null,"DvLevel":null,"RpuPresentFlag":null,"ElPresentFlag":null,"BlPresentFlag":null,"DvBlSignalCompatibilityId":null,"Comment":null,"TimeBase":"1/1000","CodecTimeBase":null,"Title":"Spanish","VideoRange":null,"VideoRangeType":null,"VideoDoViTitle":null,"LocalizedUndefined":"Undefined","LocalizedDefault":"Default","LocalizedForced":"Forced","LocalizedExternal":"External","DisplayTitle":"Spanish - SUBRIP","NalLengthSize":null,"IsInterlaced":false,"IsAVC":null,"ChannelLayout":null,"BitRate":null,"BitDepth":null,"RefFrames":null,"PacketLength":null,"Channels":null,"SampleRate":null,"IsDefault":false,"IsForced":false,"Height":null,"Width":null,"AverageFrameRate":null,"RealFrameRate":null,"Profile":null,"Type":2,"AspectRatio":null,"Index":5,"Score":null,"IsExternal":false,"DeliveryMethod":null,"DeliveryUrl":null,"IsExternalUrl":null,"IsTextSubtitleStream":true,"SupportsExternalStream":true,"Path":null,"PixelFormat":null,"Level":0,"IsAnamorphic":null},{"Codec":"subrip","CodecTag":null,"Language":"fre","ColorRange":null,"ColorSpace":null,"ColorTransfer":null,"ColorPrimaries":null,"DvVersionMajor":null,"DvVersionMinor":null,"DvProfile":null,"DvLevel":null,"RpuPresentFlag":null,"ElPresentFlag":null,"BlPresentFlag":null,"DvBlSignalCompatibilityId":null,"Comment":null,"TimeBase":"1/1000","CodecTimeBase":null,"Title":"French","VideoRange":null,"VideoRangeType":null,"VideoDoViTitle":null,"LocalizedUndefined":"Undefined","LocalizedDefault":"Default","LocalizedForced":"Forced","LocalizedExternal":"External","DisplayTitle":"French - SUBRIP","NalLengthSize":null,"IsInterlaced":false,"IsAVC":null,"ChannelLayout":null,"BitRate":null,"BitDepth":null,"RefFrames":null,"PacketLength":null,"Channels":null,"SampleRate":null,"IsDefault":false,"IsForced":false,"Height":null,"Width":null,"AverageFrameRate":null,"RealFrameRate":null,"Profile":null,"Type":2,"AspectRatio":null,"Index":6,"Score":null,"IsExternal":false,"DeliveryMethod":null,"DeliveryUrl":null,"IsExternalUrl":null,"IsTextSubtitleStream":true,"SupportsExternalStream":true,"Path":null,"PixelFormat":null,"Level":0,"IsAnamorphic":null}],"MediaAttachments":[],"Formats":[],"Bitrate":25781071,"Timestamp":null,"RequiredHttpHeaders":{},"TranscodingUrl":null,"TranscodingSubProtocol":null,"TranscodingContainer":null,"AnalyzeDurationMs":null,"DefaultAudioStreamIndex":null,"DefaultSubtitleStreamIndex":null}
+
+/usr/lib/jellyfin-ffmpeg/ffmpeg -analyzeduration 200M -ss 00:00:15.000 -f matroska,webm -autorotate 0 -i file:"/data/movies/Indiana Jones and the Dial of Destiny (2023)/Indiana Jones and the Dial of Destiny (2023) WEBDL-2160p.mkv" -map_metadata -1 -map_chapters -1 -threads 0 -map 0:0 -map 0:1 -map -0:s -codec:v:0 libx264 -preset veryfast -crf 23 -maxrate 25013071 -bufsize 50026142 -x264opts:0 subme=0:me_range=4:rc_lookahead=10:me=dia:no_chroma_me:8x8dct=0:partitions=none -force_key_frames:0 "expr:gte(t,15+n_forced*3)" -sc_threshold:v:0 0 -vf "setparams=color_primaries=bt709:color_trc=bt709:colorspace=bt709,scale=trunc(min(max(iw\,ih*a)\,min(3840\,1608*a))/2)*2:trunc(min(max(iw/a\,ih)\,min(3840/a\,1608))/2)*2,format=yuv420p" -codec:a:0 libfdk_aac -ac 2 -ab 384000 -af "volume=2" -copyts -avoid_negative_ts disabled -max_muxing_queue_size 2048 -f hls -max_delay 5000000 -hls_time 3 -hls_segment_type mpegts -start_number 5 -hls_segment_filename "/config/data/transcodes/f9fb5ab10e777755eaa8656cfcb8ff69%d.ts" -hls_playlist_type vod -hls_list_size 0 -y "/config/data/transcodes/f9fb5ab10e777755eaa8656cfcb8ff69.m3u8"
+
+
+ffmpeg version 5.1.3-Jellyfin Copyright (c) 2000-2022 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.4.0-1ubuntu1~22.04)
+  configuration: --prefix=/usr/lib/jellyfin-ffmpeg --target-os=linux --extra-libs=-lfftw3f --extra-version=Jellyfin --disable-doc --disable-ffplay --disable-ptx-compression --disable-static --disable-libxcb --disable-sdl2 --disable-xlib --enable-lto --enable-gpl --enable-version3 --enable-shared --enable-gmp --enable-gnutls --enable-chromaprint --enable-libdrm --enable-libass --enable-libfreetype --enable-libfribidi --enable-libfontconfig --enable-libbluray --enable-libmp3lame --enable-libopus --enable-libtheora --enable-libvorbis --enable-libopenmpt --enable-libdav1d --enable-libwebp --enable-libvpx --enable-libx264 --enable-libx265 --enable-libzvbi --enable-libzimg --enable-libfdk-aac --arch=amd64 --enable-libsvtav1 --enable-libshaderc --enable-libplacebo --enable-vulkan --enable-opencl --enable-vaapi --enable-amf --enable-libmfx --enable-ffnvcodec --enable-cuda --enable-cuda-llvm --enable-cuvid --enable-nvdec --enable-nvenc
+  libavutil      57. 28.100 / 57. 28.100
+  libavcodec     59. 37.100 / 59. 37.100
+  libavformat    59. 27.100 / 59. 27.100
+  libavdevice    59.  7.100 / 59.  7.100
+  libavfilter     8. 44.100 /  8. 44.100
+  libswscale      6.  7.100 /  6.  7.100
+  libswresample   4.  7.100 /  4.  7.100
+  libpostproc    56.  6.100 / 56.  6.100
+Input #0, matroska,webm, from 'file:/data/movies/Indiana Jones and the Dial of Destiny (2023)/Indiana Jones and the Dial of Destiny (2023) WEBDL-2160p.mkv':
+  Metadata:
+    encoder         : libebml v1.4.4 + libmatroska v1.7.1
+  Duration: 02:34:33.95, start: 0.000000, bitrate: 25013 kb/s
+  Chapters:
+    Chapter #0:0: start 0.000000, end 308.350000
+      Metadata:
+        title           : Chapter 01
+    Chapter #0:1: start 308.350000, end 530.030000
+      Metadata:
+        title           : Chapter 02
+    Chapter #0:2: start 530.030000, end 887.804000
+      Metadata:
+        title           : Chapter 03
+    Chapter #0:3: start 887.804000, end 1295.920000
+      Metadata:
+        title           : Chapter 04
+    Chapter #0:4: start 1295.920000, end 1455.372000
+      Metadata:
+        title           : Chapter 05
+    Chapter #0:5: start 1455.372000, end 1626.626000
+      Metadata:
+        title           : Chapter 06
+    Chapter #0:6: start 1626.626000, end 1991.700000
+      Metadata:
+        title           : Chapter 07
+    Chapter #0:7: start 1991.700000, end 2437.979000
+      Metadata:
+        title           : Chapter 08
+    Chapter #0:8: start 2437.979000, end 2787.954000
+      Metadata:
+        title           : Chapter 09
+    Chapter #0:9: start 2787.954000, end 3091.675000
+      Metadata:
+        title           : Chapter 10
+    Chapter #0:10: start 3091.675000, end 3273.773000
+      Metadata:
+        title           : Chapter 11
+    Chapter #0:11: start 3273.773000, end 3578.995000
+      Metadata:
+        title           : Chapter 12
+    Chapter #0:12: start 3578.995000, end 3728.311000
+      Metadata:
+        title           : Chapter 13
+    Chapter #0:13: start 3728.311000, end 4141.558000
+      Metadata:
+        title           : Chapter 14
+    Chapter #0:14: start 4141.558000, end 4417.125000
+      Metadata:
+        title           : Chapter 15
+    Chapter #0:15: start 4417.125000, end 4814.147000
+      Metadata:
+        title           : Chapter 16
+    Chapter #0:16: start 4814.147000, end 5172.172000
+      Metadata:
+        title           : Chapter 17
+    Chapter #0:17: start 5172.172000, end 5669.544000
+      Metadata:
+        title           : Chapter 18
+    Chapter #0:18: start 5669.544000, end 5811.186000
+      Metadata:
+        title           : Chapter 19
+    Chapter #0:19: start 5811.186000, end 6045.170000
+      Metadata:
+        title           : Chapter 20
+    Chapter #0:20: start 6045.170000, end 6489.489000
+      Metadata:
+        title           : Chapter 21
+    Chapter #0:21: start 6489.489000, end 6940.398000
+      Metadata:
+        title           : Chapter 22
+    Chapter #0:22: start 6940.398000, end 7344.803000
+      Metadata:
+        title           : Chapter 23
+    Chapter #0:23: start 7344.803000, end 7518.143000
+      Metadata:
+        title           : Chapter 24
+    Chapter #0:24: start 7518.143000, end 7955.830000
+      Metadata:
+        title           : Chapter 25
+    Chapter #0:25: start 7955.830000, end 8259.884000
+      Metadata:
+        title           : Chapter 26
+    Chapter #0:26: start 8259.884000, end 8607.607000
+      Metadata:
+        title           : Chapter 27
+    Chapter #0:27: start 8607.607000, end 9273.952000
+      Metadata:
+        title           : Chapter 28
+  Stream #0:0: Video: hevc (Main 10), yuv420p10le(tv, bt2020nc/bt2020/smpte2084), 3840x1608 [SAR 1:1 DAR 160:67], 23.98 fps, 23.98 tbr, 1k tbn (default)
+    Metadata:
+      BPS             : 24242677
+      DURATION        : 02:34:33.931000000
+      NUMBER_OF_FRAMES: 222352
+      NUMBER_OF_BYTES : 28103114738
+      _STATISTICS_WRITING_APP: mkvmerge v79.0 ('Funeral Pyres') 64-bit
+      _STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+    Side data:
+      DOVI configuration record: version: 1.0, profile: 8, level: 6, rpu flag: 1, el flag: 0, bl flag: 1, compatibility id: 1
+  Stream #0:1(eng): Audio: eac3, 48000 Hz, 5.1(side), fltp, 768 kb/s (default)
+    Metadata:
+      title           : English
+      BPS             : 768000
+      DURATION        : 02:34:33.952000000
+      NUMBER_OF_FRAMES: 289811
+      NUMBER_OF_BYTES : 890299392
+      _STATISTICS_WRITING_APP: mkvmerge v79.0 ('Funeral Pyres') 64-bit
+      _STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+  Stream #0:2(eng): Subtitle: subrip (default) (forced)
+    Metadata:
+      title           : English (Forced)
+      BPS             : 2
+      DURATION        : 02:16:00.703000000
+      NUMBER_OF_FRAMES: 141
+      NUMBER_OF_BYTES : 2841
+      _STATISTICS_WRITING_APP: mkvmerge v79.0 ('Funeral Pyres') 64-bit
+      _STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+  Stream #0:3(eng): Subtitle: subrip
+    Metadata:
+      title           : English
+      BPS             : 40
+      DURATION        : 02:22:16.536000000
+      NUMBER_OF_FRAMES: 1739
+      NUMBER_OF_BYTES : 43722
+      _STATISTICS_WRITING_APP: mkvmerge v79.0 ('Funeral Pyres') 64-bit
+      _STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+  Stream #0:4(spa): Subtitle: subrip
+    Metadata:
+      title           : Spanish
+      BPS             : 39
+      DURATION        : 02:23:06.254000000
+      NUMBER_OF_FRAMES: 1748
+      NUMBER_OF_BYTES : 42255
+      _STATISTICS_WRITING_APP: mkvmerge v79.0 ('Funeral Pyres') 64-bit
+      _STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+  Stream #0:5(fre): Subtitle: subrip
+    Metadata:
+      title           : French
+      BPS             : 41
+      DURATION        : 02:34:20.929000000
+      NUMBER_OF_FRAMES: 1768
+      NUMBER_OF_BYTES : 48103
+      _STATISTICS_WRITING_APP: mkvmerge v79.0 ('Funeral Pyres') 64-bit
+      _STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+Stream mapping:
+  Stream #0:0 -> #0:0 (hevc (native) -> h264 (libx264))
+  Stream #0:1 -> #0:1 (eac3 (native) -> aac (libfdk_aac))
+Press [q] to stop, [?] for help
+[libx264 @ 0x55f657a38d00] using SAR=1920/1919
+[libx264 @ 0x55f657a38d00] using cpu capabilities: MMX2 SSE2Fast LZCNT SSSE3 SSE4.2
+[libx264 @ 0x55f657a38d00] profile Main, level 5.1, 4:2:0, 8-bit
+[libx264 @ 0x55f657a38d00] 264 - core 163 r3060 5db6aa6 - H.264/MPEG-4 AVC codec - Copyleft 2003-2021 - http://www.videolan.org/x264.html - options: cabac=1 ref=1 deblock=1:0:0 analyse=0x1:0 me=dia subme=0 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=4 chroma_me=0 trellis=0 8x8dct=0 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=23 scenecut=0 intra_refresh=0 rc_lookahead=10 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 vbv_maxrate=25013 vbv_bufsize=50026 crf_max=0.0 nal_hrd=none filler=0 ip_ratio=1.40 aq=1:1.00
+Output #0, hls, to '/config/data/transcodes/f9fb5ab10e777755eaa8656cfcb8ff69.m3u8':
+  Metadata:
+    encoder         : Lavf59.27.100
+  Stream #0:0: Video: h264, yuv420p(tv, bt709, progressive), 3838x1608 [SAR 1920:1919 DAR 160:67], q=2-31, 23.98 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc59.37.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 25013000/0/0 buffer size: 50026000 vbv_delay: N/A
+      DOVI configuration record: version: 1.0, profile: 8, level: 6, rpu flag: 1, el flag: 0, bl flag: 1, compatibility id: 1
+  Stream #0:1: Audio: aac, 48000 Hz, stereo, s16, 384 kb/s (default)
+    Metadata:
+      encoder         : Lavc59.37.100 libfdk_aac
+frame=    1 fps=0.0 q=0.0 size=N/A time=00:00:00.00 bitrate=N/A speed=   0x    
+frame=   37 fps=0.0 q=28.0 size=N/A time=00:00:01.42 bitrate=N/A speed= 2.1x    
+frame=   79 fps= 67 q=28.0 size=N/A time=00:00:03.26 bitrate=N/A speed=2.75x    
+frame=  118 fps= 69 q=28.0 size=N/A time=00:00:05.01 bitrate=N/A speed=2.94x    
+frame=  166 fps= 75 q=28.0 size=N/A time=00:00:06.84 bitrate=N/A speed= 3.1x    
+frame=  220 fps= 81 q=28.0 size=N/A time=00:00:09.15 bitrate=N/A speed=3.36x    
+frame=  266 fps= 82 q=25.0 size=N/A time=00:00:11.00 bitrate=N/A speed=3.39x    
+[hls @ 0x55f657a37d80] Opening '/config/data/transcodes/f9fb5ab10e777755eaa8656cfcb8ff695.ts' for writing
+frame=  303 fps= 81 q=28.0 size=N/A time=00:00:12.54 bitrate=N/A speed=3.34x    
+frame=  333 fps= 78 q=28.0 size=N/A time=00:00:13.78 bitrate=N/A speed=3.23x    
+frame=  365 fps= 76 q=28.0 size=N/A time=00:00:15.25 bitrate=N/A speed=3.19x    
+[hls @ 0x55f657a37d80] Opening '/config/data/transcodes/f9fb5ab10e777755eaa8656cfcb8ff696.ts' for writing
+frame=  396 fps= 75 q=28.0 size=N/A time=00:00:16.51 bitrate=N/A speed=3.12x    
+
+[q] command received. Exiting.
+
+[hls @ 0x55f657a37d80] Opening '/config/data/transcodes/f9fb5ab10e777755eaa8656cfcb8ff697.ts' for writing
+frame=  411 fps= 72 q=-1.0 Lsize=N/A time=00:00:17.13 bitrate=N/A speed=3.01x    
+video:7110kB audio:830kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+[libx264 @ 0x55f657a38d00] frame I:3     Avg QP:18.23  size: 93622
+[libx264 @ 0x55f657a38d00] frame P:171   Avg QP:20.03  size: 31272
+[libx264 @ 0x55f657a38d00] frame B:237   Avg QP:20.36  size:  6968
+[libx264 @ 0x55f657a38d00] consecutive B-frames: 19.0% 10.7%  5.1% 65.2%
+[libx264 @ 0x55f657a38d00] mb I  I16..4: 80.5%  0.0% 19.5%
+[libx264 @ 0x55f657a38d00] mb P  I16..4: 39.0%  0.0%  0.0%  P16..4: 15.2%  0.0%  0.0%  0.0%  0.0%    skip:45.8%
+[libx264 @ 0x55f657a38d00] mb B  I16..4:  3.9%  0.0%  0.0%  B16..8:  5.2%  0.0%  0.0%  direct: 3.7%  skip:87.2%  L0:46.2% L1:48.6% BI: 5.2%
+[libx264 @ 0x55f657a38d00] coded y,uvDC,uvAC intra: 4.0% 13.4% 0.4% inter: 1.9% 4.9% 0.0%
+[libx264 @ 0x55f657a38d00] i16 v,h,dc,p: 43% 25% 12% 20%
+[libx264 @ 0x55f657a38d00] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 24% 23% 21%  8%  5%  3%  6%  4%  5%
+[libx264 @ 0x55f657a38d00] i8c dc,h,v,p: 68% 15% 15%  2%
+[libx264 @ 0x55f657a38d00] Weighted P-Frames: Y:15.2% UV:4.7%
+[libx264 @ 0x55f657a38d00] kb/s:3397.38

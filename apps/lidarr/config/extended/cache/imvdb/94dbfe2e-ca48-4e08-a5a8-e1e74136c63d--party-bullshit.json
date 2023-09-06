@@ -1,0 +1,75 @@
+{
+    "id": 247045496071,
+    "production_status": "r",
+    "song_title": "Party & Bullshit",
+    "song_slug": "party-bullshit",
+    "url": "https:\/\/imvdb.com\/video\/method-man\/party-bullshit",
+    "multiple_versions": false,
+    "version_name": null,
+    "version_number": 1,
+    "is_imvdb_pick": false,
+    "aspect_ratio": null,
+    "year": 2001,
+    "verified_credits": false,
+    "artists": [
+        {
+            "name": "Method Man",
+            "slug": "method-man",
+            "url": "https:\/\/imvdb.com\/n\/method-man"
+        }
+    ],
+    "image": {
+        "o": "https:\/\/s3.amazonaws.com\/images.imvdb.com\/video\/247045496071-method-man-party-bullshit_music_video_ov.jpg",
+        "l": "https:\/\/s3.amazonaws.com\/images.imvdb.com\/video\/247045496071-method-man-party-bullshit_music_video_lv.jpg",
+        "b": "https:\/\/s3.amazonaws.com\/images.imvdb.com\/video\/247045496071-method-man-party-bullshit_music_video_bv.jpg",
+        "t": "https:\/\/s3.amazonaws.com\/images.imvdb.com\/video\/247045496071-method-man-party-bullshit_music_video_tv.jpg",
+        "s": "https:\/\/s3.amazonaws.com\/images.imvdb.com\/video\/247045496071-method-man-party-bullshit_music_video_sv.jpg"
+    },
+    "sources": [
+        {
+            "source": "youtube",
+            "source_slug": "youtube",
+            "source_data": "BvFJzbbulmA",
+            "is_primary": true
+        }
+    ],
+    "directors": [
+        {
+            "position_name": "Director",
+            "position_code": "dir",
+            "entity_name": "Hype Williams",
+            "entity_slug": "hype-williams",
+            "entity_id": 10819,
+            "position_notes": null,
+            "position_id": 10819,
+            "entity_url": "https:\/\/imvdb.com\/n\/hype-williams"
+        }
+    ],
+    "credits": {
+        "total_credits": 2,
+        "crew": [
+            {
+                "position_name": "Director",
+                "position_code": "dir",
+                "entity_name": "Hype Williams",
+                "entity_slug": "hype-williams",
+                "entity_id": 10819,
+                "position_notes": null,
+                "position_id": 10819,
+                "entity_url": "https:\/\/imvdb.com\/n\/hype-williams"
+            }
+        ],
+        "cast": []
+    },
+    "release_date_stamp": null,
+    "release_date_string": null,
+    "featured_artists": [],
+    "popularity": {
+        "views_all_time": 0,
+        "views_all_time_formatted": 0,
+        "shares_all_time": 0,
+        "shares_all_time_formatted": 0
+    },
+    "bts": [],
+    "countries": []
+}

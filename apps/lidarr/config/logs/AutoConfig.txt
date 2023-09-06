@@ -1,0 +1,217 @@
+
+2023-08-24 03:56:13 :: AutoConfig :: 2.2 :: Lidarr is not ready, sleeping until valid response...
+2023-08-24 03:56:14 :: AutoConfig :: 2.2 :: Configuring Lidarr Media Management Settings
+2023-08-24 03:56:14 :: AutoConfig :: 2.2 :: Configuring Lidarr Metadata ConsumerSettings
+2023-08-24 03:56:14 :: AutoConfig :: 2.2 :: Configuring Lidarr Metadata Provider Settings
+2023-08-24 03:56:14 :: AutoConfig :: 2.2 :: Configuring Lidarr Custom Scripts
+2023-08-24 03:56:14 :: AutoConfig :: 2.2 :: Adding PlexNotify.bash to Lidarr custom scripts
+2023-08-24 03:56:14 :: AutoConfig :: 2.2 :: Configuring Lidarr UI Settings
+2023-08-24 03:56:15 :: AutoConfig :: 2.2 :: Configuring Lidarr Standard Metadata Profile
+2023-08-24 03:56:15 :: AutoConfig :: 2.2 :: Configuring Lidarr Track Naming Settings
+2023-08-24 04:43:50 :: AutoConfig :: 2.2 :: Lidarr is not ready, sleeping until valid response...
+2023-08-24 04:43:51 :: AutoConfig :: 2.2 :: Configuring Lidarr Media Management Settings
+2023-08-24 04:43:51 :: AutoConfig :: 2.2 :: Configuring Lidarr Metadata ConsumerSettings
+2023-08-24 04:43:52 :: AutoConfig :: 2.2 :: Configuring Lidarr Metadata Provider Settings
+2023-08-24 04:43:52 :: AutoConfig :: 2.2 :: Configuring Lidarr Custom Scripts
+2023-08-24 04:43:52 :: AutoConfig :: 2.2 :: PlexNotify.bash Already added to Lidarr custom scripts
+2023-08-24 04:43:52 :: AutoConfig :: 2.2 :: Configuring Lidarr UI Settings
+2023-08-24 04:43:52 :: AutoConfig :: 2.2 :: Configuring Lidarr Standard Metadata Profile
+2023-08-24 04:43:52 :: AutoConfig :: 2.2 :: Configuring Lidarr Track Naming Settings
+2023-08-24 05:04:16 :: AutoConfig :: 2.2 :: Lidarr is not ready, sleeping until valid response...
+2023-08-24 05:04:17 :: AutoConfig :: 2.2 :: Configuring Lidarr Media Management Settings
+2023-08-24 05:04:17 :: AutoConfig :: 2.2 :: Configuring Lidarr Metadata ConsumerSettings
+2023-08-24 05:04:17 :: AutoConfig :: 2.2 :: Configuring Lidarr Metadata Provider Settings
+2023-08-24 05:04:17 :: AutoConfig :: 2.2 :: Configuring Lidarr Custom Scripts
+2023-08-24 05:04:17 :: AutoConfig :: 2.2 :: PlexNotify.bash Already added to Lidarr custom scripts
+2023-08-24 05:04:17 :: AutoConfig :: 2.2 :: Configuring Lidarr UI Settings
+2023-08-24 05:04:17 :: AutoConfig :: 2.2 :: Configuring Lidarr Standard Metadata Profile
+2023-08-24 05:04:17 :: AutoConfig :: 2.2 :: Configuring Lidarr Track Naming Settings
+2023-08-24 05:24:31 :: AutoConfig :: 2.2 :: Lidarr is not ready, sleeping until valid response...
+2023-08-24 05:24:32 :: AutoConfig :: 2.2 :: Configuring Lidarr Media Management Settings
+2023-08-24 05:24:32 :: AutoConfig :: 2.2 :: Configuring Lidarr Metadata ConsumerSettings
+2023-08-24 05:24:32 :: AutoConfig :: 2.2 :: Configuring Lidarr Metadata Provider Settings
+2023-08-24 05:24:32 :: AutoConfig :: 2.2 :: Configuring Lidarr Custom Scripts
+2023-08-24 05:24:32 :: AutoConfig :: 2.2 :: PlexNotify.bash Already added to Lidarr custom scripts
+2023-08-24 05:24:32 :: AutoConfig :: 2.2 :: Configuring Lidarr UI Settings
+2023-08-24 05:24:32 :: AutoConfig :: 2.2 :: Configuring Lidarr Standard Metadata Profile
+2023-08-24 05:24:32 :: AutoConfig :: 2.2 :: Configuring Lidarr Track Naming Settings
+2023-08-24 13:49:49 :: AutoConfig :: 2.2 :: Lidarr is not ready, sleeping until valid response...
+2023-08-24 13:49:50 :: AutoConfig :: 2.2 :: Configuring Lidarr Media Management Settings
+2023-08-24 13:49:50 :: AutoConfig :: 2.2 :: Configuring Lidarr Metadata ConsumerSettings
+2023-08-24 13:49:50 :: AutoConfig :: 2.2 :: Configuring Lidarr Metadata Provider Settings
+2023-08-24 13:49:50 :: AutoConfig :: 2.2 :: Configuring Lidarr Custom Scripts
+2023-08-24 13:49:51 :: AutoConfig :: 2.2 :: PlexNotify.bash Already added to Lidarr custom scripts
+2023-08-24 13:49:51 :: AutoConfig :: 2.2 :: Configuring Lidarr UI Settings
+2023-08-24 13:49:51 :: AutoConfig :: 2.2 :: Configuring Lidarr Standard Metadata Profile
+2023-08-24 13:49:51 :: AutoConfig :: 2.2 :: Configuring Lidarr Track Naming Settings
+2023-08-24 16:55:28 :: AutoConfig :: 2.2 :: Lidarr is not ready, sleeping until valid response...
+2023-08-24 16:55:29 :: AutoConfig :: 2.2 :: Configuring Lidarr Media Management Settings
+2023-08-24 16:55:29 :: AutoConfig :: 2.2 :: Configuring Lidarr Metadata ConsumerSettings
+2023-08-24 16:55:29 :: AutoConfig :: 2.2 :: Configuring Lidarr Metadata Provider Settings
+2023-08-24 16:55:30 :: AutoConfig :: 2.2 :: Configuring Lidarr Custom Scripts
+2023-08-24 16:55:30 :: AutoConfig :: 2.2 :: PlexNotify.bash Already added to Lidarr custom scripts
+2023-08-24 16:55:30 :: AutoConfig :: 2.2 :: Configuring Lidarr UI Settings
+2023-08-24 16:55:30 :: AutoConfig :: 2.2 :: Configuring Lidarr Standard Metadata Profile
+2023-08-24 16:55:30 :: AutoConfig :: 2.2 :: Configuring Lidarr Track Naming Settings
+2023-08-24 23:39:03 :: AutoConfig :: 2.2 :: Lidarr is not ready, sleeping until valid response...
+2023-08-24 23:39:04 :: AutoConfig :: 2.2 :: Configuring Lidarr Media Management Settings
+2023-08-24 23:39:04 :: AutoConfig :: 2.2 :: Configuring Lidarr Metadata ConsumerSettings
+2023-08-24 23:39:04 :: AutoConfig :: 2.2 :: Configuring Lidarr Metadata Provider Settings
+2023-08-24 23:39:05 :: AutoConfig :: 2.2 :: Configuring Lidarr Custom Scripts
+2023-08-24 23:39:05 :: AutoConfig :: 2.2 :: PlexNotify.bash Already added to Lidarr custom scripts
+2023-08-24 23:39:05 :: AutoConfig :: 2.2 :: Configuring Lidarr UI Settings
+2023-08-24 23:39:05 :: AutoConfig :: 2.2 :: Configuring Lidarr Standard Metadata Profile
+2023-08-24 23:39:05 :: AutoConfig :: 2.2 :: Configuring Lidarr Track Naming Settings
+2023-08-25 13:55:42 :: AutoConfig :: 2.2 :: Lidarr is not ready, sleeping until valid response...
+2023-08-25 13:55:43 :: AutoConfig :: 2.2 :: Configuring Lidarr Media Management Settings
+2023-08-25 13:55:43 :: AutoConfig :: 2.2 :: Configuring Lidarr Metadata ConsumerSettings
+2023-08-25 13:55:43 :: AutoConfig :: 2.2 :: Configuring Lidarr Metadata Provider Settings
+2023-08-25 13:55:43 :: AutoConfig :: 2.2 :: Configuring Lidarr Custom Scripts
+2023-08-25 13:55:43 :: AutoConfig :: 2.2 :: PlexNotify.bash Already added to Lidarr custom scripts
+2023-08-25 13:55:43 :: AutoConfig :: 2.2 :: Configuring Lidarr UI Settings
+2023-08-25 13:55:43 :: AutoConfig :: 2.2 :: Configuring Lidarr Standard Metadata Profile
+2023-08-25 13:55:43 :: AutoConfig :: 2.2 :: Configuring Lidarr Track Naming Settings
+2023-08-26 03:06:04 :: AutoConfig :: 2.2 :: Lidarr is not ready, sleeping until valid response...
+2023-08-26 03:06:05 :: AutoConfig :: 2.2 :: Configuring Lidarr Media Management Settings
+2023-08-26 03:06:05 :: AutoConfig :: 2.2 :: Configuring Lidarr Metadata ConsumerSettings
+2023-08-26 03:06:05 :: AutoConfig :: 2.2 :: Configuring Lidarr Metadata Provider Settings
+2023-08-26 03:06:05 :: AutoConfig :: 2.2 :: Configuring Lidarr Custom Scripts
+2023-08-26 03:06:05 :: AutoConfig :: 2.2 :: PlexNotify.bash Already added to Lidarr custom scripts
+2023-08-26 03:06:05 :: AutoConfig :: 2.2 :: Configuring Lidarr UI Settings
+2023-08-26 03:06:05 :: AutoConfig :: 2.2 :: Configuring Lidarr Standard Metadata Profile
+2023-08-26 03:06:05 :: AutoConfig :: 2.2 :: Configuring Lidarr Track Naming Settings
+2023-08-26 11:36:46 :: AutoConfig :: 2.2 :: Lidarr is not ready, sleeping until valid response...
+2023-08-26 11:36:47 :: AutoConfig :: 2.2 :: Configuring Lidarr Media Management Settings
+2023-08-26 11:36:47 :: AutoConfig :: 2.2 :: Configuring Lidarr Metadata ConsumerSettings
+2023-08-26 11:36:47 :: AutoConfig :: 2.2 :: Configuring Lidarr Metadata Provider Settings
+2023-08-26 11:36:47 :: AutoConfig :: 2.2 :: Configuring Lidarr Custom Scripts
+2023-08-26 11:36:47 :: AutoConfig :: 2.2 :: PlexNotify.bash Already added to Lidarr custom scripts
+2023-08-26 11:36:47 :: AutoConfig :: 2.2 :: Configuring Lidarr UI Settings
+2023-08-26 11:36:48 :: AutoConfig :: 2.2 :: Configuring Lidarr Standard Metadata Profile
+2023-08-26 11:36:48 :: AutoConfig :: 2.2 :: Configuring Lidarr Track Naming Settings
+2023-08-28 00:58:01 :: AutoConfig :: 2.2 :: Lidarr is not ready, sleeping until valid response...
+2023-08-28 00:58:02 :: AutoConfig :: 2.2 :: Configuring Lidarr Media Management Settings
+2023-08-28 00:58:02 :: AutoConfig :: 2.2 :: Configuring Lidarr Metadata ConsumerSettings
+2023-08-28 00:58:02 :: AutoConfig :: 2.2 :: Configuring Lidarr Metadata Provider Settings
+2023-08-28 00:58:02 :: AutoConfig :: 2.2 :: Configuring Lidarr Custom Scripts
+2023-08-28 00:58:02 :: AutoConfig :: 2.2 :: PlexNotify.bash Already added to Lidarr custom scripts
+2023-08-28 00:58:02 :: AutoConfig :: 2.2 :: Configuring Lidarr UI Settings
+2023-08-28 00:58:02 :: AutoConfig :: 2.2 :: Configuring Lidarr Standard Metadata Profile
+2023-08-28 00:58:02 :: AutoConfig :: 2.2 :: Configuring Lidarr Track Naming Settings
+2023-08-28 18:09:21 :: AutoConfig :: 2.2 :: Lidarr is not ready, sleeping until valid response...
+2023-08-28 18:09:22 :: AutoConfig :: 2.2 :: Configuring Lidarr Media Management Settings
+2023-08-28 18:09:22 :: AutoConfig :: 2.2 :: Configuring Lidarr Metadata ConsumerSettings
+2023-08-28 18:09:22 :: AutoConfig :: 2.2 :: Configuring Lidarr Metadata Provider Settings
+2023-08-28 18:09:22 :: AutoConfig :: 2.2 :: Configuring Lidarr Custom Scripts
+2023-08-28 18:09:22 :: AutoConfig :: 2.2 :: PlexNotify.bash Already added to Lidarr custom scripts
+2023-08-28 18:09:22 :: AutoConfig :: 2.2 :: Configuring Lidarr UI Settings
+2023-08-28 18:09:22 :: AutoConfig :: 2.2 :: Configuring Lidarr Standard Metadata Profile
+2023-08-28 18:09:22 :: AutoConfig :: 2.2 :: Configuring Lidarr Track Naming Settings
+2023-08-29 13:26:14 :: AutoConfig :: 2.2 :: Lidarr is not ready, sleeping until valid response...
+2023-08-29 13:26:15 :: AutoConfig :: 2.2 :: Configuring Lidarr Media Management Settings
+2023-08-29 13:26:15 :: AutoConfig :: 2.2 :: Configuring Lidarr Metadata ConsumerSettings
+2023-08-29 13:26:15 :: AutoConfig :: 2.2 :: Configuring Lidarr Metadata Provider Settings
+2023-08-29 13:26:15 :: AutoConfig :: 2.2 :: Configuring Lidarr Custom Scripts
+2023-08-29 13:26:15 :: AutoConfig :: 2.2 :: PlexNotify.bash Already added to Lidarr custom scripts
+2023-08-29 13:26:15 :: AutoConfig :: 2.2 :: Configuring Lidarr UI Settings
+2023-08-29 13:26:15 :: AutoConfig :: 2.2 :: Configuring Lidarr Standard Metadata Profile
+2023-08-29 13:26:15 :: AutoConfig :: 2.2 :: Configuring Lidarr Track Naming Settings
+2023-08-30 14:00:32 :: AutoConfig :: 2.2 :: Lidarr is not ready, sleeping until valid response...
+2023-08-30 14:00:33 :: AutoConfig :: 2.2 :: Configuring Lidarr Media Management Settings
+2023-08-30 14:00:33 :: AutoConfig :: 2.2 :: Configuring Lidarr Metadata ConsumerSettings
+2023-08-30 14:00:33 :: AutoConfig :: 2.2 :: Configuring Lidarr Metadata Provider Settings
+2023-08-30 14:00:33 :: AutoConfig :: 2.2 :: Configuring Lidarr Custom Scripts
+2023-08-30 14:00:33 :: AutoConfig :: 2.2 :: PlexNotify.bash Already added to Lidarr custom scripts
+2023-08-30 14:00:33 :: AutoConfig :: 2.2 :: Configuring Lidarr UI Settings
+2023-08-30 14:00:33 :: AutoConfig :: 2.2 :: Configuring Lidarr Standard Metadata Profile
+2023-08-30 14:00:33 :: AutoConfig :: 2.2 :: Configuring Lidarr Track Naming Settings
+2023-09-01 00:17:19 :: AutoConfig :: 2.2 :: Lidarr is not ready, sleeping until valid response...
+2023-09-01 00:17:20 :: AutoConfig :: 2.2 :: Configuring Lidarr Media Management Settings
+2023-09-01 00:17:21 :: AutoConfig :: 2.2 :: Configuring Lidarr Metadata ConsumerSettings
+2023-09-01 00:17:21 :: AutoConfig :: 2.2 :: Configuring Lidarr Metadata Provider Settings
+2023-09-01 00:17:21 :: AutoConfig :: 2.2 :: Configuring Lidarr Custom Scripts
+2023-09-01 00:17:21 :: AutoConfig :: 2.2 :: PlexNotify.bash Already added to Lidarr custom scripts
+2023-09-01 00:17:21 :: AutoConfig :: 2.2 :: Configuring Lidarr UI Settings
+2023-09-01 00:17:21 :: AutoConfig :: 2.2 :: Configuring Lidarr Standard Metadata Profile
+2023-09-01 00:17:21 :: AutoConfig :: 2.2 :: Configuring Lidarr Track Naming Settings
+2023-09-01 15:46:17 :: AutoConfig :: 2.2 :: Lidarr is not ready, sleeping until valid response...
+2023-09-01 15:46:18 :: AutoConfig :: 2.2 :: Configuring Lidarr Media Management Settings
+2023-09-01 15:46:19 :: AutoConfig :: 2.2 :: Configuring Lidarr Metadata ConsumerSettings
+2023-09-01 15:46:19 :: AutoConfig :: 2.2 :: Configuring Lidarr Metadata Provider Settings
+2023-09-01 15:46:19 :: AutoConfig :: 2.2 :: Configuring Lidarr Custom Scripts
+2023-09-01 15:46:19 :: AutoConfig :: 2.2 :: PlexNotify.bash Already added to Lidarr custom scripts
+2023-09-01 15:46:19 :: AutoConfig :: 2.2 :: Configuring Lidarr UI Settings
+2023-09-01 15:46:19 :: AutoConfig :: 2.2 :: Configuring Lidarr Standard Metadata Profile
+2023-09-01 15:46:19 :: AutoConfig :: 2.2 :: Configuring Lidarr Track Naming Settings
+2023-09-01 23:18:21 :: AutoConfig :: 2.3 :: Lidarr is not ready, sleeping until valid response...
+2023-09-01 23:18:22 :: AutoConfig :: 2.3 :: Configuring Lidarr Media Management Settings
+2023-09-01 23:18:22 :: AutoConfig :: 2.3 :: Configuring Lidarr Metadata ConsumerSettings
+2023-09-01 23:18:22 :: AutoConfig :: 2.3 :: Configuring Lidarr Metadata Provider Settings
+2023-09-01 23:18:22 :: AutoConfig :: 2.3 :: Configuring Lidarr Custom Scripts
+2023-09-01 23:18:22 :: AutoConfig :: 2.3 :: PlexNotify.bash Already added to Lidarr custom scripts
+2023-09-01 23:18:22 :: AutoConfig :: 2.3 :: Configuring Lidarr UI Settings
+2023-09-01 23:18:22 :: AutoConfig :: 2.3 :: Configuring Lidarr Standard Metadata Profile
+2023-09-01 23:18:22 :: AutoConfig :: 2.3 :: Configuring Lidarr Track Naming Settings
+2023-09-02 01:30:20 :: AutoConfig :: 2.3 :: Lidarr is not ready, sleeping until valid response...
+2023-09-02 01:30:21 :: AutoConfig :: 2.3 :: Configuring Lidarr Media Management Settings
+2023-09-02 01:30:21 :: AutoConfig :: 2.3 :: Configuring Lidarr Metadata ConsumerSettings
+2023-09-02 01:30:21 :: AutoConfig :: 2.3 :: Configuring Lidarr Metadata Provider Settings
+2023-09-02 01:30:21 :: AutoConfig :: 2.3 :: Configuring Lidarr Custom Scripts
+2023-09-02 01:30:21 :: AutoConfig :: 2.3 :: PlexNotify.bash Already added to Lidarr custom scripts
+2023-09-02 01:30:21 :: AutoConfig :: 2.3 :: Configuring Lidarr UI Settings
+2023-09-02 01:30:21 :: AutoConfig :: 2.3 :: Configuring Lidarr Standard Metadata Profile
+2023-09-02 01:30:21 :: AutoConfig :: 2.3 :: Configuring Lidarr Track Naming Settings
+2023-09-02 06:14:23 :: AutoConfig :: 2.3 :: Lidarr is not ready, sleeping until valid response...
+2023-09-02 06:14:24 :: AutoConfig :: 2.3 :: Configuring Lidarr Media Management Settings
+2023-09-02 06:14:24 :: AutoConfig :: 2.3 :: Configuring Lidarr Metadata ConsumerSettings
+2023-09-02 06:14:24 :: AutoConfig :: 2.3 :: Configuring Lidarr Metadata Provider Settings
+2023-09-02 06:14:24 :: AutoConfig :: 2.3 :: Configuring Lidarr Custom Scripts
+2023-09-02 06:14:24 :: AutoConfig :: 2.3 :: PlexNotify.bash Already added to Lidarr custom scripts
+2023-09-02 06:14:24 :: AutoConfig :: 2.3 :: Configuring Lidarr UI Settings
+2023-09-02 06:14:24 :: AutoConfig :: 2.3 :: Configuring Lidarr Standard Metadata Profile
+2023-09-02 06:14:24 :: AutoConfig :: 2.3 :: Configuring Lidarr Track Naming Settings
+2023-09-02 16:04:10 :: AutoConfig :: 2.3 :: Lidarr is not ready, sleeping until valid response...
+2023-09-02 16:04:11 :: AutoConfig :: 2.3 :: Configuring Lidarr Media Management Settings
+2023-09-02 16:04:11 :: AutoConfig :: 2.3 :: Configuring Lidarr Metadata ConsumerSettings
+2023-09-02 16:04:11 :: AutoConfig :: 2.3 :: Configuring Lidarr Metadata Provider Settings
+2023-09-02 16:04:11 :: AutoConfig :: 2.3 :: Configuring Lidarr Custom Scripts
+2023-09-02 16:04:11 :: AutoConfig :: 2.3 :: PlexNotify.bash Already added to Lidarr custom scripts
+2023-09-02 16:04:11 :: AutoConfig :: 2.3 :: Configuring Lidarr UI Settings
+2023-09-02 16:04:12 :: AutoConfig :: 2.3 :: Configuring Lidarr Standard Metadata Profile
+2023-09-02 16:04:12 :: AutoConfig :: 2.3 :: Configuring Lidarr Track Naming Settings
+2023-09-03 19:36:52 :: AutoConfig :: 2.3 :: Lidarr is not ready, sleeping until valid response...
+2023-09-03 19:36:53 :: AutoConfig :: 2.3 :: Configuring Lidarr Media Management Settings
+2023-09-03 19:36:53 :: AutoConfig :: 2.3 :: Configuring Lidarr Metadata ConsumerSettings
+2023-09-03 19:36:53 :: AutoConfig :: 2.3 :: Configuring Lidarr Metadata Provider Settings
+2023-09-03 19:36:53 :: AutoConfig :: 2.3 :: Configuring Lidarr Custom Scripts
+2023-09-03 19:36:53 :: AutoConfig :: 2.3 :: PlexNotify.bash Already added to Lidarr custom scripts
+2023-09-03 19:36:53 :: AutoConfig :: 2.3 :: Configuring Lidarr UI Settings
+2023-09-03 19:36:53 :: AutoConfig :: 2.3 :: Configuring Lidarr Standard Metadata Profile
+2023-09-03 19:36:53 :: AutoConfig :: 2.3 :: Configuring Lidarr Track Naming Settings
+2023-09-04 13:21:26 :: AutoConfig :: 2.3 :: Lidarr is not ready, sleeping until valid response...
+2023-09-04 13:21:27 :: AutoConfig :: 2.3 :: Configuring Lidarr Media Management Settings
+2023-09-04 13:21:27 :: AutoConfig :: 2.3 :: Configuring Lidarr Metadata ConsumerSettings
+2023-09-04 13:21:27 :: AutoConfig :: 2.3 :: Configuring Lidarr Metadata Provider Settings
+2023-09-04 13:21:27 :: AutoConfig :: 2.3 :: Configuring Lidarr Custom Scripts
+2023-09-04 13:21:27 :: AutoConfig :: 2.3 :: PlexNotify.bash Already added to Lidarr custom scripts
+2023-09-04 13:21:27 :: AutoConfig :: 2.3 :: Configuring Lidarr UI Settings
+2023-09-04 13:21:27 :: AutoConfig :: 2.3 :: Configuring Lidarr Standard Metadata Profile
+2023-09-04 13:21:27 :: AutoConfig :: 2.3 :: Configuring Lidarr Track Naming Settings
+2023-09-05 16:33:11 :: AutoConfig :: 2.3 :: Lidarr is not ready, sleeping until valid response...
+2023-09-05 16:33:12 :: AutoConfig :: 2.3 :: Configuring Lidarr Media Management Settings
+2023-09-05 16:33:12 :: AutoConfig :: 2.3 :: Configuring Lidarr Metadata ConsumerSettings
+2023-09-05 16:33:12 :: AutoConfig :: 2.3 :: Configuring Lidarr Metadata Provider Settings
+2023-09-05 16:33:12 :: AutoConfig :: 2.3 :: Configuring Lidarr Custom Scripts
+2023-09-05 16:33:12 :: AutoConfig :: 2.3 :: PlexNotify.bash Already added to Lidarr custom scripts
+2023-09-05 16:33:12 :: AutoConfig :: 2.3 :: Configuring Lidarr UI Settings
+2023-09-05 16:33:12 :: AutoConfig :: 2.3 :: Configuring Lidarr Standard Metadata Profile
+2023-09-05 16:33:12 :: AutoConfig :: 2.3 :: Configuring Lidarr Track Naming Settings
+2023-09-06 13:58:58 :: AutoConfig :: 2.3 :: Lidarr is not ready, sleeping until valid response...
+2023-09-06 13:59:00 :: AutoConfig :: 2.3 :: Configuring Lidarr Media Management Settings
+2023-09-06 13:59:00 :: AutoConfig :: 2.3 :: Configuring Lidarr Metadata ConsumerSettings
+2023-09-06 13:59:00 :: AutoConfig :: 2.3 :: Configuring Lidarr Metadata Provider Settings
+2023-09-06 13:59:00 :: AutoConfig :: 2.3 :: Configuring Lidarr Custom Scripts
+2023-09-06 13:59:00 :: AutoConfig :: 2.3 :: PlexNotify.bash Already added to Lidarr custom scripts
+2023-09-06 13:59:00 :: AutoConfig :: 2.3 :: Configuring Lidarr UI Settings
+2023-09-06 13:59:00 :: AutoConfig :: 2.3 :: Configuring Lidarr Standard Metadata Profile
+2023-09-06 13:59:00 :: AutoConfig :: 2.3 :: Configuring Lidarr Track Naming Settings
